@@ -1,0 +1,333 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Edit Invoice
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Invoices
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Edit Invoice
+        </li>
+    </ol>
+</div>
+
+<!-- Edit Invoice -->
+<div
+    class="edit-invoice-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-content">
+        <div class="row">
+            <div class="col-xxl-3 col-sm-6">
+                <div class="form-group">
+                    <label class="main-label d-block fw-medium text-black">
+                        Invoice ID
+                    </label>
+                    <input type="text" class="form-control" disabled value="#JAN-2345">
+                </div>
+            </div>
+            <div class="col-xxl-3 col-sm-6">
+                <div class="form-group">
+                    <label class="main-label d-block fw-medium text-black">
+                        Status
+                    </label>
+                    <select class="form-select">
+                        <option>
+                            Select
+                        </option>
+                        <option value="1" selected>
+                            Paid
+                        </option>
+                        <option value="2">
+                            Unpaid
+                        </option>
+                        <option value="3">
+                            Cancelled
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-sm-6">
+                <div class="form-group">
+                    <label class="main-label d-block fw-medium text-black">
+                        Date
+                    </label>
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+            <div class="col-xxl-3 col-sm-6">
+                <div class="form-group">
+                    <label class="main-label d-block fw-medium text-black">
+                        Due Date
+                    </label>
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="invoice-info position-relative border-radius">
+                    <div>
+                        <span class="title text-black fw-medium d-block">
+                            From:
+                        </span>
+                        <span class="d-block text-black fw-medium">
+                            Olivia John
+                        </span>
+                        <span class="d-block">
+                            olivia&#64;trezo.com
+                        </span>
+                        <span class="d-block">
+                            4545 Seth Street Ballinger, TX 78965
+                        </span>
+                        <span class="d-block">
+                            +1 444 556 8899
+                        </span>
+                    </div>
+                    <button type="button" class="d-inline-block transition fw-medium">
+                        <span class="d-flex align-items-center">
+                            <i class="material-symbols-outlined">
+                                edit
+                            </i>
+                            Change
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="invoice-info position-relative border-radius">
+                    <div>
+                        <span class="title text-black fw-medium d-block">
+                            To:
+                        </span>
+                        <span class="d-block text-black fw-medium">
+                            Alina Smith
+                        </span>
+                        <span class="d-block">
+                            smith&#64;trezo.com
+                        </span>
+                        <span class="d-block">
+                            4545 Seth Street Ballinger, TX 78965
+                        </span>
+                        <span class="d-block">
+                            +1 444 556 8899
+                        </span>
+                    </div>
+                    <button type="button" class="d-inline-block transition fw-medium">
+                        <span class="d-flex align-items-center">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Add
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    No
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Item Description
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Quantity
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Price
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Total
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-body">
+                                    1
+                                </td>
+                                <td class="fw-medium">
+                                    <input type="text" class="form-control" value="Apple MacBook Pro 16.2' with M3 Pro Chip">
+                                </td>
+                                <td class="text-body">
+                                    <input type="number" class="form-control" value="4">
+                                </td>
+                                <td class="text-body">
+                                    <input type="text" class="form-control" value="$80.00">
+                                </td>
+                                <td class="text-body">
+                                    $320.00
+                                </td>
+                                <td class="action">
+                                    <button type="button" class="d-inline-block p-0 border-0 bg-transparent">
+                                        <i class="material-symbols-outlined">
+                                            delete
+                                        </i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    2
+                                </td>
+                                <td class="fw-medium">
+                                    <input type="text" class="form-control" value="SAMSUNG Galaxy Tab A9+ Tablet 11'">
+                                </td>
+                                <td class="text-body">
+                                    <input type="number" class="form-control" value="3">
+                                </td>
+                                <td class="text-body">
+                                    <input type="text" class="form-control" value="$45.00">
+                                </td>
+                                <td class="text-body">
+                                    $135.00
+                                </td>
+                                <td class="action">
+                                    <button type="button" class="d-inline-block p-0 border-0 bg-transparent">
+                                        <i class="material-symbols-outlined">
+                                            delete
+                                        </i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    3
+                                </td>
+                                <td class="fw-medium">
+                                    <input type="text" class="form-control" value="Apple iPhone 15 Pro Max (512 GB)">
+                                </td>
+                                <td class="text-body">
+                                    <input type="number" class="form-control" value="5">
+                                </td>
+                                <td class="text-body">
+                                    <input type="text" class="form-control" value="$30.00">
+                                </td>
+                                <td class="text-body">
+                                    $150.00
+                                </td>
+                                <td class="action">
+                                    <button type="button" class="d-inline-block p-0 border-0 bg-transparent">
+                                        <i class="material-symbols-outlined">
+                                            delete
+                                        </i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-primary">
+                                        + Add Item
+                                    </button>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="form-group mb-0">
+                                        <label class="main-label d-block fw-medium text-black">
+                                            Discount(%)
+                                        </label>
+                                        <input type="text" class="form-control" value="0.54">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group mb-0">
+                                        <label class="main-label d-block fw-medium text-black">
+                                            Tax(%)
+                                        </label>
+                                        <input type="text" class="form-control" value="0.22">
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-body">
+                                    Sub Total:
+                                </td>
+                                <td class="text-body">
+                                    $971.00
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-body">
+                                    Tax (0.22%)
+                                </td>
+                                <td class="text-body">
+                                    $5.00
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-body">
+                                    Discount (0.52%)
+                                </td>
+                                <td class="text-body">
+                                    - $5.00
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-black fw-medium">
+                                    Grand Total
+                                </td>
+                                <td class="text-black">
+                                    $971.00
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="form-btn-box text-center">
+            <button type="button" class="warn d-inline-block fw-medium border-radius border-0 transition">
+                Cancel
+            </button>
+            <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Update
+                </span>
+            </button>
+        </div>
+    </div>
+</div>

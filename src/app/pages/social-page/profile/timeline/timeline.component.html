@@ -1,0 +1,370 @@
+<!-- Create Post -->
+<div
+    class="publish-post-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Create Post
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="form-group">
+            <textarea class="form-control" placeholder="E.g. It makes me feel..."></textarea>
+        </div>
+        <div class="btn-box d-md-flex align-items-center">
+            <button class="t-btn d-inline-block border-radius fw-medium border-0">
+                <span class="d-flex align-items-center">
+                    <i class="material-symbols-outlined">
+                        send
+                    </i>
+                    Publish Post
+                </span>
+            </button>
+            <div class="buttons-list d-flex align-items-center">
+                <button class="d-inline-block p-0 border-0 bg-transparent transition">
+                    <i class="material-symbols-outlined">
+                        sentiment_satisfied
+                    </i>
+                </button>
+                <button class="d-inline-block p-0 border-0 bg-transparent transition">
+                    <i class="material-symbols-outlined">
+                        attach_file
+                    </i>
+                </button>
+                <button class="d-inline-block p-0 border-0 bg-transparent transition">
+                    <i class="material-symbols-outlined">
+                        mic_none
+                    </i>
+                </button>
+                <button class="d-inline-block p-0 border-0 bg-transparent transition">
+                    <i class="material-symbols-outlined">
+                        image
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Timeline -->
+<div
+    class="timeline-post-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none position-relative"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header mb-0 d-flex align-items-center justify-content-between">
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Save Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Hide Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Report Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Block Cynthia
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="user d-flex align-items-center">
+            <div class="img">
+                <img src="images/users/user6.jpg" class="rounded-circle" alt="user-image">
+            </div>
+            <div class="title">
+                <span class="d-block text-black fw-semibold">
+                    Cynthia Baggett
+                </span>
+                <span class="d-block">
+                    05 mins ago
+                </span>
+            </div>
+        </div>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <p>
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
+        </p>
+        <div class="post-info d-sm-flex align-items-center">
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        thumb_up
+                    </i>
+                    10 Likes
+                </span>
+            </button>
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        chat_bubble_outline
+                    </i>
+                    0 Comments
+                </span>
+            </button>
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        share
+                    </i>
+                    0 Share
+                </span>
+            </button>
+        </div>
+        <div class="post-comment d-sm-flex align-items-center">
+            <div class="img">
+                <img src="images/profile.jpg" class="rounded-circle" alt="profile-image">
+            </div>
+            <form class="position-relative">
+                <input type="text" class="form-control" placeholder="Type something....">
+                <button class="d-inline-block border-radius p-0 border-0 transition" type="submit">
+                    <i class="material-symbols-outlined">
+                        send
+                    </i>
+                </button>
+            </form>
+            <div class="buttons-list d-flex align-items-center">
+                <button class="d-inline-block p-0 border-0 bg-transparent">
+                    <i class="material-symbols-outlined">
+                        sentiment_satisfied
+                    </i>
+                </button>
+                <button class="d-inline-block p-0 border-0 bg-transparent">
+                    <i class="material-symbols-outlined">
+                        attach_file
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+    class="timeline-post-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none position-relative"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header mb-0 d-flex align-items-center justify-content-between">
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu2">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu2()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen2">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Save Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Hide Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Report Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Block Douglas
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="user d-flex align-items-center">
+            <div class="img">
+                <img src="images/users/user7.jpg" class="rounded-circle" alt="user-image">
+            </div>
+            <div class="title">
+                <span class="d-block text-black fw-semibold">
+                    Douglas Hairston
+                </span>
+                <span class="d-block">
+                    1 hour ago
+                </span>
+            </div>
+        </div>
+        <p>
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of lorem ipsum.
+        </p>
+        <div class="post-info d-sm-flex align-items-center">
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        thumb_up
+                    </i>
+                    42 Likes
+                </span>
+            </button>
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        chat_bubble_outline
+                    </i>
+                    2 Comments
+                </span>
+            </button>
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        share
+                    </i>
+                    1 Share
+                </span>
+            </button>
+        </div>
+        <div class="post-comment d-sm-flex align-items-center">
+            <div class="img">
+                <img src="images/profile.jpg" class="rounded-circle" alt="profile-image">
+            </div>
+            <form class="position-relative">
+                <input type="text" class="form-control" placeholder="Type something....">
+                <button class="d-inline-block border-radius p-0 border-0 transition" type="submit">
+                    <i class="material-symbols-outlined">
+                        send
+                    </i>
+                </button>
+            </form>
+            <div class="buttons-list d-flex align-items-center">
+                <button class="d-inline-block p-0 border-0 bg-transparent">
+                    <i class="material-symbols-outlined">
+                        sentiment_satisfied
+                    </i>
+                </button>
+                <button class="d-inline-block p-0 border-0 bg-transparent">
+                    <i class="material-symbols-outlined">
+                        attach_file
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+    class="timeline-post-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none position-relative"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header mb-0 d-flex align-items-center justify-content-between">
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu3">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu3()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen3">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Save Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Hide Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Report Post
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Block Olivia
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="user d-flex align-items-center">
+            <div class="img">
+                <img src="images/users/user8.jpg" class="rounded-circle" alt="user-image">
+            </div>
+            <div class="title">
+                <span class="d-block text-black fw-semibold">
+                    Olivia John
+                </span>
+                <span class="d-block">
+                    1 day ago
+                </span>
+            </div>
+        </div>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </p>
+        <div class="post-info d-sm-flex align-items-center">
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        thumb_up
+                    </i>
+                    100 Likes
+                </span>
+            </button>
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        chat_bubble_outline
+                    </i>
+                    16 Comments
+                </span>
+            </button>
+            <button class="d-inline-block bg-transparent p-0 border-0">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        share
+                    </i>
+                    5 Share
+                </span>
+            </button>
+        </div>
+        <div class="post-comment d-sm-flex align-items-center">
+            <div class="img">
+                <img src="images/profile.jpg" class="rounded-circle" alt="profile-image">
+            </div>
+            <form class="position-relative">
+                <input type="text" class="form-control" placeholder="Type something....">
+                <button class="d-inline-block border-radius p-0 border-0 transition" type="submit">
+                    <i class="material-symbols-outlined">
+                        send
+                    </i>
+                </button>
+            </form>
+            <div class="buttons-list d-flex align-items-center">
+                <button class="d-inline-block p-0 border-0 bg-transparent">
+                    <i class="material-symbols-outlined">
+                        sentiment_satisfied
+                    </i>
+                </button>
+                <button class="d-inline-block p-0 border-0 bg-transparent">
+                    <i class="material-symbols-outlined">
+                        attach_file
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

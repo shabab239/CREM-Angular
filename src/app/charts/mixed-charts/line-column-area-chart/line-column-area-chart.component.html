@@ -1,0 +1,28 @@
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Line, Column & Area Chart
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="chart">
+            <apx-chart
+                [series]="chartOptions.series!"
+                [chart]="chartOptions.chart!"
+                [yaxis]="chartOptions.yaxis!"
+                [xaxis]="chartOptions.xaxis!"
+                [labels]="chartOptions.labels!"
+                [stroke]="chartOptions.stroke!"
+                [plotOptions]="chartOptions.plotOptions!"
+                [markers]="chartOptions.markers!"
+                [grid]="chartOptions.grid!"
+                [colors]="chartOptions.colors!"
+                [legend]="chartOptions.legend!"
+                [fill]="chartOptions.fill!"
+                [tooltip]="chartOptions.tooltip!"
+            ></apx-chart>
+        </div>
+    </div>
+</div>

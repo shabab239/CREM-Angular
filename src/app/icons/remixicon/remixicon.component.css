@@ -1,0 +1,41 @@
+.icon-card {
+  padding-top: 40px;
+}
+.icon-card i {
+  line-height: 1;
+  font-size: 25px;
+}
+.icon-card .title {
+  margin-top: 37px;
+}
+
+code {
+  padding: 17.5px 20px;
+  display: block;
+  font-size: 1em;
+  background: #f5f2f0;
+}
+code .red {
+  color: #905;
+  margin-right: 5px;
+}
+code .red:last-child {
+  margin-right: 0;
+}
+code .green {
+  color: #690;
+}
+code .blue {
+  color: #07a;
+}
+
+.btn-box {
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+
+.component-dark-theme code {
+  background: #15203c;
+}/*# sourceMappingURL=remixicon.component.css.map */

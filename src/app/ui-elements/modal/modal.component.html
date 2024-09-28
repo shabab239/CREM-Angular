@@ -1,0 +1,136 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Modal
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            UI Elements
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Modal
+        </li>
+    </ol>
+</div>
+
+<!-- Modal -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Live Demo
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <button type="button" class="btn btn-primary" (click)="toggleClass()">
+                    Launch demo modal
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Scrolling Long Content
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <button type="button" class="btn btn-primary" (click)="toggleClass2()">
+                    Launch demo modal
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Vertically Centered
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <button type="button" class="btn btn-primary" (click)="toggleClass3()">
+                    Launch demo modal
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Live Demo Modal -->
+<div class="modal fade" tabindex="-1" [class.show]="classApplied">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Modal title</h1>
+                <button type="button" class="btn-close shadow-none" aria-label="Close" (click)="toggleClass()"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="toggleClass()">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+</div>
+
+<!-- Scrolling Long Content -->
+<div class="modal fade" tabindex="-1" [class.show]="classApplied2">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Modal title</h1>
+                <button type="button" class="btn-close shadow-none" aria-label="Close" (click)="toggleClass2()"></button>
+            </div>
+            <div class="modal-body">
+                <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>This content should appear at the bottom after you scroll.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="toggleClass2()">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+</div>
+
+<!-- Vertically Centered -->
+<div class="modal fade" tabindex="-1" [class.show]="classApplied3">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Modal title</h1>
+                <button type="button" class="btn-close shadow-none" aria-label="Close" (click)="toggleClass3()"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="toggleClass3()">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+</div>

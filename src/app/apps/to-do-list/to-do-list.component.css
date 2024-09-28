@@ -1,0 +1,83 @@
+.apps-to-do-list-card {
+  padding-bottom: 8px;
+}
+.apps-to-do-list-card .trezo-card-content .basic-table .table thead tr th:first-child, .apps-to-do-list-card .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 0;
+}
+.apps-to-do-list-card .trezo-card-content .basic-table .table thead tr th:nth-child(2), .apps-to-do-list-card .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 15px;
+}
+.apps-to-do-list-card .trezo-card-content .basic-table .table tbody tr td, .apps-to-do-list-card .trezo-card-content .basic-table table tbody tr td {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.apps-to-do-list-card .trezo-card-content .basic-table .table tbody tr td:first-child, .apps-to-do-list-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 0;
+}
+.apps-to-do-list-card .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .apps-to-do-list-card .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+.apps-to-do-list-card .trezo-card-content .basic-table .table tbody tr:last-child td, .apps-to-do-list-card .trezo-card-content .basic-table table tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+.apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 25px !important;
+  padding-right: 15px !important;
+}
+.apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 25px !important;
+  padding-right: 15px !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .apps-to-do-list-card {
+    padding-bottom: 4px;
+  }
+  .apps-to-do-list-card .trezo-card-content .basic-table .table tbody tr td, .apps-to-do-list-card .trezo-card-content .basic-table table tbody tr td {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 17px !important;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 17px !important;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 17px !important;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 17px !important;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .apps-to-do-list-card {
+    padding-bottom: 7px;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 20px !important;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 20px !important;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 20px !important;
+  }
+  .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .apps-to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 20px !important;
+  }
+}
+/* Min width 768px to Max width 991px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=to-do-list.component.css.map */

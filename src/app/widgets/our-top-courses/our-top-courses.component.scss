@@ -1,0 +1,279 @@
+.our-top-courses-card {
+    overflow: hidden;
+    background-color: var(--secondaryColor) !important;
+
+    .trezo-card-header {
+        margin-bottom: 20px;
+    }
+    .trezo-card-content {
+        .image {
+            width: 120px;
+
+            img {
+                display: inline-block;
+                width: auto;
+            }
+        }
+        .content {
+            margin-left: 15px;
+
+            .price {
+                font-size: 20px;
+                margin-top: 3px;
+            }
+        }
+        .info {
+            margin-top: 10px;
+
+            .title {
+                font-size: 16px;
+                margin-bottom: 2px;
+            }
+            ul {
+                li {
+                    margin-right: 17px;
+
+                    &::before {
+                        top: 50%;
+                        width: 4px;
+                        height: 4px;
+                        content: '';
+                        right: -11px;
+                        margin-top: 1px;
+                        position: absolute;
+                        border-radius: 50%;
+                        transform: translateY(-50%);
+                        background: var(--whiteColor);
+                    }
+                    &:last-child {
+                        margin-right: 0;
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .view-details-btn {
+                margin-top: 18px;
+                padding: 6px 13px;
+                color: var(--whiteColor);
+                border: 1px solid var(--whiteColor);
+                
+                span {
+                    padding-left: 22px;
+
+                    i {
+                        top: 50%;
+                        left: -4px;
+                        font-size: 22px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+    &::before {
+        top: -80px;
+        z-index: -1;
+        content: '';
+        right: -80px;
+        width: 169px;
+        height: 169px;
+        position: absolute;
+        border-radius: 50%;
+        background: #1F64F1;
+    }
+    &::after {
+        left: auto;
+        top: -75px;
+        content: '';
+        z-index: -2;
+        right: -75px;
+        width: 169px;
+        height: 169px;
+        position: absolute;
+        border-radius: 50%;
+        background: #5DA8FF;
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .d-flex {
+                direction: rtl;
+            }
+            .content {
+                margin: {
+                    left: 0;
+                    right: 15px;
+                };
+            }
+            .info {
+                direction: rtl;
+
+                ul {
+                    li {
+                        margin: {
+                            right: 0;
+                            left: 17px;
+                        };
+                        &::before {
+                            right: auto;
+                            left: -11px;
+                        }
+                        &:last-child {
+                            margin: {
+                                left: 0;
+                            };
+                        }
+                    }
+                }
+                .view-details-btn {
+                    span {
+                        padding: {
+                            left: 0;
+                            right: 22px;
+                        };
+                        i {
+                            right: -4px;
+                            left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+::ng-deep {
+    .our-top-courses-card {
+        .trezo-card-content {
+            .owl-theme {
+                .owl-nav {
+                    &.disabled + .owl-dots {
+                        margin-top: 0;
+                    }
+                }
+                .owl-dots {
+                    left: 0;
+                    bottom: 10px;
+                    position: absolute;
+
+                    .owl-dot {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                            margin: 0 5px 0 0;
+                            border-radius: 50%;
+                            background: var(--whiteColor);
+                            transition: var(--transition);
+                        }
+                        &:hover, &.active {
+                            span {
+                                background: #FFAA72;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .owl-theme {
+                    .owl-dots {
+                        left: auto;
+                        right: 0;
+    
+                        .owl-dot {
+                            span {
+                                margin: {
+                                    left: 5px;
+                                    right: 0;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .our-top-courses-card {
+        .trezo-card-header {
+            margin-bottom: 17px;
+        }
+        .trezo-card-content {
+            .image {
+                width: 100px;
+            }
+            .content {
+                .price {
+                    font-size: 18px;
+                }
+            }
+            .info {
+                .title {
+                    font-size: 14px;
+                }
+                .view-details-btn {
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .our-top-courses-card {
+            .trezo-card-content {
+                .owl-theme {
+                    .owl-dots {
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .our-top-courses-card {
+        .trezo-card-header {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .our-top-courses-card {
+        .trezo-card-content {
+            .content {
+                .price {
+                    font-size: 19px;
+                }
+            }
+            .info {
+                .title {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

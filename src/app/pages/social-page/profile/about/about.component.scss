@@ -1,0 +1,73 @@
+.about-me-card {
+    .trezo-card-content {
+        border-top: 1px solid var(--borderColor);
+        padding-top: 25px;
+
+        h6 {
+            font-size: 16px;
+            margin-bottom: 10px;
+
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .about-me-card {
+        .trezo-card-content {
+            padding-top: 17px;
+    
+            h6 {
+                font-size: 14px;
+    
+                &:not(:first-child) {
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .about-me-card {
+        .trezo-card-content {
+            padding-top: 20px;
+    
+            h6 {
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .about-me-card {
+        .trezo-card-content {
+            h6 {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

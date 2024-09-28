@@ -1,0 +1,671 @@
+.dark-theme {
+    background-color: #0A0E19;
+    --borderColor: #172036;
+    color: var(--bodyColor);
+    --bodyColor: #8695AA;
+    --bs-border-color: var(--borderColor);
+    --bs-secondary-color: rgba(255, 255, 255, 0.75);
+
+    // Default
+    a {
+        color: var(--whiteColor);
+
+        &:hover {
+            color: var(--primaryColor);
+        }
+    }
+
+    // Color
+    .bg-white {
+        background-color: #0C1427 !important;
+    }
+    .text-black {
+        color: var(--whiteColor) !important;
+    }
+    .bg-black {
+        background-color: var(--whiteColor) !important;
+    }
+    .bg-gray {
+        background-color: #15203c !important;
+    }
+
+    // Heading
+    .h1, h1, .display-1, .h2, h2, .display-2, .h3, h3, .display-3, .h4, h4, .display-4, .h5, h5, .display-5, .h6, h6, .display-6 {
+        color: var(--whiteColor);
+    }
+
+    // Card
+    .trezo-card {
+        .trezo-card-header {
+            .trezo-card-title {
+                .search-box {
+                    .input-search {
+                        background-color: #15203c;
+                        color: var(--whiteColor);
+                        border-color: #15203c;
+                    }
+                }
+            }
+            .trezo-card-subtitle {
+                .menu-btn {
+                    &:hover {
+                        background-color: #0A0E19 !important;
+                    }
+                }
+                .search-box {
+                    .input-search {
+                        background-color: #15203c;
+                        color: var(--whiteColor);
+                        border-color: #15203c;
+                    }
+                }
+                .buttons-list {
+                    .trezo-card-header-menu {
+                        .button {
+                            color: var(--whiteColor);
+                            
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .trezo-card-content {
+            .trezo-card-pagination {
+                ul, ol {
+                    li {
+                        a {
+                            background-color: #15203c;
+            
+                            &.active, &:hover {
+                                background-color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.table-style-two {
+            .trezo-card-content {
+                .basic-table {
+                    .table, table {
+                        thead {
+                            tr {
+                                th {
+                                    background-color: #15203c;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card {
+        --bs-card-bg: #0C1427;
+    }
+
+    // NG Scrollbar
+    .ng-scrollbar {
+        --scrollbar-thumb-color: rgba(255, 255, 255, .05);
+    }
+
+    // ApexCharts
+    apx-chart {
+        .apexcharts-gridline {
+            stroke: var(--borderColor);
+        }
+        .apexcharts-tooltip {
+            &.apexcharts-theme-light {
+                background: var(--borderColor);
+                box-shadow: unset;
+
+                .apexcharts-tooltip-title {
+                    background: #0C1427;
+                    color: var(--whiteColor);
+                }
+            }
+            &.apexcharts-theme-dark {
+                .apexcharts-tooltip-series-group {
+                    background-color: var(--blackColor) !important;
+                }
+            }
+        }
+        .apexcharts-tooltip-text-y-label, .apexcharts-tooltip-text-goals-value, .apexcharts-tooltip-text-y-value, .apexcharts-tooltip-text-z-value {
+            color: var(--whiteColor);
+        }
+        .apexcharts-xaxistooltip {
+            color: var(--whiteColor);
+            background: #15203c;
+            box-shadow: unset;
+        }
+        .apexcharts-menu {
+            background: var(--borderColor);
+            box-shadow: unset;
+
+            .apexcharts-menu-item {
+                &:hover {
+                    background: #0A0E19;
+                }
+            }
+        }
+        .apexcharts-xcrosshairs, .apexcharts-ycrosshairs {
+            fill: var(--borderColor);
+        }
+        .apexcharts-toolbar {
+            .apexcharts-menu-icon {
+                svg {
+                    fill: var(--whiteColor);
+                }
+                &:hover {
+                    svg {
+                        fill: var(--primaryColor);
+                    }
+                }
+            }
+        }
+        .apexcharts-legend-text, .apexcharts-title-text {
+            color: var(--bodyColor) !important;
+        }
+        .apexcharts-text {
+            fill: var(--bodyColor);
+
+            &.apexcharts-datalabel-value {
+                fill: var(--whiteColor);
+            }
+            &.apexcharts-point-annotation-label {
+                fill: var(--whiteColor);
+            }
+        }
+        .apexcharts-pie-area {
+            stroke: #0C1427;
+        }
+        .apexcharts-yaxis, .apexcharts-grid-borders {
+            line {
+                stroke: var(--borderColor);
+            }
+        }
+        .apexcharts-xaxis-tick {
+            stroke: var(--borderColor);
+        }
+        .apexcharts-track {
+            .apexcharts-radialbar-area {
+                stroke: var(--borderColor);
+            }
+        }
+        .apexcharts-radar-series {
+            &.apexcharts-plot-series {
+                line, polygon {
+                    fill: #0C1427;
+                    stroke: var(--borderColor);
+                }
+                polygon {
+                    &:nth-child(odd) {
+                        fill: var(--borderColor);
+                    }
+                }
+            }
+        }
+        .apexcharts-pie {
+            line, circle {
+                stroke: var(--borderColor);
+            }
+        }
+    }
+
+    // Table
+    .basic-table {
+        table, .table {
+            thead {
+                tr {
+                    th {
+                        color: var(--whiteColor);
+                        background-color: #15203c;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        color: var(--whiteColor);
+
+                        .assignees {
+                            div {
+                                border-color: #0C1427;
+                            }
+                        }
+                        .group-lesson {
+                            .users {
+                                div {
+                                    border-color: #0C1427;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-responsive {
+        &::-webkit-scrollbar-thumb {
+            background-color: #15203c;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #0A0E19;
+        }
+    }
+
+    // Progressbar
+    .progress, .progress-stacked {
+        --bs-progress-bg: var(--borderColor);
+
+        .progress-bar {
+            &.text-dark {
+                color: var(--whiteColor) !important;
+            }
+        }
+    }
+
+    // Checkbox
+    .form-check-input {
+        --bs-border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    // Add New Popup
+    .add-new-popup {
+        .popup-dialog {
+            .trezo-card {
+                .trezo-card-header {
+                    background-color: #15203c;
+                    
+                    .trezo-card-subtitle {
+                        button {
+                            color: var(--whiteColor);
+
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Form Control
+    .form-control {
+        color: var(--whiteColor);
+        background-color: transparent;
+        border-color: var(--borderColor);
+        
+        &::placeholder {
+            color: var(--bodyColor);
+        }
+        &[type="date"] {
+            color: var(--bodyColor);
+        }
+        &:focus {
+            border-color: var(--primaryColor);
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+        &::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+        &[type=file] {
+            &::file-selector-button {
+                background-color: #0A0E19 !important;
+                color: var(--whiteColor);
+            }
+        }
+    }
+
+    // Form Select
+    .form-select {
+        background-color: transparent;
+        border-color: var(--borderColor);
+
+        &:focus {
+            border-color: var(--primaryColor);
+        }
+    }
+
+    // Ngx Editor
+    .NgxEditor__Wrapper {
+        --ngx-editor-popup-bg-color: #0C1427;
+        border-color: var(--borderColor) !important;
+    
+        .NgxEditor__MenuBar {
+            background-color: #15203c;
+    
+            .NgxEditor__MenuItem {
+                .NgxEditor__MenuItem--Icon {
+                    svg {
+                        fill: var(--whiteColor);
+                    }
+                    &:hover {
+                        svg {
+                            fill: var(--whiteColor);
+                        }
+                    }
+                    &.NgxEditor__MenuItem--Active {
+                        svg {
+                            fill: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+            .NgxEditor__Dropdown {
+                .NgxEditor__Dropdown--Text {
+                    color: var(--whiteColor);
+                    background-color: #0C1427;
+                }
+                .NgxEditor__Dropdown--DropdownMenu {
+                    .NgxEditor__Dropdown--Item {
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+        .NgxEditor {
+            color: var(--whiteColor);
+            border-color: var(--borderColor) !important;
+    
+            .NgxEditor__Content {
+                p {
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+
+    // Paginator
+    .pagination-card {
+        ul, ol {
+            li {
+                a {
+                    background-color: #15203c;
+    
+                    &.active, &:hover {
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    .pagination-list {
+        --border-color: var(--borderColor);
+        --tertiary-bg: #0A0E19;
+    }
+
+    // File Uploader
+    .file-uploader {
+        border-color: var(--borderColor) !important;
+    
+        .upload-input {
+            .icon {
+                border-color: var(--borderColor) !important;
+            }
+            .upload-text {
+                b {
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        .remove-btn {
+            fill: var(--bodyColor);
+        }
+        .file-info {
+            color: var(--whiteColor);
+        }
+        file-upload-icon {
+            border-color: var(--borderColor);
+        }
+    }
+
+    // Badges
+    .text-outline-light {
+        color: var(--whiteColor) !important;
+    }
+
+    // Breadcrumb
+    .t-breadcrumb {
+        --secondary-color: var(--bodyColor);
+    }
+
+    // Carousel
+    .owl-theme {
+        .owl-dots {
+            .owl-dot {
+                span {
+                    background: #15203c;
+                }
+                &:hover, &.active {
+                    span {
+                        background: var(--primaryColor);
+                    }
+                }
+            }
+        }
+        .owl-nav {
+            [class*=owl-] {
+                color: var(--whiteColor);
+                background-color: #15203c;
+                
+                &:hover {
+                    color: var(--whiteColor);
+                    background: var(--primaryColor);
+                }
+            }
+        }
+    }
+
+    // Color Picker
+    .color-picker {
+        input {
+            color: var(--whiteColor);
+        }
+    }
+
+    // Badge
+    .trezo-badge {
+        background-color: #15203c;
+        
+        &.pending {
+            background-color: #15203c;
+        }
+        &.rejected {
+            background-color: #15203c;
+        }
+        &.pInProgress, &.cancelled {
+            background-color: #15203c;
+        }
+        &.inProgress, &.finished, &.shipped, &.pFinished {
+            background-color: #15203c;
+        }
+        &.pPending {
+            background-color: #15203c;
+        }
+    }
+
+    // Dropdown
+    .dropdown-menu {
+        --bs-dropdown-bg: #0A0E19;
+        --bs-dropdown-link-hover-bg: #0C1427;
+        --bs-dropdown-link-color: var(--whiteColor);
+    }
+
+    // Alerts
+    .alert-secondary {
+        --bs-secondary-bg-subtle: #0A0E19;
+        --bs-secondary-border-subtle: var(--borderColor);
+    }
+    .alert-light {
+        --bs-light-bg-subtle: #232a3c;
+        --bs-light-border-subtle: var(--borderColor);
+    }
+    .alert-dark {
+        --bs-dark-bg-subtle: #000000;
+        --bs-alert-color: var(--whiteColor);
+        --bs-dark-border-subtle: var(--borderColor);
+    }
+    .alert-outline-light {
+        --bs-alert-border-color: var(--borderColor);
+    }
+    .alert-outline-dark {
+        --bs-alert-color: var(--whiteColor);
+    }
+
+    // Accordion
+    .accordion {
+        --bs-body-bg: #0A0E19;
+        --bs-body-color: var(--whiteColor);
+        --bs-primary-bg-subtle: #131d36;
+        --bs-primary-text-emphasis: var(--whiteColor);
+
+        .accordion-button {
+            &::after {
+                filter: invert(1);
+            }
+        }
+    }
+
+    // List Group
+    .list-group {
+        --bs-list-group-bg: #0C1427;
+        --bs-list-group-disabled-bg: #111a31;
+        --bs-list-group-action-hover-bg: #111a31;
+        --bs-list-group-action-active-bg: #111a31;
+        --bs-list-group-action-active-color: var(--primaryColor);
+    }
+    .list-group-item {
+        &.active {
+            color: var(--bs-list-group-active-color) !important;
+        }
+    }
+
+    // Close Button
+    .btn-close {
+        filter: invert(1);
+    }
+
+    // Color Picker
+    .color-picker {
+        background-color: #0A0E19;
+        border-color: var(--borderColor);
+
+        input {
+            background-color: #15203c;
+            border-color: var(--borderColor) !important;
+        }
+        .selected-color {
+            background-color: #15203c !important;
+            border-color: var(--borderColor);
+        }
+    }
+
+    // Modal
+    .modal {
+        --bs-modal-bg: #0A0E19;
+        --bs-modal-border-color: var(--borderColor);
+    }
+
+    // Navs & Tabs
+    .nav-tabs {
+        --bs-nav-tabs-link-active-color: var(--whiteColor);
+        --bs-nav-link-disabled-color: rgba(255, 255, 255, 0.25);
+        --bs-nav-tabs-link-active-bg: #0C1427;
+        --bs-nav-tabs-link-active-border-color: var(--borderColor);
+        --bs-nav-tabs-link-hover-border-color: var(--borderColor);
+
+        .nav-link {
+            color: var(--bs-nav-link-color);
+
+            &.disabled, &:disabled {
+                color: var(--bs-nav-link-disabled-color);
+            }
+        }
+    }
+    .nav {
+        --bs-nav-link-disabled-color: rgba(255, 255, 255, 0.25);
+    }
+    .nav-underline {
+        --bs-nav-underline-link-active-color: var(--whiteColor);
+    }
+
+    // Offcanvas
+    .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+        --bs-offcanvas-bg: #0A0E19;
+    }
+
+    // Pagination
+    .pagination {
+        --bs-pagination-bg: #0A0E19;
+        --bs-pagination-focus-bg: #12192b;
+        --bs-pagination-hover-bg: #12192b;
+        --bs-pagination-disabled-bg: #12192b;
+    }
+
+    // Stacks
+    .vstack, .hstack {
+        color: var(--whiteColor) !important;
+    }
+    
+    // Table
+    .table {
+        --bs-table-bg: #0C1427;
+        --bs-table-color: var(--whiteColor);
+        --bs-table-striped-color: var(--whiteColor);
+        --bs-table-hover-color: var(--whiteColor);
+        --bs-emphasis-color-rgb: 255, 255, 255;
+        --bs-table-active-color: var(--whiteColor);
+    }
+    .table-dark {
+        --bs-table-striped-bg: #0A0E19;
+        --bs-table-border-color: var(--borderColor);
+        --bs-table-active-bg: #0A0E19;
+        --bs-table-bg: #0A0E19;
+    }
+    .table-light {
+        --bs-table-bg: #0A0E19;
+        --bs-table-color: var(--whiteColor);
+    }
+
+    // Toasts
+    .toast {
+        --bs-toast-header-color: var(--whiteColor);
+        --bs-body-bg-rgb: 0, 0, 0;
+    }
+
+    // Range
+    .form-range {
+        &::-webkit-slider-runnable-track {
+            background: #0A0E19;
+        }
+    }
+
+    // Input Group
+    .input-group-text {
+        --bs-tertiary-bg: #0A0E19;
+        --bs-body-color: var(--whiteColor);
+    }
+
+    // Floting Labels
+    .form-floating {
+        --bs-body-bg: #0C1427;
+        --bs-body-color-rgb: 255, 255, 255;
+        --bs-secondary-bg: #0C1427;
+        --bs-body-color: var(--whiteColor);
+
+        .form-control {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,147 @@
+<div class="bt-students-progress-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Student's Progress
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium">
+                            Name
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Course Name
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-medium">Olivia Clark</td>
+                        <td class="text-body">Web Design</td>
+                        <td>
+                            <div class="progress trezo-progress" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 55%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fw-medium">Alexander Garcia</td>
+                        <td class="text-body">Python Dev</td>
+                        <td>
+                            <div class="progress trezo-progress success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fw-medium">Chloe Lewis</td>
+                        <td class="text-body">Front-end</td>
+                        <td>
+                            <div class="progress trezo-progress purple" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 30%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fw-medium">Ava Turner</td>
+                        <td class="text-body">Back-end</td>
+                        <td>
+                            <div class="progress trezo-progress orange" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fw-medium">Ryan Flores</td>
+                        <td class="text-body">Data Analytics</td>
+                        <td>
+                            <div class="progress trezo-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fw-medium">John Doe</td>
+                        <td class="text-body">Plugin Dev</td>
+                        <td>
+                            <div class="progress trezo-progress purple" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Items per pages: <strong>4</strong>
+                </p>
+                <div class="d-flex align-items-center">
+                    <p class="mb-0">
+                        1 – 5 of 10
+                    </p>
+                    <ol class="list-unstyled mb-0 p-0">
+                        <li class="d-inline-block">
+                            <a class="prev" routerLink=".">
+                                <span class="opacity-0">
+                                    0
+                                </span>
+                                <i class="material-symbols-outlined">
+                                    chevron_left
+                                </i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a class="next" routerLink=".">
+                                <span class="opacity-0">
+                                    0
+                                </span>
+                                <i class="material-symbols-outlined">
+                                    chevron_right
+                                </i>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,372 @@
+<div
+    class="tables-of-content-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Tables Of Content
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="row align-items-center">
+            <div class="col-xxl-8">
+                <div class="tables-of-content-list">
+                    <div class="accordion">
+                        <div class="accordion-item border-radius border-0">
+                            <button
+                                type="button"
+                                (click)="toggleSection(0)"
+                                [ngClass]="{ 'open': isSectionOpen(0) }"
+                                class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                            >
+                                Introduction to Cybersecurity
+                            </button>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <div class="accordion-body">
+                                    <ul class="p-0 m-0 list-unstyled">
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    info
+                                                </i>
+                                                Course Introduction
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 24s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    play_circle
+                                                </i>
+                                                Cyber Security Introduction
+                                            </a>
+                                            <span class="d-block text-body">
+                                                0m 46s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    list
+                                                </i>
+                                                What is Cyber Security and the CIA Triad
+                                            </a>
+                                            <span class="d-block text-body">
+                                                3m 32s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    star
+                                                </i>
+                                                Threat Actors: Who are They?
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 2s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    hotel_class
+                                                </i>
+                                                Types of Threat Actors
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 13s
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-radius border-0">
+                            <button
+                                type="button"
+                                (click)="toggleSection(1)"
+                                [ngClass]="{ 'open': isSectionOpen(1) }"
+                                class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                            >
+                                Secure Networking
+                            </button>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <div class="accordion-body">
+                                    <ul class="p-0 m-0 list-unstyled">
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    info
+                                                </i>
+                                                Network Security Introduction
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 24s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    hotel_class
+                                                </i>
+                                                Introduction to Wired and Wireless Networks
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 13s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    list
+                                                </i>
+                                                Wired Network Vulnerabilities and How to Protect Wired Networks
+                                            </a>
+                                            <span class="d-block text-body">
+                                                3m 32s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    star
+                                                </i>
+                                                Wireless Network Vulnerabilities and How to Protect Wireless Networks
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 2s
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-radius border-0">
+                            <button
+                                type="button"
+                                (click)="toggleSection(2)"
+                                [ngClass]="{ 'open': isSectionOpen(2) }"
+                                class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                            >
+                                Secure E-Mail
+                            </button>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <div class="accordion-body">
+                                    <ul class="p-0 m-0 list-unstyled">
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    info
+                                                </i>
+                                                E-Mail Security Introduction
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 24s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    play_circle
+                                                </i>
+                                                E-Mail: Overview and Importance
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 13s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    list
+                                                </i>
+                                                Phishing: Techniques, Implications and How to Spot
+                                            </a>
+                                            <span class="d-block text-body">
+                                                3m 32s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    star
+                                                </i>
+                                                Understanding E-Mail Headers for Verification
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 2s
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-radius border-0">
+                            <button
+                                type="button"
+                                (click)="toggleSection(3)"
+                                [ngClass]="{ 'open': isSectionOpen(3) }"
+                                class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                            >
+                                Secure Internet Browsing
+                            </button>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <div class="accordion-body">
+                                    <ul class="p-0 m-0 list-unstyled">
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    info
+                                                </i>
+                                                Internet Security Introduction
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 24s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    play_circle
+                                                </i>
+                                                Exploring Web-Based Threats
+                                            </a>
+                                            <span class="d-block text-body">
+                                                0m 46s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    list
+                                                </i>
+                                                Typo Squatting: Risks and Mitigation
+                                            </a>
+                                            <span class="d-block text-body">
+                                                3m 32s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    star
+                                                </i>
+                                                Watering Hole Attacks: Tactics and Countermeasures
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 2s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    hotel_class
+                                                </i>
+                                                Secure Browsing Best Practices
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 13s
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-radius border-0">
+                            <button
+                                type="button"
+                                (click)="toggleSection(4)"
+                                [ngClass]="{ 'open': isSectionOpen(4) }"
+                                class="accordion-button d-block text-start shadow-none bg-transparent fw-semibold border-0"
+                            >
+                                Device Security & Password Management
+                            </button>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <div class="accordion-body">
+                                    <ul class="p-0 m-0 list-unstyled">
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    info
+                                                </i>
+                                                Device Security Introduction
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 24s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    play_circle
+                                                </i>
+                                                Securing Computers, Laptops, and Mobile Devices
+                                            </a>
+                                            <span class="d-block text-body">
+                                                0m 46s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    list
+                                                </i>
+                                                Password Best Practices
+                                            </a>
+                                            <span class="d-block text-body">
+                                                3m 32s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    star
+                                                </i>
+                                                Multi-Factor Authentication (MFA)
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 2s
+                                            </span>
+                                        </li>
+                                        <li class="d-sm-flex align-items-center justify-content-between">
+                                            <a routerLink="/dashboard/lms-page/lesson-preview" class="position-relative d-inline-block">
+                                                <i class="material-symbols-outlined">
+                                                    hotel_class
+                                                </i>
+                                                Keeping Devices Up-to-Date
+                                            </a>
+                                            <span class="d-block text-body">
+                                                2m 13s
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4">
+                <div class="unlock-library-box text-center border-radius bg-primary">
+                    <h4 class="text-white">
+                        Unlock Library
+                    </h4>
+                    <p>
+                        Get access to all videos in the library
+                    </p>
+                    <a routerLink="/dashboard/lms-page/course-details" class="btn-box fw-medium d-inline-block border-radius">
+                        Sign Up - Only $120/mo
+                    </a>
+                    <p>
+                        Have an account? <a routerLink="/dashboard" class="text-white">Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

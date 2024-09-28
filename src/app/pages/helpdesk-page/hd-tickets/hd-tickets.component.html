@@ -1,0 +1,556 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Tickets
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            HelpDesk
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Tickets
+        </li>
+    </ol>
+</div>
+
+<!-- Stats -->
+<div class="row">
+    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
+
+        <!-- Tickets Resolved -->
+        <app-tickets-resolved />
+
+    </div>
+    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
+
+        <!-- Tickets In Progress -->
+        <app-tickets-in-progress />
+
+    </div>
+    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
+
+        <!-- Tickets Due -->
+        <app-tickets-due />
+
+    </div>
+    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
+
+        <!-- Tickets New Open -->
+        <app-tickets-new-open />
+
+    </div>
+</div>
+
+<!-- All Tickets -->
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                All Tickets
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <button class="add-btn d-inline-block transition fw-medium border-radius" type="button" (click)="toggleClass()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Ticket
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Ticket Title </th>
+                        <th scope="col" class="fw-medium"> Requester </th>
+                        <th scope="col" class="fw-medium"> Assigned To </th>
+                        <th scope="col" class="fw-medium"> Created Date </th>
+                        <th scope="col" class="fw-medium"> Due Date </th>
+                        <th scope="col" class="fw-medium"> Priority </th>
+                        <th scope="col" class="fw-medium"> Status </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #JAN-854 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Network Infrastructure </a>
+                        </td>
+                        <td> Walter Frazier </td>
+                        <td> Oliver Clark </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td class="text-body"> 30 Apr 2024 </td>
+                        <td class="text-body"> High </td>
+                        <td>
+                            <span class="trezo-badge"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-853 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Cloud Migration </a>
+                        </td>
+                        <td> Kimberly Anderson </td>
+                        <td> Ethan Baker </td>
+                        <td class="text-body"> 21 Apr 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td class="text-body"> Low </td>
+                        <td>
+                            <span class="trezo-badge pending"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #DEC-852 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Website Revamp </a>
+                        </td>
+                        <td> Roscoe Guerrero </td>
+                        <td> Sophia Carter </td>
+                        <td class="text-body"> 17 Apr 2024 </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td class="text-body"> Medium </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> In Progress </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #DEC-851 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Mobile Application </a>
+                        </td>
+                        <td> Robert Stewart </td>
+                        <td> Ava Cooper </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td class="text-body"> 15 Apr 2024 </td>
+                        <td class="text-body"> High </td>
+                        <td>
+                            <span class="trezo-badge"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #DEC-850 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> System Deployment </a>
+                        </td>
+                        <td> Dustin Fritch </td>
+                        <td> Isabella Evans </td>
+                        <td class="text-body"> 05 Apr 2024 </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td class="text-body"> Low </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Cancelled </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-849 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Login Issues </a>
+                        </td>
+                        <td> Walter Frazier </td>
+                        <td> Oliver Clark </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td class="text-body"> 30 Apr 2024 </td>
+                        <td class="text-body"> High </td>
+                        <td>
+                            <span class="trezo-badge"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #FEB-848 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Email Configuration </a>
+                        </td>
+                        <td> Kimberly Anderson </td>
+                        <td> Ethan Baker </td>
+                        <td class="text-body"> 21 Apr 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td class="text-body"> Low </td>
+                        <td>
+                            <span class="trezo-badge pending"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #MAR-847 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Application Error </a>
+                        </td>
+                        <td> Roscoe Guerrero </td>
+                        <td> Sophia Carter </td>
+                        <td class="text-body"> 17 Apr 2024 </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td class="text-body"> Medium </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> In Progress </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-846 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Software Installation </a>
+                        </td>
+                        <td> Robert Stewart </td>
+                        <td> Ava Cooper </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td class="text-body"> 15 Apr 2024 </td>
+                        <td class="text-body"> High </td>
+                        <td>
+                            <span class="trezo-badge"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #DEC-845 </td>
+                        <td>
+                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> System Upgrade </a>
+                        </td>
+                        <td> Dustin Fritch </td>
+                        <td> Isabella Evans </td>
+                        <td class="text-body"> 05 Apr 2024 </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td class="text-body"> Low </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Cancelled </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied"
+>
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Add New Ticket
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleClass()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Title
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. Network Infrastructure">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Requester
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. Olivia Smith">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Assigned To
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Shawn Kennedy
+                                </option>
+                                <option value="2">
+                                    Roberto Cruz
+                                </option>
+                                <option value="3">
+                                    Juli Johnson
+                                </option>
+                                <option value="4">
+                                    Catalina Engles
+                                </option>
+                                <option value="5">
+                                    Louis Nagle
+                                </option>
+                                <option value="6">
+                                    Michael Marquez
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Due Date
+                            </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Priority
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    High
+                                </option>
+                                <option value="2">
+                                    Medium
+                                </option>
+                                <option value="3">
+                                    Low
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Status
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    In Progress
+                                </option>
+                                <option value="2">
+                                    Pending
+                                </option>
+                                <option value="3">
+                                    Completed
+                                </option>
+                                <option value="4">
+                                    Not Started
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleClass()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Color and Background
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            UI Elements
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Color and Background
+        </li>
+    </ol>
+</div>
+
+<!-- Color and Background -->
+<div
+    class="row"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Overview
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="text-bg-primary p-3">Primary with contrasting color</div>
+                <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
+                <div class="text-bg-success p-3">Success with contrasting color</div>
+                <div class="text-bg-danger p-3">Danger with contrasting color</div>
+                <div class="text-bg-warning p-3">Warning with contrasting color</div>
+                <div class="text-bg-info p-3">Info with contrasting color</div>
+                <div class="text-bg-light p-3">Light with contrasting color</div>
+                <div class="text-bg-dark p-3">Dark with contrasting color</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        With Components
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <span class="badge text-bg-primary">Primary</span>
+                <span class="badge text-bg-info">Info</span>
+            </div>
+        </div>
+    </div>
+</div>

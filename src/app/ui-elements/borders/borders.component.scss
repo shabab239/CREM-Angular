@@ -1,0 +1,20 @@
+.style {
+    [class^="border"] {
+        width: 5rem;
+        height: 5rem;
+        margin: .25rem;
+        display: inline-block;
+        background-color: var(--bs-tertiary-bg);
+    }
+    img {
+        margin: .25rem;
+        display: inline-block;
+    }
+}
+.component-dark-theme {
+    .style {
+        [class^="border"] {
+            background-color: #0A0E19;
+        }
+    }
+}

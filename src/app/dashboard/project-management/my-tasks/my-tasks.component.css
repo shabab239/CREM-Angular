@@ -1,0 +1,59 @@
+.my-tasks-card .trezo-card-content .basic-table .table thead tr th:first-child, .my-tasks-card .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 0;
+}
+.my-tasks-card .trezo-card-content .basic-table .table thead tr th:nth-child(2), .my-tasks-card .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 15px;
+}
+.my-tasks-card .trezo-card-content .basic-table .table tbody tr td:first-child, .my-tasks-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 0;
+}
+.my-tasks-card .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .my-tasks-card .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+.my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-right: 15px !important;
+  padding-left: 25px !important;
+}
+.my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-right: 15px !important;
+  padding-left: 25px !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 17px !important;
+  }
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 17px !important;
+  }
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 17px !important;
+  }
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 17px !important;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 20px !important;
+  }
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 20px !important;
+  }
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 20px !important;
+  }
+  .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .my-tasks-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 20px !important;
+  }
+}/*# sourceMappingURL=my-tasks.component.css.map */

@@ -1,0 +1,140 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Seller Details
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Sellers
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Seller Details
+        </li>
+    </ol>
+</div>
+
+<!-- Seller Overview -->
+<app-seller-overview />
+
+<div
+    class="row"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="col-xxl-3 col-lg-4">
+
+        <!-- Seller -->
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller1.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Ava Turner
+                            </a>
+                            <span class="d-block">
+                                turner&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trezo-card-header-menu position-relative">
+                        <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu()">
+                            <i class="ri-more-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Block
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Delete
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Report
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        25 Nov 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $9,999.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $5,999.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        TechMaster Store
+                    </li>
+                </ul>
+                <form>
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Contact Support 
+                        </label>
+                        <textarea class="form-control" placeholder="Type here...."></textarea>
+                    </div>
+                    <div class="form-btn-box">
+                        <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    send
+                                </i>
+                                Send Message
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-xxl-9 col-lg-8">
+
+        <!-- Revenue -->
+        <app-revenue />
+        
+    </div>
+</div>
+
+<!-- Products -->
+<app-products />

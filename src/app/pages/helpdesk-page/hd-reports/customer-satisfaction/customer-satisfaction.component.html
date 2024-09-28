@@ -1,0 +1,69 @@
+<div
+    class="hd-customer-satisfaction-card trezo-card mb-25 border-radius d-block bg-primary border-0 shadow-none"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0 fw-semibold text-white">
+                Customer Satisfaction
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        This Month
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content position-relative">
+        <div class="chart">
+            <apx-chart
+                [chart]="chartOptions.chart!"
+                [legend]="chartOptions.legend!"
+                [colors]="chartOptions.colors!"
+                [stroke]="chartOptions.stroke!"
+                [labels]="chartOptions.labels!"
+                [series]="chartOptions.series!"
+                [tooltip]="chartOptions.tooltip!"
+                [dataLabels]="chartOptions.dataLabels!"
+                [plotOptions]="chartOptions.plotOptions!"
+            ></apx-chart>
+            <div class="text text-center">
+                <span class="d-block text-white">
+                    Overall
+                </span>
+                <h6 class="mb-0 fw-semibold text-white">
+                    98%
+                </h6>
+            </div>
+        </div>
+        <div class="image mx-auto text-center">
+            <img src="images/man-with-tablet.png" alt="man-with-tablet-image">
+        </div>
+    </div>
+</div>

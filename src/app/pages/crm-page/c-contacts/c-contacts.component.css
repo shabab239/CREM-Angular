@@ -1,0 +1,21 @@
+.crm-contacts-card .trezo-card-content .basic-table .table thead tr th:first-child, .crm-contacts-card .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 0;
+}
+.crm-contacts-card .trezo-card-content .basic-table .table thead tr th:nth-child(2), .crm-contacts-card .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 15px;
+}
+.crm-contacts-card .trezo-card-content .basic-table .table thead tr th:last-child, .crm-contacts-card .trezo-card-content .basic-table table thead tr th:last-child {
+  text-align: end;
+}
+.crm-contacts-card .trezo-card-content .basic-table .table tbody tr td:first-child, .crm-contacts-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 0;
+}
+.crm-contacts-card .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .crm-contacts-card .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+.crm-contacts-card .trezo-card-content .basic-table .table tbody tr td:last-child, .crm-contacts-card .trezo-card-content .basic-table table tbody tr td:last-child {
+  text-align: end;
+}
+.crm-contacts-card .trezo-card-content .basic-table .table tbody tr td:last-child .action-buttons, .crm-contacts-card .trezo-card-content .basic-table table tbody tr td:last-child .action-buttons {
+  justify-content: end;
+}/*# sourceMappingURL=c-contacts.component.css.map */

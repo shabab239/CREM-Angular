@@ -1,0 +1,186 @@
+.team-card {
+    .trezo-card-content {
+        .info {
+            img {
+                width: 65px;
+                height: 65px;
+                margin-right: 12px;
+                border: 2px solid var(--borderColor);
+            }
+            .title {
+                font-size: 16px;
+                margin-bottom: 1px;
+            }
+            .action-buttons {
+                button, a {
+                    color: var(--primaryColor);
+                    margin-right: 9px;
+    
+                    i {
+                        font-size: 16px;
+                    }
+                    &:nth-child(2) {
+                        color: var(--bodyColor);
+                    }
+                    &:nth-child(3) {
+                        color: var(--dangerColor);
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .team-name {
+            margin: {
+                top: 15px;
+                bottom: 15px;
+            };
+            span {
+                border-radius: 30px;
+                padding: 4.5px 15px;
+            }
+        }
+        .members {
+            span {
+                margin-bottom: 8px;
+            }
+            div {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid var(--borderColor);
+                    margin: {
+                        left: -6px;
+                        right: -6px;
+                    };
+                }
+                div {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 12px;
+                    border-radius: 50%;
+                    border: 2px solid var(--whiteColor);
+                    margin: {
+                        left: -6px;
+                        right: -6px;
+                    };
+                }
+            }
+        }
+        .t-progress {
+            margin: {
+                top: 18px;
+                bottom: 30px;
+            };
+            span {
+                margin-bottom: 8px;
+            }
+        }
+        .t-btn {
+            border: 1px solid var(--primaryColor);
+            color: var(--primaryColor);
+            padding: 8.5px 15px;
+
+            &:hover {
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+}
+.component-dark-theme {
+    .team-card {
+        .trezo-card-content {
+            .members {
+                div {
+                    div {
+                        border-color: #0C1427;
+                    }
+                }
+            }
+            .bg-purple-100, .bg-secondary-100, .bg-success-100, .bg-orange-100, .bg-primary-100, .bg-danger-100 {
+                background-color: #15203c !important;
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    .team-card {
+        .trezo-card-content {
+            .info {
+                img {
+                    margin: {
+                        right: 0;
+                        left: 12px;
+                    };
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .team-card {
+        .trezo-card-content {
+            .info {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                .title {
+                    font-size: 14px;
+                }
+            }
+            .t-progress {
+                margin: {
+                    top: 15px;
+                    bottom: 20px;
+                };
+                span {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .team-card {
+        .trezo-card-content {
+            .info {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                .title {
+                    font-size: 15px;
+                }
+            }
+            .t-progress {
+                margin: {
+                    top: 15px;
+                    bottom: 20px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

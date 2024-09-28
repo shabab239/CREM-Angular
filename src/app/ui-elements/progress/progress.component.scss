@@ -1,0 +1,8 @@
+.progress+.progress {
+    margin-top: 15px;
+}
+.progress-stacked {
+    .progress+.progress {
+        margin-top: 0;
+    }
+}

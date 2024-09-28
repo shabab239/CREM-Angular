@@ -1,0 +1,104 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Course Details
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            LMS
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Courses
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Course Details
+        </li>
+    </ol>
+</div>
+
+<!-- Course Details -->
+<div class="trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Course
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Course Name </th>
+                        <th scope="col" class="fw-medium"> Category </th>
+                        <th scope="col" class="fw-medium"> Instructor </th>
+                        <th scope="col" class="fw-medium"> Enrolled </th>
+                        <th scope="col" class="fw-medium"> Start Date </th>
+                        <th scope="col" class="fw-medium"> End Date </th>
+                        <th scope="col" class="fw-medium"> Price </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #854 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Cybersecurity Awareness </a>
+                        </td>
+                        <td> Technology </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 180 </td>
+                        <td class="text-body"> 25 Mar 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td class="text-body"> $49.99 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Tables of Content -->
+<app-tables-of-content />
+
+<div class="row">
+    <div class="col-lg-7 col-md-12">
+
+        <!-- Course Instructor -->
+        <app-course-instructor />
+
+    </div>
+    <div class="col-lg-5 col-md-12">
+
+        <!-- Enrolled Students -->
+        <app-enrolled-students />
+        
+    </div>
+</div>
+
+<!-- Reviews -->
+<app-reviews />

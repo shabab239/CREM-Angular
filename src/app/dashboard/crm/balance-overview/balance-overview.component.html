@@ -1,0 +1,89 @@
+<div
+    class="balance-overview-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Balance Overview
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        Current Year
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Current Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Current Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Current Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="chart">
+            <apx-chart
+                [fill]="chartOptions.fill!"
+                [grid]="chartOptions.grid!"
+                [chart]="chartOptions.chart!"
+                [xaxis]="chartOptions.xaxis!"
+                [yaxis]="chartOptions.yaxis!"
+                [title]="chartOptions.title!"
+                [series]="chartOptions.series!"
+                [labels]="chartOptions.labels!"
+                [colors]="chartOptions.colors!"
+                [stroke]="chartOptions.stroke!"
+                [legend]="chartOptions.legend!"
+                [subtitle]="chartOptions.subtitle!"
+                [dataLabels]="chartOptions.dataLabels!"
+            ></apx-chart>
+        </div>
+        <ul class="list p-0 mb-0 list-unstyled text-center">
+            <li class="d-inline-block">
+                <div class="d-sm-flex align-items-center">
+                    <span class="fw-semibold text-primary">
+                        $628k
+                    </span>
+                    <span class="d-block">
+                        Revenue
+                    </span>
+                </div>
+            </li>
+            <li class="d-inline-block">
+                <div class="d-sm-flex align-items-center">
+                    <span class="fw-semibold text-purple">
+                        $379k
+                    </span>
+                    <span class="d-block">
+                        Expenses
+                    </span>
+                </div>
+            </li>
+            <li class="d-inline-block">
+                <div class="d-sm-flex align-items-center">
+                    <span class="fw-semibold text-success">
+                        11.2%
+                    </span>
+                    <span class="d-block">
+                        Profit Ratio
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

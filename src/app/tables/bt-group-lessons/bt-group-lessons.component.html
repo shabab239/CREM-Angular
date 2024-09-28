@@ -1,0 +1,211 @@
+<div
+    class="bt-group-lessons-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Group Lessons
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="group-lesson d-flex align-items-center">
+                                <div class="users d-flex align-items-center">
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user20.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user21.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg" />
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Digital Marketing
+                                    </span>
+                                    <span class="date text-body d-block">
+                                        15 March 2024
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="group-lesson d-flex align-items-center">
+                                <div class="users d-flex align-items-center">
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user22.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user23.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user24.jpg" />
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Web Development
+                                    </span>
+                                    <span class="date text-body d-block">
+                                        10 March 2024
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="group-lesson d-flex align-items-center">
+                                <div class="users d-flex align-items-center">
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user25.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user26.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user27.jpg" />
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        UX/UI Design
+                                    </span>
+                                    <span class="date text-body d-block">
+                                        05 March 2024
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="group-lesson d-flex align-items-center">
+                                <div class="users d-flex align-items-center">
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user28.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user29.jpg" />
+                                    </div>
+                                    <div class="rounded-circle">
+                                        <img alt="user-image" class="rounded-circle" src="images/users/user30.jpg" />
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Content Writer
+                                    </span>
+                                    <span class="date text-body d-block">
+                                        02 March 2024
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Items per pages: <strong>4</strong>
+                </p>
+                <div class="d-flex align-items-center">
+                    <p class="mb-0">
+                        1 – 5 of 10
+                    </p>
+                    <ol class="list-unstyled mb-0 p-0">
+                        <li class="d-inline-block">
+                            <a class="prev" routerLink=".">
+                                <span class="opacity-0">
+                                    0
+                                </span>
+                                <i class="material-symbols-outlined">
+                                    chevron_left
+                                </i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a class="next" routerLink=".">
+                                <span class="opacity-0">
+                                    0
+                                </span>
+                                <i class="material-symbols-outlined">
+                                    chevron_right
+                                </i>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

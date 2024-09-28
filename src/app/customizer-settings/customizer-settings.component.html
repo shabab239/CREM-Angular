@@ -1,0 +1,143 @@
+<!-- Sidebar -->
+<div
+    [ngClass]="{'active': isToggled}"
+    [class.component-dark-theme]="themeService.isDark()"
+    class="settings-sidebar bg-white transition box-shadow"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="settings-header bg-gray d-flex align-items-center justify-content-between">
+        <div class="logo d-flex align-items-center">
+            <img src="images/logo-icon.svg" alt="logo-icon">
+            <h4 class="m-0 lh-1">
+                Trezo
+            </h4>
+        </div>
+        <button
+            class="close-btn p-0 border-0 bg-transparent"
+            [ngClass]="{'active': isToggled}"
+            (click)="toggle()"
+            type="button"
+        >
+            <i class="material-symbols-outlined">
+                close
+            </i>
+        </button>
+    </div>
+    <ng-scrollbar visibility="hover">
+        <div class="settings-body">
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    RTL Mode
+                </span>
+                <button
+                    (click)="toggleRTLEnabledTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isRTLEnabled()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Dark Mode
+                </span>
+                <button
+                    (click)="toggleTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isDark()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Right Sidebar
+                </span>
+                <button
+                    (click)="toggleRightSidebarTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isRightSidebar()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20 hide-sidebar">
+                <span class="title d-block text-black fw-medium">
+                    Hide Sidebar
+                </span>
+                <button
+                    (click)="toggleHideSidebarTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isHideSidebar()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Borderd Card
+                </span>
+                <button
+                    (click)="toggleCardBorderedTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isCardBordered()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Card Without Border Radius
+                </span>
+                <button
+                    (click)="toggleCardWithoutBorderRadiusTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isCardWithoutBorderRadius()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Card With Box Shadow
+                </span>
+                <button
+                    (click)="toggleCardWithBoxShadowTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isCardWithBoxShadow()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Only Sidebar Dark
+                </span>
+                <button
+                    (click)="toggleSidebarTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isSidebarDark()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <span class="title d-block text-black fw-medium">
+                    Only Header Dark
+                </span>
+                <button
+                    (click)="toggleHeaderTheme()"
+                    class="switch-btn"
+                    [class.active]="themeService.isHeaderDark()"
+                >
+                </button>
+            </div>
+            <div class="border-top"></div>
+            <div class="p-20">
+                <a href="javascript:void(0);" class="btn btn-primary">
+                    Buy Trezo
+                </a>
+            </div>
+        </div>
+    </ng-scrollbar>
+</div>

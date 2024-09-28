@@ -1,0 +1,6 @@
+.mp-profile-information-card .trezo-card-content .info-list li {
+  margin-bottom: 10px;
+}
+.mp-profile-information-card .trezo-card-content .info-list li:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=mp-profile-information.component.css.map */

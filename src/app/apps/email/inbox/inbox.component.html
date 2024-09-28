@@ -1,0 +1,182 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Inbox
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Apps
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Email
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Inbox
+        </li>
+    </ol>
+</div>
+
+<!-- Inbox -->
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+        <app-sidebar />
+    </div>
+    <div class="col-lg-8 col-md-12">
+        <div
+            class="email-inbox-card trezo-card position-relative mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title d-flex align-items-center">
+                    <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                    <div class="buttons-list d-flex align-items-center">
+                        <div class="trezo-card-header-menu position-relative">
+                            <button class="button lh-1 bg-transparent position-relative p-0 border-0 transition d-inline-block" (click)="toggleCardHeaderMenu()">
+                                <i class="material-symbols-outlined">
+                                    arrow_drop_down
+                                </i>
+                            </button>
+                            <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        All
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        None
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Read
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Unread
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Starred
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Unstarred
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="button d-inline-block p-0 border-0 bg-transparent position-relative transition">
+                            <i class="material-symbols-outlined">
+                                archive
+                            </i>
+                        </button>
+                        <button type="button" class="button d-inline-block p-0 border-0 bg-transparent position-relative transition">
+                            <i class="material-symbols-outlined">
+                                help_clinic
+                            </i>
+                        </button>
+                        <button type="button" class="button d-inline-block p-0 border-0 bg-transparent position-relative transition">
+                            <i class="material-symbols-outlined">
+                                delete
+                            </i>
+                        </button>
+                        <div class="trezo-card-header-menu2 position-relative">
+                            <button class="button lh-1 bg-transparent position-relative p-0 border-0 transition d-inline-block" (click)="toggleCardHeaderMenu2()">
+                                <i class="material-symbols-outlined">
+                                    more_vert
+                                </i>
+                            </button>
+                            <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen2">
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Mark as unread
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Snooze
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Add star
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Mark as important
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Mark as not important
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Forward as attachment
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Filter
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Mute
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+
+                <!-- Nav Links -->
+                <ul class="inbox-nav-links p-0 mt-0 list-unstyled">
+                    <li class="d-inline-block">
+                        <a routerLink="/dashboard/apps/email" routerLinkActive="active" class="d-inline-block position-relative" [routerLinkActiveOptions]="{exact: true}">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    inbox
+                                </i>
+                                Primary
+                            </span>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="/dashboard/apps/email/promotions" routerLinkActive="active" class="d-inline-block position-relative" [routerLinkActiveOptions]="{exact: true}">
+                            <span class="position-relative d-inline-block">
+                                <i class="material-symbols-outlined">
+                                    shoppingmode
+                                </i>
+                                Promotions
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Router Outlet -->
+                <router-outlet />
+
+            </div>
+        </div>
+    </div>
+</div>

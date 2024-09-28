@@ -1,0 +1,85 @@
+.p-about-me-card .trezo-card-content {
+  border-top: 1px solid var(--borderColor);
+  padding-top: 25px;
+}
+.p-about-me-card .trezo-card-content h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.p-about-me-card .trezo-card-content h6:not(:first-child) {
+  margin-top: 25px;
+}
+
+.p-followers-card .trezo-card-content .follower {
+  margin-bottom: 14.5px;
+  padding-bottom: 14.5px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.p-followers-card .trezo-card-content .follower .image img {
+  width: 42px;
+}
+.p-followers-card .trezo-card-content .follower .title {
+  margin-left: 12px;
+}
+.p-followers-card .trezo-card-content .follower .title span:not(:first-child) {
+  margin-top: 2px;
+}
+.p-followers-card .trezo-card-content .follower .link-btn {
+  width: 36px;
+  height: 36px;
+  color: var(--bodyColor);
+  border: 1px solid var(--borderColor);
+}
+.p-followers-card .trezo-card-content .follower .link-btn i {
+  left: 0;
+  right: 0;
+  top: 50%;
+  font-size: 18px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.p-followers-card .trezo-card-content .follower .link-btn:hover {
+  color: var(--whiteColor);
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+.p-followers-card .trezo-card-content .follower:last-child {
+  border-bottom-width: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.p-followers-card.component-rtl-enabled .trezo-card-content .follower .title {
+  margin-left: 0;
+  margin-right: 12px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .p-about-me-card .trezo-card-content {
+    padding-top: 17px;
+  }
+  .p-about-me-card .trezo-card-content h6 {
+    font-size: 14px;
+  }
+  .p-about-me-card .trezo-card-content h6:not(:first-child) {
+    margin-top: 17px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .p-about-me-card .trezo-card-content {
+    padding-top: 20px;
+  }
+  .p-about-me-card .trezo-card-content h6:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .p-about-me-card .trezo-card-content h6 {
+    font-size: 15px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=p-user-profile.component.css.map */

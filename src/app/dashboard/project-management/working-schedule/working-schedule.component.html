@@ -1,0 +1,96 @@
+<div
+    class="working-schedule-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Working Schedule
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content position-relative">
+        <div class="calendar">
+            <div class="header d-flex align-items-center justify-content-between">
+                <button (click)="previousMonth()" class="p-0 border-0 d-flex align-items-center justify-content-center rounded-circle transition">
+                    <i class="material-symbols-outlined">
+                        chevron_left
+                    </i>
+                </button>
+                <span class="fw-medium text-black">
+                    {{ monthNames[currentMonth] }} {{ currentYear }}
+                </span>
+                <button (click)="nextMonth()" class="p-0 border-0 d-flex align-items-center justify-content-center rounded-circle transition">
+                    <i class="material-symbols-outlined">
+                        chevron_right
+                    </i>
+                </button>
+            </div>
+            <div class="weekdays text-center">
+                <div class="text-black fw-medium" *ngFor="let day of weekdays">
+                    {{ day }}
+                </div>
+            </div>
+            <div class="days text-center">
+                <div
+                    *ngFor="let day of daysInMonth"
+                    [ngClass]="{ 'current-day': isToday(day) }"
+                >
+                    <span *ngIf="day !== null">
+                        {{ day }}
+                    </span>
+                    <span *ngIf="day === null">
+                        &nbsp;
+                    </span> <!-- Placeholder for empty days -->
+                </div>
+            </div>
+        </div>
+        <div class="upcoming-events">
+            <span class="title d-block fw-medium">
+                Upcoming Events:
+            </span>
+            <owl-carousel-o [options]="upcomingEventsSlides">
+                <ng-template carouselSlide>
+                    <div class="event-item position-relative">
+                        <h6 class="fw-semibold">
+                            Pythons Unleashed: A Development Expedition
+                        </h6>
+                        <span>
+                            <span class="text-primary">
+                                15 April 2024
+                            </span>
+                            -  12.00 PM - 6.00 PM
+                        </span>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="event-item position-relative">
+                        <h6 class="fw-semibold">
+                            Pythons Unleashed: A Development Expedition
+                        </h6>
+                        <span>
+                            <span class="text-primary">
+                                15 April 2024
+                            </span>
+                            -  12.00 PM - 6.00 PM
+                        </span>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="event-item position-relative">
+                        <h6 class="fw-semibold">
+                            Pythons Unleashed: A Development Expedition
+                        </h6>
+                        <span>
+                            <span class="text-primary">
+                                15 April 2024
+                            </span>
+                            -  12.00 PM - 6.00 PM
+                        </span>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.icon-card {
+    padding-top: 40px;
+
+    i {
+        line-height: 1;
+        font-size: 25px;
+    }
+    .title {
+        margin-top: 37px;
+    }
+}
+code {
+    padding: 17.5px 20px;
+    display: block;
+    font-size: 1em;
+    background: #f5f2f0;
+
+    .red {
+        color: #905;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .green {
+        color: #690;
+    }
+    .blue {
+        color: #07a;
+    }
+}
+.btn-box {
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+}
+.component-dark-theme {
+    code {
+        background: #15203c;
+    }
+}

@@ -1,0 +1,72 @@
+<div
+    class="sign-in-area"
+    [class.dark-theme]="themeService.isDark()"
+>
+    <div
+        class="trezo-form mx-auto"
+        [class.component-dark-theme]="themeService.isDark()"
+        [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    >
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="form-image">
+                    <img src="images/sign-in.jpg" alt="sign-in-image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                <div class="form-content">
+                    <!--<div class="logo">
+                        <img src="images/logo-big.svg" alt="logo">
+                        <img src="images/white-logo-big.svg" class="d-none" alt="logo">
+                    </div>-->
+                    <div class="title">
+                        <h1 class="fw-semibold">
+                            Welcome!
+                        </h1>
+                        <p class="fw-medium">
+                            Sign In with your details
+                        </p>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Email Address
+                            </label>
+                            <input [(ngModel)]="token.username" name="username" type="text" class="form-control" placeholder="example&#64;email.com">
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="main-label d-block fw-medium text-black">
+                                Password
+                            </label>
+                            <input [(ngModel)]="token.password" name="password" [type]="isPasswordVisible ? 'text' : 'password'" (input)="onPasswordInput($event)" class="form-control" placeholder="Type password">
+                            <button type="button" (click)="togglePasswordVisibility()" class="icon-button p-0 border-0 bg-transparent transition">
+                                <i [ngClass]="isPasswordVisible ? 'ri-eye-line' : 'ri-eye-off-line'"></i>
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <span class="error-message fw-medium text-danger">
+                                {{ errorMessage }}
+                            </span>
+                        </div>
+                        <div class="forgot-password">
+                            <a routerLink="/authentication/forgot-password" class="text-primary fw-semibold">
+                                Forgot Password?
+                            </a>
+                        </div>
+                        <button type="button" (click)="signIn()" class="btn-box d-block w-100 border-0 transition fw-medium border-radius">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <i class="material-symbols-outlined">
+                                    login
+                                </i>
+                                Sign In
+                            </span>
+                        </button>
+                        <p class="info">
+                            Don’t have an account. <a routerLink="/authentication/sign-up" class="fw-semibold text-primary">Sign Up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

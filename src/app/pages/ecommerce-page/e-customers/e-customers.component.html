@@ -1,0 +1,477 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Customers
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Customers
+        </li>
+    </ol>
+</div>
+
+<!-- Customers -->
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search customer here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        Last Month
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Last Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Last Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Last Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Last Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium">
+                            ID
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Customer
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Email
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Phone
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Last Login
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Total Spend
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Total Orders	
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Status
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #JAN-854 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> oliver&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-123-4567 </td>
+                        <td class="text-body"> 10 Oct 2024 </td>
+                        <td class="text-body"> $6,855.00 </td>
+                        <td class="text-body"> 125 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-853 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Carolyn Barnes </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> carolyn&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-987-6543 </td>
+                        <td class="text-body"> 11 Sep 2024 </td>
+                        <td class="text-body"> $2,800.00 </td>
+                        <td class="text-body"> 99 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-852 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Donna Miller </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> donna&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-456-7890 </td>
+                        <td class="text-body"> 12 Aug 2024 </td>
+                        <td class="text-body"> $258.00 </td>
+                        <td class="text-body"> 145 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-851 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Barbara Cross </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> barbara&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-369-7878 </td>
+                        <td class="text-body"> 13 Jul 2024 </td>
+                        <td class="text-body"> $3,890.00 </td>
+                        <td class="text-body"> 279 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-850 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user10.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Rebecca Block </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> rebecca&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-658-4488 </td>
+                        <td class="text-body"> 14 Jun 2024 </td>
+                        <td class="text-body"> $2,500.00 </td>
+                        <td class="text-body"> 169 </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Deactive </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-849 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user11.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Ramiro McCarty </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> ramiro&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-558-9966 </td>
+                        <td class="text-body"> 15 May 2024 </td>
+                        <td class="text-body"> $8,200.00 </td>
+                        <td class="text-body"> 46 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-848 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Robert Fairweather </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> robert&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-357-5888 </td>
+                        <td class="text-body"> 16 Apr 2024 </td>
+                        <td class="text-body"> $640.00 </td>
+                        <td class="text-body"> 184 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-847 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user13.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Marcelino Haddock </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> marcelino&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-456-8877 </td>
+                        <td class="text-body"> 17 Mar 2024 </td>
+                        <td class="text-body"> $9,100.00 </td>
+                        <td class="text-body"> 166 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-846 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Thomas Wilson </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> thomas&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-622-4488 </td>
+                        <td class="text-body"> 18 Feb 2024 </td>
+                        <td class="text-body"> $7,300.00 </td>
+                        <td class="text-body"> 75 </td>
+                        <td>
+                            <span class="trezo-badge"> Active </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JAN-845 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="customer-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Nathaniel Hulsey </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> nathaniel&#64;trezo.com </td>
+                        <td class="text-body"> +1 555-225-4488 </td>
+                        <td class="text-body"> 19 Jan 2024 </td>
+                        <td class="text-body"> $6,600.00 </td>
+                        <td class="text-body"> 55 </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Deactive </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/ecommerce-page/customer-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

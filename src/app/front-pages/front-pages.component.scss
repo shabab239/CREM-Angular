@@ -1,0 +1,11 @@
+::ng-deep {
+    .front-pages {
+        --primaryColor: #4936F5;
+        --purpleColor: #9135E8;
+        overflow: hidden;
+    
+        p {
+            line-height: 1.6;
+        }
+    }
+}

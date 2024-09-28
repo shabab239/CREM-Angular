@@ -1,0 +1,101 @@
+::ng-deep .settings-sidebar {
+  bottom: 0;
+  opacity: 0;
+  z-index: 7;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  visibility: hidden;
+}
+::ng-deep .settings-sidebar .settings-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 19px 20px;
+  position: absolute;
+}
+::ng-deep .settings-sidebar .settings-header .logo img {
+  margin-right: 8px;
+}
+::ng-deep .settings-sidebar .settings-header .close-btn {
+  color: var(--blackColor);
+}
+::ng-deep .settings-sidebar .settings-body {
+  padding-top: 80px;
+}
+::ng-deep .settings-sidebar .settings-body .title {
+  margin-bottom: 10px;
+}
+::ng-deep .settings-sidebar .settings-body .switch-btn {
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 30px;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--borderColor);
+}
+::ng-deep .settings-sidebar .settings-body .switch-btn::before {
+  left: 4px;
+  width: 22px;
+  content: "";
+  bottom: 3px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #dad9d9;
+  transition: var(--transition);
+}
+::ng-deep .settings-sidebar .settings-body .switch-btn.active::before {
+  left: 31px;
+  background-color: var(--primaryColor) !important;
+}
+::ng-deep .settings-sidebar .settings-body .border-top {
+  border-color: var(--borderColor) !important;
+}
+::ng-deep .settings-sidebar .settings-body .p-20 {
+  padding: 18px 20px;
+}
+::ng-deep .settings-sidebar .ng-scroll-content {
+  padding-right: 0 !important;
+}
+::ng-deep .settings-sidebar.active {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+::ng-deep .settings-sidebar.component-dark-theme .settings-header .close-btn {
+  color: var(--whiteColor);
+}
+::ng-deep .settings-sidebar.component-rtl-enabled {
+  text-align: end;
+  right: auto;
+  left: -100%;
+}
+::ng-deep .settings-sidebar.component-rtl-enabled .settings-header .logo img {
+  margin-left: 8px;
+  margin-right: 0;
+}
+::ng-deep .settings-sidebar.component-rtl-enabled.active {
+  right: auto;
+  left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .settings-sidebar {
+    width: 260px;
+  }
+  .settings-sidebar .settings-header {
+    padding: 15px;
+  }
+  .settings-sidebar .settings-body {
+    padding-top: 70px;
+  }
+  .settings-sidebar .settings-body .p-20 {
+    padding: 15px;
+  }
+}/*# sourceMappingURL=customizer-settings.component.css.map */

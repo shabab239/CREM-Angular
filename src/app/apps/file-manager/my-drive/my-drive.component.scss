@@ -1,0 +1,120 @@
+.my-drive-card {
+    padding-bottom: 0;
+
+    .trezo-card-content {
+        .box {
+            padding: 22px 20px;
+            border-radius: 7px;
+            margin-bottom: 25px;
+
+            .title {
+                margin-top: 40px;
+            }
+            .icon {
+                margin-right: 10px;
+
+                i {
+                    font-size: 45px;
+                }
+            }
+            .info {
+                margin-top: 40px;
+
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .bg-primary-50, .bg-orange-50, .bg-success-50, .bg-purple-50 {
+            background-color: #15203c !important;
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .box {
+                .icon {
+                    margin: {
+                        right: 0;
+                        left: 10px;
+                    };
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .my-drive-card {
+        .trezo-card-content {
+            .box {
+                padding: 17px;
+                margin-bottom: 17px;
+    
+                .title {
+                    margin-top: 22px;
+                }
+                .icon {
+                    i {
+                        font-size: 40px;
+                    }
+                }
+                .info {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .my-drive-card {
+        .trezo-card-content {
+            .box {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .my-drive-card {
+        .trezo-card-content {
+            .box {
+                padding: 20px;
+    
+                .title {
+                    margin-top: 35px;
+                }
+                .icon {
+                    i {
+                        font-size: 40px;
+                    }
+                }
+                .info {
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

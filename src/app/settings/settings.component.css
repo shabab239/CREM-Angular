@@ -1,0 +1,46 @@
+.settings-card .trezo-card-content .nav-links {
+  margin-bottom: 10px;
+}
+.settings-card .trezo-card-content .nav-links li {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.settings-card .trezo-card-content .nav-links li a {
+  padding: 8.5px 15px;
+  color: var(--primaryColor);
+  background-color: transparent;
+  border: 1px solid var(--primaryColor);
+}
+.settings-card .trezo-card-content .nav-links li a.active, .settings-card .trezo-card-content .nav-links li a:hover {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.settings-card.component-rtl-enabled .trezo-card-content .nav-links li {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .settings-card .trezo-card-content .nav-links {
+    margin-bottom: 7px;
+  }
+  .settings-card .trezo-card-content .nav-links li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .settings-card.component-rtl-enabled .trezo-card-content .nav-links li {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .settings-card .trezo-card-content .nav-links {
+    margin-bottom: 10px;
+  }
+}
+/* Min width 768px to Max width 991px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=settings.component.css.map */

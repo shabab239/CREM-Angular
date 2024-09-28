@@ -1,0 +1,44 @@
+.footer-area {
+  padding: 20px 25px;
+}
+.footer-area span {
+  color: var(--purpleColor);
+}
+.footer-area a {
+  color: var(--primaryColor);
+}
+.footer-area a:hover {
+  text-decoration: underline;
+}
+.footer-area.card-borderd.card-borderd {
+  border-top: 1px solid var(--borderColor) !important;
+  border-left: 1px solid var(--borderColor) !important;
+  border-right: 1px solid var(--borderColor) !important;
+}
+.footer-area.card-without-border-radius {
+  border-radius: 0 !important;
+}
+.footer-area.card-with-box-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .footer-area {
+    padding: 15px;
+  }
+  .footer-area.right-sidebar {
+    margin-left: -15px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-area {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=footer.component.css.map */

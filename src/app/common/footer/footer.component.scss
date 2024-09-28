@@ -1,0 +1,68 @@
+.footer-area {
+    padding: 20px 25px;
+    
+    span {
+        color: var(--purpleColor);
+    }
+    a {
+        color: var(--primaryColor);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &.card-borderd {
+        &.card-borderd {
+            border: {
+                top: 1px solid var(--borderColor) !important;
+                left: 1px solid var(--borderColor) !important;
+                right: 1px solid var(--borderColor) !important;
+            };
+        }
+    }
+    &.card-without-border-radius {
+        border-radius: 0 !important;
+    }
+    &.card-with-box-shadow {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .footer-area {
+        padding: 15px;
+        
+        &.right-sidebar {
+            margin: {
+                left: -15px;
+            };
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .footer-area {
+        padding: {
+            top: 17px;
+            bottom: 17px;
+        };
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

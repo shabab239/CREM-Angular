@@ -1,0 +1,156 @@
+.cta-content {
+  max-width: 830px;
+}
+.cta-content h2 {
+  font-size: 48px;
+  margin-bottom: 35px;
+  letter-spacing: -1.5px;
+}
+.cta-content p {
+  max-width: 740px;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-content .btn-box {
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 12px 17px;
+  color: var(--whiteColor);
+  background-color: var(--purpleColor);
+}
+.cta-content .btn-box span {
+  padding-left: 29px;
+}
+.cta-content .btn-box span i {
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.cta-content .btn-box:not(:disabled) {
+  color: var(--whiteColor);
+}
+.cta-content .btn-box:hover {
+  background-color: var(--purpleColor);
+}
+
+.shape1 {
+  left: 10px;
+  top: -200px;
+  z-index: -1;
+  position: absolute;
+  filter: blur(150px);
+}
+
+.shape2 {
+  top: 150px;
+  right: 25px;
+  z-index: -1;
+  position: absolute;
+  filter: blur(125px);
+}
+
+.component-rtl-enabled .shape1 {
+  left: auto;
+  right: 10px;
+}
+.component-rtl-enabled .shape2 {
+  right: auto;
+  left: 25px;
+}
+.component-rtl-enabled .cta-content .btn-box span {
+  padding-left: 0;
+  padding-right: 29px;
+}
+.component-rtl-enabled .cta-content .btn-box span i {
+  left: auto;
+  right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .cta-content {
+    max-width: 100%;
+  }
+  .cta-content h2 {
+    font-size: 28px;
+    margin-bottom: 13px;
+    letter-spacing: -0.5px;
+  }
+  .cta-content p {
+    max-width: 100%;
+    font-size: 13px;
+  }
+  .cta-content .btn-box {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .cta-content .btn-box span {
+    padding-left: 25px;
+  }
+  .cta-content .btn-box span i {
+    font-size: 20px;
+  }
+  .shape2 {
+    display: none;
+  }
+  .component-rtl-enabled .cta-content .btn-box span {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cta-content {
+    max-width: 680px;
+  }
+  .cta-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: -0.8px;
+  }
+  .cta-content p {
+    max-width: 650px;
+    font-size: 15px;
+  }
+  .cta-content .btn-box {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .cta-content .btn-box span {
+    padding-left: 28px;
+  }
+  .cta-content .btn-box span i {
+    font-size: 22px;
+  }
+  .shape2 {
+    display: none;
+  }
+  .component-rtl-enabled .cta-content .btn-box span {
+    padding-left: 0;
+    padding-right: 28px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .cta-content {
+    max-width: 800px;
+  }
+  .cta-content h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    letter-spacing: -1.2px;
+  }
+  .cta-content p {
+    max-width: 680px;
+    font-size: 16px;
+  }
+  .cta-content .btn-box {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=fp-cta.component.css.map */

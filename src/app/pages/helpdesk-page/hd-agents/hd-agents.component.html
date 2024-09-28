@@ -1,0 +1,555 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Agents
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            HelpDesk
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Agents
+        </li>
+    </ol>
+</div>
+
+<!-- Agents -->
+<div class="trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Performance of Agents
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        Last 30 Days
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Agent Name </th>
+                        <th scope="col" class="fw-medium"> Total Tickets </th>
+                        <th scope="col" class="fw-medium"> Open Tickets </th>
+                        <th scope="col" class="fw-medium"> Resolved Tickets </th>
+                        <th scope="col" class="fw-medium"> Avg. Resolution Time </th>
+                        <th scope="col" class="fw-medium"> Satisfaction Rate </th>
+                        <th scope="col" class="fw-medium"> Availability </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #JAN-854 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 230 </td>
+                        <td class="text-body"> 20 </td>
+                        <td class="text-body"> 75 </td>
+                        <td class="text-body"> 2.5 hours </td>
+                        <td>
+                            <div class="circle-progress-bar rounded-circle position-relative">
+                                <!-- Create Here: https://nikitahl.github.io/svg-circle-progress-generator/ -->
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="transparent" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#605DFF" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="113px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    80%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #FEB-853 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user13.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Ava Cooper </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 180 </td>
+                        <td class="text-body"> 16 </td>
+                        <td class="text-body"> 35 </td>
+                        <td class="text-body"> 1.4 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="transparent" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#AD63F6" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="141px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    75%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #MAR-852 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Isabella Evans </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 150 </td>
+                        <td class="text-body"> 35 </td>
+                        <td class="text-body"> 45 </td>
+                        <td class="text-body"> 3.2 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="transparent" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#25B003" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="113px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    80%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #APR-851 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Mia Hughes </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 75 </td>
+                        <td class="text-body"> 86 </td>
+                        <td class="text-body"> 25 </td>
+                        <td class="text-body"> 4.5 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="transparent" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#3584FC" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="0px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    100%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #MAY-850 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user16.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Noah Mitchell </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 320 </td>
+                        <td class="text-body"> 90 </td>
+                        <td class="text-body"> 10 </td>
+                        <td class="text-body"> 3.8 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#FD5812" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="113px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    80%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Not Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JUN-849 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user17.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Sophia Carter </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 120 </td>
+                        <td class="text-body"> 55 </td>
+                        <td class="text-body"> 20 </td>
+                        <td class="text-body"> 5.3 hours </td>
+                        <td>
+                            <div class="circle-progress-bar rounded-circle position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#605DFF" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="226px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    60%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #JUN-849 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user17.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Sophia Carter </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 120 </td>
+                        <td class="text-body"> 55 </td>
+                        <td class="text-body"> 20 </td>
+                        <td class="text-body"> 5.3 hours </td>
+                        <td>
+                            <div class="circle-progress-bar rounded-circle position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#605DFF" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="226px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    60%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #MAY-850 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user16.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Noah Mitchell </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 320 </td>
+                        <td class="text-body"> 90 </td>
+                        <td class="text-body"> 10 </td>
+                        <td class="text-body"> 3.8 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="#e0e0e0" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#FD5812" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="113px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    80%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #APR-851 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Mia Hughes </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 75 </td>
+                        <td class="text-body"> 86 </td>
+                        <td class="text-body"> 25 </td>
+                        <td class="text-body"> 4.5 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="transparent" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#3584FC" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="0px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    100%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #MAR-852 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="agent-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Isabella Evans </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 150 </td>
+                        <td class="text-body"> 35 </td>
+                        <td class="text-body"> 45 </td>
+                        <td class="text-body"> 3.2 hours </td>
+                        <td>
+                            <div class="circle-progress-bar position-relative">
+                                <svg width="50" height="50" viewBox="-25 -25 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke="transparent" stroke-width="16px" stroke-dasharray="565.48px" stroke-dashoffset="0"></circle>
+                                    <circle r="90" cx="100" cy="100" stroke="#25B003" stroke-width="16px" stroke-linecap="round" stroke-dashoffset="113px" fill="transparent" stroke-dasharray="565.48px"></circle>
+                                </svg>
+                                <span class="percentage d-block text-body">
+                                    80%
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Available </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

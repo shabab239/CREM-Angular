@@ -1,0 +1,131 @@
+.annual-profit-card {
+    .trezo-card-content {
+        position: relative;
+
+        .title {
+            margin-bottom: 35px;
+            
+            h5 {
+                margin-top: 3px;
+                font-size: 20px;
+            }
+        }
+        .chart {
+            top: -28px;
+            right: -9px;
+            max-width: 120px;
+            position: absolute;
+        }
+        .info-badge {
+            font-size: 13px;
+            color: #1E8308;
+            padding: 1px 8.3px;
+            border-radius: 100px;
+            border: 1px solid #82FC5A;
+            background-color: #D8FFC8;
+
+            &.down {
+                border-color: #FFCEA9;
+                color: var(--dangerColor);
+                background-color: #FFE1DD;
+            }
+        }
+        .days {
+            font-size: 13px;
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .chart {
+                right: auto;
+                left: -9px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .annual-profit-card {
+        .trezo-card-content {
+            .title {
+                margin-bottom: 20px;
+                
+                h5 {
+                    font-size: 18px;
+                }
+            }
+            .chart {
+                top: -30px;
+                right: -7px;
+            }
+            .info-badge {
+                font-size: 12px;
+                padding: 3px 8px;
+            }
+            .days {
+                font-size: 12px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .chart {
+                    right: auto;
+                    left: -7px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .annual-profit-card {
+        .trezo-card-content {
+            .title {
+                margin-bottom: 25px;
+                
+                h5 {
+                    margin-top: 8px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .annual-profit-card {
+        .trezo-card-content {
+            .chart {
+                top: -30px;
+                right: -10px;
+                max-width: 100px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .chart {
+                    right: auto;
+                    left: -10px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

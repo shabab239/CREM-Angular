@@ -1,0 +1,253 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Create Project
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Create Project
+        </li>
+    </ol>
+</div>
+
+<!-- Create Project -->
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-content">
+        <form>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Name
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. Project CyberSphere">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project ID
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. #854">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Start Date
+                        </label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            End Date
+                        </label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Description
+                        </label>
+                        <div class="NgxEditor__Wrapper">
+                            <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+                            <ngx-editor [editor]="editor" [placeholder]="'Type here...'"></ngx-editor>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Budget
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. $90">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Priority Status
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                In Progress
+                            </option>
+                            <option value="2">
+                                Pending
+                            </option>
+                            <option value="3">
+                                Completed
+                            </option>
+                            <option value="4">
+                                Not Started
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Categories
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                Book
+                            </option>
+                            <option value="2">
+                                Watch
+                            </option>
+                            <option value="3">
+                                Electronics
+                            </option>
+                            <option value="4">
+                                Sports
+                            </option>
+                            <option value="5">
+                                Fashion
+                            </option>
+                            <option value="6">
+                                Jewellery
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Manager
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                Walter Frazier
+                            </option>
+                            <option value="2">
+                                Kimberly Anderson
+                            </option>
+                            <option value="3">
+                                Roscoe Guerrero
+                            </option>
+                            <option value="4">
+                                Robert Stewart
+                            </option>
+                            <option value="5">
+                                Dustin Fritch
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Team Members
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                Sarah Johnson
+                            </option>
+                            <option value="2">
+                                Michael Smith
+                            </option>
+                            <option value="3">
+                                Emily Brown
+                            </option>
+                            <option value="4">
+                                Jason Lee
+                            </option>
+                            <option value="5">
+                                Ashley Davis
+                            </option>
+                            <option value="6">
+                                Mark Thompson
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Tags
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                Book
+                            </option>
+                            <option value="2">
+                                Watch
+                            </option>
+                            <option value="3">
+                                Electronics
+                            </option>
+                            <option value="4">
+                                Sports
+                            </option>
+                            <option value="5">
+                                Fashion
+                            </option>
+                            <option value="6">
+                                Jewellery
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Preview Image
+                        </label>
+                        <file-upload class="file-uploader" [multiple]="multiple"></file-upload>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Attached File
+                        </label>
+                        <file-upload class="file-uploader" [multiple]="multiple"></file-upload>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn-box">
+                <button type="button" class="warn d-inline-block fw-medium border-radius border-0 transition">
+                    Cancel
+                </button>
+                <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                    <span class="d-inline-block position-relative">
+                        <i class="material-symbols-outlined">
+                            add
+                        </i>
+                        Create Project
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

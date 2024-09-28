@@ -1,0 +1,613 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Deals
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            CRM
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Deals
+        </li>
+    </ol>
+</div>
+
+<!-- Deals -->
+<div class="crm-deals-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search deal here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <button class="add-btn d-inline-block transition fw-medium border-radius" type="button" (click)="toggleClass()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Deal
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </th>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Company Name </th>
+                        <th scope="col" class="fw-medium"> Contact Person </th>
+                        <th scope="col" class="fw-medium"> Amount </th>
+                        <th scope="col" class="fw-medium"> Stage </th>
+                        <th scope="col" class="fw-medium"> Probability </th>
+                        <th scope="col" class="fw-medium"> Created At </th>
+                        <th scope="col" class="fw-medium"> Close Date </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #854 </td>
+                        <td> Tech Solutions </td>
+                        <td> Shawn Kennedy </td>
+                        <td class="text-body"> $25,000.00 </td>
+                        <td class="text-body"> Proposal </td>
+                        <td class="text-body"> 80% </td>
+                        <td class="text-body"> 08 Nov 2024 10:30 AM </td>
+                        <td class="text-body"> 15 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #853 </td>
+                        <td> Acma Industries </td>
+                        <td> Roberto Cruz </td>
+                        <td class="text-body"> $15,000.00 </td>
+                        <td class="text-body"> Presentation </td>
+                        <td class="text-body"> 50% </td>
+                        <td class="text-body"> 09 Nov 2024 02:15 PM </td>
+                        <td class="text-body"> 14 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #852 </td>
+                        <td> Synergy Ltd </td>
+                        <td> Juli Johnson </td>
+                        <td class="text-body"> $30,000.00 </td>
+                        <td class="text-body"> Negotiation </td>
+                        <td class="text-body"> 75% </td>
+                        <td class="text-body"> 10 Nov 2024 09:45 AM </td>
+                        <td class="text-body"> 13 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #851 </td>
+                        <td> Tech Enterprises </td>
+                        <td> Catalina Engles </td>
+                        <td class="text-body"> $20,000.00 </td>
+                        <td class="text-body"> Discovery </td>
+                        <td class="text-body"> 90% </td>
+                        <td class="text-body"> 11 Nov 2024 03:45 PM </td>
+                        <td class="text-body"> 12 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #850 </td>
+                        <td> Synetic Solutions </td>
+                        <td> Louis Nagle </td>
+                        <td class="text-body"> $40,000.00 </td>
+                        <td class="text-body"> Contract Sent </td>
+                        <td class="text-body"> 60% </td>
+                        <td class="text-body"> 12 Nov 2024 01:00 PM </td>
+                        <td class="text-body"> 13 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #849 </td>
+                        <td> GlobalTech Solutions </td>
+                        <td> Patrick Madsen </td>
+                        <td class="text-body"> $50,000.00 </td>
+                        <td class="text-body"> Proposal </td>
+                        <td class="text-body"> 55% </td>
+                        <td class="text-body"> 13 Nov 2024 01:00 PM </td>
+                        <td class="text-body"> 19 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #848 </td>
+                        <td> Quantum Solutions </td>
+                        <td> Lillian McCreary </td>
+                        <td class="text-body"> $45,000.00 </td>
+                        <td class="text-body"> Negotiation </td>
+                        <td class="text-body"> 79% </td>
+                        <td class="text-body"> 14 Nov 2024 01:00 PM </td>
+                        <td class="text-body"> 26 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #847 </td>
+                        <td> Synetic Pinnacle Ltd </td>
+                        <td> Beverly Caulkins </td>
+                        <td class="text-body"> $35,000.00 </td>
+                        <td class="text-body"> Presentation </td>
+                        <td class="text-body"> 85% </td>
+                        <td class="text-body"> 15 Nov 2024 01:00 PM </td>
+                        <td class="text-body"> 23 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #846 </td>
+                        <td> IT Solutions </td>
+                        <td> Alina Smith </td>
+                        <td class="text-body"> $23,423.00 </td>
+                        <td class="text-body"> Proposal </td>
+                        <td class="text-body"> 11% </td>
+                        <td class="text-body"> 08 Nov 2024 10:30 AM </td>
+                        <td class="text-body"> 14 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td class="text-body"> #845 </td>
+                        <td> Trezo Admin </td>
+                        <td> David Warner </td>
+                        <td class="text-body"> $12,421.00 </td>
+                        <td class="text-body"> Discovery </td>
+                        <td class="text-body"> 53% </td>
+                        <td class="text-body"> 07 Nov 2024 10:30 AM </td>
+                        <td class="text-body"> 11 Nov 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied"
+>
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Add New Deal
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleClass()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Company Name
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. Tech Solutions">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Contact Person
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. Shawn Kennedy">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Amount
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. $65,000.00">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Stage
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Proposal
+                                </option>
+                                <option value="2">
+                                    Presentation
+                                </option>
+                                <option value="3">
+                                    Negotiation
+                                </option>
+                                <option value="4">
+                                    Discovery
+                                </option>
+                                <option value="5">
+                                    Contract Sent
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Close Date
+                            </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleClass()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied2"
+>
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Edit Deal
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleClass2()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Company Name
+                            </label>
+                            <input type="text" class="form-control" value="Tech Solutions">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Contact Person
+                            </label>
+                            <input type="text" class="form-control" value="Shawn Kennedy">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Amount
+                            </label>
+                            <input type="text" class="form-control" value="$65,000.00">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Stage
+                            </label>
+                            <select class="form-select">
+                                <option>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Proposal
+                                </option>
+                                <option value="2" selected>
+                                    Presentation
+                                </option>
+                                <option value="3">
+                                    Negotiation
+                                </option>
+                                <option value="4">
+                                    Discovery
+                                </option>
+                                <option value="5">
+                                    Contract Sent
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Close Date
+                            </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleClass()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Save
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

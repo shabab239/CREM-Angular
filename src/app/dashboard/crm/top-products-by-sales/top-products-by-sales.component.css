@@ -1,0 +1,51 @@
+.top-products-by-sales-card .trezo-card-content ul li {
+  border-bottom: 1px solid var(--borderColor);
+  padding-bottom: 14px;
+  margin-bottom: 15px;
+}
+.top-products-by-sales-card .trezo-card-content ul li .icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+.top-products-by-sales-card .trezo-card-content ul li .title {
+  margin-bottom: 2px;
+}
+.top-products-by-sales-card .trezo-card-content ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom-width: 0;
+}
+.top-products-by-sales-card.component-rtl-enabled .trezo-card-content ul li .icon {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .top-products-by-sales-card .trezo-card-content ul li {
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+  }
+  .top-products-by-sales-card .trezo-card-content ul li .icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+  }
+  .top-products-by-sales-card.component-rtl-enabled .trezo-card-content ul li .icon {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-products-by-sales-card .trezo-card-content ul li {
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=top-products-by-sales.component.css.map */

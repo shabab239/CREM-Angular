@@ -1,0 +1,874 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Sellers
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Sellers
+        </li>
+    </ol>
+</div>
+
+<!-- Sellers -->
+<div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header mb-0 d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search seller here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/ecommerce-page/create-seller">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Seller
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div
+    class="row"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller1.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Ava Turner
+                            </a>
+                            <span class="d-block">
+                                turner&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        25 Nov 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $9,999.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $5,999.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        TechMaster Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller2.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Ethan Parker
+                            </a>
+                            <span class="d-block">
+                                ethan&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        01 Nov 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        39
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $6,756.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $4,645.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        RisionTech Outlet
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller3.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Isabella Lee
+                            </a>
+                            <span class="d-block">
+                                isabella&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        30 Sep 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        75
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $5,550.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $4,350.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        ComfotLiving
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller4.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Thompson Torres
+                            </a>
+                            <span class="d-block">
+                                thompson&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        02 Aug 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        99
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $2,100.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $1,500.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        SportFit Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller5.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Lucas Lyon
+                            </a>
+                            <span class="d-block">
+                                lucas&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        22 July 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        350
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $15,250.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $10,200.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Velas Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller6.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Morgan Sturges
+                            </a>
+                            <span class="d-block">
+                                morgan&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        10 Jun 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        200
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $10,500.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $5,458.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Herna Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller7.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Sophia McNeel
+                            </a>
+                            <span class="d-block">
+                                sophia&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        16 Feb 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        80
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $2,580.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $1,500.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Dona Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller8.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Rodriguez Meade
+                            </a>
+                            <span class="d-block">
+                                rodriguez&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        12 May 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        150
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $9,000.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $6,000.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Willi Dav Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller9.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Olivia Taylor
+                            </a>
+                            <span class="d-block">
+                                olivia&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        10 Apr 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        75
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $7,500.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $4,500.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Donne Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller10.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                David Smith
+                            </a>
+                            <span class="d-block">
+                                david&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        03 Dec 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        500
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $18,500.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $13,200.00
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        RichMaster Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller11.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Alice Johnson
+                            </a>
+                            <span class="d-block">
+                                alice&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        23 Mar 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $6,300.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $4,000.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Dajon Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6">
+        <div class="seller-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon position-relative text-center rounded-circle">
+                            <img src="images/sellers/seller12.png" alt="seller-image">
+                        </div>
+                        <div>
+                            <a routerLink="/dashboard/ecommerce-page/seller-details" class="title d-block fw-medium">
+                                Emily Brown
+                            </a>
+                            <span class="d-block">
+                                emily&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action-buttons d-flex align-items-center">
+                        <a routerLink="/dashboard/ecommerce-page/seller-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> visibility </i>
+                        </a>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> edit </i>
+                        </button>
+                        <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <i class="material-symbols-outlined"> delete </i>
+                        </button>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black">
+                        <span class="text-body">
+                            Last Sale Date:
+                        </span> 
+                        20 Jan 2024
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Item Stock:
+                        </span> 
+                        99
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Wallet Balance:
+                        </span> 
+                        $3,699.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Revenue:
+                        </span> 
+                        $2,599.50
+                    </li>
+                    <li class="text-black">
+                        <span class="text-body">
+                            Store:
+                        </span> 
+                        Barbahall Store
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination -->
+<div class="pagination-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-content">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <p class="mb-0">
+                Showing 9 of 36 results
+            </p>
+            <ol class="list-unstyled mb-0 p-0">
+                <li class="d-inline-block">
+                    <a class="prev" routerLink=".">
+                        <span class="opacity-0">
+                            0
+                        </span>
+                        <i class="material-symbols-outlined">
+                            chevron_left
+                        </i>
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink="." class="active">
+                        1
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink=".">
+                        2
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink=".">
+                        3
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink=".">
+                        4
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a class="next" routerLink=".">
+                        <span class="opacity-0">
+                            0
+                        </span>
+                        <i class="material-symbols-outlined">
+                            chevron_right
+                        </i>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+.mp-profile-intro-card .trezo-card-content .user {
+  margin-bottom: 16px;
+}
+.mp-profile-intro-card .trezo-card-content .user .image img {
+  width: 75px;
+}
+.mp-profile-intro-card .trezo-card-content .user .title {
+  margin-left: 15px;
+}
+.mp-profile-intro-card .trezo-card-content .user .title span {
+  font-size: 17px;
+}
+.mp-profile-intro-card .trezo-card-content .user .title span:not(:first-child) {
+  margin-top: 2px;
+  font-size: var(--fontSize);
+}
+.mp-profile-intro-card .trezo-card-content .sub-title {
+  margin-bottom: 5px;
+}
+.mp-profile-intro-card .trezo-card-content h6 {
+  font-size: var(--fontSize);
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a {
+  width: 28px;
+  height: 28px;
+  margin-right: 7px;
+  text-align: center;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a i {
+  left: 0;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a.facebook {
+  background-color: #3A559F;
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a.x {
+  background-color: #03A9F4;
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a.linkedin {
+  background-color: #007AB9;
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a.mail {
+  background-color: #2196F3;
+}
+.mp-profile-intro-card .trezo-card-content .socials-link a:last-child {
+  margin-right: 0;
+}
+.mp-profile-intro-card.component-rtl-enabled .trezo-card-content .user .title {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.mp-profile-intro-card.component-rtl-enabled .trezo-card-content .socials-link a {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.mp-profile-intro-card.component-rtl-enabled .trezo-card-content .socials-link a:last-child {
+  margin-left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .mp-profile-intro-card .trezo-card-content .user {
+    margin-bottom: 15px;
+  }
+  .mp-profile-intro-card .trezo-card-content .user .image img {
+    width: 60px;
+  }
+  .mp-profile-intro-card .trezo-card-content .user .title {
+    margin-left: 12px;
+  }
+  .mp-profile-intro-card .trezo-card-content .user .title span {
+    font-size: 15px;
+  }
+  .mp-profile-intro-card .trezo-card-content .user .title span:not(:first-child) {
+    font-size: 13px;
+  }
+  .mp-profile-intro-card .trezo-card-content .sub-title {
+    margin-bottom: 8px;
+  }
+  .mp-profile-intro-card .trezo-card-content h6 {
+    font-size: 13px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+  .mp-profile-intro-card.component-rtl-enabled .trezo-card-content .user .title {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mp-profile-intro-card .trezo-card-content .user .title span {
+    font-size: 16px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=mp-profile-intro.component.css.map */

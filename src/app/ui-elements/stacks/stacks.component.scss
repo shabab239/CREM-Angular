@@ -1,0 +1,11 @@
+.vstack, .hstack {
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    background-color: rgba(var(--bd-violet-rgb), 0.15);
+    border: 1px solid rgba(var(--bd-violet-rgb), 0.3);
+    color: var(--blackColor);
+
+    div {
+        background-color: rgba(var(--bd-violet-rgb), 0.15);
+        border: 1px solid rgba(var(--bd-violet-rgb), 0.3);
+    }
+}

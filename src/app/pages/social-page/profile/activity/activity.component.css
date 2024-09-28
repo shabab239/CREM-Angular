@@ -1,0 +1,151 @@
+.activity-card .trezo-card-content {
+  border-top: 1px solid var(--borderColor);
+  padding-top: 25px;
+}
+.activity-card .trezo-card-content .list li {
+  padding-left: 132px;
+  margin-bottom: 30px;
+}
+.activity-card .trezo-card-content .list li .time {
+  top: 0;
+  left: 5px;
+  font-size: 13px;
+  position: absolute;
+}
+.activity-card .trezo-card-content .list li .title {
+  margin-bottom: 10px;
+}
+.activity-card .trezo-card-content .list li p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 11px;
+}
+.activity-card .trezo-card-content .list li .author {
+  font-size: 13px;
+}
+.activity-card .trezo-card-content .list li::before {
+  top: 3px;
+  left: 93px;
+  width: 12px;
+  content: "";
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  background: #37D80A;
+}
+.activity-card .trezo-card-content .list li:nth-child(2)::before {
+  background: var(--orangeColor);
+}
+.activity-card .trezo-card-content .list li:nth-child(3)::before {
+  background: var(--purpleColor);
+}
+.activity-card .trezo-card-content .list li:nth-child(4)::before {
+  background: var(--secondaryColor);
+}
+.activity-card .trezo-card-content .list li:last-child {
+  margin-bottom: 0;
+}
+.activity-card .trezo-card-content .list::before {
+  top: 0;
+  bottom: 0;
+  left: 98px;
+  content: "";
+  margin-top: 5px;
+  position: absolute;
+  border-left: 1px dashed var(--borderColor);
+}
+.activity-card.component-rtl-enabled .trezo-card-content .list li {
+  padding-left: 0;
+  padding-right: 132px;
+}
+.activity-card.component-rtl-enabled .trezo-card-content .list li .time {
+  left: auto;
+  right: 5px;
+}
+.activity-card.component-rtl-enabled .trezo-card-content .list li::before {
+  left: auto;
+  right: 93px;
+}
+.activity-card.component-rtl-enabled .trezo-card-content .list::before {
+  right: 98px;
+  left: auto;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .activity-card .trezo-card-content {
+    padding-top: 17px;
+  }
+  .activity-card .trezo-card-content .list li {
+    padding-left: 25px;
+    margin-bottom: 25px;
+  }
+  .activity-card .trezo-card-content .list li .time {
+    left: 0;
+    position: relative;
+    margin-bottom: 11px;
+  }
+  .activity-card .trezo-card-content .list li .title {
+    margin-bottom: 10px;
+  }
+  .activity-card .trezo-card-content .list li p {
+    margin-bottom: 11px;
+  }
+  .activity-card .trezo-card-content .list li::before {
+    left: 0;
+    width: 10px;
+    height: 10px;
+  }
+  .activity-card .trezo-card-content .list::before {
+    left: 4px;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list li {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list li .time {
+    right: 0;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list li::before {
+    left: auto;
+    right: 0;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list::before {
+    left: auto;
+    right: 4px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .activity-card .trezo-card-content {
+    padding-top: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .activity-card .trezo-card-content .list li {
+    padding-left: 125px;
+    margin-bottom: 25px;
+  }
+  .activity-card .trezo-card-content .list li::before {
+    left: 90px;
+  }
+  .activity-card .trezo-card-content .list::before {
+    left: 95px;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list li {
+    padding-left: 0;
+    padding-right: 125px;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list li::before {
+    left: auto;
+    right: 90px;
+  }
+  .activity-card.component-rtl-enabled .trezo-card-content .list::before {
+    left: auto;
+    right: 95px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=activity.component.css.map */

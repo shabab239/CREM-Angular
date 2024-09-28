@@ -1,0 +1,317 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Cart
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Cart
+        </li>
+    </ol>
+</div>
+
+<!-- Cart -->
+<div class="row">
+    <div class="col-lg-8">
+        <div class="your-order-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Your Order
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <h5 class="mb-0">
+                        Customer ID : 357951
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Order ID
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Product
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Quantity
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Price
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    #JAN-2345
+                                </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="images/products/product1.jpg" alt="product-image">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block">
+                                                Smart Band
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <app-quantity-counter [initialValue]="1" />
+                                </td>
+                                <td class="text-body">
+                                    $80.00
+                                </td>
+                                <td class="text-body">
+                                    $80.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    #JAN-1323
+                                </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="images/products/product2.jpg" alt="product-image">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block">
+                                                Headphone
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <app-quantity-counter [initialValue]="7" />
+                                </td>
+                                <td class="text-body">
+                                    $150.00
+                                </td>
+                                <td class="text-body">
+                                    $450.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    #DEC-1234
+                                </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="images/products/product3.jpg" alt="product-image">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block">
+                                                iPhone 15 Plus
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <app-quantity-counter [initialValue]="1" />
+                                </td>
+                                <td class="text-body">
+                                    $750.00
+                                </td>
+                                <td class="text-body">
+                                    $750.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    #DEC-3567
+                                </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="images/products/product4.jpg" alt="product-image">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block">
+                                                Bluetooth Speaker
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <app-quantity-counter [initialValue]="5" />
+                                </td>
+                                <td class="text-body">
+                                    $15.00
+                                </td>
+                                <td class="text-body">
+                                    $75.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    #DEC-1098
+                                </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="images/products/product5.jpg" alt="product-image">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block">
+                                                Airbuds 2nd Gen
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <app-quantity-counter [initialValue]="2" />
+                                </td>
+                                <td class="text-body">
+                                    $25.00
+                                </td>
+                                <td class="text-body">
+                                    $50.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="coupon-code position-relative">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="E.g. #ARP1217">
+                    </div>
+                    <div class="form-btn-box">
+                        <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    done_all
+                                </i>
+                                Apply
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="order-summary-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Order Summary
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Description
+                                </th>
+                                <th scope="col" class="fw-medium text-end">
+                                    Price
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-body">
+                                    Grand Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Discount :
+                                </td>
+                                <td class="text-body text-end">
+                                    -$105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Tax :
+                                </td>
+                                <td class="text-body text-end">
+                                    $75.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Subtotal :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,000.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Shipping Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $80.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Coupon Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $20.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $900.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>
+                    Add A Note
+                </h6>
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="It makes me feel..."></textarea>
+                    </div>
+                    <div class="form-btn-box">
+                        <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    add
+                                </i>
+                                Proceed To Shipping
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

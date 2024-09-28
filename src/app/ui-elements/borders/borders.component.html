@@ -1,0 +1,189 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Borders
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            UI Elements
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Borders
+        </li>
+    </ol>
+</div>
+
+<!-- Borders -->
+<div
+    class="row"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="col-xl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Additive
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <span class="border"></span>
+                <span class="border-top"></span>
+                <span class="border-end"></span>
+                <span class="border-bottom"></span>
+                <span class="border-start"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Subtractive
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <span class="border border-0"></span>
+                <span class="border border-top-0"></span>
+                <span class="border border-end-0"></span>
+                <span class="border border-bottom-0"></span>
+                <span class="border border-start-0"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-12">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Color
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <span class="border border-primary"></span>
+                <span class="border border-primary-subtle"></span>
+                <span class="border border-secondary"></span>
+                <span class="border border-secondary-subtle"></span>
+                <span class="border border-success"></span>
+                <span class="border border-success-subtle"></span>
+                <span class="border border-danger"></span>
+                <span class="border border-danger-subtle"></span>
+                <span class="border border-warning"></span>
+                <span class="border border-warning-subtle"></span>
+                <span class="border border-info"></span>
+                <span class="border border-info-subtle"></span>
+                <span class="border border-light"></span>
+                <span class="border border-light-subtle"></span>
+                <span class="border border-dark"></span>
+                <span class="border border-dark-subtle"></span>
+                <span class="border border-black"></span>
+                <span class="border border-white"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-12">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Opacity
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="border border-primary p-2 mb-2">This is default primary border</div>
+                <div class="border border-primary p-2 mb-2 border-opacity-75">This is 75% opacity primary border</div>
+                <div class="border border-primary p-2 mb-2 border-opacity-50">This is 50% opacity primary border</div>
+                <div class="border border-primary p-2 mb-2 border-opacity-25">This is 25% opacity primary border</div>
+                <div class="border border-primary p-2 border-opacity-10">This is 10% opacity primary border</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Width
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <span class="border border-1"></span>
+                <span class="border border-2"></span>
+                <span class="border border-3"></span>
+                <span class="border border-4"></span>
+                <span class="border border-5"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Radius
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <img src="images/75.jpg" class="rounded" alt="image">
+                <img src="images/75.jpg" class="rounded-top" alt="image">
+                <img src="images/75.jpg" class="rounded-end" alt="image">
+                <img src="images/75.jpg" class="rounded-bottom" alt="image">
+                <img src="images/75.jpg" class="rounded-start" alt="image">
+                <img src="images/75.jpg" class="rounded-circle" alt="image">
+                <img src="images/150x75.jpg" class="rounded-pill" alt="image">
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Sizes
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <img src="images/75.jpg" class="rounded-0" alt="image">
+                <img src="images/75.jpg" class="rounded-1" alt="image">
+                <img src="images/75.jpg" class="rounded-2" alt="image">
+                <img src="images/75.jpg" class="rounded-3" alt="image">
+                <img src="images/75.jpg" class="rounded-4" alt="image">
+                <img src="images/75.jpg" class="rounded-5" alt="image">
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Sizes - 2
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content style">
+                <img src="images/75.jpg" class="rounded-bottom-1" alt="image">
+                <img src="images/75.jpg" class="rounded-start-2" alt="image">
+                <img src="images/75.jpg" class="rounded-end-circle" alt="image">
+                <img src="images/75.jpg" class="rounded-start-pill" alt="image">
+                <img src="images/75.jpg" class="rounded-5 rounded-top-0" alt="image">
+            </div>
+        </div>
+    </div>
+</div>

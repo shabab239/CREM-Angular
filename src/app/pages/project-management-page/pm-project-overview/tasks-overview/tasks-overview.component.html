@@ -1,0 +1,23 @@
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Tasks Overview
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="chart">
+            <apx-chart
+                [plotOptions]="chartOptions.plotOptions!"
+                [dataLabels]="chartOptions.dataLabels!"
+                [series]="chartOptions.series!"
+                [labels]="chartOptions.labels!"
+                [legend]="chartOptions.legend!"
+                [colors]="chartOptions.colors!"
+                [stroke]="chartOptions.stroke!"
+                [chart]="chartOptions.chart!"
+            ></apx-chart>
+        </div>
+    </div>
+</div>

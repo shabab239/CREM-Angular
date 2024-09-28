@@ -1,0 +1,70 @@
+<div
+    class="courses-sales-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Courses Sales
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        This Month
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="info position-relative z-2 d-flex align-items-center">
+            <h5 class="mb-0">
+                $57.2k
+            </h5>
+            <span class="info-badge d-inline-block">
+                +10%
+            </span>
+        </div>
+        <div class="chart">
+            <apx-chart
+                [grid]="chartOptions.grid!"
+                [fill]="chartOptions.fill!"
+                [chart]="chartOptions.chart!"
+                [xaxis]="chartOptions.xaxis!"
+                [yaxis]="chartOptions.yaxis!"
+                [title]="chartOptions.title!"
+                [stroke]="chartOptions.stroke!"
+                [series]="chartOptions.series!"
+                [labels]="chartOptions.labels!"
+                [legend]="chartOptions.legend!"
+                [colors]="chartOptions.colors!"
+                [subtitle]="chartOptions.subtitle!"
+                [dataLabels]="chartOptions.dataLabels!"
+            ></apx-chart>
+        </div>
+    </div>
+</div>

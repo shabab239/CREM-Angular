@@ -1,0 +1,201 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Read
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Apps
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Email
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Read
+        </li>
+    </ol>
+</div>
+
+<!-- Read -->
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+        <app-sidebar />
+    </div>
+    <div class="col-lg-8 col-md-12">
+        <div
+            class="email-read-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0 fw-semibold">
+                        Sales Review Meeting
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <div class="buttons-list d-flex align-items-center">
+                        <button type="button" class="button p-0 border-0 transition d-inline-block bg-transparent">
+                            <i class="material-symbols-outlined">
+                                archive
+                            </i>
+                        </button>
+                        <button type="button" class="button p-0 border-0 transition d-inline-block bg-transparent">
+                            <i class="material-symbols-outlined">
+                                help_clinic
+                            </i>
+                        </button>
+                        <button type="button" class="button p-0 border-0 transition d-inline-block bg-transparent">
+                            <i class="material-symbols-outlined">
+                                delete
+                            </i>
+                        </button>
+                        <div class="trezo-card-header-menu position-relative">
+                            <button class="button p-0 border-0 transition d-inline-block bg-transparent" (click)="toggleCardHeaderMenu()">
+                                <i class="material-symbols-outlined">
+                                    more_vert
+                                </i>
+                            </button>
+                            <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            reply
+                                        </i>
+                                        Reply
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            redo
+                                        </i>
+                                        Forward
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            print
+                                        </i>
+                                        Print
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            download
+                                        </i>
+                                        Download
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            mark_email_unread
+                                        </i>
+                                        Mark as unread
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            info
+                                        </i>
+                                        Report Spam
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            delete
+                                        </i>
+                                        Delete
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item with-icon d-block w-100 position-relative transition">
+                                        <i class="material-symbols-outlined">
+                                            block
+                                        </i>
+                                        Block Sarah
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="info d-md-flex align-items-center justify-content-between">
+                    <div class="user d-flex align-items-center">
+                        <div class="img">
+                            <img src="images/users/user31.jpg" class="rounded-circle" alt="user-image">
+                        </div>
+                        <div class="title">
+                            <span class="d-block fw-semibold text-black">
+                                Sarah Smith
+                            </span>
+                            <span class="d-block">
+                                sarah&#64;trezo.com
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="bg-transparent lh-1 position-relative d-inline-block p-0 border-0">
+                            <i class="material-symbols-outlined">
+                                grade
+                            </i>
+                        </button>
+                        <span class="d-block">
+                            26 March 2024
+                        </span>
+                    </div>
+                </div>
+                <div class="content">
+                    <span class="d-block title text-black fw-semibold">
+                        Subject: Re: Quarterly Sales Review Meeting
+                    </span>
+                    <span class="d-block sub-title text-black fw-medium">
+                        Hi Smith,
+                    </span>
+                    <p>
+                        Great, I'll go ahead and send out the calendar invite shortly.
+                    </p>
+                    <p>
+                        Regarding the agenda, I think your suggestions are spot on. I'll add them to the agenda and circulate it to everyone before the meeting so they can come prepared.
+                    </p>
+                    <p>
+                        In addition to our current initiatives, I believe it would be advantageous to have a concise yet comprehensive update on any new products or promotions that are scheduled to launch in the next quarter. This information will not only keep us informed but also assist in aligning our strategies with upcoming opportunities.
+                    </p>
+                    <p>
+                        Let me know if you think that's a valuable addition to the agenda.
+                    </p>
+                    <div class="regards">
+                        <span class="d-block text-black fw-medium">
+                            Best regards,
+                        </span>
+                        <span class="d-block text-black fw-medium">
+                            Olivia Parker
+                        </span>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="button" class="primary d-inline-block fw-semibold border-radius transition">
+                        Reply
+                    </button>
+                    <button type="button" class="d-inline-block fw-semibold border-radius transition">
+                        Forward
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

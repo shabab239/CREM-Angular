@@ -1,0 +1,220 @@
+.attachments-card {
+    .trezo-card-content {
+        ul {
+            li {
+                padding: 15px;
+                margin-bottom: 10px;
+                background-color: #F6F7F9;
+
+                .icon {
+                    margin-right: 12px;
+
+                    i {
+                        background-color: var(--whiteColor);
+                        color: var(--primaryColor);
+                        display: inline-block;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 22px;
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+                h6 {
+                    font-size: 14px;
+                    margin-bottom: 3px;
+                }
+                .file-size {
+                    font-size: 13px;
+                }
+                button {
+                    color: var(--primaryColor);
+                    font-size: 22px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            ul {
+                li {
+                    background-color: #15203c;
+
+                    .icon {
+                        i {
+                            background-color: #0C1427;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            ul {
+                li {
+                    .icon {
+                        margin: {
+                            right: 0;
+                            left: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .attachments-card {
+        .trezo-card-content {
+            ul {
+                li {
+                    padding: 12px;
+    
+                    .icon {
+                        margin-right: 10px;
+    
+                        i {
+                            line-height: 35px;
+                            font-size: 18px;
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                    h6 {
+                        font-size: 13px;
+                    }
+                    .file-size {
+                        font-size: 12px;
+                    }
+                    button {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                ul {
+                    li {
+                        .icon {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .attachments-card {
+        .trezo-card-content {
+            ul {
+                li {
+                    padding: 12px;
+    
+                    .icon {
+                        margin-right: 10px;
+
+                        i {
+                            line-height: 35px;
+                            font-size: 20px;
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                    h6 {
+                        font-size: 13.5px;
+                    }
+                    button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                ul {
+                    li {
+                        .icon {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .attachments-card {
+        .trezo-card-content {
+            ul {
+                li {
+                    padding: 12px;
+    
+                    .icon {
+                        margin-right: 10px;
+
+                        i {
+                            line-height: 35px;
+                            font-size: 20px;
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                    h6 {
+                        font-size: 13.5px;
+                    }
+                    button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                ul {
+                    li {
+                        .icon {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,254 @@
+.email-inbox-card .trezo-card-header {
+  margin-bottom: 20px;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu {
+  margin-right: 25px;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu .button {
+  top: 1px;
+  margin-left: -3px;
+  margin-right: 0;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button {
+  top: 2px;
+  margin-right: 0;
+  color: var(--blackColor);
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button:hover {
+  color: var(--primaryColor);
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .button {
+  color: var(--bodyColor);
+  margin-right: 10px;
+  top: 2px;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .button i {
+  font-size: 18px;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .button:last-child {
+  margin-right: 0;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .button:hover {
+  color: var(--primaryColor);
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu {
+  left: 0;
+  top: 100%;
+  width: 195px;
+  padding: 15px 0;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item i {
+  top: 50%;
+  left: 20px;
+  font-size: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  transition: var(--transition);
+  background: var(--primaryColor);
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+  padding-left: 47px;
+  padding-right: 20px;
+}
+.email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item:hover::before {
+  transform: scaleY(1);
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links {
+  margin-bottom: 0;
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li {
+  margin-right: 35px;
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li a {
+  font-weight: 500;
+  padding-bottom: 14px;
+  color: var(--bodyColor);
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li a span {
+  display: inline-block;
+  padding-left: 28px;
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li a span i {
+  left: 0;
+  top: 50%;
+  font-size: 18px;
+  margin-top: -1px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li a.active {
+  color: var(--primaryColor);
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li a.active::before {
+  transform: scaleX(1);
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li a::before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  bottom: 0;
+  height: 2px;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: var(--transition);
+  background: var(--primaryColor);
+}
+.email-inbox-card .trezo-card-content .inbox-nav-links li:last-child {
+  margin-right: 0;
+}
+.email-inbox-card.component-dark-theme .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button {
+  color: var(--whiteColor);
+}
+.email-inbox-card.component-dark-theme .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button:hover {
+  color: var(--primaryColor);
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu .button {
+  margin-right: -3px;
+  margin-left: 0;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button {
+  margin-left: 0;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .button {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .button:last-child {
+  margin-left: 0;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item i {
+  left: auto;
+  right: 20px;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item::before {
+  left: auto;
+  right: 0;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+  padding-right: 47px;
+  padding-left: 20px;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li {
+  margin-right: 0;
+  margin-left: 35px;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li a span {
+  padding-left: 0;
+  padding-right: 28px;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li a span i {
+  left: auto;
+  right: 0;
+}
+.email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li:last-child {
+  margin-left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .email-inbox-card .trezo-card-header {
+    margin-bottom: 15px;
+  }
+  .email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu {
+    margin-right: 10px;
+  }
+  .email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu .button {
+    margin-left: -3px;
+    margin-right: 0;
+  }
+  .email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button {
+    margin-right: 0;
+  }
+  .email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu {
+    padding: 10px 0;
+  }
+  .email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item i {
+    left: 20px;
+    font-size: 20px;
+  }
+  .email-inbox-card .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+    padding-left: 47px;
+    padding-right: 20px;
+  }
+  .email-inbox-card .trezo-card-content .inbox-nav-links {
+    margin-bottom: 12px;
+  }
+  .email-inbox-card .trezo-card-content .inbox-nav-links li {
+    margin-right: 25px;
+  }
+  .email-inbox-card .trezo-card-content .inbox-nav-links li a span {
+    padding-left: 23px;
+  }
+  .email-inbox-card .trezo-card-content .inbox-nav-links li a span i {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .email-inbox-card .trezo-card-content .inbox-nav-links li a::before {
+    bottom: -13px;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu {
+    margin-left: 10px;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu .button {
+    margin-right: -3px;
+    margin-left: 0;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .trezo-card-header-menu2 .button {
+    margin-left: 0;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item i {
+    left: auto;
+    right: 20px;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-header .trezo-card-title .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+    padding-right: 47px;
+    padding-left: 20px;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li {
+    margin-right: 0;
+    margin-left: 25px;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li a span {
+    padding-left: 0;
+    padding-right: 23px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .email-inbox-card .trezo-card-content .inbox-nav-links li {
+    margin-right: 30px;
+  }
+  .email-inbox-card .trezo-card-content .inbox-nav-links li a span {
+    padding-left: 25px;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .email-inbox-card.component-rtl-enabled .trezo-card-content .inbox-nav-links li a span {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=inbox.component.css.map */

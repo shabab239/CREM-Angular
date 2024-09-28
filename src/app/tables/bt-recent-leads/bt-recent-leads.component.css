@@ -1,0 +1,59 @@
+.bt-recent-leads-card .trezo-card-content .basic-table .table thead tr th:first-child, .bt-recent-leads-card .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 0;
+}
+.bt-recent-leads-card .trezo-card-content .basic-table .table thead tr th:nth-child(2), .bt-recent-leads-card .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 15px;
+}
+.bt-recent-leads-card .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-recent-leads-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 0;
+}
+.bt-recent-leads-card .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .bt-recent-leads-card .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+.bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-right: 15px !important;
+  padding-left: 25px !important;
+}
+.bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-right: 15px !important;
+  padding-left: 25px !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 17px !important;
+  }
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 17px !important;
+  }
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 17px !important;
+  }
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 17px !important;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 20px !important;
+  }
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 20px !important;
+  }
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 20px !important;
+  }
+  .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .bt-recent-leads-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 20px !important;
+  }
+}/*# sourceMappingURL=bt-recent-leads.component.css.map */

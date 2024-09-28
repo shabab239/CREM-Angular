@@ -1,0 +1,55 @@
+.order-summary-card {
+    .trezo-card-content {
+        ul {
+            margin-top: -8px;
+
+            li {
+                margin-bottom: 9px;
+
+                .progressbar {
+                    .percentage {
+                        margin-left: 15px;
+                    }
+                    .completed-order {
+                        --bs-progress-bar-bg: #37D80A;
+                    }
+                    .pending-order {
+                        --bs-progress-bar-bg: var(--purpleColor);
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            ul {
+                li {
+                    .progressbar {
+                        .percentage {
+                            margin: {
+                                left: 0;
+                                right: 15px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .order-summary-card {
+        .trezo-card-content {
+            ul {
+                margin-top: -25px;
+            }
+        }
+    }
+
+}

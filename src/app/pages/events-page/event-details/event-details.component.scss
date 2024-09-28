@@ -1,0 +1,299 @@
+.event-details-card {
+    .trezo-card-content {
+        .title {
+            margin-bottom: 10px;
+        }
+        .info {
+            margin-top: 20px;
+
+            .icon {
+                width: 70px;
+                height: 70px;
+                margin-right: 15px;
+                background-color: #f4f6fc;
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    font-size: 35px;
+                    margin-top: -1px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+            }
+            span {
+                &:not(:first-child) {
+                    margin-top: 3px;
+                }
+            }
+            .d-flex {
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .btn-box {
+            margin-top: 28px;
+            padding-top: 28px;
+            border-top: 1px dashed var(--borderColor);
+
+            button {
+                font-size: 16px;
+                margin-right: 10px;
+                padding: 11px 27px;
+                color: var(--bodyColor);
+                background-color: transparent;
+                border: 1px solid var(--borderColor);
+                
+                span {
+                    i {
+                        font-size: 20px;
+                        margin-right: 8px;
+                    }
+                }
+                &:nth-child(1) {
+                    color: var(--whiteColor);
+                    border-color: var(--primaryColor);
+                    background-color: var(--primaryColor);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        h5 {
+            margin: {
+                bottom: 16px;
+                top: 23px;
+            };
+        }
+        .list {
+            li {
+                margin-bottom: 12.5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .features-list {
+            margin-top: 20px;
+            
+            li {
+                margin-bottom: 11px;
+                padding-left: 15px;
+
+                &::before {
+                    left: 0;
+                    top: 50%;
+                    width: 6px;
+                    height: 6px;
+                    content: '';
+                    position: absolute;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    background: var(--primaryColor);
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .info {
+                .icon {
+                    background-color: #15203c;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .info {
+                .icon {
+                    margin: {
+                        right: 0;
+                        left: 15px;
+                    };
+                }
+                .d-flex {
+                    margin: {
+                        right: 0;
+                        left: 30px;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .btn-box {
+                button {
+                    margin: {
+                        right: 0;
+                        left: 10px;
+                    };
+                    span {
+                        i {
+                            margin: {
+                                right: 0;
+                                left: 8px;
+                            };
+                        }
+                    }
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .features-list {
+                li {
+                    padding: {
+                        left: 0;
+                        right: 15px;
+                    };
+                    &::before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .event-details-card {
+        .trezo-card-content {
+            .info {
+                margin-top: 0;
+    
+                .d-flex {
+                    margin: {
+                        top: 15px;
+                        right: 0;
+                    };
+                }
+                .icon {
+                    width: 55px;
+                    height: 55px;
+                    margin-right: 12px;
+
+                    i {
+                        font-size: 30px;
+                        margin-top: 0;
+                    }
+                }
+            }
+            .btn-box {
+                margin-top: 15px;
+                padding-top: 5px;
+
+                button {
+                    font-size: 13px;
+                    margin-top: 10px;
+                    padding: 10px 25px;
+                }
+            }
+            h5 {
+                margin: {
+                    bottom: 12px;
+                    top: 20px;
+                };
+            }
+            .list {
+                li {
+                    margin-bottom: 12px;
+                }
+            }
+            .features-list {
+                margin-top: 15px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .info {
+                    .d-flex {
+                        margin: {
+                            left: 0;
+                        };
+                    }
+                    .icon {
+                        margin: {
+                            right: 0;
+                            left: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .event-details-card {
+        .trezo-card-content {
+            .info {
+                margin-top: 20px;
+    
+                .icon {
+                    width: 65px;
+                    height: 65px;
+
+                    i {
+                        font-size: 40px;
+                    }
+                }
+            }
+            .btn-box {
+                margin-top: 25px;
+                padding-top: 25px;
+
+                button {
+                    padding: 10px 25px;
+                    font-size: 14px;
+                }
+            }
+            h5 {
+                margin: {
+                    bottom: 15px;
+                    top: 25px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .event-details-card {
+        .trezo-card-content {
+            .btn-box {
+                button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,297 @@
+.publish-post-card .trezo-card-content .btn-box .t-btn {
+  font-size: 16px;
+  padding: 12px 27px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.publish-post-card .trezo-card-content .btn-box .t-btn span i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.publish-post-card .trezo-card-content .btn-box .buttons-list {
+  margin-left: 25px;
+}
+.publish-post-card .trezo-card-content .btn-box .buttons-list button {
+  margin-left: 15px;
+  color: var(--bodyColor);
+}
+.publish-post-card .trezo-card-content .btn-box .buttons-list button i {
+  font-size: 20px;
+}
+.publish-post-card .trezo-card-content .btn-box .buttons-list button:first-child {
+  margin-left: 0;
+}
+.publish-post-card .trezo-card-content .btn-box .buttons-list button:hover {
+  color: var(--primaryColor);
+}
+.publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .t-btn span i {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .buttons-list {
+  margin-left: 0;
+  margin-right: 25px;
+}
+.publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .buttons-list button {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .buttons-list button:first-child {
+  margin-right: 0;
+}
+
+.timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu, .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu2, .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu3 {
+  top: 38px;
+  right: 25px;
+  position: absolute;
+}
+.timeline-post-card .trezo-card-content .user {
+  border-bottom: 1px solid var(--borderColor);
+  padding-bottom: 20px;
+  margin-bottom: 18px;
+}
+.timeline-post-card .trezo-card-content .user .img img {
+  width: 50px;
+}
+.timeline-post-card .trezo-card-content .user .title {
+  margin-left: 12px;
+}
+.timeline-post-card .trezo-card-content .user .title span:not(:first-child) {
+  margin-top: 2px;
+}
+.timeline-post-card .trezo-card-content .post-info {
+  margin-top: 20px;
+  border-top: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.timeline-post-card .trezo-card-content .post-info button {
+  margin-right: 30px;
+  color: var(--bodyColor);
+}
+.timeline-post-card .trezo-card-content .post-info button span {
+  padding-left: 25px;
+}
+.timeline-post-card .trezo-card-content .post-info button span i {
+  left: 0;
+  top: 50%;
+  font-size: 18px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.timeline-post-card .trezo-card-content .post-info button:last-child {
+  margin-right: 0;
+}
+.timeline-post-card .trezo-card-content .post-comment {
+  margin-top: 20px;
+}
+.timeline-post-card .trezo-card-content .post-comment .img {
+  margin-right: 20px;
+}
+.timeline-post-card .trezo-card-content .post-comment .img img {
+  width: 55px;
+}
+.timeline-post-card .trezo-card-content .post-comment form {
+  flex: 1 1 auto;
+  padding-right: 70px;
+}
+.timeline-post-card .trezo-card-content .post-comment form button {
+  right: 0;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  color: var(--whiteColor);
+  transform: translateY(-50%);
+  background-color: var(--primaryColor);
+}
+.timeline-post-card .trezo-card-content .post-comment form button i {
+  left: 0;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.timeline-post-card .trezo-card-content .post-comment .buttons-list {
+  margin-left: 20px;
+}
+.timeline-post-card .trezo-card-content .post-comment .buttons-list button {
+  margin-left: 15px;
+  color: var(--bodyColor);
+  transition: var(--transition);
+}
+.timeline-post-card .trezo-card-content .post-comment .buttons-list button i {
+  font-size: 20px;
+}
+.timeline-post-card .trezo-card-content .post-comment .buttons-list button:hover {
+  color: var(--primaryColor);
+}
+.timeline-post-card .trezo-card-content .post-comment .buttons-list button:first-child {
+  margin-left: 0;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu, .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu2, .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu3 {
+  right: auto;
+  left: 25px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .user .title {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-info button {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-info button span {
+  padding-left: 0;
+  padding-right: 25px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-info button span i {
+  left: auto;
+  right: 0;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-info button:last-child {
+  margin-left: 0;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .img {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment form {
+  padding-right: 0;
+  padding-left: 70px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment form button {
+  right: auto;
+  left: 0;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .buttons-list {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .buttons-list button {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .buttons-list button:first-child {
+  margin-right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .publish-post-card .trezo-card-content .btn-box .t-btn {
+    padding: 11px 25px;
+    font-size: 13px;
+  }
+  .publish-post-card .trezo-card-content .btn-box .t-btn span i {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .publish-post-card .trezo-card-content .btn-box .buttons-list {
+    margin-left: 0;
+    margin-top: 17px;
+  }
+  .publish-post-card .trezo-card-content .btn-box .buttons-list button {
+    margin-left: 12px;
+  }
+  .publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .t-btn span i {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .buttons-list {
+    margin-right: 0;
+  }
+  .publish-post-card.component-rtl-enabled .trezo-card-content .btn-box .buttons-list button {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu, .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu2, .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu3 {
+    top: 32px;
+    right: 17px;
+  }
+  .timeline-post-card .trezo-card-content .user {
+    padding-bottom: 15px;
+    margin-bottom: 13px;
+  }
+  .timeline-post-card .trezo-card-content .post-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+  .timeline-post-card .trezo-card-content .post-info button {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .timeline-post-card .trezo-card-content .post-comment {
+    margin-top: 15px;
+  }
+  .timeline-post-card .trezo-card-content .post-comment .img {
+    margin-right: 0;
+  }
+  .timeline-post-card .trezo-card-content .post-comment form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .timeline-post-card .trezo-card-content .post-comment .buttons-list {
+    margin-left: 0;
+  }
+  .timeline-post-card .trezo-card-content .post-comment .buttons-list button {
+    margin-left: 12px;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu, .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu2, .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu3 {
+    right: auto;
+    left: 17px;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-content .post-info button {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .img {
+    margin-left: 0;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .buttons-list {
+    margin-right: 0;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .buttons-list button {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu, .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu2, .timeline-post-card .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu3 {
+    right: 20px;
+  }
+  .timeline-post-card .trezo-card-content .post-comment .img {
+    margin-right: 15px;
+  }
+  .timeline-post-card .trezo-card-content .post-comment form {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .timeline-post-card .trezo-card-content .post-comment .buttons-list {
+    margin-left: 15px;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu, .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu2, .timeline-post-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .trezo-card-header-menu3 {
+    right: auto;
+    left: 20px;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .img {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .timeline-post-card.component-rtl-enabled .trezo-card-content .post-comment .buttons-list {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .publish-post-card .trezo-card-content .btn-box .t-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=timeline.component.css.map */

@@ -1,0 +1,133 @@
+.course-instructor-card {
+    .trezo-card-content {
+        .course-instructor {
+            .image {
+                img {
+                    width: 100px;
+                }
+            }
+            .title {
+                margin-left: 15px;
+
+                span {
+                    &:nth-child(1) {
+                        font-size: 17px;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+        .course-content {
+            .title {
+                margin: {
+                    bottom: 7px;
+                    top: 22px;
+                };
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .course-instructor {
+                .title {
+                    margin: {
+                        left: 0;
+                        right: 15px;
+                    };
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .course-instructor-card {
+        .trezo-card-content {
+            .course-instructor {
+                .image {
+                    img {
+                        width: 60px;
+                    }
+                }
+                .title {
+                    margin-left: 12px;
+
+                    span {
+                        &:nth-child(1) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .course-content {
+                .title {
+                    margin: {
+                        bottom: 8px;
+                        top: 17px;
+                    };
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .course-instructor {
+                    .title {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .course-instructor-card {
+        .trezo-card-content {
+            .course-content {
+                .title {
+                    margin: {
+                        bottom: 8px;
+                        top: 20px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .course-instructor-card {
+        .trezo-card-content {
+            .course-instructor {
+                .title {
+                    span {
+                        &:nth-child(1) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

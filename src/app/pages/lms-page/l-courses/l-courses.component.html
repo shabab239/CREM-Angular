@@ -1,0 +1,459 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Courses List
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            LMS
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Courses List
+        </li>
+    </ol>
+</div>
+
+<!-- Courses -->
+<div class="trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search course here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        All Courses
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Paid
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Free
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Top Rated
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Best Seller
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Course Name </th>
+                        <th scope="col" class="fw-medium"> Category </th>
+                        <th scope="col" class="fw-medium"> Instructor </th>
+                        <th scope="col" class="fw-medium"> Enrolled </th>
+                        <th scope="col" class="fw-medium"> Start Date </th>
+                        <th scope="col" class="fw-medium"> End Date </th>
+                        <th scope="col" class="fw-medium"> Price </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #854 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Cybersecurity Awareness </a>
+                        </td>
+                        <td> Technology </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 180 </td>
+                        <td class="text-body"> 25 Mar 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td class="text-body"> $49.99 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #853 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Python Programming </a>
+                        </td>
+                        <td> Science </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Ava Cooper </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 250 </td>
+                        <td class="text-body"> 20 Mar 2024 </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td class="text-body"> $45.32 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #852 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Big Data Analytics </a>
+                        </td>
+                        <td> Health &amp; Wellness </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Isabella Evans </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 320 </td>
+                        <td class="text-body"> 15 Mar 2024 </td>
+                        <td class="text-body"> 15 Apr 2024 </td>
+                        <td class="text-body"> $99.00 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #851 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Introduction to Blockchain </a>
+                        </td>
+                        <td> Education </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Mia Hughes </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 135 </td>
+                        <td class="text-body"> 10 Mar 2024 </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td class="text-body"> $29.75 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #850 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Network Administration </a>
+                        </td>
+                        <td> Food &amp; Cooking </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user10.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Noah Mitchell </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 460 </td>
+                        <td class="text-body"> 05 Mar 2024 </td>
+                        <td class="text-body"> 05 Apr 2024 </td>
+                        <td class="text-body"> $56.99 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #849 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Artificial Intelligence </a>
+                        </td>
+                        <td> Lifestyle &amp; Fashion </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user11.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 515 </td>
+                        <td class="text-body"> 10 Feb 2024 </td>
+                        <td class="text-body"> 10 Mar 2024 </td>
+                        <td class="text-body"> $78.75 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #854 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Introduction Of Python </a>
+                        </td>
+                        <td> Technology </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 180 </td>
+                        <td class="text-body"> 25 Mar 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td class="text-body"> $49.99 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #853 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Graphic Design Basics </a>
+                        </td>
+                        <td> Science </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Ava Cooper </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 250 </td>
+                        <td class="text-body"> 20 Mar 2024 </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td class="text-body"> $45.32 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #852 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Business Finance </a>
+                        </td>
+                        <td> Health &amp; Wellness </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Isabella Evans </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 320 </td>
+                        <td class="text-body"> 15 Mar 2024 </td>
+                        <td class="text-body"> 15 Apr 2024 </td>
+                        <td class="text-body"> $99.00 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #851 </td>
+                        <td>
+                            <a routerLink="/dashboard/lms-page/course-details" class="project-name fw-medium"> Photoshop Mastery </a>
+                        </td>
+                        <td> Education </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="instructor-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Mia Hughes </span>
+                            </div>
+                        </td>
+                        <td class="text-body"> 135 </td>
+                        <td class="text-body"> 10 Mar 2024 </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td class="text-body"> $29.75 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/lms-page/course-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/lms-page/edit-course" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+.your-order-card {
+    .trezo-card-content {
+        .coupon-code {
+            max-width: 430px;
+            margin-top: 25px;
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.order-summary-card {
+    .trezo-card-content {
+        h6 {
+            margin: {
+                bottom: 10px;
+                top: 25px;
+            };
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .your-order-card {
+        .trezo-card-content {
+            .coupon-code {
+                max-width: 100%;
+                margin-top: 17px;
+    
+                .form-group {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .order-summary-card {
+        .trezo-card-content {
+            h6 {
+                margin-top: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .your-order-card {
+        .trezo-card-content {
+            .coupon-code {
+                max-width: 430px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .order-summary-card {
+        .trezo-card-content {
+            h6 {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,51 @@
+<div
+    class="welcome-card trezo-card mb-25 border-radius d-block bg-primary-500 border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-content">
+        <div class="content">
+            <h5 class="fw-semibold text-white">
+                Good Morning, <span>Olivia!</span>
+            </h5>
+            <p>
+                Here's what's happening with your store today.
+            </p>
+            <div class="border-top"></div>
+            <div class="d-md-flex align-items-center">
+                <div class="item d-flex align-items-center">
+                    <div class="icon text-primary bg-primary-50 border-radius d-flex align-items-center justify-content-center">
+                        <i class="material-symbols-outlined">
+                            shopping_bag
+                        </i>
+                    </div>
+                    <div>
+                        <span class="title d-block fw-semibold text-white">
+                            86 New orders
+                        </span>
+                        <span class="d-block">
+                            Awaiting processing
+                        </span>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="icon text-danger bg-danger-50 border-radius d-flex align-items-center justify-content-center">
+                        <i class="material-symbols-outlined">
+                            chat_error
+                        </i>
+                    </div>
+                    <div>
+                        <span class="title d-block fw-semibold text-white">
+                            35 Products
+                        </span>
+                        <span class="d-block">
+                            Out of stock
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/welcome.png" alt="welcome-image">
+        </div>
+    </div>
+</div>

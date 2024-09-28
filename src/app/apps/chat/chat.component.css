@@ -1,0 +1,811 @@
+.chat-sidebar-card .trezo-card-header {
+  margin-bottom: 20px;
+}
+.chat-sidebar-card .trezo-card-header .trezo-card-title h5 {
+  font-size: 16px;
+}
+.chat-sidebar-card .trezo-card-content .search-box label {
+  top: 50%;
+  left: 13px;
+  margin-top: 2px;
+  position: absolute;
+  color: var(--blackColor);
+  transform: translateY(-50%);
+}
+.chat-sidebar-card .trezo-card-content .search-box label i {
+  font-size: 18px;
+}
+.chat-sidebar-card .trezo-card-content .search-box .input-search {
+  padding: 11px 16px 12px 39px;
+  background-color: #F6F7F9;
+  border: 1px solid #F6F7F9;
+  color: var(--blackColor);
+  font-size: 12px;
+  height: 40px;
+}
+.chat-sidebar-card .trezo-card-content .search-box .input-search::-moz-placeholder {
+  color: var(--bodyColor);
+  -moz-transition: var(--transition);
+  transition: var(--transition);
+}
+.chat-sidebar-card .trezo-card-content .search-box .input-search::placeholder {
+  color: var(--bodyColor);
+  transition: var(--transition);
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs {
+  padding: 0;
+  margin-top: 20px;
+  border-color: var(--borderColor);
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item {
+  margin-right: 33px;
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item .nav-link {
+  border: 0;
+  padding: 0 0 8px;
+  font-weight: 500;
+  position: relative;
+  color: var(--bodyColor);
+  transition: var(--transition);
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item .nav-link::before {
+  left: 0;
+  width: 0;
+  bottom: 0;
+  height: 2px;
+  content: "";
+  position: absolute;
+  transition: var(--transition);
+  background: var(--primaryColor);
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item .nav-link:hover {
+  color: var(--primaryColor);
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item.active .nav-link {
+  color: var(--primaryColor);
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item.active .nav-link::before {
+  width: 100%;
+}
+.chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item:last-child {
+  margin-right: 0;
+}
+.chat-sidebar-card .trezo-card-content .tab-content .tab-pane {
+  margin-right: -25px;
+  display: block;
+  opacity: 1;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list {
+  overflow-y: scroll;
+  height: 820px;
+  padding-right: 25px;
+  padding-top: 20px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: var(--whiteColor);
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #B5C3D7;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item {
+  margin-bottom: 13.5px;
+  padding-bottom: 13.5px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .img {
+  margin-right: 10px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .img img {
+  width: 35px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .img .active-status {
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background: #37D80A;
+  border: 2px solid var(--whiteColor);
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .img .active-status.off {
+  background: #FE7A36;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .title span:not(:first-child) {
+  margin-top: 2px;
+  font-size: 12px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .title span.voice, .chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .title span.attachment {
+  position: relative;
+  padding-left: 16px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .title span.voice i, .chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .user .title span.attachment i {
+  left: 0;
+  top: 50%;
+  margin-top: -0.5px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .info {
+  text-align: end;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item .info .time {
+  font-size: 12px;
+}
+.chat-sidebar-card .trezo-card-content .chat-users-list .single-user-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom-width: 0;
+}
+.chat-sidebar-card .trezo-card-content .btn-box {
+  padding-right: 25px;
+  margin-top: 20px;
+}
+.chat-sidebar-card .trezo-card-content .btn-box button {
+  padding: 11.8px 22px;
+  color: var(--whiteColor);
+  transition: var(--transition);
+  background-color: var(--primaryColor);
+  font-size: 16px;
+  font-weight: 500;
+}
+.chat-sidebar-card .trezo-card-content .btn-box button:hover {
+  background-color: var(--secondaryColor);
+}
+.chat-sidebar-card.component-dark-theme .trezo-card-content .search-box label {
+  color: var(--whiteColor);
+}
+.chat-sidebar-card.component-dark-theme .trezo-card-content .search-box .input-search {
+  background-color: #15203c;
+  color: var(--whiteColor);
+  border-color: #15203c;
+}
+.chat-sidebar-card.component-dark-theme .trezo-card-content .chat-users-list::-webkit-scrollbar-track {
+  background-color: #0C1427;
+}
+.chat-sidebar-card.component-dark-theme .trezo-card-content .chat-users-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+}
+.chat-sidebar-card.component-dark-theme .trezo-card-content .chat-users-list .single-user-item .user .img .active-status {
+  border-color: #0C1427;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .search-box label {
+  left: auto;
+  right: 13px;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .search-box .input-search {
+  padding-left: 14px;
+  padding-right: 39px;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .nav.nav-tabs .nav-item {
+  margin-right: 0;
+  margin-left: 33px;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .nav.nav-tabs .nav-item .nav-link::before {
+  left: auto;
+  right: 0;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .nav.nav-tabs .nav-item:last-child {
+  margin-left: 0;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list {
+  padding-right: 0;
+  padding-left: 25px;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list .single-user-item .user .img {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list .single-user-item .user .img .active-status {
+  right: auto;
+  left: 0;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list .single-user-item .user .title span.voice, .chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list .single-user-item .user .title span.attachment {
+  padding-left: 0;
+  padding-right: 16px;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list .single-user-item .user .title span.voice i, .chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list .single-user-item .user .title span.attachment i {
+  left: auto;
+  right: 0;
+}
+.chat-sidebar-card.component-rtl-enabled .trezo-card-content .btn-box {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+.chat-card .trezo-card-content .chat-header .user .img {
+  margin-right: 15px;
+}
+.chat-card .trezo-card-content .chat-header .user .img img {
+  width: 75px;
+}
+.chat-card .trezo-card-content .chat-header .user .img .active-status {
+  right: 5px;
+  bottom: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background: #37D80A;
+  border: 2px solid var(--whiteColor);
+}
+.chat-card .trezo-card-content .chat-header .user .img .active-status.off {
+  background: #FE7A36;
+}
+.chat-card .trezo-card-content .chat-header .user .title span:nth-child(1) {
+  font-size: 16px;
+}
+.chat-card .trezo-card-content .chat-header .user .title span:not(:first-child) {
+  margin-top: 1px;
+  font-size: 14px;
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .button {
+  margin-right: 15px;
+  color: var(--bodyColor);
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .button i {
+  font-size: 16px;
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .button:hover {
+  color: var(--primaryColor);
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dot-menu {
+  top: -2px;
+  font-size: 16px;
+  color: var(--bodyColor);
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dot-menu:hover {
+  color: var(--primaryColor);
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dropdown-menu {
+  right: 0;
+  top: 100%;
+  left: auto;
+  width: 195px;
+  padding: 15px 0;
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item i {
+  top: 50%;
+  left: 20px;
+  font-size: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  transition: var(--transition);
+  background: var(--primaryColor);
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+  padding-left: 47px;
+  padding-right: 20px;
+}
+.chat-card .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item:hover::before {
+  transform: scaleY(1);
+}
+.chat-card .trezo-card-content .border-top {
+  border-color: var(--borderColor) !important;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.chat-card .trezo-card-content .current-time {
+  padding-bottom: 18px;
+  font-size: 12px;
+}
+.chat-card .trezo-card-content .chat-body {
+  transform: rotate(180deg);
+  margin-right: -25px;
+  overflow-y: scroll;
+  direction: rtl;
+  height: 703px;
+}
+.chat-card .trezo-card-content .chat-body::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.chat-card .trezo-card-content .chat-body::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: var(--whiteColor);
+}
+.chat-card .trezo-card-content .chat-body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #B5C3D7;
+}
+.chat-card .trezo-card-content .chat-body ul {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 0;
+}
+.chat-card .trezo-card-content .chat-body ul li {
+  transform: rotate(180deg);
+  padding-left: 45px;
+  direction: ltr;
+  width: 90%;
+}
+.chat-card .trezo-card-content .chat-body ul li .user {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.chat-card .trezo-card-content .chat-body ul li .message {
+  text-align: start;
+}
+.chat-card .trezo-card-content .chat-body ul li .message p {
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #F6F7F9;
+  border-radius: 0 7px 7px 7px;
+}
+.chat-card .trezo-card-content .chat-body ul li .message div {
+  margin-bottom: 5px;
+}
+.chat-card .trezo-card-content .chat-body ul li .message div:last-child {
+  margin-bottom: 0;
+}
+.chat-card .trezo-card-content .chat-body ul li .time {
+  font-size: 12px;
+  text-align: start;
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+.chat-card .trezo-card-content .chat-body ul li.right {
+  text-align: end;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.chat-card .trezo-card-content .chat-body ul li.right .user {
+  left: auto;
+  right: 0;
+}
+.chat-card .trezo-card-content .chat-body ul li.right .message {
+  text-align: end;
+}
+.chat-card .trezo-card-content .chat-body ul li.right .message p {
+  color: var(--whiteColor);
+  border-radius: 7px 0 7px 7px;
+  background-color: var(--primaryColor);
+}
+.chat-card .trezo-card-content .chat-body ul li.right .time {
+  text-align: end;
+}
+.chat-card .trezo-card-content .chat-footer {
+  padding: 20px;
+  background-color: #F6F7F9;
+}
+.chat-card .trezo-card-content .chat-footer .buttons-list {
+  top: 2px;
+  position: relative;
+  margin-right: 20px;
+}
+.chat-card .trezo-card-content .chat-footer .buttons-list button {
+  margin-left: 10px;
+  color: var(--bodyColor);
+}
+.chat-card .trezo-card-content .chat-footer .buttons-list button i {
+  font-size: 16px;
+}
+.chat-card .trezo-card-content .chat-footer .buttons-list button:hover {
+  color: var(--primaryColor);
+}
+.chat-card .trezo-card-content .chat-footer .buttons-list button:first-child {
+  margin-left: 0;
+}
+.chat-card .trezo-card-content .chat-footer form {
+  flex: 1 1 auto;
+  padding-right: 70px;
+}
+.chat-card .trezo-card-content .chat-footer form input {
+  height: 55px;
+  color: var(--blackColor);
+  font-size: var(--fontSize);
+  background-color: var(--whiteColor);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.chat-card .trezo-card-content .chat-footer form input::-moz-placeholder {
+  color: var(--bodyColor);
+  -moz-transition: var(--transition);
+  transition: var(--transition);
+}
+.chat-card .trezo-card-content .chat-footer form input::placeholder {
+  color: var(--bodyColor);
+  transition: var(--transition);
+}
+.chat-card .trezo-card-content .chat-footer form input:focus::-moz-placeholder {
+  color: transparent;
+}
+.chat-card .trezo-card-content .chat-footer form input:focus::placeholder {
+  color: transparent;
+}
+.chat-card .trezo-card-content .chat-footer form button {
+  right: 0;
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  border-radius: 3px;
+  position: absolute;
+  color: var(--whiteColor);
+  transform: translateY(-50%);
+  background-color: var(--primaryColor);
+}
+.chat-card .trezo-card-content .chat-footer form button i {
+  left: 0;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.chat-card .trezo-card-content .chat-footer form button:hover {
+  background-color: var(--secondaryColor);
+}
+.chat-card.component-dark-theme .trezo-card-content .chat-body::-webkit-scrollbar-track {
+  background-color: #0C1427;
+}
+.chat-card.component-dark-theme .trezo-card-content .chat-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+}
+.chat-card.component-dark-theme .trezo-card-content .chat-body ul li .message p {
+  background-color: #15203c;
+}
+.chat-card.component-dark-theme .trezo-card-content .chat-body ul li.right .message p {
+  background-color: var(--primaryColor);
+}
+.chat-card.component-dark-theme .trezo-card-content .chat-footer {
+  background-color: #15203c;
+}
+.chat-card.component-dark-theme .trezo-card-content .chat-footer form input {
+  color: var(--whiteColor);
+  background-color: #0C1427;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .user .img {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .user .img .active-status {
+  right: auto;
+  left: 5px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .buttons-list .button {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .buttons-list .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item i {
+  left: auto;
+  right: 20px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item::before {
+  left: auto;
+  right: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-header .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+  padding-left: 20px;
+  padding-right: 47px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body {
+  direction: ltr;
+  margin-right: 0;
+  margin-left: -25px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul {
+  padding-left: 0;
+  padding-right: 25px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li {
+  direction: rtl;
+  padding-left: 0;
+  padding-right: 45px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li .user {
+  left: auto;
+  right: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li .message p {
+  border-radius: 7px 0 7px 7px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li.right {
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li.right .user {
+  left: 0;
+  right: auto;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li.right .message p {
+  border-radius: 0 7px 7px 7px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-footer .buttons-list {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-footer .buttons-list button {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-footer .buttons-list button:first-child {
+  margin-right: 0;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-footer form {
+  padding-right: 0;
+  padding-left: 70px;
+}
+.chat-card.component-rtl-enabled .trezo-card-content .chat-footer form button {
+  right: auto;
+  left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .chat-sidebar-card .trezo-card-header {
+    margin-bottom: 17px;
+  }
+  .chat-sidebar-card .trezo-card-header .trezo-card-title h5 {
+    font-size: 15px;
+  }
+  .chat-sidebar-card .trezo-card-content .search-box label {
+    left: 12px;
+    font-size: 17px;
+  }
+  .chat-sidebar-card .trezo-card-content .search-box .input-search {
+    height: 38px;
+    padding-left: 35px;
+  }
+  .chat-sidebar-card .trezo-card-content .nav.nav-tabs {
+    margin-top: 17px;
+  }
+  .chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item {
+    margin-right: 20px;
+  }
+  .chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item .nav-link {
+    padding: 0 0 6px;
+  }
+  .chat-sidebar-card .trezo-card-content .tab-content .tab-pane {
+    margin-right: -17px;
+  }
+  .chat-sidebar-card .trezo-card-content .chat-users-list {
+    height: 476px;
+    padding-right: 17px;
+    padding-top: 17px;
+  }
+  .chat-sidebar-card .trezo-card-content .btn-box {
+    padding-right: 17px;
+    margin-top: 17px;
+  }
+  .chat-sidebar-card .trezo-card-content .btn-box button {
+    padding: 13px 22px;
+    font-size: 13px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .search-box label {
+    left: auto;
+    right: 12px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .search-box .input-search {
+    padding-left: 10px;
+    padding-right: 35px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .nav.nav-tabs .nav-item {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .tab-content .tab-pane {
+    margin-right: 0;
+    margin-left: -17px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list {
+    padding-right: 0;
+    padding-left: 17px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .btn-box {
+    padding-right: 0;
+    padding-left: 17px;
+  }
+  .chat-card .trezo-card-content .chat-header .user .img {
+    margin-right: 13px;
+  }
+  .chat-card .trezo-card-content .chat-header .user .img img {
+    width: 65px;
+  }
+  .chat-card .trezo-card-content .chat-header .user .img .active-status {
+    right: 4px;
+    bottom: 4px;
+  }
+  .chat-card .trezo-card-content .chat-header .user .title span:nth-child(1) {
+    font-size: 15px;
+  }
+  .chat-card .trezo-card-content .chat-header .user .title span:not(:first-child) {
+    font-size: 13px;
+  }
+  .chat-card .trezo-card-content .chat-header .buttons-list {
+    margin-top: 15px;
+  }
+  .chat-card .trezo-card-content .border-top {
+    margin-top: 12px;
+    margin-bottom: 13px;
+  }
+  .chat-card .trezo-card-content .current-time {
+    padding-bottom: 13px;
+  }
+  .chat-card .trezo-card-content .chat-body {
+    margin-right: -17px;
+    height: 650px;
+  }
+  .chat-card .trezo-card-content .chat-body ul {
+    padding-left: 17px;
+  }
+  .chat-card .trezo-card-content .chat-body ul li {
+    width: 100%;
+  }
+  .chat-card .trezo-card-content .chat-body ul li .message p {
+    padding: 10px;
+  }
+  .chat-card .trezo-card-content .chat-body ul li .time {
+    margin-bottom: 17px;
+  }
+  .chat-card .trezo-card-content .chat-footer {
+    padding: 17px;
+  }
+  .chat-card .trezo-card-content .chat-footer .buttons-list {
+    top: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .chat-card .trezo-card-content .chat-footer form {
+    padding-right: 0;
+  }
+  .chat-card .trezo-card-content .chat-footer form button {
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    position: relative;
+    transform: translateY(0);
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-header .user .img {
+    margin-right: 0;
+    margin-left: 13px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-header .user .img .active-status {
+    right: auto;
+    left: 4px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-body {
+    margin-right: 0;
+    margin-left: -17px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-body ul {
+    padding-left: 0;
+    padding-right: 17px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li.right {
+    padding-right: 0;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-footer .buttons-list {
+    margin-left: 0;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-footer form {
+    padding-left: 0;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .chat-sidebar-card .trezo-card-header {
+    margin-bottom: 20px;
+  }
+  .chat-sidebar-card .trezo-card-content .nav.nav-tabs {
+    margin-top: 20px;
+  }
+  .chat-sidebar-card .trezo-card-content .tab-content .tab-pane {
+    margin-right: -20px;
+  }
+  .chat-sidebar-card .trezo-card-content .chat-users-list {
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .chat-sidebar-card .trezo-card-content .btn-box {
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .tab-content .tab-pane {
+    margin-right: 0;
+    margin-left: -20px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .chat-users-list {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .btn-box {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .chat-card .trezo-card-content .chat-header .buttons-list {
+    margin-top: 0;
+  }
+  .chat-card .trezo-card-content .chat-body {
+    margin-right: -20px;
+  }
+  .chat-card .trezo-card-content .chat-body ul {
+    padding-left: 20px;
+  }
+  .chat-card .trezo-card-content .chat-body ul li .time {
+    margin-bottom: 20px;
+  }
+  .chat-card .trezo-card-content .chat-footer {
+    padding: 20px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-body {
+    margin-right: 0;
+    margin-left: -20px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-body ul {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .chat-card.component-rtl-enabled .trezo-card-content .chat-body ul li.right {
+    padding-right: 0;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .chat-sidebar-card .trezo-card-content .chat-users-list {
+    height: 559px;
+  }
+  .chat-sidebar-card .trezo-card-content .btn-box button {
+    font-size: 14px;
+  }
+  .chat-card .trezo-card-content .chat-body {
+    height: 650px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item {
+    margin-right: 20px;
+  }
+  .chat-sidebar-card .trezo-card-content .chat-users-list {
+    height: 720px;
+  }
+  .chat-sidebar-card .trezo-card-content .btn-box button {
+    font-size: 15px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .nav.nav-tabs .nav-item {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .chat-card .trezo-card-content .chat-body {
+    height: 603px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .chat-sidebar-card .trezo-card-content .nav.nav-tabs .nav-item {
+    margin-right: 25px;
+  }
+  .chat-sidebar-card.component-rtl-enabled .trezo-card-content .nav.nav-tabs .nav-item {
+    margin-right: 0;
+    margin-left: 25px;
+  }
+}
+/* Min width 1600px *//*# sourceMappingURL=chat.component.css.map */

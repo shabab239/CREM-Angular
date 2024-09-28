@@ -1,0 +1,26 @@
+span {
+    font-size: 13px;
+    margin-top: 10px;
+}
+input {
+    background-color: #F6F7F9;
+    border: 1px solid #F6F7F9;
+    font-size: var(--fontSize);
+    color: var(--blackColor);
+    padding: 11px 16px 12px;
+    border-radius: 7px;
+    display: block;
+    height: 44px;
+    width: 100%;
+
+    &::placeholder {
+        color: var(--bodyColor);
+    }
+}
+.component-dark-theme {
+    input {
+        background-color: #15203c;
+        color: var(--whiteColor);
+        border-color: #15203c;
+    }
+}

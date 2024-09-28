@@ -1,0 +1,48 @@
+<div
+    class="logout-area"
+    [class.dark-theme]="themeService.isDark()"
+>
+    <div
+        class="trezo-form mx-auto"
+        [class.component-dark-theme]="themeService.isDark()"
+        [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    >
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="form-image">
+                    <img src="images/logout.jpg" alt="logout-image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                <div class="form-content">
+                    <div class="logo">
+                        <img src="images/logo-big.svg" alt="logo">
+                        <img src="images/white-logo-big.svg" class="d-none" alt="logo">
+                    </div>
+                    <div class="title">
+                        <h1 class="fw-semibold">
+                            Welcome back to Trezo!
+                        </h1>
+                        <p class="fw-medium">
+                            You Are Logged out
+                        </p>
+                    </div>
+                    <div class="admin d-flex align-items-center">
+                        <img src="images/admin.png" class="rounded-circle" alt="admin-image">
+                        <span class="d-block fw-semibold text-black">
+                            Olivia John
+                        </span>
+                    </div>
+                    <a routerLink="/authentication" class="btn-box d-block w-100 border-0 transition fw-medium border-radius">
+                        <span class="d-flex align-items-center justify-content-center">
+                            <i class="material-symbols-outlined">
+                                autorenew
+                            </i>
+                            Sign In
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,407 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Users List
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Users
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Users List
+        </li>
+    </ol>
+</div>
+
+<!-- Users List -->
+<div class="users-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search user here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/users/add-user">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New User
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> User ID </th>
+                        <th scope="col" class="fw-medium"> User </th>
+                        <th scope="col" class="fw-medium"> Email </th>
+                        <th scope="col" class="fw-medium"> Location </th>
+                        <th scope="col" class="fw-medium"> Phone </th>
+                        <th scope="col" class="fw-medium"> Projects </th>
+                        <th scope="col" class="fw-medium"> Join Date </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> #JAN-158 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Marcia Baker </span>
+                            </div>
+                        </td>
+                        <td> marcia&#64;trezo.com </td>
+                        <td> Washington D.C </td>
+                        <td> +1 555-445-4455 </td>
+                        <td> 6 </td>
+                        <td> 01 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-325 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Carolyn Barnes </span>
+                            </div>
+                        </td>
+                        <td> barnes&#64;trezo.com </td>
+                        <td> Chicago </td>
+                        <td> +1 555-455-9966 </td>
+                        <td> 10 </td>
+                        <td> 02 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-286 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Donna Miller </span>
+                            </div>
+                        </td>
+                        <td> donna&#64;trezo.com </td>
+                        <td> Oklahoma City </td>
+                        <td> +1 555-555-9922 </td>
+                        <td> 6 </td>
+                        <td> 03 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-463 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Barbara Cross </span>
+                            </div>
+                        </td>
+                        <td> cross&#64;trezo.com </td>
+                        <td> San Diego </td>
+                        <td> +1 555-445-7788 </td>
+                        <td> 4 </td>
+                        <td> 04 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-491 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user10.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Rebecca Block </span>
+                            </div>
+                        </td>
+                        <td> block&#64;trezo.com </td>
+                        <td> Los Angeles </td>
+                        <td> +1 555-333-2288 </td>
+                        <td> 2 </td>
+                        <td> 05 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-860 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user11.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Ramiro McCarty </span>
+                            </div>
+                        </td>
+                        <td> ramiro&#64;trezo.com </td>
+                        <td> Las Vegas </td>
+                        <td> +1 555-445-4455 </td>
+                        <td> 8 </td>
+                        <td> 06 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-431 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Robert Fairweather </span>
+                            </div>
+                        </td>
+                        <td> robert&#64;trezo.com </td>
+                        <td> San Francisco </td>
+                        <td> +1 555-555-9922 </td>
+                        <td> 6 </td>
+                        <td> 07 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-998 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user13.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Marcelino Haddock </span>
+                            </div>
+                        </td>
+                        <td> haddock&#64;trezo.com </td>
+                        <td> Washington D.C </td>
+                        <td> +1 555-455-9966 </td>
+                        <td> 9 </td>
+                        <td> 08 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-436 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Thomas Wilson </span>
+                            </div>
+                        </td>
+                        <td> wildon&#64;trezo.com </td>
+                        <td> San Diego </td>
+                        <td> +1 555-333-2288 </td>
+                        <td> 5 </td>
+                        <td> 10 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-125 </td>
+                        <td>
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <span class="d-block text-black fw-medium"> Nathaniel Hulsey </span>
+                            </div>
+                        </td>
+                        <td> hulsey&#64;trezo.com </td>
+                        <td> Chicago </td>
+                        <td> +1 555-445-7788 </td>
+                        <td> 6 </td>
+                        <td> 11 Dec 2024 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

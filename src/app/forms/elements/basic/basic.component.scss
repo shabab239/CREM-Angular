@@ -1,0 +1,116 @@
+.basic-form {
+    form {
+        .form-group {
+            .icon-button {
+                right: 20px;
+                bottom: 12px;
+                font-size: 18px;
+                position: absolute;
+                color: var(--bodyColor);
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+        .btn-box {
+            font-size: 16px;
+            margin-top: 25px;
+            padding: 11px 25px;
+            color: var(--whiteColor);
+            background-color: var(--primaryColor);
+
+            &:hover {
+                background-color: var(--secondaryColor);
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        form {
+            .form-group {
+                .icon-button {
+                    right: auto;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .basic-form {
+        form {
+            .form-group {
+                .icon-button {
+                    right: 15px;
+                    bottom: 12px;
+                    font-size: 16px;
+                }
+            }
+            .btn-box {
+                padding: 11px 25px;
+                margin-top: 17px;
+                font-size: 13px;
+            }
+        }
+        &.component-rtl-enabled {
+            form {
+                .form-group {
+                    .icon-button {
+                        right: auto;
+                        left: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .basic-form {
+        form {
+            .btn-box {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .basic-form {
+        form {
+            .btn-box {
+                font-size: 14px;
+                padding: 12px 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .basic-form {
+        form {
+            .btn-box {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

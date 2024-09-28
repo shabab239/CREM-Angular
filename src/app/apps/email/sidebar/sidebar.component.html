@@ -1,0 +1,141 @@
+<div
+    class="email-sidebar-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-content">
+        <form class="search-box position-relative">
+            <label>
+                <i class="material-symbols-outlined">
+                    search
+                </i>
+            </label>
+            <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search">
+        </form>
+        <a routerLink="/dashboard/apps/email/compose" class="compose-btn fw-medium text-center d-block w-100 border-radius">
+            <span class="position-relative d-inline-block">
+                <i class="material-symbols-outlined">
+                    edit
+                </i>
+                Compose
+            </span>
+        </a>
+        <ul class="sidebar-list p-0 list-unstyled">
+            <li>
+                <a routerLink="/dashboard/apps/email" class="d-flex align-items-center justify-content-between position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="material-symbols-outlined">
+                        inbox
+                    </i>
+                    Inbox
+                    <span class="d-block text-body">
+                        10
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        star_rate
+                    </i>
+                    Starred
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        alarm
+                    </i>
+                    Snoozed
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        send
+                    </i>
+                    Sent
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        draft
+                    </i>
+                    Drafts
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        bookmark
+                    </i>
+                    Important
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        auto_read_pause
+                    </i>
+                    Chats
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        schedule_send
+                    </i>
+                    Scheduled
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        forward_to_inbox
+                    </i>
+                    All Mail
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        live_help
+                    </i>
+                    Spam
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        delete
+                    </i>
+                    Trash
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        account_circle
+                    </i>
+                    Personal
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        trip
+                    </i>
+                    Company
+                </a>
+            </li>
+        </ul>
+        <button class="add-btn d-inline-block transition fw-medium border-radius" type="button">
+            <span class="position-relative d-inline-block">
+                <i class="material-symbols-outlined">
+                    add
+                </i>
+                Add New Label
+            </span>
+        </button>
+    </div>
+</div>

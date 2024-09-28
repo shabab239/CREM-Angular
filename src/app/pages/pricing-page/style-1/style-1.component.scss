@@ -1,0 +1,413 @@
+.pricing-style-1-card {
+    .trezo-card-content {
+        padding: 10px;
+        max-width: 500px;
+
+        .info {
+            margin-right: 45px;
+            border-right: 1px dashed var(--borderColor);
+
+            .title {
+                span {
+                    color: #8695AA;
+                    padding: 6.5px 17.3px;
+                    border: 1px solid var(--borderColor);
+                }
+            }
+            .price {
+                font-size: 36px;
+                letter-spacing: -1px;
+                margin: {
+                    top: 14px;
+                    bottom: 24px;
+                };
+                span {
+                    font-size: 24px;
+                    letter-spacing: normal;
+                }
+            }
+            .popular {
+                top: -20px;
+                right: -35px;
+                font-size: 12px;
+                padding: 6px 14px;
+                position: absolute;
+                color: var(--whiteColor);
+                background-color: #EE3E08;
+                transform: rotate(-10.156deg);
+            }
+            .btn-box {
+                font-size: 16px;
+                margin-top: 6px;
+                padding: 12px 20px;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+                
+                span {
+                    padding-left: 25px;
+
+                    i {
+                        left: 0;
+                        top: 50%;
+                        font-size: 16px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                }
+                &:hover {
+                    background-color: var(--secondaryColor);
+                }
+            }
+        }
+        .features-list {
+            margin-left: -25px;
+
+            li {
+                padding-left: 38px;
+                margin-bottom: 16px;
+
+                i {
+                    left: 0;
+                    top: 50%;
+                    position: absolute;
+                    color: var(--successColor);
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    .pricing-style-1-card {
+        .trezo-card-content {
+            .info {
+                margin: {
+                    right: 0;
+                    left: 45px;
+                };
+                border: {
+                    right-width: 0;
+                    left: 1px dashed var(--borderColor);
+                };
+                .popular {
+                    transform: rotate(10.156deg);
+                    right: auto;
+                    left: -35px;
+                }
+            }
+            .features-list {
+                margin: {
+                    left: 0;
+                    right: -25px;
+                };
+                li {
+                    padding: {
+                        left: 0;
+                        right: 38px;
+                    };
+                    i {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+            .btn-box {
+                span {
+                    padding: {
+                        left: 0;
+                        right: 25px;
+                    };
+                    i {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .pricing-style-1-card {
+        .trezo-card-content {
+            padding: 3px;
+            max-width: 100%;
+    
+            .info {
+                border-right-width: 0;
+                margin: {
+                    right: 0;
+                    bottom: 17px;
+                };
+                .title {
+                    span {
+                        padding: 6px 15px;
+                    }
+                }
+                .price {
+                    font-size: 26px;
+                    letter-spacing: -.5px;
+                    margin: {
+                        top: 15px;
+                        bottom: 11px;
+                    };
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .popular {
+                    top: 0;
+                    right: 0;
+                }
+                .btn-box {
+                    margin-top: -2px;
+                    font-size: 13px;
+                    padding: {
+                        top: 11px;
+                        bottom: 11px;
+                    };
+                    span {
+                        padding-left: 23px;
+    
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .features-list {
+                margin-left: 0;
+    
+                li {
+                    padding-left: 27px;
+                    margin-bottom: 13px;
+    
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .pricing-style-1-card {
+            .trezo-card-content {
+                .info {
+                    border-left-width: 0;
+                    margin: {
+                        left: 0;
+                    };
+                    .popular {
+                        left: 0;
+                    }
+                    .btn-box {
+                        span {
+                            padding: {
+                                left: 0;
+                                right: 23px;
+                            };
+                        }
+                    }
+                }
+                .features-list {
+                    margin-right: 0;
+                    
+                    li {
+                        padding: {
+                            left: 0;
+                            right: 27px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .pricing-style-1-card {
+        .trezo-card-content {
+            padding: 5px;
+
+            .info {
+                .btn-box {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .pricing-style-1-card {
+        .trezo-card-content {
+            padding: 5px;
+            max-width: 500px;
+    
+            .info {
+                .price {
+                    font-size: 30px;
+                    letter-spacing: -.5px;
+                    
+                    span {
+                        font-size: 22px;
+                    }
+                }
+                .popular {
+                    top: -10px;
+                }
+                .btn-box {
+                    font-size: 14px;
+                    margin-top: 0;
+                }
+            }
+            .features-list {
+                li {
+                    padding-left: 35px;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .pricing-style-1-card {
+            .trezo-card-content {
+                .features-list {
+                    li {
+                        padding: {
+                            left: 0;
+                            right: 35px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .pricing-style-1-card {
+        .trezo-card-content {
+            max-width: 408px;
+    
+            .info {
+                margin-right: 20px;
+
+                .price {
+                    margin-bottom: 15px;
+                }
+            }
+            .features-list {
+                margin-left: -20px;
+    
+                li {
+                    padding-left: 35px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .pricing-style-1-card {
+            .trezo-card-content {
+                .info {
+                    margin: {
+                        right: 0;
+                        left: 20px;
+                    };
+                }
+                .features-list {
+                    margin: {
+                        left: 0;
+                        right: -20px;
+                    };
+                    li {
+                        padding: {
+                            left: 0;
+                            right: 35px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .pricing-style-1-card {
+        .trezo-card-content {
+            padding: 0;
+            max-width: 392px;
+    
+            .info {
+                margin-right: 19px;
+    
+                .price {
+                    margin-bottom: 15px;
+                }
+                .popular {
+                    top: -15px;
+                    right: -35px;
+                    font-size: 11px;
+                    padding: 7px 14px;
+                }
+            }
+            .features-list {
+                margin-left: -18px;
+    
+                li {
+                    padding-left: 35px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .pricing-style-1-card {
+            .trezo-card-content {
+                .info {
+                    margin: {
+                        right: 0;
+                        left: 19px;
+                    };
+                    .popular {
+                        left: -35px;
+                        right: auto;
+                    }
+                }
+                .features-list {
+                    margin: {
+                        left: 0;
+                        right: -18px;
+                    };
+                    li {
+                        padding: {
+                            left: 0;
+                            right: 35px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

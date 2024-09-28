@@ -1,0 +1,117 @@
+.team-card .trezo-card-content .info img {
+  width: 65px;
+  height: 65px;
+  margin-right: 12px;
+  border: 2px solid var(--borderColor);
+}
+.team-card .trezo-card-content .info .title {
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+.team-card .trezo-card-content .info .action-buttons button, .team-card .trezo-card-content .info .action-buttons a {
+  color: var(--primaryColor);
+  margin-right: 9px;
+}
+.team-card .trezo-card-content .info .action-buttons button i, .team-card .trezo-card-content .info .action-buttons a i {
+  font-size: 16px;
+}
+.team-card .trezo-card-content .info .action-buttons button:nth-child(2), .team-card .trezo-card-content .info .action-buttons a:nth-child(2) {
+  color: var(--bodyColor);
+}
+.team-card .trezo-card-content .info .action-buttons button:nth-child(3), .team-card .trezo-card-content .info .action-buttons a:nth-child(3) {
+  color: var(--dangerColor);
+}
+.team-card .trezo-card-content .info .action-buttons button:last-child, .team-card .trezo-card-content .info .action-buttons a:last-child {
+  margin-right: 0;
+}
+.team-card .trezo-card-content .team-name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.team-card .trezo-card-content .team-name span {
+  border-radius: 30px;
+  padding: 4.5px 15px;
+}
+.team-card .trezo-card-content .members span {
+  margin-bottom: 8px;
+}
+.team-card .trezo-card-content .members div img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--borderColor);
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.team-card .trezo-card-content .members div div {
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--whiteColor);
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.team-card .trezo-card-content .t-progress {
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+.team-card .trezo-card-content .t-progress span {
+  margin-bottom: 8px;
+}
+.team-card .trezo-card-content .t-btn {
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  padding: 8.5px 15px;
+}
+.team-card .trezo-card-content .t-btn:hover {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+
+.component-dark-theme .team-card .trezo-card-content .members div div {
+  border-color: #0C1427;
+}
+.component-dark-theme .team-card .trezo-card-content .bg-purple-100, .component-dark-theme .team-card .trezo-card-content .bg-secondary-100, .component-dark-theme .team-card .trezo-card-content .bg-success-100, .component-dark-theme .team-card .trezo-card-content .bg-orange-100, .component-dark-theme .team-card .trezo-card-content .bg-primary-100, .component-dark-theme .team-card .trezo-card-content .bg-danger-100 {
+  background-color: #15203c !important;
+}
+
+.component-rtl-enabled .team-card .trezo-card-content .info img {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .team-card .trezo-card-content .info img {
+    width: 60px;
+    height: 60px;
+  }
+  .team-card .trezo-card-content .info .title {
+    font-size: 14px;
+  }
+  .team-card .trezo-card-content .t-progress {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .team-card .trezo-card-content .t-progress span {
+    margin-bottom: 8px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-card .trezo-card-content .info img {
+    width: 60px;
+    height: 60px;
+  }
+  .team-card .trezo-card-content .info .title {
+    font-size: 15px;
+  }
+  .team-card .trezo-card-content .t-progress {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=pm-teams.component.css.map */

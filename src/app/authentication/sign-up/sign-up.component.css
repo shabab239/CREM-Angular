@@ -1,0 +1,342 @@
+.sign-up-area {
+  background-color: var(--whiteColor);
+  padding-top: 135px;
+  padding-bottom: 135px;
+}
+.sign-up-area.dark-theme {
+  background-color: #0A0E19;
+}
+
+.trezo-form {
+  max-width: 1255px;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+.trezo-form .form-image {
+  border-radius: 24px;
+  margin-right: -25px;
+}
+.trezo-form .form-image img {
+  border-radius: 24px;
+}
+.trezo-form .form-content {
+  padding-left: 90px;
+}
+.trezo-form .form-content .title {
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+.trezo-form .form-content .title h1 {
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+.trezo-form .form-content .title p {
+  font-size: 16px;
+  color: #445164;
+}
+.trezo-form .form-content .with-socials {
+  margin-bottom: 23px;
+}
+.trezo-form .form-content .with-socials div {
+  flex-grow: 1;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.trezo-form .form-content .with-socials div:first-child {
+  margin-left: 0;
+}
+.trezo-form .form-content .with-socials div:last-child {
+  margin-right: 0;
+}
+.trezo-form .form-content .with-socials button {
+  padding: 10.5px 25px;
+  color: var(--blackColor);
+  border: 1px solid #D6DAE1;
+  background: var(--whiteColor);
+  box-shadow: 0px 4px 16px -2px rgba(27, 37, 51, 0.06);
+}
+.trezo-form .form-content form .form-group {
+  margin-bottom: 15px;
+}
+.trezo-form .form-content form .form-group .main-label {
+  margin-bottom: 12px;
+}
+.trezo-form .form-content form .form-group .icon-button {
+  right: 20px;
+  bottom: 12px;
+  font-size: 18px;
+  position: absolute;
+  color: var(--bodyColor);
+}
+.trezo-form .form-content form .form-group .icon-button:hover {
+  color: var(--primaryColor);
+}
+.trezo-form .form-content form .btn-box {
+  font-size: 16px;
+  margin-top: 24px;
+  padding: 12px 25px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.trezo-form .form-content form .btn-box i {
+  margin-right: 5px;
+}
+.trezo-form .form-content form .btn-box:hover {
+  background-color: var(--secondaryColor);
+}
+.trezo-form .form-content form .info {
+  line-height: 1.6;
+}
+.trezo-form .form-content form .info a:hover {
+  text-decoration: underline;
+}
+.trezo-form.component-dark-theme .form-content .logo img {
+  display: none;
+}
+.trezo-form.component-dark-theme .form-content .logo img.d-none {
+  display: inline !important;
+}
+.trezo-form.component-dark-theme .form-content .title p {
+  color: var(--bodyColor);
+}
+.trezo-form.component-dark-theme .form-content .with-socials button {
+  background: #0A0E19;
+  color: var(--whiteColor);
+  border-color: var(--borderColor);
+}
+.trezo-form.component-rtl-enabled .form-image {
+  margin-right: 0;
+  margin-left: -24px;
+}
+.trezo-form.component-rtl-enabled .form-content {
+  padding-left: 0;
+  padding-right: 90px;
+}
+.trezo-form.component-rtl-enabled .form-content .with-socials div:first-child {
+  margin-left: 6px;
+  margin-right: 0;
+}
+.trezo-form.component-rtl-enabled .form-content .with-socials div:last-child {
+  margin-right: 6px;
+  margin-left: 0;
+}
+.trezo-form.component-rtl-enabled .form-content form .btn-box span i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .sign-up-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .trezo-form {
+    max-width: 100%;
+  }
+  .trezo-form .form-image {
+    border-radius: 15px;
+    margin-right: 0;
+    margin-top: 25px;
+  }
+  .trezo-form .form-image img {
+    border-radius: 15px;
+  }
+  .trezo-form .form-content {
+    padding-left: 0;
+  }
+  .trezo-form .form-content .title {
+    margin-top: 17px;
+    margin-bottom: 15px;
+  }
+  .trezo-form .form-content .title h1 {
+    font-size: 22px;
+  }
+  .trezo-form .form-content .title p {
+    font-size: 13px;
+  }
+  .trezo-form .form-content .with-socials {
+    margin-bottom: 20px;
+  }
+  .trezo-form .form-content .with-socials div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .trezo-form .form-content .with-socials button {
+    padding: 8px 15px;
+  }
+  .trezo-form .form-content form .form-group .main-label {
+    margin-bottom: 10px;
+  }
+  .trezo-form .form-content form .form-group .icon-button {
+    right: 15px;
+    bottom: 12px;
+    font-size: 16px;
+  }
+  .trezo-form .form-content form .btn-box {
+    padding: 12px 25px;
+    font-size: 13px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+  .trezo-form .form-content form .btn-box i {
+    font-size: 20px;
+  }
+  .trezo-form.component-rtl-enabled .form-image {
+    margin-left: 0;
+  }
+  .trezo-form.component-rtl-enabled .form-content {
+    padding-right: 0;
+  }
+  .trezo-form.component-rtl-enabled .form-content .with-socials div:first-child {
+    margin-left: 5px;
+  }
+  .trezo-form.component-rtl-enabled .form-content .with-socials div:last-child {
+    margin-right: 5px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .trezo-form {
+    max-width: 540px;
+  }
+  .trezo-form .form-content .title {
+    margin-top: 20px;
+    margin-bottom: 17px;
+  }
+  .trezo-form .form-content form .btn-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sign-up-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .trezo-form {
+    max-width: 720px;
+  }
+  .trezo-form .form-image {
+    margin-right: 0;
+    margin-top: 25px;
+  }
+  .trezo-form .form-content {
+    padding-left: 0;
+  }
+  .trezo-form .form-content .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .trezo-form .form-content .title h1 {
+    font-size: 24px;
+  }
+  .trezo-form .form-content .title p {
+    font-size: 14px;
+  }
+  .trezo-form .form-content .with-socials {
+    margin-bottom: 20px;
+  }
+  .trezo-form .form-content .with-socials div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .trezo-form .form-content form .btn-box {
+    font-size: 14px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .trezo-form .form-content form .btn-box i {
+    font-size: 22px;
+  }
+  .trezo-form.component-rtl-enabled .form-image {
+    margin-left: 0;
+  }
+  .trezo-form.component-rtl-enabled .form-content {
+    padding-right: 0;
+  }
+  .trezo-form.component-rtl-enabled .form-content .with-socials div:first-child {
+    margin-left: 5px;
+  }
+  .trezo-form.component-rtl-enabled .form-content .with-socials div:last-child {
+    margin-right: 5px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sign-up-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .trezo-form {
+    max-width: 960px;
+  }
+  .trezo-form .form-image {
+    margin-right: 0;
+  }
+  .trezo-form .form-content {
+    padding-left: 15px;
+  }
+  .trezo-form .form-content .title h1 {
+    font-size: 26px;
+  }
+  .trezo-form .form-content .title p {
+    font-size: 15px;
+  }
+  .trezo-form .form-content form .btn-box {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .trezo-form.component-rtl-enabled .form-image {
+    margin-left: 0;
+  }
+  .trezo-form.component-rtl-enabled .form-content {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sign-up-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .trezo-form {
+    max-width: 1140px;
+  }
+  .trezo-form .form-image {
+    margin-right: 0;
+  }
+  .trezo-form .form-content {
+    padding-left: 25px;
+  }
+  .trezo-form.component-rtl-enabled .form-image {
+    margin-left: 0;
+  }
+  .trezo-form.component-rtl-enabled .form-content {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+}
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+  .trezo-form .form-image {
+    margin-right: -45px;
+  }
+  .trezo-form .form-content {
+    padding-left: 120px;
+  }
+  .trezo-form.component-rtl-enabled .form-image {
+    margin-right: 0;
+    margin-left: -45px;
+  }
+  .trezo-form.component-rtl-enabled .form-content {
+    padding-left: 0;
+    padding-right: 120px;
+  }
+}/*# sourceMappingURL=sign-up.component.css.map */

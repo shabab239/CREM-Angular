@@ -1,0 +1,113 @@
+.to-do-list-card .trezo-card-content .basic-table .table thead tr th:first-child, .to-do-list-card .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 0;
+}
+.to-do-list-card .trezo-card-content .basic-table .table thead tr th:nth-child(2), .to-do-list-card .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 15px;
+}
+.to-do-list-card .trezo-card-content .basic-table .table tbody tr td:first-child, .to-do-list-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 0;
+}
+.to-do-list-card .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .to-do-list-card .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+.to-do-list-card .trezo-card-content .add-new-task-btn {
+  padding: 6px 13px;
+  color: var(--primaryColor);
+  background-color: transparent;
+  border: 1px solid var(--primaryColor);
+  margin-top: 15px;
+  margin-right: 25px;
+}
+.to-do-list-card .trezo-card-content .add-new-task-btn span {
+  padding-left: 22px;
+}
+.to-do-list-card .trezo-card-content .add-new-task-btn span i {
+  top: 50%;
+  left: -4px;
+  font-size: 22px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.to-do-list-card .trezo-card-content .add-new-task-btn:hover {
+  color: var(--whiteColor);
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .add-new-task-btn {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .add-new-task-btn span {
+  padding-left: 0;
+  padding-right: 22px;
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .add-new-task-btn span i {
+  left: auto;
+  right: -4px;
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 25px !important;
+  padding-right: 15px !important;
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 25px !important;
+  padding-left: 0 !important;
+}
+.to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 25px !important;
+  padding-right: 15px !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .to-do-list-card .trezo-card-header .trezo-card-subtitle {
+    margin-top: 12px;
+  }
+  .to-do-list-card .trezo-card-content .add-new-task-btn {
+    margin-right: 17px;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 17px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 17px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 17px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 17px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .add-new-task-btn {
+    margin-left: 17px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .to-do-list-card .trezo-card-content .add-new-task-btn {
+    margin-right: 20px;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:first-child, .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:first-child {
+    padding-right: 20px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table thead tr th:nth-child(2), .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+    padding-left: 20px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-right: 20px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .to-do-list-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+    padding-left: 20px !important;
+  }
+  .to-do-list-card.component-rtl-enabled .trezo-card-content .add-new-task-btn {
+    margin-left: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=to-do-list.component.css.map */

@@ -1,0 +1,22 @@
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Pie Monochrome Chart
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="chart">
+            <apx-chart
+                [chart]="chartOptions.chart!"
+                [series]="chartOptions.series!"
+                [legend]="chartOptions.legend!"
+                [theme]="chartOptions.theme!"
+                [colors]="chartOptions.colors!"
+                [labels]="chartOptions.labels!"
+                [dataLabels]="chartOptions.dataLabels!"
+            ></apx-chart>
+        </div>
+    </div>
+</div>

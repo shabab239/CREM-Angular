@@ -1,0 +1,519 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Projects List
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Projects List
+        </li>
+    </ol>
+</div>
+
+<!-- Projects List -->
+<div class="projects-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                All Projects
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/project-management-page/create-project">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Create New Project
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Project Name </th>
+                        <th scope="col" class="fw-medium"> Client </th>
+                        <th scope="col" class="fw-medium"> Assignees </th>
+                        <th scope="col" class="fw-medium"> Budget </th>
+                        <th scope="col" class="fw-medium"> Start Date </th>
+                        <th scope="col" class="fw-medium"> End Date </th>
+                        <th scope="col" class="fw-medium"> Status </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #854 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Project CyberSphere </a>
+                        </td>
+                        <td> NovaTech Solutions </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user11.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +10 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $4,500 </td>
+                        <td class="text-body"> 25 Mar 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pFinished"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #853 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Digital Oasis Initiative </a>
+                        </td>
+                        <td> AlphaWave Innovations </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +04 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $6,800 </td>
+                        <td class="text-body"> 20 Mar 2024 </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pInProgress"> In Progress </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #852 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> CloudScape Evolution </a>
+                        </td>
+                        <td> InnovateIQ Inc. </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user10.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +07 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $2,500 </td>
+                        <td class="text-body"> 15 Mar 2024 </td>
+                        <td class="text-body"> 15 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pPending"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #851 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Data Dynamo Drive </a>
+                        </td>
+                        <td> BlueSky Technologies </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user13.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +15 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $7,500 </td>
+                        <td class="text-body"> 10 Mar 2024 </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pInProgress"> In Progress </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #850 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> QuantumLeap Quest </a>
+                        </td>
+                        <td> NexGen Systems </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +03 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $3,400 </td>
+                        <td class="text-body"> 05 Mar 2024 </td>
+                        <td class="text-body"> 05 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pFinished"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #849 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Product Development </a>
+                        </td>
+                        <td> NovaTech Solutions </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user11.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +10 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $4,500 </td>
+                        <td class="text-body"> 25 Mar 2024 </td>
+                        <td class="text-body"> 25 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pFinished"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #848 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Python Upgrade </a>
+                        </td>
+                        <td> AlphaWave Innovations </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +04 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $6,800 </td>
+                        <td class="text-body"> 20 Mar 2024 </td>
+                        <td class="text-body"> 20 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pInProgress"> In Progress </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #847 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Project Monitoring </a>
+                        </td>
+                        <td> InnovateIQ Inc. </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user10.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +07 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $2,500 </td>
+                        <td class="text-body"> 15 Mar 2024 </td>
+                        <td class="text-body"> 15 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pPending"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #846 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Project Alpho </a>
+                        </td>
+                        <td> BlueSky Technologies </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user13.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +15 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $7,500 </td>
+                        <td class="text-body"> 10 Mar 2024 </td>
+                        <td class="text-body"> 10 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pInProgress"> In Progress </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #845 </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page" class="project-name fw-medium"> Dashboard Design </a>
+                        </td>
+                        <td> NexGen Systems </td>
+                        <td>
+                            <div class="assignees d-flex align-items-center">
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div>
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium"> +03 </div>
+                            </div>
+                        </td>
+                        <td class="text-body"> $3,400 </td>
+                        <td class="text-body"> 05 Mar 2024 </td>
+                        <td class="text-body"> 05 Apr 2024 </td>
+                        <td>
+                            <span class="trezo-badge pFinished"> Finished </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

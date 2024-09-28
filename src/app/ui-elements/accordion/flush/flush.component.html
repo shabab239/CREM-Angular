@@ -1,0 +1,53 @@
+<div class="accordion accordion-flush">
+    <div class="accordion-item">
+        <button
+            class="accordion-button collapsed"
+            type="button"
+            (click)="toggleSection(0)"
+            [ngClass]="{ 'open': isSectionOpen(0) }"
+        >
+            Accordion Item #1
+        </button>
+        <div class="accordion-collapse collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+            <div class="accordion-body">
+                <p>
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button
+            class="accordion-button collapsed"
+            type="button"
+            (click)="toggleSection(1)"
+            [ngClass]="{ 'open': isSectionOpen(1) }"
+        >
+            Accordion Item #2
+        </button>
+        <div class="accordion-collapse collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+            <div class="accordion-body">
+                <p>
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button
+            class="accordion-button collapsed"
+            type="button"
+            (click)="toggleSection(2)"
+            [ngClass]="{ 'open': isSectionOpen(2) }"
+        >
+            Accordion Item #3
+        </button>
+        <div class="accordion-collapse collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+            <div class="accordion-body">
+                <p>
+                    Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

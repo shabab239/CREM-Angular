@@ -1,0 +1,70 @@
+<div
+    class="advanced-form"
+    [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label class="main-label d-block fw-medium text-black">
+                Email Address
+            </label>
+            <input type="text" class="form-control" placeholder="Enter email address" id="email" formControlName="email">
+            <div class="form-text text-danger" *ngIf="authForm.get('email')!.hasError('required') && authForm.get('email')!.touched">
+                Email is required.
+            </div>
+            <div class="form-text text-danger" *ngIf="authForm.get('email')!.hasError('email') && authForm.get('email')!.touched">
+                Please enter a valid email address.
+            </div>
+        </div>
+        <div class="form-group position-relative">
+            <label class="main-label d-block fw-medium text-black">
+                Your Password
+            </label>
+            <input [type]="isPasswordVisible ? 'text' : 'password'" [value]="password" (input)="onPasswordInput($event)" class="form-control" placeholder="Type password" id="password" formControlName="password">
+            <button type="button" (click)="togglePasswordVisibility()" class="icon-button p-0 border-0 bg-transparent transition">
+                <i [ngClass]="isPasswordVisible ? 'ri-eye-line' : 'ri-eye-off-line'"></i>
+            </button>
+            <div class="form-text text-danger" *ngIf="authForm.get('password')!.hasError('required') && authForm.get('password')!.touched">
+                Password is required.
+            </div>
+            <div class="form-text text-danger" *ngIf="authForm.get('password')!.hasError('minlength') && authForm.get('password')!.touched">
+                Password must be at least 8 characters long.
+            </div>
+        </div>
+        <div class="info d-flex justify-content-between align-items-center">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe2">
+                <label class="form-check-label" for="rememberMe2">
+                    Remember me
+                </label>
+            </div>
+            <a routerLink="." class="d-inline-block text-primary">
+                Forgot Password?
+            </a>
+        </div>
+        <button class="btn-box d-block w-100 border-0 transition border-radius fw-medium" type="submit" [disabled]="authForm.invalid">
+            Sign In
+        </button>
+        <div class="signin-with-socials text-center">
+            <div class="or z-1 position-relative">
+                <span class="d-inline-block">
+                    or sign in with
+                </span>
+            </div>
+            <div class="socials">
+                <button type="button" class="facebook d-inline-block rounded-circle border-0 p-0">
+                    <i class="ri-facebook-fill"></i>
+                </button>
+                <button type="button" class="twitter d-inline-block rounded-circle border-0 p-0">
+                    <i class="ri-twitter-x-fill"></i>
+                </button>
+                <button type="button" class="google d-inline-block rounded-circle border-0 p-0">
+                    <i class="ri-google-fill"></i>
+                </button>
+                <button type="button" class="linkedin d-inline-block rounded-circle border-0 p-0">
+                    <i class="ri-linkedin-fill"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

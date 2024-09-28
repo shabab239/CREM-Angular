@@ -1,0 +1,110 @@
+.seller-overview-card {
+  padding-bottom: 0;
+}
+.seller-overview-card .trezo-card-content .box {
+  padding: 22px 20px;
+  border-radius: 7px;
+  margin-bottom: 25px;
+}
+.seller-overview-card .trezo-card-content .box .icon {
+  margin-right: 12px;
+}
+.seller-overview-card .trezo-card-content .box .icon i {
+  font-size: 40px;
+}
+.seller-overview-card .trezo-card-content .box h5 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.seller-overview-card .trezo-card-content .box .info {
+  margin-top: 25px;
+}
+.seller-overview-card .trezo-card-content .box .info .sub-title {
+  font-size: 13px;
+}
+.seller-overview-card .trezo-card-content .box .info .info-badge {
+  font-size: 13px;
+  color: #1E8308;
+  padding: 1px 8.3px;
+  border-radius: 100px;
+  border: 1px solid #82FC5A;
+  background-color: #D8FFC8;
+}
+.seller-overview-card .trezo-card-content .box .info .info-badge.down {
+  border-color: #FFCEA9;
+  color: var(--dangerColor);
+  background-color: #FFE1DD;
+}
+.seller-overview-card .trezo-card-content .box .info .users img {
+  width: 34px;
+  height: 34px;
+  margin-right: -14px;
+  border: 1px solid var(--whiteColor);
+}
+.seller-overview-card .trezo-card-content .box .info .users span {
+  width: 34px;
+  height: 34px;
+  font-size: 12px;
+  border: 1px solid var(--whiteColor);
+}
+.seller-overview-card.component-dark-theme .bg-primary-50, .seller-overview-card.component-dark-theme .bg-orange-50, .seller-overview-card.component-dark-theme .bg-success-50, .seller-overview-card.component-dark-theme .bg-purple-50 {
+  background-color: #15203c !important;
+}
+.seller-overview-card.component-rtl-enabled .trezo-card-content .box .icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.seller-overview-card.component-rtl-enabled .trezo-card-content .box .info .users img {
+  margin-right: 0;
+  margin-left: -14px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .seller-overview-card .trezo-card-content .box {
+    padding: 17px;
+    margin-bottom: 17px;
+  }
+  .seller-overview-card .trezo-card-content .box .icon i {
+    font-size: 35px;
+  }
+  .seller-overview-card .trezo-card-content .box h5 {
+    font-size: 18px;
+  }
+  .seller-overview-card .trezo-card-content .box .info {
+    margin-top: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .seller-overview-card .trezo-card-content .row {
+    margin-left: -8.5px;
+    margin-right: -8.5px;
+  }
+  .seller-overview-card .trezo-card-content .row .col-sm-6 {
+    padding-left: 8.5px;
+    padding-right: 8.5px;
+  }
+  .seller-overview-card .trezo-card-content .box {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .seller-overview-card .trezo-card-content .box .info {
+    margin-top: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .seller-overview-card .trezo-card-content .box {
+    padding: 20px;
+  }
+  .seller-overview-card .trezo-card-content .box h5 {
+    font-size: 19px;
+  }
+  .seller-overview-card .trezo-card-content .box .info {
+    margin-top: 20px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=seller-overview.component.css.map */

@@ -1,0 +1,158 @@
+.single-testimonial-item {
+    padding: 40px;
+    margin-bottom: 30px;
+
+    .ratings {
+        margin-bottom: 20px;
+
+        i {
+            font-size: 19px;
+            color: #FE7A36;
+            margin-right: 3px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    p {
+        font: {
+            size: 16px;
+            weight: 500;
+        };
+    }
+    .info {
+        margin-top: 20px;
+
+        img {
+            width: 50px;
+            margin-right: 15px;
+        }
+        h5 {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+    }
+}
+.component-rtl-enabled {
+    .single-testimonial-item {
+        .ratings {
+            i {
+                margin: {
+                    right: 0;
+                    left: 3px;
+                };
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .info {
+            img {
+                margin: {
+                    right: 0;
+                    left: 15px;
+                };
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-testimonial-item {
+        padding: 22px 20px;
+    
+        .ratings {
+            margin-bottom: 12px;
+    
+            i {
+                font-size: 16px;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+        .info {
+            margin-top: 15px;
+    
+            img {
+                margin-right: 12px;
+            }
+            h5 {
+                font-size: 14px;
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .single-testimonial-item {
+            .info {
+                img {
+                    margin: {
+                        right: 0;
+                        left: 12px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-testimonial-item {
+        padding: 30px;
+    
+        .ratings {
+            margin-bottom: 15px;
+    
+            i {
+                font-size: 18px;
+            }
+        }
+        p {
+            font-size: 15px;
+        }
+        .info {
+            margin-top: 18px;
+    
+            h5 {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .single-testimonial-item {
+        padding: 30px;
+    
+        .ratings {
+            i {
+                font-size: 18px;
+            }
+        }
+        p {
+            font: {
+                size: 16px;
+                weight: 500;
+            };
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,116 @@
+<div
+    class="sidebar-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-content">
+        <form class="search-box position-relative">
+            <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search here.....">
+            <button type="submit" class="bg-transparent p-0 border-0 transition">
+                <i class="material-symbols-outlined">
+                    search
+                </i>
+            </button>
+        </form>
+        <ul class="sidebar-list mt-0 p-0 list-unstyled">
+            <li>
+                <a routerLink="/dashboard/apps/file-manager" class="d-flex align-items-center justify-content-between position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="material-symbols-outlined">
+                        drive_eta
+                    </i>
+                    My Drive
+                    <span class="d-block text-body">
+                        6
+                    </span>
+                </a>
+                <ul class="list-unstyled">
+                    <li>
+                        <a routerLink="/dashboard/apps/file-manager/assets" class="d-inline-block position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Assets
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/dashboard/apps/file-manager/projects" class="d-inline-block position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/dashboard/apps/file-manager/personal" class="d-inline-block position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Personal
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/dashboard/apps/file-manager/applications" class="d-inline-block position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Applications
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/dashboard/apps/file-manager/documents" class="d-flex align-items-center justify-content-between position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="material-symbols-outlined">
+                        description
+                    </i>
+                    Documents
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/apps/file-manager/media" class="d-flex align-items-center justify-content-between position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="material-symbols-outlined">
+                        perm_media
+                    </i>
+                    Media
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/apps/file-manager/recents" class="d-flex align-items-center justify-content-between position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="material-symbols-outlined">
+                        schedule
+                    </i>
+                    Recents
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard/apps/file-manager/important" class="d-flex align-items-center justify-content-between position-relative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="material-symbols-outlined">
+                        grade
+                    </i>
+                    Important
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        report_gmailerrorred
+                    </i>
+                    Spam
+                    <span class="d-block text-body">
+                        10
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="d-flex align-items-center justify-content-between position-relative">
+                    <i class="material-symbols-outlined">
+                        delete
+                    </i>
+                    Trash
+                    <span class="d-block text-body">
+                        15
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <div class="storage-status">
+            <h6>
+                Storage Status
+            </h6>
+            <span class="d-block text-body">
+                % 50 GB used of 100 GB
+            </span>
+            <div class="progress trezo-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 50%"></div>
+            </div>
+        </div>
+    </div>
+</div>

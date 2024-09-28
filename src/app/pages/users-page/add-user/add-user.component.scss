@@ -1,0 +1,74 @@
+.add-user-card {
+    .trezo-card-content {
+        .boxes {
+            margin-bottom: 25px;
+
+            .form-check {
+                margin-bottom: 10px;
+
+                .form-check-input {
+                    margin-top: 2px;
+                }
+                .form-check-label {
+                    cursor: pointer;
+                    margin-left: 2px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .boxes {
+                .form-check {
+                    .form-check-label {
+                        margin: {
+                            left: 0;
+                            right: 2px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .add-user-card {
+        .trezo-card-content {
+            .boxes {
+                margin-bottom: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .add-user-card {
+        .trezo-card-content {
+            .boxes {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

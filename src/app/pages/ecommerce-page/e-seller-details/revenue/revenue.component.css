@@ -1,0 +1,9 @@
+.revenue-card .trezo-card-content .chart {
+  margin-top: -8px;
+  margin-left: -13px;
+  margin-bottom: -22px;
+}
+
+::ng-deep .revenue-card .trezo-card-content apx-chart .apexcharts-tooltip-series-group.apexcharts-active {
+  padding-bottom: 4px;
+}/*# sourceMappingURL=revenue.component.css.map */

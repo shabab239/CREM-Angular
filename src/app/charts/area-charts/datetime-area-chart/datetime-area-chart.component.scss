@@ -1,0 +1,34 @@
+button {
+    box-shadow: rgba(0, 0, 0, .16) 0px 1px 4px;
+    background: var(--whiteColor);
+    color: var(--blackColor);
+    border-radius: 2px;
+    padding: 2px 18px;
+    cursor: pointer;
+    border: 0;
+
+    &.active {
+        color: var(--whiteColor);
+        background: var(--primaryColor);
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+.chart {
+    margin: {
+        bottom: -20px !important;
+        left: -13px;
+    };
+}
+.component-dark-theme {
+    button {
+        background: #0A0E19;
+        color: var(--whiteColor);
+    
+        &.active {
+            color: var(--whiteColor);
+            background: var(--primaryColor);
+        }
+    }
+}

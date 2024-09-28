@@ -1,0 +1,63 @@
+<div
+    class="contact-area pt-150"
+    [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-image border-radius">
+                    <img src="images/front-pages/contact.jpg" class="border-radius" alt="contact-image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-content">
+                    <div class="section-title">
+                        <div class="sub-title d-inline-block position-relative">
+                            <span class="d-inline-block position-relative text-purple">
+                                Contact Us
+                            </span>
+                        </div>
+                        <h2 class="mb-0">
+                            How Can We Help? We Love to Hear From You. Send Us a Message!
+                        </h2>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Full Name
+                            </label>
+                            <input type="text" class="form-control" placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Email Address
+                            </label>
+                            <input type="text" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Phone Number
+                            </label>
+                            <input type="text" class="form-control" placeholder="Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Message
+                            </label>
+                            <textarea class="form-control" placeholder="Write your message..."></textarea>
+                        </div>
+                        <button type="button" class="btn-box d-block border-0 w-100 border-radius transition fw-medium">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <i class="material-symbols-outlined">
+                                    autorenew
+                                </i>
+                                Send
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

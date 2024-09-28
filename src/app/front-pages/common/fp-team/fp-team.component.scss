@@ -1,0 +1,358 @@
+.section-title {
+    max-width: 630px;
+}
+.single-team-member {
+    .image {
+        margin-bottom: 1px;
+        padding: 15px 15px 12px;
+        background: rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(3.5999999046325684px);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+    }
+    .content {
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(3.5999999046325684px);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .socials {
+            a {
+                font-size: 20px;
+                margin-right: 8px;
+                color: var(--primaryColor);
+
+                &:hover {
+                    color: var(--purpleColor);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.component-dark-theme {
+    .single-team-member {
+        .image {
+            background: rgba(0, 0, 0, 0.26);
+            border-color: rgba(0, 0, 0, 0.24);
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.26);
+            border-color: rgba(0, 0, 0, 0.24);
+        }
+    }
+}
+.component-rtl-enabled {
+    .single-team-member {
+        direction: rtl;
+
+        .content {
+            .socials {
+                a {
+                    margin: {
+                        right: 0;
+                        left: 8px;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .shape1 {
+        left: auto;
+        right: 90px;
+    }
+    .shape2 {
+        right: auto;
+        left: -15px;
+    }
+}
+::ng-deep {
+    .team-slides {
+        .owl-theme {
+            .owl-nav {
+                right: 0;
+                top: -164px;
+                margin-top: 0;
+                position: absolute;
+
+                [class*=owl-] {
+                    padding: 0;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    position: relative;
+                    color: var(--bodyColor);
+                    background-color: #ECF0FF;
+                    transition: var(--transition);
+                    margin: {
+                        left: 7.5px;
+                        right: 7.5px;
+                    };
+                    i {
+                        left: 0;
+                        right: 0;
+                        top: 50%;
+                        font-size: 24px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        color: var(--whiteColor);
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    .component-dark-theme {
+        .team-slides {
+            .owl-theme {
+                .owl-nav {
+                    [class*=owl-] {
+                        background-color: #15203c;
+                        
+                        &:hover {
+                            background-color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .team-slides {
+            .owl-theme {
+                .owl-nav {
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.shape1 {
+    left: 90px;
+    z-index: -1;
+    bottom: 15px;
+    position: absolute;
+    filter: blur(150px);
+}
+.shape2 {
+    z-index: -1;
+    right: -15px;
+    bottom: -130px;
+    position: absolute;
+    filter: blur(125px);
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .section-title {
+        max-width: 100%;
+    }
+    .single-team-member {
+        .content {
+            padding: 22px;
+    
+            h3 {
+                font-size: 16px;
+            }
+            .socials {
+                a {
+                    margin-right: 5px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .single-team-member {
+            .content {
+                .socials {
+                    a {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .shape1 {
+            left: 0;
+            right: 0;
+        }
+        .shape2 {
+            right: 0;
+            left: 0;
+        }
+    }
+    ::ng-deep {
+        .team-slides {
+            .owl-theme {
+                .owl-nav {
+                    top: 0;
+                    margin-top: 25px;
+                    position: relative;
+
+                    [class*=owl-] {
+                        width: 40px;
+                        height: 40px;
+                        margin: {
+                            left: 5px;
+                            right: 5px;
+                        };
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shape1 {
+        left: 0;
+        right: 0;
+        bottom: 150px;
+        text-align: center;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .shape2 {
+        text-align: center;
+        bottom: -100px;
+        right: 0;
+        left: 0;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .section-title {
+        max-width: 500px;
+    }
+    .single-team-member {
+        .content {
+            padding: 25px;
+    
+            h3 {
+                font-size: 17px;
+            }
+            .socials {
+                a {
+                    font-size: 18px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .single-team-member {
+            .content {
+                .socials {
+                    a {
+                        margin: {
+                            right: 0;
+                            left: 7px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .team-slides {
+            .owl-theme {
+                .owl-nav {
+                    top: -110px;
+    
+                    [class*=owl-] {
+                        width: 50px;
+                        height: 50px;
+                        
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shape2 {
+        bottom: -30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .single-team-member {
+        .content {
+            .socials {
+                a {
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .single-team-member {
+            .content {
+                .socials {
+                    a {
+                        margin: {
+                            right: 0;
+                            left: 5px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .team-slides {
+            .owl-theme {
+                .owl-nav {
+                    top: -138px;
+    
+                    [class*=owl-] {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

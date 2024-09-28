@@ -1,0 +1,40 @@
+.project-folder-card .trezo-card-content .title {
+  margin-top: 40px;
+}
+.project-folder-card .trezo-card-content .icon {
+  margin-right: 12px;
+}
+.project-folder-card .trezo-card-content .info {
+  margin-top: 40px;
+}
+.project-folder-card .trezo-card-content .info span {
+  font-size: 13px;
+}
+
+.component-rtl-enabled .project-folder-card .trezo-card-content .icon {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .project-folder-card .trezo-card-content .title {
+    margin-top: 22px;
+  }
+  .project-folder-card .trezo-card-content .info {
+    margin-top: 20px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .project-folder-card .trezo-card-content .title {
+    margin-top: 35px;
+  }
+  .project-folder-card .trezo-card-content .info {
+    margin-top: 35px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=projects.component.css.map */

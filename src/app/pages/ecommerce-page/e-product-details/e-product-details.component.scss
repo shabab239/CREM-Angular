@@ -1,0 +1,1177 @@
+.product-details-card {
+    .trezo-card-content {
+        max-width: 1070px;
+        padding: 15px 15px 75px;
+
+        .product-details-image {
+            margin-right: 30px;
+
+            .product-gallery__featured {
+                margin-bottom: 25px;
+            }
+            .product-gallery__carousel {
+                a {
+                    position: relative;
+
+                    &::before {
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        content: '';
+                        visibility: hidden;
+                        border-radius: 7px;
+                        position: absolute;
+                        border: 1px solid #FE7A36;
+                        transition: var(--transition);
+                    }
+                }
+                // .active {
+                //     a {
+                //         &::before {
+                //             opacity: 1;
+                //             visibility: visible;
+                //         }
+                //     }
+                // }
+            }
+        }
+        .product-details-content {
+            .stock {
+                font-size: 12px;
+                color: #1E8308;
+                border-radius: 6px;
+                margin-bottom: 14px;
+                padding: 4px 16px 4px 37px;
+                background-color: #EEFFE5;
+
+                i {
+                    top: 50%;
+                    left: 12px;
+                    font-size: 19px;
+                    margin-top: 0.2px;
+                    position: absolute;
+                    color: var(--successColor);
+                    transform: translateY(-50%);
+                }
+            }
+            h6 {
+                font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 16px;
+            }
+            .ratings {
+                border-bottom: 1px solid var(--borderColor);
+                padding-bottom: 25px;
+                margin-bottom: 21px;
+
+                i {
+                    color: var(--warningColor);
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 12px;
+                    margin-left: 12px;
+                }
+            }
+            .price {
+                span {
+                    font-size: 18px;
+
+                    &:nth-child(2) {
+                        font-size: 16px;
+                        margin-left: 7px;
+                    }
+                }
+            }
+            .types {
+                margin-top: 20px;
+
+                .style {
+                    span {
+                        &:nth-child(2) {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .buttons {
+                    margin-top: 7px;
+
+                    button {
+                        font-size: 12px;
+                        padding: 4px 15px;
+                        border-radius: 4px;
+                        margin-right: 10px;
+                        color: var(--bodyColor);
+                        border: 1px solid var(--borderColor);
+
+                        &.active {
+                            font-weight: 600;
+                            border-color: #FE7A36;
+                            color: var(--blackColor);
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .capacity {
+                margin-top: 15px;
+
+                .storage {
+                    span {
+                        &:nth-child(2) {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .buttons {
+                    margin-top: 6px;
+
+                    button {
+                        font-size: 12px;
+                        padding: 4px 15px;
+                        border-radius: 4px;
+                        margin-right: 10px;
+                        color: var(--bodyColor);
+                        border: 1px solid var(--borderColor);
+
+                        &.active {
+                            font-weight: 600;
+                            border-color: #FE7A36;
+                            color: var(--blackColor);
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .colors {
+                margin-top: 15px;
+
+                .color {
+                    span {
+                        &:nth-child(2) {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .buttons {
+                    margin-top: 6px;
+
+                    button {
+                        width: 29px;
+                        height: 29px;
+                        margin-right: 10px;
+                        border: 1px solid var(--borderColor);
+                        background-color: var(--borderColor);
+
+                        &:nth-child(2) {
+                            border-color: #D5D9E2;
+                            background-color: #D5D9E2;
+                        }
+                        &.active {
+                            border-color: #FE7A36;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .add-to-cart {
+                margin-top: 26px;
+
+                button {
+                    margin-left: 8px;
+                    padding: 6.5px 21px;
+                    color: var(--whiteColor);
+                    background-color: var(--primaryColor);
+
+                    span {
+                        padding-left: 24px;
+
+                        i {
+                            left: 0;
+                            top: 50%;
+                            font-size: 17px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .add-to-wishlist {
+                color: var(--blackColor);
+                margin-top: 20px;
+
+                span {
+                    i {
+                        width: 31px;
+                        height: 31px;
+                        font-size: 18px;
+                        color: #64748B;
+                        line-height: 33px;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        background: var(--borderColor);
+                    }
+                }
+            }
+            .total-views {
+                display: flex;
+                margin-top: 11px;
+                align-items: center;
+
+                i {
+                    width: 31px;
+                    height: 31px;
+                    font-size: 18px;
+                    color: #64748B;
+                    line-height: 33px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    background: var(--borderColor);
+                }
+            }
+            .features-list {
+                margin: {
+                    top: 19px;
+                    bottom: 19px;
+                };
+                border: {
+                    top: 1px solid var(--borderColor);
+                    bottom: 1px solid var(--borderColor);
+                };
+                padding: {
+                    top: 15px;
+                    bottom: 16px;
+                };
+                li {
+                    padding-left: 27px;
+                    margin-bottom: 7px;
+                    color: var(--blackColor);
+    
+                    i {
+                        left: 0;
+                        top: 50%;
+                        font-size: 20px;
+                        color: #1E8308;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .info {
+                margin-bottom: 20px;
+
+                li {
+                    margin-bottom: 6px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .share-to-socials {
+                .title {
+                    top: -1px;
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+                a {
+                    width: 23.844px;
+                    font-size: 13px;
+                    height: 23.844px;
+                    margin-left: 4px;
+                    line-height: 23.844px;
+                    color: var(--blackColor);
+                    background-color: var(--borderColor);
+
+                    &:hover {
+                        color: var(--whiteColor);
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .product-details-content {
+                .types {
+                    .buttons {
+                        button {
+                            &.active {
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+                .capacity {
+                    .buttons {
+                        button {
+                            &.active {
+                                color: var(--whiteColor);
+                            }
+                        }
+                    }
+                }
+                .add-to-wishlist {
+                    color: var(--whiteColor);
+
+                    span {
+                        i {
+                            color: var(--bodyColor);
+                        }
+                    }
+                }
+                .total-views {
+                    i {
+                        color: var(--bodyColor);
+                    }
+                }
+                .features-list {
+                    li {
+                        color: var(--whiteColor);
+                    }
+                }
+                .share-to-socials {
+                    a {
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .product-details-image {
+                margin: {
+                    right: 0;
+                    left: 30px;
+                };
+            }
+            .product-details-content {
+                .stock {
+                    padding: {
+                        left: 16px;
+                        right: 37px;
+                    };
+                    i {
+                        left: auto;
+                        right: 12px;
+                    }
+                }
+                .ratings {
+                    span {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                    }
+                }
+                .price {
+                    span {
+                        &:nth-child(2) {
+                            margin: {
+                                left: 0;
+                                right: 7px;
+                            };
+                        }
+                    }
+                }
+                .types {
+                    .style {
+                        span {
+                            &:nth-child(2) {
+                                margin: {
+                                    left: 0;
+                                    right: 3px;
+                                };
+                            }
+                        }
+                    }
+                    .buttons {
+                        button {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                            &:last-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .capacity {
+                    .storage {
+                        span {
+                            &:nth-child(2) {
+                                margin: {
+                                    left: 0;
+                                    right: 3px;
+                                };
+                            }
+                        }
+                    }
+                    .buttons {
+                        button {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                            &:last-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .colors {
+                    .color {
+                        span {
+                            &:nth-child(2) {
+                                margin: {
+                                    left: 0;
+                                    right: 3px;
+                                };
+                            }
+                        }
+                    }
+                    .buttons {
+                        button {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                            &:last-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .add-to-cart {
+                    button {
+                        margin: {
+                            left: 0;
+                            right: 8px;
+                        };
+                        span {
+                            padding: {
+                                left: 0;
+                                right: 24px;
+                            };
+                            i {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+                .add-to-wishlist {
+                    span {
+                        i {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                        }
+                    }
+                }
+                .total-views {
+                    i {
+                        margin: {
+                            right: 0;
+                            left: 10px;
+                        };
+                    }
+                }
+                .features-list {
+                    li {
+                        padding: {
+                            left: 0;
+                            right: 27px;
+                        };
+                        i {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                }
+                .share-to-socials {
+                    .title {
+                        margin: {
+                            right: 0;
+                            left: 5px;
+                        };
+                    }
+                    a {
+                        margin: {
+                            left: 0;
+                            right: 4px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+.product-specifications-card {
+    .trezo-card-content {
+        h6 {
+            margin-bottom: 12px;
+
+            &:not(:first-child) {
+                margin-top: 25px;
+            }
+        }
+        ul {
+            li {
+                padding: 11px 20px;
+                border: {
+                    bottom: 1px solid var(--borderColor);
+                    right: 1px solid var(--borderColor);
+                    left: 1px solid var(--borderColor);
+                };
+                &:first-child {
+                    border-top: 1px solid var(--borderColor);
+                }
+            }
+        }
+    }
+}
+.product-overall-reviews-card {
+    .trezo-card-content {
+        .rating-item {
+            margin-bottom: 16px;
+            padding-right: 48px;
+
+            .ratings {
+                margin-right: 15px;
+
+                i {
+                    font-size: 18px;
+                    color: #ee8336;
+                    margin-right: 5px;
+                    
+                    &.ri-star-line {
+                        color: #e2e8f0;
+                    }
+                }
+            }
+            .number {
+                right: 0;
+                top: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .overall-reviews {
+            h3 {
+                margin-bottom: 7px;
+                font-size: 40px;
+            }
+            .all-ratings {
+                margin-bottom: 10px;
+                
+                i {
+                    font-size: 30px;
+                    color: #ee8336;
+                    margin: {
+                        left: 2px;
+                        right: 2px;
+                    };
+                    &.ri-star-line {
+                        color: #e2e8f0;
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .rating-item {
+                padding: {
+                    right: 0;
+                    left: 48px;
+                };
+                .ratings {
+                    margin: {
+                        left: 15px;
+                        right: 0;
+                    };
+                    i {
+                        margin: {
+                            right: 0;
+                            left: 5px;
+                        };
+                    }
+                }
+                .number {
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+.product-details-tabs {
+    .nav {
+        &.nav-tabs {
+            .nav-item {
+                .nav-link {
+                    font-size: 16px;
+                    padding: 12px 20px;
+                    color: var(--bodyColor);
+                    border-radius: 7px 7px 0 0;
+                    
+                    &::before {
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        height: 1px;
+                        content: '';
+                        position: absolute;
+                        transition: (--transition);
+                        background: var(--primaryColor);
+                    }
+                }
+                &.active {
+                    .nav-link {
+                        color: var(--blackColor);
+                        background-color: var(--whiteColor);
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            display: block;
+            opacity: 1;
+        }
+    }
+    &.component-dark-theme {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    &.active {
+                        .nav-link {
+                            background-color: #15203c;
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+        }
+        .product-overall-reviews-card {
+            .trezo-card-content {
+                .rating-item {
+                    .ratings {
+                        i {
+                            &.ri-star-line {
+                                color: #334161;
+                            }
+                        }
+                    }
+                }
+                .overall-reviews {
+                    .all-ratings {
+                        i {
+                            &.ri-star-line {
+                                color: #334161;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.card-without-border-radius {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .product-details-card {
+        .trezo-card-content {
+            max-width: 100%;
+            padding: 0;
+
+            .product-details-image {
+                margin-right: 0;
+
+                .product-gallery__featured {
+                    margin-bottom: 17px;
+                }
+                .product-gallery__carousel {
+                    .owl-item {
+                        margin-right: 17px !important;
+                    }
+                }
+            }
+            .product-details-content {
+                margin-top: 17px;
+
+                .stock {
+                    margin-bottom: 10px;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    margin-bottom: 10px;
+                }
+                .ratings {
+                    padding-bottom: 17px;
+                    margin-bottom: 17px;
+
+                    i {
+                        font-size: 14px;
+                    }
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+                .price {
+                    span {
+                        font-size: 16px;
+
+                        &:nth-child(2) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .types {
+                    margin-top: 17px;
+
+                    .buttons {
+                        button {
+                            padding: 6px 10px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .capacity {
+                    margin-top: 15px;
+
+                    .buttons {
+                        button {
+                            padding: 6px 10px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .colors {
+                    margin-top: 15px;
+
+                    .buttons {
+                        button {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .add-to-cart {
+                    margin-top: 17px;
+                }
+                .add-to-wishlist {
+                    margin-top: 17px;
+                }
+                .features-list {
+                    margin: {
+                        top: 17px;
+                        bottom: 17px;
+                    };
+                    padding: {
+                        top: 17px;
+                        bottom: 17px;
+                    };
+                    li {
+                        padding-left: 23px;
+                        margin-bottom: 10px;
+        
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .info {
+                    margin-bottom: 17px;
+                }
+                .share-to-socials {
+                    .title {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .product-details-image {
+                    margin-left: 0;
+
+                    .product-gallery__carousel {
+                        .owl-item {
+                            margin: {
+                                right: 0 !important;
+                                left: 17px !important;
+                            };
+                        }
+                    }
+                }
+                .product-details-content {
+                    .ratings {
+                        span {
+                            margin: {
+                                left: 0;
+                                right: 5px;
+                            };
+                        }
+                    }
+                    .types {
+                        .buttons {
+                            button {
+                                margin: {
+                                    right: 0;
+                                    left: 5px;
+                                };
+                            }
+                        }
+                    }
+                    .capacity {
+                        .buttons {
+                            button {
+                                margin: {
+                                    right: 0;
+                                    left: 5px;
+                                };
+                            }
+                        }
+                    }
+                    .colors {
+                        .buttons {
+                            button {
+                                margin: {
+                                    right: 0;
+                                    left: 5px;
+                                };
+                            }
+                        }
+                    }
+                    .features-list {
+                        li {
+                            padding: {
+                                left: 0;
+                                right: 23px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-specifications-card {
+        .trezo-card-content {
+            h6 {
+                margin-bottom: 10px;
+
+                &:not(:first-child) {
+                    margin-top: 17px;
+                }
+            }
+            ul {
+                li {
+                    padding: 12px 15px;
+                }
+            }
+        }
+    }
+    .product-overall-reviews-card {
+        .trezo-card-content {
+            .rating-item {
+                margin-bottom: 15px;
+                padding-right: 35px;
+    
+                .ratings {
+                    margin-right: 7px;
+    
+                    i {
+                        font-size: 15px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .overall-reviews {
+                margin-top: 20px;
+
+                h3 {
+                    font-size: 25px;
+                }
+                .all-ratings {
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .rating-item {
+                    padding: {
+                        right: 0;
+                        left: 35px;
+                    };
+                    .ratings {
+                        margin: {
+                            right: 0;
+                            left: 7px;
+                        };
+                        i {
+                            margin: {
+                                right: 0;
+                                left: 2px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-details-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        padding: 10px 15px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .product-details-card {
+        .trezo-card-content {
+            max-width: 100%;
+            padding: 0;
+
+            .product-details-image {
+                margin: {
+                    right: 0;
+                    bottom: 25px;
+                };
+            }
+            .product-details-content {
+                .stock {
+                    margin-bottom: 13px;
+                }
+                h6 {
+                    font-size: 17px;
+                    margin-bottom: 11px;
+                }
+                .ratings {
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+
+                    i {
+                        font-size: 15px;
+                    }
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+                .price {
+                    span {
+                        font-size: 17px;
+
+                        &:nth-child(2) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .types {
+                    margin-top: 20px;
+                }
+                .add-to-cart {
+                    margin-top: 20px;
+                }
+                .features-list {
+                    margin: {
+                        top: 20px;
+                        bottom: 20px;
+                    };
+                    padding: {
+                        top: 17px;
+                        bottom: 17px;
+                    };
+                    li {
+                        padding-left: 25px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .info {
+                    margin-bottom: 20px;
+                }
+                .share-to-socials {
+                    .title {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .product-details-image {
+                    margin: {
+                        left: 0;
+                    };
+                }
+                .product-details-content {
+                    .ratings {
+                        span {
+                            margin: {
+                                left: 0;
+                                right: 5px;
+                            };
+                        }
+                    }
+                    .features-list {
+                        li {
+                            padding: {
+                                left: 0;
+                                right: 25px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-overall-reviews-card {
+        .trezo-card-content {
+            .rating-item {
+                margin-bottom: 20px;
+            }
+            .overall-reviews {
+                margin-top: 25px;
+
+                h3 {
+                    font-size: 30px;
+                }
+                .all-ratings {
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .product-details-card {
+        .trezo-card-content {
+            max-width: 100%;
+            padding: 5px;
+
+            .product-details-image {
+                margin-right: 5px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .product-details-image {
+                    margin: {
+                        right: 0;
+                        left: 5px;
+                    };
+                }
+            }
+        }
+    }
+    .product-overall-reviews-card {
+        .trezo-card-content {
+            .rating-item {
+                margin-bottom: 20px;
+            }
+            .overall-reviews {
+                h3 {
+                    font-size: 35px;
+                }
+                .all-ratings {
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .product-details-card {
+        .trezo-card-content {
+            padding: 15px;
+
+            .product-details-image {
+                margin-right: 10px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .product-details-image {
+                    margin: {
+                        right: 0;
+                        left: 10px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

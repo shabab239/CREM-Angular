@@ -1,0 +1,13 @@
+<div
+    class="quantity-counter position-relative"
+    [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <button (click)="decrement()" class="border-0 p-0 transition cursor-pointer bg-transparent">
+        -
+    </button>
+    <input type="number" class="d-block w-100 border-0 text-center border-radius" [(ngModel)]="value" />
+    <button (click)="increment()" class="border-0 p-0 transition cursor-pointer bg-transparent">
+        +
+    </button>
+</div>

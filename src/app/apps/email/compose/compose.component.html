@@ -1,0 +1,222 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Compose
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Apps
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Email
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Compose
+        </li>
+    </ol>
+</div>
+
+<!-- Compose -->
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+        <app-sidebar />
+    </div>
+    <div class="col-lg-8 col-md-12">
+        <div
+            class="email-compose-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0 fw-semibold">
+                        New Message
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                To
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    james&#64;trezo.com
+                                </option>
+                                <option value="2">
+                                    andy&#64;trezo.com
+                                </option>
+                                <option value="3">
+                                    mateo&#64;trezo.com
+                                </option>
+                                <option value="4">
+                                    luca&#64;trezo.com
+                                </option>
+                                <option value="5">
+                                    tomato&#64;trezo.com
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Cc
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    james&#64;trezo.com
+                                </option>
+                                <option value="2">
+                                    andy&#64;trezo.com
+                                </option>
+                                <option value="3">
+                                    mateo&#64;trezo.com
+                                </option>
+                                <option value="4">
+                                    luca&#64;trezo.com
+                                </option>
+                                <option value="5">
+                                    tomato&#64;trezo.com
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Bcc
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    james&#64;trezo.com
+                                </option>
+                                <option value="2">
+                                    andy&#64;trezo.com
+                                </option>
+                                <option value="3">
+                                    mateo&#64;trezo.com
+                                </option>
+                                <option value="4">
+                                    luca&#64;trezo.com
+                                </option>
+                                <option value="5">
+                                    tomato&#64;trezo.com
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Subject
+                            </label>
+                            <input type="text" class="form-control" placeholder="Write your subject...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Your Email
+                            </label>
+                            <div class="NgxEditor__Wrapper">
+                                <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+                                <ngx-editor [editor]="editor" [placeholder]="'Enter details...'"></ngx-editor>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-list d-sm-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <button type="submit" class="button primary fw-semibold border-0 transition border-radius">
+                            Send
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                text_fields_alt
+                            </i>
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                attach_file
+                            </i>
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                link
+                            </i>
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                mood
+                            </i>
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                add_to_drive
+                            </i>
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                add_photo_alternate
+                            </i>
+                        </button>
+                        <button type="button" class="button position-relative bg-transparent p-0 border-0 d-inline-block transition">
+                            <i class="material-symbols-outlined">
+                                ink_pen
+                            </i>
+                        </button>
+                        <div class="trezo-card-header-menu position-relative">
+                            <button class="button position-relative bg-transparent p-0 border-0 d-inline-block transition" (click)="toggleCardHeaderMenu()">
+                                <i class="material-symbols-outlined">
+                                    more_vert
+                                </i>
+                            </button>
+                            <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Print
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Plain text mode
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Check spelling
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="button" class="button position-relative warn bg-transparent p-0 border-0 d-inline-block transition">
+                        <i class="material-symbols-outlined">
+                            delete
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

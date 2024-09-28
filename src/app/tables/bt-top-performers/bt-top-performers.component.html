@@ -1,0 +1,199 @@
+<div
+    class="bt-top-performers-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Top Performers
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        This Week
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Alex Davis
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        alex&#64;trezo.com
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Laura Martinez
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        laura&#64;trezo.com
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user8.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Mark Thompson
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        mark&#64;trezo.com
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg" /></div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Rachel White
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        rachel&#64;trezo.com
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user10.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Kevin Lee
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        kevin&#64;trezo.com
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/tables" class="link-btn d-inline-block rounded-circle position-relative">
+                                <i class="material-symbols-outlined">
+                                    arrow_outward
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Items per pages: <strong>5</strong>
+                </p>
+                <div class="d-flex align-items-center">
+                    <p class="mb-0">
+                        1 – 5 of 10
+                    </p>
+                    <ol class="list-unstyled mb-0 p-0">
+                        <li class="d-inline-block">
+                            <a class="prev" routerLink=".">
+                                <span class="opacity-0">
+                                    0
+                                </span>
+                                <i class="material-symbols-outlined">
+                                    chevron_left
+                                </i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a class="next" routerLink=".">
+                                <span class="opacity-0">
+                                    0
+                                </span>
+                                <i class="material-symbols-outlined">
+                                    chevron_right
+                                </i>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

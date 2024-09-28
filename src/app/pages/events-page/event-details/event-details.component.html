@@ -1,0 +1,306 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Event Details
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Events
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Event Details
+        </li>
+    </ol>
+</div>
+
+<!-- Event Details Image -->
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none p-0">
+    <div class="trezo-card-content">
+        <img src="images/events/event-details.jpg" class="border-radius" alt="event-details-image">
+    </div>
+</div>
+
+<!-- Event Details -->
+<div class="row">
+    <div class="col-xxxl-7">
+        <div
+            class="event-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Event Details
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <span class="title d-block fw-semibold text-black">
+                    Annual Conference 2024
+                </span>
+                <p>
+                    The Annual Conference 2024 is a flagship event organized by ABC Corporation. This conference aims to bring together industry leaders, experts, and enthusiasts to discuss the latest trends, innovations, and challenges in our field. Participants can expect insightful keynote sessions, engaging panel discussions, and valuable networking opportunities.
+                </p>
+                <div class="info d-md-flex aling-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="icon rounded-circle position-relative text-primary text-center">
+                            <i class="material-symbols-outlined">
+                                schedule
+                            </i>
+                        </div>
+                        <div>
+                            <span class="d-block text-black fw-semibold">
+                                Time
+                            </span>
+                            <span class="d-block">
+                                01 Dec 2024, 09:00 AM
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="icon rounded-circle position-relative text-info text-center">
+                            <i class="material-symbols-outlined">
+                                place
+                            </i>
+                        </div>
+                        <div>
+                            <span class="d-block text-black fw-semibold">
+                                Location
+                            </span>
+                            <span class="d-block">
+                                Convention Center
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="icon rounded-circle position-relative text-purple text-center">
+                            <i class="material-symbols-outlined">
+                                event_seat
+                            </i>
+                        </div>
+                        <div>
+                            <span class="d-block text-black fw-semibold">
+                                Event Seat
+                            </span>
+                            <span class="d-block">
+                                50
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button class="d-inline-block border-radius fw-medium">
+                        <span class="d-flex align-items-center">
+                            <i class="material-symbols-outlined">
+                                local_activity
+                            </i>
+                            Get Ticket
+                        </span>
+                    </button>
+                    <button class="d-inline-block border-radius fw-medium">
+                        <span class="d-flex align-items-center">
+                            <i class="material-symbols-outlined">
+                                event
+                            </i>
+                            Add To Calendar
+                        </span>
+                    </button>
+                    <button class="d-inline-block border-radius fw-medium">
+                        <span class="d-flex align-items-center">
+                            <i class="material-symbols-outlined">
+                                favorite_border
+                            </i>
+                            5937
+                        </span>
+                    </button>
+                    <button class="d-inline-block border-radius fw-medium">
+                        <span class="d-flex align-items-center">
+                            <i class="material-symbols-outlined">
+                                share
+                            </i>
+                            2582
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxxl-5">
+        <div class="event-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Event Info
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <ul class="list p-0 mb-0 mt-0 list-unstyled">
+                    <li>
+                        <span class="text-black">08:00 AM</span> - Registration
+                    </li>
+                    <li>
+                        <span class="text-black">09:00 AM</span> - Opening Keynote
+                    </li>
+                    <li>
+                        <span class="text-black">10:30 AM</span> - Panel Discussion: Future Trends
+                    </li>
+                    <li>
+                        <span class="text-black">12:00 PM</span> - Lunch Break
+                    </li>
+                    <li>
+                        <span class="text-black">02:00 PM</span> - Interactive Workshops
+                    </li>
+                    <li>
+                        <span class="text-black">04:30 PM</span> - Networking Reception
+                    </li>
+                </ul>
+                <h5>
+                    Registration Information
+                </h5>
+                <ul class="list p-0 mb-0 mt-0 list-unstyled">
+                    <li>
+                        Early Bird Registration Deadline: 15 November 2024
+                    </li>
+                    <li>
+                        Standard Registration Deadline: 30 November 2024
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-6">
+        <div
+            class="event-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        About This Event
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <p>
+                    Pellentesque viverra lorem malesuada nunc tristique sapien. Imperdiet sit hendrerit tincidunt bibendum donec adipiscing. Tellus non morbi nascetur cursus etiam facilisis mi. Dolor aliquam sed amet aliquam venenatis. Ac viverra interdum tortor enim. Molestie tincidunt ut consequat a urna tortor. Vitae velit ac nisl velit mauris placerat nisi placerat.
+                </p>
+                <p>
+                    Imperdiet sit hendrerit tincidunt bibendum donec adipiscing. Tellus non morbi nascetur cursus etiam facilisis mi. Dolor aliquam sed amet aliquam venenatis. Ac viverra interdum tortor enim. Molestie tincidunt ut consequat a urna tortor. Vitae velit ac nisl velit mauris placerat nisi placerat.
+                </p>
+                <ul class="features-list p-0 mb-0 list-unstyled">
+                    <li class="position-relative">
+                        Pellentesque viverra lorem malesuada nunc tristique sapien.
+                    </li>
+                    <li class="position-relative">
+                        Imperdiet sit hendrerit tincidunt bibendum donec adipiscing.
+                    </li>
+                    <li class="position-relative">
+                        Tellus non morbi nascetur cursus etiam facilisis mi.
+                    </li>
+                    <li class="position-relative">
+                        Imperdiet sit hendrerit tincidunt bibendum donec adipiscing.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Speakers
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Speaker
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Topic
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="speaker-info d-flex align-items-center">
+                                        <div class="img">
+                                            <img src="images/users/user1.jpg" alt="user-image">
+                                        </div>
+                                        <span class="d-block fw-medium">
+                                            Sarah Johnson
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-body">
+                                    Opening Keynote
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="speaker-info d-flex align-items-center">
+                                        <div class="img">
+                                            <img src="images/users/user2.jpg" alt="user-image">
+                                        </div>
+                                        <span class="d-block fw-medium">
+                                            Russell Colon
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-body">
+                                    Panel Discussion: Future Trends
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="speaker-info d-flex align-items-center">
+                                        <div class="img">
+                                            <img src="images/users/user3.jpg" alt="user-image">
+                                        </div>
+                                        <span class="d-block fw-medium">
+                                            Cynthia Baggett
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-body">
+                                    Interactive Workshops
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="speaker-info d-flex align-items-center">
+                                        <div class="img">
+                                            <img src="images/users/user4.jpg" alt="user-image">
+                                        </div>
+                                        <span class="d-block fw-medium">
+                                            Raymond Nguyen
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="text-body">
+                                    Networking Reception
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

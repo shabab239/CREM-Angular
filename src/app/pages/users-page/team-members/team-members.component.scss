@@ -1,0 +1,175 @@
+.team-member-card {
+    .trezo-card-content {
+        .info {
+            img {
+                width: 65px;
+                height: 65px;
+                margin-right: 12px;
+                border: 2px solid var(--borderColor);
+            }
+            .title {
+                font-size: 16px;
+                margin-bottom: 2px;
+            }
+            .action-buttons {
+                button, a {
+                    color: var(--primaryColor);
+                    margin-right: 9px;
+    
+                    i {
+                        font-size: 16px;
+                    }
+                    &:nth-child(2) {
+                        color: var(--bodyColor);
+                    }
+                    &:nth-child(3) {
+                        color: var(--dangerColor);
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        ul {
+            margin-top: 17px;
+
+            li {
+                margin-bottom: 9px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .socials-link {
+            margin-top: 18px;
+
+            a {
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &:hover {
+                    transform: translateY(-4px);
+                }
+                &.facebook {
+                    background-color: #3a559f;
+                }
+                &.twitter {
+                    background-color: #03a9f4;
+                }
+                &.linkedin {
+                    background-color: #007ab9;
+                }
+                &.github {
+                    background-color: #000000;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    .team-member-card {
+        .trezo-card-content {
+            .info {
+                img {
+                    margin: {
+                        right: 0;
+                        left: 12px;
+                    };
+                }
+                .action-buttons {
+                    button, a {
+                        margin: {
+                            right: 0;
+                            left: 9px;
+                        };
+                        &:last-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .socials-link {
+                a {
+                    margin: {
+                        left: 10px;
+                        right: 0;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .team-member-card {
+        .trezo-card-content {
+            .info {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                .title {
+                    font-size: 14px;
+                }
+            }
+            ul {
+                margin-top: 12px;
+            }
+            .socials-link {
+                margin-top: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .team-member-card {
+        .trezo-card-content {
+            .info {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                .title {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

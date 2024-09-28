@@ -1,0 +1,148 @@
+.client-card {
+  padding-top: 18px;
+}
+.client-card .trezo-card-content {
+  position: relative;
+}
+.client-card .trezo-card-content .image {
+  top: -18px;
+  left: -25px;
+  width: 90px;
+  position: absolute;
+  border-radius: 7px 0 7px 0;
+  background-color: #F6F7F9;
+  border-right: 10px solid #F6F7F9;
+  border-bottom: 10px solid #F6F7F9;
+}
+.client-card .trezo-card-content .content {
+  padding-left: 88px;
+  margin-bottom: 26px;
+}
+.client-card .trezo-card-content .content .title {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.client-card .trezo-card-content .list li {
+  margin-bottom: 5px;
+}
+.client-card .trezo-card-content .list li span {
+  margin-right: 7px;
+}
+.client-card .trezo-card-content .list li:last-child {
+  margin-bottom: 0;
+}
+.client-card .trezo-card-content .btn-box {
+  margin-top: 17px;
+}
+.client-card .trezo-card-content .btn-box button, .client-card .trezo-card-content .btn-box a {
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+  padding: 4.5px 15.5px;
+  margin-right: 14px;
+}
+.client-card .trezo-card-content .btn-box button:nth-child(1), .client-card .trezo-card-content .btn-box a:nth-child(1) {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.client-card .trezo-card-content .btn-box button:last-child, .client-card .trezo-card-content .btn-box a:last-child {
+  margin-right: 0;
+}
+
+.component-dark-theme .client-card .trezo-card-content .image {
+  background-color: #0A0E19;
+  border-color: #0A0E19;
+}
+
+.card-without-border-radius .client-card .trezo-card-content .image {
+  border-radius: 0 0 7px 0;
+}
+.card-without-border-radius .client-card .trezo-card-content .image img {
+  border-radius: 0 0 7px 0 !important;
+}
+
+.component-rtl-enabled .client-card .trezo-card-content .image {
+  left: auto;
+  right: -25px;
+  border-radius: 0 7px 0 7px;
+  border-right-width: 0;
+  border-left: 10px solid #F6F7F9;
+}
+.component-rtl-enabled .client-card .trezo-card-content .content {
+  padding-left: 0;
+  padding-right: 88px;
+}
+.component-rtl-enabled .client-card .trezo-card-content .list li span {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.component-rtl-enabled .client-card .trezo-card-content .btn-box button, .component-rtl-enabled .client-card .trezo-card-content .btn-box a {
+  margin-right: 0;
+  margin-left: 14px;
+}
+.component-rtl-enabled .client-card .trezo-card-content .btn-box button:last-child, .component-rtl-enabled .client-card .trezo-card-content .btn-box a:last-child {
+  margin-left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .client-card {
+    padding-top: 17px;
+  }
+  .client-card .trezo-card-content .image {
+    top: -17px;
+    left: -17px;
+  }
+  .client-card .trezo-card-content .content {
+    padding-left: 88px;
+    margin-bottom: 32px;
+  }
+  .client-card .trezo-card-content .content .title {
+    font-size: 14px;
+  }
+  .client-card .trezo-card-content .btn-box button, .client-card .trezo-card-content .btn-box a {
+    margin-right: 10px;
+  }
+  .component-rtl-enabled .client-card .trezo-card-content .image {
+    left: auto;
+    right: -17px;
+  }
+  .component-rtl-enabled .client-card .trezo-card-content .content {
+    padding-left: 0;
+    padding-right: 88px;
+  }
+  .component-rtl-enabled .client-card .trezo-card-content .btn-box button, .component-rtl-enabled .client-card .trezo-card-content .btn-box a {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .client-card {
+    padding-top: 20px;
+  }
+  .client-card .trezo-card-content .image {
+    top: -20px;
+    left: -20px;
+  }
+  .component-rtl-enabled .client-card .trezo-card-content .image {
+    left: auto;
+    right: -20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-card .trezo-card-content .content {
+    padding-left: 85px;
+    margin-bottom: 28px;
+  }
+  .client-card .trezo-card-content .content .title {
+    font-size: 15px;
+  }
+  .component-rtl-enabled .client-card .trezo-card-content .content {
+    padding-left: 0;
+    padding-right: 85px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=pm-clients.component.css.map */

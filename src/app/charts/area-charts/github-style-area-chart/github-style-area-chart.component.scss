@@ -1,0 +1,19 @@
+.github-user {
+    .title {
+        margin-left: 12px;
+
+        span {
+            &:not(:first-child) {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+.chart {
+    &:first-child {
+        margin-top: -20px;
+    }
+    &:last-child {
+        margin-bottom: -20px !important;
+    }
+}

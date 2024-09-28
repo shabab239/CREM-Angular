@@ -1,0 +1,42 @@
+.crm-customers-card {
+    .trezo-card-content {
+        .basic-table {
+            .table, table {
+                thead {
+                    tr {
+                        th {
+                            &:first-child {
+                                padding-right: 0;
+                            }
+                            &:nth-child(2) {
+                                padding-left: 15px;
+                            }
+                            &:last-child {
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &:first-child {
+                                padding-right: 0;
+                            }
+                            &:nth-child(2) {
+                                padding-left: 15px;
+                            }
+                            &:last-child {
+                                text-align: end;
+
+                                .action-buttons {
+                                    justify-content: end;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

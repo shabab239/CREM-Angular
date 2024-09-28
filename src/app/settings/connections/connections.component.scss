@@ -1,0 +1,119 @@
+.connections-card {
+    h5 {
+        margin-bottom: 23px;
+    }
+    ul {
+        li {
+            margin-bottom: 21px;
+
+            .icon {
+                img {
+                    width: 40px;
+                }
+            }
+            .title {
+                margin-left: 15px;
+
+                span {
+                    &:not(:first-child) {
+                        margin-top: 3px;
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .border-top {
+        border-color: var(--borderColor) !important;
+        margin: {
+            top: 25px;
+            bottom: 25px;
+        };
+    }
+    &.component-rtl-enabled {
+        ul {
+            li {
+                .title {
+                    margin: {
+                        left: 0;
+                        right: 15px;
+                    };
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .connections-card {
+        h5 {
+            margin-bottom: 17px;
+        }
+        ul {
+            li {
+                margin-bottom: 17px;
+    
+                .title {
+                    margin-left: 12px;
+                }
+            }
+        }
+        .border-top {
+            margin: {
+                top: 17px;
+                bottom: 17px;
+            };
+        }
+        &.component-rtl-enabled {
+            ul {
+                li {
+                    .title {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .connections-card {
+        h5 {
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+        .border-top {
+            margin: {
+                top: 20px;
+                bottom: 20px;
+            };
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

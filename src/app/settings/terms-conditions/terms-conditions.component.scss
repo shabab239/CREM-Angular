@@ -1,0 +1,9 @@
+.terms-conditions-card {
+    .title {
+        margin-bottom: 10px;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.crm-customers-card .trezo-card-content .basic-table .table thead tr th:first-child, .crm-customers-card .trezo-card-content .basic-table table thead tr th:first-child {
+  padding-right: 0;
+}
+.crm-customers-card .trezo-card-content .basic-table .table thead tr th:nth-child(2), .crm-customers-card .trezo-card-content .basic-table table thead tr th:nth-child(2) {
+  padding-left: 15px;
+}
+.crm-customers-card .trezo-card-content .basic-table .table thead tr th:last-child, .crm-customers-card .trezo-card-content .basic-table table thead tr th:last-child {
+  text-align: end;
+}
+.crm-customers-card .trezo-card-content .basic-table .table tbody tr td:first-child, .crm-customers-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-right: 0;
+}
+.crm-customers-card .trezo-card-content .basic-table .table tbody tr td:nth-child(2), .crm-customers-card .trezo-card-content .basic-table table tbody tr td:nth-child(2) {
+  padding-left: 15px;
+}
+.crm-customers-card .trezo-card-content .basic-table .table tbody tr td:last-child, .crm-customers-card .trezo-card-content .basic-table table tbody tr td:last-child {
+  text-align: end;
+}
+.crm-customers-card .trezo-card-content .basic-table .table tbody tr td:last-child .action-buttons, .crm-customers-card .trezo-card-content .basic-table table tbody tr td:last-child .action-buttons {
+  justify-content: end;
+}/*# sourceMappingURL=c-customers.component.css.map */

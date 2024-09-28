@@ -1,0 +1,395 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Order Details
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Orders
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Order Details
+        </li>
+    </ol>
+</div>
+
+<!-- Order Details -->
+<div class="row">
+    <div class="col-lg-8">
+        <div
+            class="tracking-id-card trezo-card mb-25 border-radius d-block bg-primary border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0 text-white">
+                        Tracking ID: 000346798254
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="numbers z-1 position-relative d-sm-flex align-items-center justify-content-between">
+                    <div class="box">
+                        <div class="rounded-circle bg-primary text-center transition text-white fw-semibold">
+                            01
+                        </div>
+                        <span class="fw-semibold d-block text-white">
+                            Order Placed
+                        </span>
+                    </div>
+                    <div class="box">
+                        <div class="rounded-circle bg-primary text-center transition text-white fw-semibold">
+                            02
+                        </div>
+                        <span class="fw-semibold d-block text-white">
+                            Packed
+                        </span>
+                    </div>
+                    <div class="box active">
+                        <div class="rounded-circle bg-primary text-center transition text-white fw-semibold">
+                            03
+                        </div>
+                        <span class="fw-semibold d-block text-white">
+                            Shipped
+                        </span>
+                    </div>
+                    <div class="box">
+                        <div class="rounded-circle bg-primary text-center transition text-white fw-semibold">
+                            04
+                        </div>
+                        <span class="fw-semibold d-block text-white">
+                            Delivered
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Recent Orders
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <h5 class="mb-0">
+                        Customer ID : 357951
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Order ID
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Product
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Items
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Price
+                                </th>
+                                <th scope="col" class="fw-medium">
+                                    Total
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> #JAN-2345 </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img alt="product-image" src="images/products/product1.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Smart Band </a>
+                                            <span class="d-block text-body"> 08 Jun 2024 </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 1 </td>
+                                <td> $80.00 </td>
+                                <td> $80.00 </td>
+                            </tr>
+                            <tr>
+                                <td> #JAN-1323 </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img alt="product-image" src="images/products/product2.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Headphone </a>
+                                            <span class="d-block text-body"> 07 Jun 2024 </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 3 </td>
+                                <td> $150.00 </td>
+                                <td> $450.00 </td>
+                            </tr>
+                            <tr>
+                                <td> #DEC-1234 </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img alt="product-image" src="images/products/product3.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> iPhone 15 Plus </a>
+                                            <span class="d-block text-body"> 06 Jun 2024 </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 1 </td>
+                                <td> $750.00 </td>
+                                <td> $750.00 </td>
+                            </tr>
+                            <tr>
+                                <td> #DEC-3567 </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img alt="product-image" src="images/products/product4.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Bluetooth Speaker </a>
+                                            <span class="d-block text-body"> 05 Jun 2024 </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 5 </td>
+                                <td> $15.00 </td>
+                                <td> $75.00 </td>
+                            </tr>
+                            <tr>
+                                <td> #DEC-1098 </td>
+                                <td>
+                                    <div class="product-info d-flex align-items-center">
+                                        <div class="image">
+                                            <img alt="product-image" src="images/products/product5.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Airbuds 2nd Gen </a>
+                                            <span class="d-block text-body"> 04 Jun 2024 </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> 2 </td>
+                                <td> $25.00 </td>
+                                <td> $50.00 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div
+            class="order-summary-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Order Summary
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Description
+                                </th>
+                                <th scope="col" class="fw-medium text-end">
+                                    Price
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-body">
+                                    Grand Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Discount :
+                                </td>
+                                <td class="text-body text-end">
+                                    -$105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Tax :
+                                </td>
+                                <td class="text-body text-end">
+                                    $75.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Subtotal :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,000.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Shipping Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $80.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Coupon Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $20.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $900.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>
+                    Payment Method
+                </h6>
+                <div class="payment-method d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <img src="images/master-card.png" alt="master-card">
+                        </div>
+                        <div class="info">
+                            <span class="d-block text-black fw-medium">
+                                Payment
+                            </span>
+                            <span class="d-block">
+                                Via MasterCard
+                            </span>
+                        </div>
+                    </div>
+                    <span class="d-block">
+                        $900.00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="order-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Billing Details
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <ul class="p-0 mb-0 mt-0 list-unstyled">
+                    <li>
+                        <span class="text-black">Name:</span> Gary Fraser
+                    </li>
+                    <li>
+                        <span class="text-black">Email:</span> example&#64;trezo.com
+                    </li>
+                    <li>
+                        <span class="text-black">Phone:</span> +1 444 333 5566
+                    </li>
+                    <li>
+                        <span class="text-black">Address:</span> 715 Maple St, Hamletville, England
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="order-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Shipping Details
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <ul class="p-0 mb-0 mt-0 list-unstyled">
+                    <li>
+                        <span class="text-black">Shipping Date:</span> 25 Nov 2024 10:30 AM
+                    </li>
+                    <li>
+                        <span class="text-black">Email:</span> example&#64;trezo.com
+                    </li>
+                    <li>
+                        <span class="text-black">Phone:</span> +1 444 333 5566
+                    </li>
+                    <li>
+                        <span class="text-black">Address:</span> 789 Pine St, Villageton, England
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+        <div class="order-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Delivery Details
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <ul class="p-0 mb-0 mt-0 list-unstyled">
+                    <li>
+                        <span class="text-black">XYZ Delivery</span>
+                    </li>
+                    <li>
+                        <span class="text-black">Order ID:</span> XXXXXX1004
+                    </li>
+                    <li>
+                        <span class="text-black">Payment Method:</span> Master Card
+                    </li>
+                    <li>
+                        <span class="text-black">Email:</span> example&#64;trezo.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

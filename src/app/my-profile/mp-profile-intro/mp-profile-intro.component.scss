@@ -1,0 +1,172 @@
+.mp-profile-intro-card {
+    .trezo-card-content {
+        .user {
+            margin-bottom: 16px;
+
+            .image {
+                img {
+                    width: 75px;
+                }
+            }
+            .title {
+                margin-left: 15px;
+                
+                span {
+                    font-size: 17px;
+
+                    &:not(:first-child) {
+                        margin-top: 2px;
+                        font-size: var(--fontSize);
+                    }
+                }
+            }
+        }
+        .sub-title {
+            margin-bottom: 5px;
+        }
+        h6 {
+            font-size: var(--fontSize);
+            margin: {
+                bottom: 12px;
+                top: 18px;
+            };
+        }
+        .socials-link {
+            a {
+                width: 28px;
+                height: 28px;
+                margin-right: 7px;
+                text-align: center;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &.facebook {
+                    background-color: #3A559F;
+                }
+                &.x {
+                    background-color: #03A9F4;
+                }
+                &.linkedin {
+                    background-color: #007AB9;
+                }
+                &.mail {
+                    background-color: #2196F3;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .user {
+                .title {
+                    margin: {
+                        left: 0;
+                        right: 15px;
+                    };
+                }
+            }
+            .socials-link {
+                a {
+                    margin: {
+                        right: 0;
+                        left: 7px;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .mp-profile-intro-card {
+        .trezo-card-content {
+            .user {
+                margin-bottom: 15px;
+
+                .image {
+                    img {
+                        width: 60px;
+                    }
+                }
+                .title {
+                    margin-left: 12px;
+                    
+                    span {
+                        font-size: 15px;
+
+                        &:not(:first-child) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .sub-title {
+                margin-bottom: 8px;
+            }
+            h6 {
+                font-size: 13px;
+                margin: {
+                    bottom: 12px;
+                    top: 15px;
+                };
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .user {
+                    .title {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .mp-profile-intro-card {
+        .trezo-card-content {
+            .user {
+                .title {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

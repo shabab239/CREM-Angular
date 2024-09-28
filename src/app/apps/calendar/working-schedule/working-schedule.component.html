@@ -1,0 +1,177 @@
+<!-- Working Schedule -->
+<div
+    class="calendar-working-schedule-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Working Schedule
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="calendar">
+            <div class="header d-flex align-items-center justify-content-between">
+                <button (click)="previousMonth()" class="p-0 border-0 d-flex align-items-center justify-content-center rounded-circle transition">
+                    <i class="material-symbols-outlined">
+                        chevron_left
+                    </i>
+                </button>
+                <span class="fw-medium text-black">
+                    {{ monthNames[currentMonth] }} {{ currentYear }}
+                </span>
+                <button (click)="nextMonth()" class="p-0 border-0 d-flex align-items-center justify-content-center rounded-circle transition">
+                    <i class="material-symbols-outlined">
+                        chevron_right
+                    </i>
+                </button>
+            </div>
+            <div class="weekdays text-center">
+                <div class="text-black fw-medium" *ngFor="let day of weekdays">
+                    {{ day }}
+                </div>
+            </div>
+            <div class="days text-center">
+                <div
+                    *ngFor="let day of daysInMonth"
+                    [ngClass]="{ 'current-day': isToday(day) }"
+                >
+                    <span *ngIf="day !== null">
+                        {{ day }}
+                    </span>
+                    <span *ngIf="day === null">
+                        &nbsp;
+                    </span> <!-- Placeholder for empty days -->
+                </div>
+            </div>
+        </div>
+        <div class="upcoming-events">
+            <span class="title d-block fw-medium">
+                Upcoming Events:
+            </span>
+            <owl-carousel-o [options]="upcomingEventsSlides">
+                <ng-template carouselSlide>
+                    <div class="event-item position-relative">
+                        <h6 class="fw-semibold">
+                            Pythons Unleashed: A Development Expedition
+                        </h6>
+                        <span>
+                            <span class="text-primary">
+                                15 April 2024
+                            </span>
+                            -  12.00 PM - 6.00 PM
+                        </span>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="event-item position-relative">
+                        <h6 class="fw-semibold">
+                            Pythons Unleashed: A Development Expedition
+                        </h6>
+                        <span>
+                            <span class="text-primary">
+                                15 April 2024
+                            </span>
+                            -  12.00 PM - 6.00 PM
+                        </span>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="event-item position-relative">
+                        <h6 class="fw-semibold">
+                            Pythons Unleashed: A Development Expedition
+                        </h6>
+                        <span>
+                            <span class="text-primary">
+                                15 April 2024
+                            </span>
+                            -  12.00 PM - 6.00 PM
+                        </span>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <div class="text-end">
+            <button class="add-new-event-btn d-inline-block border-radius fw-medium transition" type="button" (click)="toggleClass()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Event
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied"
+>
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Add Event
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleClass()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Add title
+                            </label>
+                            <input type="text" class="form-control" placeholder="Add title">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Start Date
+                            </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                End Date
+                            </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleClass()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

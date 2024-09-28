@@ -1,0 +1,215 @@
+.apps-to-do-list-card {
+    padding-bottom: 8px;
+
+    .trezo-card-content {
+        .basic-table {
+            .table, table {
+                thead {
+                    tr {
+                        th {
+                            &:first-child {
+                                padding-right: 0;
+                            }
+                            &:nth-child(2) {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: {
+                                top: 17px;
+                                bottom: 17px;
+                            };
+                            &:first-child {
+                                padding-right: 0;
+                            }
+                            &:nth-child(2) {
+                                padding-left: 15px;
+                            }
+                        }
+                        &:last-child {
+                            td {
+                                border-bottom-width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .basic-table {
+                .table, table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding: {
+                                        right: 25px !important;
+                                        left: 0 !important;
+                                    };
+                                }
+                                &:nth-child(2) {
+                                    padding: {
+                                        left: 25px !important;
+                                        right: 15px !important;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:first-child {
+                                    padding: {
+                                        right: 25px !important;
+                                        left: 0 !important;
+                                    };
+                                }
+                                &:nth-child(2) {
+                                    padding: {
+                                        left: 25px !important;
+                                        right: 15px !important;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .apps-to-do-list-card {
+        padding-bottom: 4px;
+
+        .trezo-card-content {
+            .basic-table {
+                .table, table {
+                    tbody {
+                        tr {
+                            td {
+                                padding: {
+                                    top: 13px;
+                                    bottom: 13px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .basic-table {
+                    .table, table {
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        padding: {
+                                            right: 17px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 17px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    &:first-child {
+                                        padding: {
+                                            right: 17px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 17px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .apps-to-do-list-card {
+        padding-bottom: 7px;
+        
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .basic-table {
+                    .table, table {
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        padding: {
+                                            right: 20px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 20px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    &:first-child {
+                                        padding: {
+                                            right: 20px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 20px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

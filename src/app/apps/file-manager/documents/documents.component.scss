@@ -1,0 +1,73 @@
+.document-folder-card {
+    .trezo-card-content {
+        .icon {
+            margin-bottom: 20px;
+        }
+        h6 {
+            margin-bottom: 18px;
+        }
+        .action-buttons {
+            button, a {
+                color: var(--primaryColor);
+                line-height: 1;
+                margin: {
+                    left: 7px;
+                    right: 7px;
+                };
+                i {
+                    font-size: 16px;
+                }
+                &:nth-child(2) {
+                    color: var(--bodyColor);
+                }
+                &:nth-child(3) {
+                    color: var(--dangerColor);
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .document-folder-card {
+        .trezo-card-content {
+            .icon {
+                margin-bottom: 15px;
+            }
+            h6 {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .document-folder-card {
+        .trezo-card-content {
+            .icon {
+                margin-bottom: 18px;
+            }
+            h6 {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

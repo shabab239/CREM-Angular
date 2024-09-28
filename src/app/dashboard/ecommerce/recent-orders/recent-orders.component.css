@@ -1,0 +1,43 @@
+.recent-orders-card .trezo-card-header .trezo-card-subtitle .search-box {
+  width: 239px;
+  margin-right: 20px;
+}
+.recent-orders-card .trezo-card-header .trezo-card-subtitle .search-box .input-search {
+  height: 36px;
+  font-size: 12px;
+}
+.recent-orders-card.component-rtl-enabled .trezo-card-header .trezo-card-subtitle .search-box {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .recent-orders-card .trezo-card-header .trezo-card-subtitle {
+    margin-top: 12px;
+  }
+  .recent-orders-card .trezo-card-header .trezo-card-subtitle .search-box {
+    margin-right: 10px;
+    margin-top: 0;
+  }
+  .recent-orders-card .trezo-card-header .trezo-card-subtitle .search-box .input-search {
+    height: 32px;
+  }
+  .recent-orders-card.component-rtl-enabled .trezo-card-header .trezo-card-header-text .trezo-card-subtitle .search-box {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .recent-orders-card .trezo-card-header .trezo-card-subtitle {
+    margin-top: 0;
+  }
+  .recent-orders-card .trezo-card-header .trezo-card-subtitle .search-box {
+    width: 200px;
+  }
+}
+/* Min width 768px to Max width 991px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=recent-orders.component.css.map */

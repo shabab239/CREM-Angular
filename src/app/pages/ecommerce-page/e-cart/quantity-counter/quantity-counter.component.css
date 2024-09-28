@@ -1,0 +1,39 @@
+.quantity-counter {
+  width: 100px;
+}
+.quantity-counter input {
+  height: 42px;
+  font-size: 15px;
+  background: #F6F7F9;
+  color: var(--blackColor);
+}
+.quantity-counter input[type=number]::-webkit-inner-spin-button, .quantity-counter input[type=number]::-webkit-outer-spin-button {
+  display: none;
+}
+.quantity-counter button {
+  top: 50%;
+  left: 15px;
+  font-size: 20px;
+  position: absolute;
+  color: var(--bodyColor);
+  transform: translateY(-50%);
+}
+.quantity-counter button:last-child {
+  left: auto;
+  right: 15px;
+}
+.quantity-counter button:hover {
+  color: var(--primaryColor);
+}
+.quantity-counter.component-dark-theme input {
+  background: #15203c;
+  color: var(--whiteColor);
+}
+.quantity-counter.component-rtl-enabled button {
+  left: auto;
+  right: 15px;
+}
+.quantity-counter.component-rtl-enabled button:last-child {
+  right: auto;
+  left: 15px;
+}/*# sourceMappingURL=quantity-counter.component.css.map */

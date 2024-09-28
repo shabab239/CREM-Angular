@@ -1,0 +1,1184 @@
+.sidebar-area {
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 260px;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    
+    .logo {
+        border-bottom: 1px solid var(--borderColor);
+        padding: 19px 25px 15px;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        left: 0;
+        top: 0;
+        
+        a {
+            transition: unset;
+            
+            span {
+                margin-left: 8px;
+                font-size: 24px;
+                top: 1px;
+            }
+        }
+    }
+    .burger-menu {
+        top: 23px;
+        z-index: 3;
+        opacity: 0;
+        right: 25px;
+        cursor: pointer;
+        position: absolute;
+        visibility: hidden;
+
+        span {
+            height: 1px;
+            width: 25px;
+            margin: 6px 0;
+        }
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            
+            span {
+                &.top-bar {
+                    transform: rotate(45deg);
+                    transform-origin: 10% 10%;
+                }
+                &.middle-bar {
+                    opacity: 0;
+                }
+                &.bottom-bar {
+                    transform: rotate(-45deg);
+                    transform-origin: 10% 90%;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .sidebar-inner {
+        padding: {
+            top: 89px;
+            left: 25px;
+            right: 25px;
+            bottom: 20px;
+        };
+        .sidebar-menu {
+            .sub-title {
+                font-size: 12px;
+                color: #8695AA;
+                margin-bottom: 8px;
+
+                &:not(:first-child) {
+                    margin-top: 22px;
+                }
+            }
+            .accordion {
+                .accordion-item {
+                    background-color: transparent;
+                    color: var(--blackColor);
+                    margin-bottom: 5px;
+
+                    .accordion-button {
+                        color: var(--blackColor);
+                        font-size: var(--fontSize);
+                        background-color: transparent;
+                        padding: {
+                            bottom: 10px;
+                            right: 30px;
+                            left: 41px;
+                            top: 9px;
+                        };
+                        i {
+                            transition: var(--transition);
+                            transform: translateY(-50%);
+                            color: var(--bodyColor);
+                            position: absolute;
+                            font-size: 22px;
+                            line-height: 1;
+                            left: 12px;
+                            top: 50%;
+                        }
+                        .trezo-badge {
+                            top: 50%;
+                            padding: 0;
+                            right: 34px;
+                            width: 20px;
+                            height: 20px;
+                            font-size: 11px;
+                            line-height: 20px;
+                            position: absolute;
+                            color: var(--orangeColor);
+                            transform: translateY(-50%);
+                            background-color: #FFF5ED;
+                            
+                            &.style-two {
+                                color: #00b69b;
+                                background: rgba(0, 182, 155, 0.07);
+                            }
+                            &.style-three {
+                                color: #ee368c;
+                                background: rgba(238, 54, 140, 0.1);
+                            }
+                        }
+                        &::after {
+                            display: none;
+                        }
+                        &::before {
+                            top: 50%;
+                            right: 8px;
+                            content: "\ea6e";
+                            position: absolute;
+                            color: var(--bodyColor);
+                            transform: translateY(-50%);
+                            transition: var(--transition);
+                            font: {
+                                size: 19px;
+                                family: remixicon;
+                            };
+                        }
+                        &.open, &:hover {
+                            color: var(--blackColor);
+                            background-color: #F6F7F9;
+
+                            i {
+                                color: var(--blackColor);
+                            }
+                            &::before {
+                                color: var(--blackColor);
+                            }
+                        }
+                        &.open {
+                            &::before {
+                                content: "\ea4e";
+                            }
+                        }
+                    }
+                    &:has(.active) .accordion-button { 
+                        color: var(--blackColor);
+                        background-color: #F6F7F9;
+
+                        i {
+                            color: var(--blackColor);
+                        }
+                        &::before {
+                            color: var(--blackColor);
+                        }
+                    }
+                    .accordion-collapse {
+                        display: none;
+
+                        .accordion-body {
+                            padding: 4px 0 0;
+
+                            .accordion-button {
+                                color: var(--bodyColor);
+                                font-size: var(--fontSize);
+                                padding: {
+                                    bottom: 10px;
+                                    right: 10px;
+                                    left: 38px;
+                                    top: 9px;
+                                };
+                                &::after {
+                                    top: 50%;
+                                    left: 18px;
+                                    width: 10px;
+                                    content: '';
+                                    height: 10px;
+                                    transition: .3s;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    display: inline-block;
+                                    transform: translateY(-50%);
+                                    background: unset !important;
+                                    border: 1px solid var(--bodyColor);
+                                }
+                                &:hover, &.active {
+                                    background-color: #ECF0FF;
+                                    color: var(--primaryColor);
+    
+                                    &::after {
+                                        border-color: var(--primaryColor);
+                                    }
+                                }
+                                .trezo-badge {
+                                    top: 50%;
+                                    padding: 0;
+                                    right: 34px;
+                                    width: 20px;
+                                    height: 20px;
+                                    font-size: 11px;
+                                    line-height: 20px;
+                                    position: absolute;
+                                    color: var(--orangeColor);
+                                    transform: translateY(-50%);
+                                    background-color: #FFF5ED;
+                                    
+                                    &.style-two {
+                                        color: #00b69b;
+                                        background: rgba(0, 182, 155, 0.07);
+                                    }
+                                    &.style-three {
+                                        color: #ee368c;
+                                        background: rgba(238, 54, 140, 0.1);
+                                    }
+                                }
+                            }
+                            .accordion-collapse {
+                                .accordion-body {
+                                    padding: {
+                                        left: 20px;
+                                        top: 6px;
+                                    };
+                                }
+                            }
+                            .sidebar-sub-menu {
+                                .sidemenu-item {
+                                    margin-bottom: 4px;
+    
+                                    .sidemenu-link {
+                                        color: var(--bodyColor);
+                                        font-size: var(--fontSize);
+                                        padding: {
+                                            bottom: 10px;
+                                            right: 10px;
+                                            left: 38px;
+                                            top: 9px;
+                                        };
+                                        &::after {
+                                            top: 50%;
+                                            left: 18px;
+                                            width: 10px;
+                                            content: '';
+                                            height: 10px;
+                                            transition: .3s;
+                                            border-radius: 50%;
+                                            position: absolute;
+                                            transform: translateY(-50%);
+                                            border: 1px solid var(--bodyColor);
+                                        }
+                                        &:hover, &.active {
+                                            background-color: #ECF0FF;
+                                            color: var(--primaryColor);
+            
+                                            &::after {
+                                                border-color: var(--primaryColor);
+                                            }
+                                        }
+                                        .trezo-badge {
+                                            top: -1px;
+                                            padding: 2px 6px;
+                                            margin-left: 5px;
+                                            border-radius: 3px;
+                                            line-height: initial;
+                                            color: var(--orangeColor);
+                                            background-color: #FFE8D4;
+                                            font: {
+                                                size: 10px;
+                                                weight: normal;
+                                            };
+                                            &::before {
+                                                top: 50%;
+                                                left: -3px;
+                                                width: 6px;
+                                                height: 6px;
+                                                content: '';
+                                                position: absolute;
+                                                background: #FFE8D4;
+                                                transform: translateY(-50%) rotate(45deg);
+                                            }
+                                            &.style-two {
+                                                color: var(--successColor);
+                                                background-color: #D8FFC8;
+
+                                                &::before {
+                                                    background: #D8FFC8;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &.open {
+                            display: block;
+                        }
+                    }
+                }
+                .sidebar-menu-link {
+                    font-size: var(--fontSize);
+                    color: var(--blackColor);
+                    padding: {
+                        bottom: 9.5px;
+                        right: 30px;
+                        top: 9.5px;
+                        left: 40px;
+                    };
+                    i {
+                        transition: var(--transition);
+                        transform: translateY(-50%);
+                        color: var(--bodyColor);
+                        position: absolute;
+                        font-size: 22px;
+                        line-height: 1;
+                        left: 12px;
+                        top: 50%;
+                    }
+                    &:hover, &.active {
+                        color: var(--primaryColor);
+                        background-color: #F6F7F9;
+
+                        i {
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.right-sidebar {
+        left: auto;
+        right: 0;
+    }
+    &.component-dark-theme {
+        .sidebar-inner {
+            .sidebar-menu {
+                .accordion {
+                    .accordion-item {
+                        color: var(--whiteColor);
+    
+                        .accordion-button {
+                            color: var(--whiteColor);
+                            
+                            &.open, &:hover {
+                                color: var(--whiteColor);
+                                background-color: #15203c;
+    
+                                i {
+                                    color: var(--whiteColor);
+                                }
+                                &::before {
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+                        &:has(.active) .accordion-button { 
+                            color: var(--whiteColor);
+                            background-color: #15203c;
+    
+                            i {
+                                color: var(--whiteColor);
+                            }
+                            &::before {
+                                color: var(--whiteColor);
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                .accordion-button {
+                                    &:hover, &.active {
+                                        background-color: #15203c;
+                                    }
+                                }
+                                .sidebar-sub-menu {
+                                    .sidemenu-item {
+                                        .sidemenu-link {
+                                            &:hover, &.active {
+                                                background-color: #15203c;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sidebar-menu-link {
+                        color: var(--whiteColor);
+                        
+                        &:hover, &.active {
+                            color: var(--primaryColor);
+                            background-color: #15203c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.dark-sidebar {
+        --borderColor: #172036;
+        color: var(--bodyColor);
+        --bodyColor: #8695AA;
+
+        a {
+            color: var(--whiteColor);
+    
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+        .text-black {
+            color: var(--whiteColor) !important;
+        }
+        &.bg-white, .bg-white {
+            background-color: #0C1427 !important;
+        }
+        .bg-black {
+            background-color: var(--whiteColor) !important;
+        }
+        .sidebar-inner {
+            .sidebar-menu {
+                .accordion {
+                    .accordion-item {
+                        color: var(--whiteColor);
+    
+                        .accordion-button {
+                            color: var(--whiteColor);
+                            
+                            &.open, &:hover {
+                                color: var(--whiteColor);
+                                background-color: #15203c;
+    
+                                i {
+                                    color: var(--whiteColor);
+                                }
+                                &::before {
+                                    color: var(--whiteColor);
+                                }
+                            }
+                        }
+                        &:has(.active) .accordion-button { 
+                            color: var(--whiteColor);
+                            background-color: #15203c;
+    
+                            i {
+                                color: var(--whiteColor);
+                            }
+                            &::before {
+                                color: var(--whiteColor);
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                .accordion-button {
+                                    &:hover, &.active {
+                                        background-color: #15203c;
+                                    }
+                                }
+                                .sidebar-sub-menu {
+                                    .sidemenu-item {
+                                        .sidemenu-link {
+                                            &:hover, &.active {
+                                                background-color: #15203c;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sidebar-menu-link {
+                        color: var(--whiteColor);
+                        
+                        &:hover, &.active {
+                            color: var(--primaryColor);
+                            background-color: #15203c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.card-borderd {
+        border: {
+            right: 1px solid var(--borderColor) !important;
+        };
+    }
+    &.card-with-box-shadow {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+    }
+    &.component-rtl-enabled {
+        text-align: end;
+        left: auto;
+        right: 0;
+
+        .logo {
+            a {
+                span {
+                    margin: {
+                        left: 0;
+                        right: 8px;
+                    };
+                }
+            }
+        }
+        .burger-menu {
+            right: auto;
+            left: 25px;
+        }
+        .sidebar-inner {
+            .sidebar-menu {
+                .accordion {
+                    .accordion-item {
+                        .accordion-button {
+                            text-align: end !important;
+                            padding: {
+                                right: 41px;
+                                left: 30px;
+                            };
+                            i {
+                                left: auto;
+                                right: 12px;
+                            }
+                            .trezo-badge {
+                                right: auto;
+                                left: 34px;
+                            }
+                            &::before {
+                                content: "\ea64";
+                                right: auto;
+                                left: 8px;
+                            }
+                            &.open {
+                                &::before {
+                                    content: "\ea4e";
+                                }
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                .accordion-button {
+                                    padding: {
+                                        left: 10px;
+                                        right: 38px;
+                                    };
+                                    &::after {
+                                        left: auto;
+                                        right: 18px;
+                                    }
+                                    .trezo-badge {
+                                        right: auto;
+                                        left: 34px;
+                                    }
+                                }
+                                .accordion-collapse {
+                                    .accordion-body {
+                                        padding: {
+                                            left: 0;
+                                            right: 20px;
+                                        };
+                                    }
+                                }
+                                .sidebar-sub-menu {
+                                    .sidemenu-item {
+                                        .sidemenu-link {
+                                            padding: {
+                                                left: 10px;
+                                                right: 38px;
+                                            };
+                                            &::after {
+                                                left: auto;
+                                                right: 18px;
+                                            }
+                                            .trezo-badge {
+                                                margin: {
+                                                    left: 0;
+                                                    right: 5px;
+                                                };
+                                                &::before {
+                                                    left: auto;
+                                                    right: -3px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sidebar-menu-link {
+                        padding: {
+                            left: 30px;
+                            right: 40px;
+                        };
+                        i {
+                            left: auto;
+                            right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &.right-sidebar {
+            left: 0;
+            right: auto;
+        }
+    }
+}
+::ng-deep {
+    .sidebar-area {
+        .ng-scrollbar {
+            height: 100vh;
+    
+            .ng-scroll-content {
+                padding-right: 0 !important;
+            }
+        }
+        &.component-rtl-enabled {
+            .ng-scrollbar {
+                .ng-scroll-content {
+                    .ng-scrollbar-sticky {
+                        right: auto;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .sidebar-area {
+        width: 250px;
+        left: -100%;
+        
+        .logo {
+            padding: 18px;
+        }
+        .burger-menu {
+            top: 20px;
+            right: 18px;
+        }
+        .sidebar-inner {
+            padding: {
+                top: 84px;
+                left: 18px;
+                right: 18px;
+                bottom: 18px;
+            };
+            .sidebar-menu {
+                .sub-title {
+                    &:not(:first-child) {
+                        margin-top: 15px;
+                    }
+                }
+                .accordion {
+                    .accordion-item {
+                        .accordion-button {
+                            font-size: 13px;
+                            padding: {
+                                bottom: 8px;
+                                right: 25px;
+                                left: 37px;
+                                top: 8px;
+                            };
+                            i {
+                                font-size: 18px;
+                                left: 12px;
+                            }
+                            .trezo-badge {
+                                right: 28px;
+                                width: 18px;
+                                height: 18px;
+                                font-size: 11px;
+                                line-height: 18px;
+                            }
+                            &::before {
+                                right: 8px;
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                .accordion-button {
+                                    font-size: 13px;
+                                    padding: {
+                                        bottom: 7px;
+                                        right: 10px;
+                                        left: 35px;
+                                        top: 7px;
+                                    };
+                                    &::after {
+                                        left: 16px;
+                                    }
+                                    .trezo-badge {
+                                        right: 28px;
+                                        width: 18px;
+                                        height: 18px;
+                                        font-size: 11px;
+                                        line-height: 18px;
+                                    }
+                                }
+                                .accordion-collapse {
+                                    .accordion-body {
+                                        padding-left: 10px;
+                                    }
+                                }
+                                .sidebar-sub-menu {
+                                    .sidemenu-item {
+                                        .sidemenu-link {
+                                            font-size: 13px;
+                                            padding: {
+                                                bottom: 7px;
+                                                right: 10px;
+                                                left: 35px;
+                                                top: 7px;
+                                            };
+                                            &::after {
+                                                left: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sidebar-menu-link {
+                        font-size: 13px;
+                        padding: {
+                            bottom: 8px;
+                            right: 25px;
+                            left: 37px;
+                            top: 8px;
+                        };
+                        i {
+                            font-size: 18px;
+                            left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &.active {
+            left: 0;
+        }
+        &.right-sidebar {
+            left: auto;
+            right: -100%;
+
+            &.active {
+                right: 0;
+            }
+        }
+        &.component-rtl-enabled {
+            right: -100%;
+
+            .burger-menu {
+                left: 18px;
+                right: auto;
+            }
+            .sidebar-inner {
+                .sidebar-menu {
+                    .accordion {
+                        .accordion-item {
+                            .accordion-button {
+                                padding: {
+                                    left: 25px;
+                                    right: 37px;
+                                };
+                                i {
+                                    left: auto;
+                                    right: 12px;
+                                }
+                                .trezo-badge {
+                                    right: auto;
+                                    left: 28px;
+                                }
+                                &::before {
+                                    right: auto;
+                                    left: 8px;
+                                }
+                            }
+                            .accordion-collapse {
+                                .accordion-body {
+                                    .accordion-button {
+                                        padding: {
+                                            left: 10px;
+                                            right: 35px;
+                                        };
+                                        &::after {
+                                            left: auto;
+                                            right: 16px;
+                                        }
+                                        .trezo-badge {
+                                            right: auto;
+                                            left: 28px;
+                                        }
+                                    }
+                                    .accordion-collapse {
+                                        .accordion-body {
+                                            padding: {
+                                                left: 0;
+                                                right: 10px;
+                                            };
+                                        }
+                                    }
+                                    .sidebar-sub-menu {
+                                        .sidemenu-item {
+                                            .sidemenu-link {
+                                                padding: {
+                                                    left: 10px;
+                                                    right: 35px;
+                                                };
+                                                &::after {
+                                                    left: auto;
+                                                    right: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .sidebar-menu-link {
+                            padding: {
+                                left: 25px;
+                                right: 37px;
+                            };
+                            i {
+                                left: auto;
+                                right: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                left: auto;
+                right: 0;
+            }
+            &.right-sidebar {
+                left: -100%;
+                right: auto;
+
+                &.active {
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .sidebar-area {
+        left: -100%;
+
+        &.active {
+            left: 0;
+        }
+        &.right-sidebar {
+            left: auto;
+            right: -100%;
+
+            &.active {
+                right: 0;
+            }
+        }
+        &.component-rtl-enabled {
+            right: -100%;
+
+            &.active {
+                left: auto;
+                right: 0;
+            }
+            &.right-sidebar {
+                right: auto;
+                left: -100%;
+
+                &.active {
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .sidebar-area {
+        left: -100%;
+
+        &.active {
+            left: 0;
+        }
+        &.right-sidebar {
+            left: auto;
+            right: -100%;
+
+            &.active {
+                right: 0;
+            }
+        }
+        &.component-rtl-enabled {
+            right: -100%;
+
+            &.active {
+                left: auto;
+                right: 0;
+            }
+            &.right-sidebar {
+                right: auto;
+                left: -100%;
+
+                &.active {
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px */
+@media (min-width: 1200px) {
+    
+    .sidebar-area {
+        &.active, &.hide-sidebar {
+            width: 60px;
+
+            .logo {
+                padding: {
+                    left: 12px;
+                    right: 12px;
+                };
+                a {
+                    left: 5px;
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+            .burger-menu {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .sidebar-inner {
+                padding: {
+                    left: 12px;
+                    right: 12px;
+                };
+                .sidebar-menu {
+                    .sub-title {
+                        display: none !important;
+                    }
+                    .accordion {
+                        .accordion-item {
+                            .accordion-button {
+                                padding: 0;
+                                width: 36px;
+                                height: 36px;
+
+                                i {
+                                    text-align: center;
+                                    right: 0;
+                                    left: 0;
+                                }
+                                .title {
+                                    display: none;
+                                }
+                                .trezo-badge {
+                                    display: none !important;
+                                }
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            .accordion-collapse {
+                                .accordion-body {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .sidebar-menu-link {
+                            padding: 0;
+                            width: 36px;
+                            height: 36px;
+        
+                            i {
+                                left: 0;
+                                right: 0;
+                                text-align: center;
+                            }
+                            .title {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                width: 260px;
+
+                .logo {
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                    };
+                    a {
+                        left: 0;
+
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                }
+                .burger-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .sidebar-inner {
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                    };
+                    .sidebar-menu {
+                        .sub-title {
+                            display: block !important;
+                        }
+                        .accordion {
+                            .accordion-item {
+                                .accordion-button {
+                                    height: auto;
+                                    width: 100%;
+                                    padding: {
+                                        bottom: 10px;
+                                        right: 30px;
+                                        left: 41px;
+                                        top: 9px;
+                                    };
+                                    i {
+                                        right: auto;
+                                        left: 12px;
+                                    }
+                                    .title {
+                                        display: block;
+                                    }
+                                    .trezo-badge {
+                                        display: inline-block !important;
+                                    }
+                                    &::before {
+                                        display: inline-block;
+                                    }
+                                }
+                                .accordion-collapse {
+                                    .accordion-body {
+                                        display: block;
+                                    }
+                                }
+                            }
+                            .sidebar-menu-link {
+                                height: auto;
+                                width: 100%;
+                                padding: {
+                                    bottom: 9.5px;
+                                    right: 30px;
+                                    top: 9.5px;
+                                    left: 40px;
+                                };
+                                i {
+                                    right: auto;
+                                    left: 12px;
+                                }
+                                .title {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.hide-sidebar {
+            .burger-menu {
+                display: none !important;
+            }
+        }
+        &.component-rtl-enabled {
+            &.active, &.hide-sidebar {
+                .logo {
+                    a {
+                        left: auto;
+                        right: 5px;
+                    }
+                }
+                &:hover {
+                    .logo {
+                        a {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                    .sidebar-inner {
+                        .sidebar-menu {
+                            .accordion {
+                                .accordion-item {
+                                    .accordion-button {
+                                        padding: {
+                                            right: 41px;
+                                            left: 30px;
+                                        };
+                                        i {
+                                            right: 12px;
+                                            left: auto;
+                                        }
+                                    }
+                                }
+                                .sidebar-menu-link {
+                                    padding: {
+                                        right: 40px;
+                                        left: 30px;
+                                    };
+                                    i {
+                                        right: 12px;
+                                        left: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .sidebar-area {
+        width: 240px;
+
+        &.active, &.hide-sidebar {
+            width: 60px;
+
+            &:hover {
+                width: 240px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

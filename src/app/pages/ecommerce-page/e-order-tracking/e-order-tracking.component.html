@@ -1,0 +1,203 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Order Tracking
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Orders
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Order Tracking
+        </li>
+    </ol>
+</div>
+
+<!-- Order Tracking -->
+<div class="row">
+    <div class="col-lg-8">
+        <div
+            class="order-tracking-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Order ID #2435679
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <h5 class="mb-0">
+                        Tracking ID #1004216609
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <span class="text d-block">
+                    IBAN: EST6049283742809
+                </span>
+                <span class="text d-block">
+                    Date: 26 Mar 2024
+                </span>
+                <div class="numbers position-relative z-1 d-md-flex justify-content-between">
+                    <div class="box">
+                        <div class="rounded-circle text-center fw-semibold text-black">
+                            01
+                        </div>
+                        <span class="fw-semibold text-black d-block">
+                            Order Placed
+                        </span>
+                        <span class="d-block">
+                            22 Mar 2024 - 11:35AM
+                        </span>
+                    </div>
+                    <div class="box">
+                        <div class="rounded-circle text-center fw-semibold text-black">
+                            02
+                        </div>
+                        <span class="fw-semibold text-black d-block">
+                            Packed
+                        </span>
+                        <span class="d-block">
+                            23 Mar 2024 - 10:35AM
+                        </span>
+                    </div>
+                    <div class="box">
+                        <div class="rounded-circle text-center fw-semibold text-black">
+                            03
+                        </div>
+                        <span class="fw-semibold text-black d-block">
+                            Shipped
+                        </span>
+                        <span class="d-block">
+                            24 Mar 2024 - 3:45PM
+                        </span>
+                    </div>
+                    <div class="box active">
+                        <div class="rounded-circle text-center fw-semibold text-black">
+                            04
+                        </div>
+                        <span class="fw-semibold text-black d-block">
+                            Delivered
+                        </span>
+                        <span class="d-block">
+                            25 Mar 2024 - 2:21PM
+                        </span>
+                    </div>
+                </div>
+                <span class="title text-black d-block fw-semibold">
+                    View Details:
+                </span>
+                <span class="text text-black d-block">
+                    <span class="text-body">25 Mar 2024 - 2:21PM:</span> Your order delivered.
+                </span>
+                <span class="text text-black d-block">
+                    <span class="text-body">24 Mar 2024 - 3:45PM:</span> Your order shipped.
+                </span>
+                <span class="text text-black d-block">
+                    <span class="text-body">23 Mar 2024 - 10:35AM:</span> Your order is on the way for deliver.
+                </span>
+                <span class="text text-black d-block">
+                    <span class="text-body">22 Mar 2024 - 11:35AM:</span> Your order is now on warehouse. It’s being ready for shipped.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Order Summary
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Description
+                                </th>
+                                <th scope="col" class="fw-medium text-end">
+                                    Price
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-body">
+                                    Grand Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Discount :
+                                </td>
+                                <td class="text-body text-end">
+                                    -$105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Tax :
+                                </td>
+                                <td class="text-body text-end">
+                                    $75.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Subtotal :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,000.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Shipping Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $80.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Coupon Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $20.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $900.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

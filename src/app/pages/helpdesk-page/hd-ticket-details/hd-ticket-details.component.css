@@ -1,0 +1,154 @@
+.ticket-details-card .trezo-card-content h6:not(:first-child) {
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.ticket-details-card .trezo-card-content ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.ticket-details-card .trezo-card-content ul li {
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+.ticket-details-card .trezo-card-content ul li:last-child {
+  margin-bottom: 0;
+}
+.ticket-details-card .trezo-card-content code {
+  padding: 20px;
+  display: block;
+  margin-top: 15px;
+  background: #f5f2f0;
+}
+.ticket-details-card .trezo-card-content code .red {
+  color: #905;
+  margin-right: 5px;
+}
+.ticket-details-card .trezo-card-content code .red:last-child {
+  margin-right: 0;
+}
+.ticket-details-card .trezo-card-content code .green {
+  color: #690;
+}
+.ticket-details-card .trezo-card-content code .blue {
+  color: #07a;
+}
+.ticket-details-card.component-dark-theme .trezo-card-content code {
+  background: #15203c;
+}
+
+.comments-card .trezo-card-content .comments li {
+  border-bottom: 1px solid var(--borderColor);
+  margin-bottom: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+.comments-card .trezo-card-content .comments li .info {
+  gap: 15px;
+  margin-bottom: 12px;
+}
+.comments-card .trezo-card-content .comments li .info img {
+  margin-right: 10px;
+}
+.comments-card .trezo-card-content .comments li .info .trezo-badge {
+  margin-top: 3px;
+}
+.comments-card .trezo-card-content .comments li h6 {
+  margin-bottom: 12px;
+}
+.comments-card .trezo-card-content .comments li .screenshots {
+  margin-bottom: -15px;
+}
+.comments-card .trezo-card-content .comments li .screenshots img {
+  display: inline-block;
+  width: 80px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.comments-card .trezo-card-content .comments li .screenshots img:last-child {
+  margin-right: 0;
+}
+.comments-card .trezo-card-content .comments li:first-child {
+  padding-left: 0;
+  border-color: var(--primaryColor);
+}
+.comments-card .trezo-card-content .comments li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.comments-card .trezo-card-content form {
+  margin-top: 25px;
+}
+.comments-card.component-rtl-enabled .trezo-card-content .comments li {
+  padding-left: 0;
+  padding-right: 25px;
+}
+.comments-card.component-rtl-enabled .trezo-card-content .comments li .info img {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.comments-card.component-rtl-enabled .trezo-card-content .comments li .screenshots img {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.comments-card.component-rtl-enabled .trezo-card-content .comments li .screenshots img:last-child {
+  margin-left: 0;
+}
+.comments-card.component-rtl-enabled .trezo-card-content .comments li:first-child {
+  padding-right: 0;
+}
+.comments-card.component-rtl-enabled .trezo-card-content form {
+  margin-top: 25px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .ticket-details-card .trezo-card-content h6:not(:first-child) {
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .ticket-details-card .trezo-card-content ul {
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
+  .ticket-details-card .trezo-card-content code {
+    padding: 15px;
+    margin-top: 12px;
+  }
+  .comments-card .trezo-card-content .comments li {
+    margin-bottom: 17px;
+    padding-left: 17px;
+    padding-bottom: 17px;
+  }
+  .comments-card .trezo-card-content .comments li .info {
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .comments-card .trezo-card-content .comments li .info img {
+    margin-right: 8px;
+  }
+  .comments-card .trezo-card-content .comments li h6 {
+    margin-bottom: 12px;
+  }
+  .comments-card .trezo-card-content .comments li .screenshots img {
+    width: 70px;
+  }
+  .comments-card .trezo-card-content form {
+    margin-top: 17px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .comments-card .trezo-card-content .comments li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .comments-card .trezo-card-content form {
+    margin-top: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=hd-ticket-details.component.css.map */

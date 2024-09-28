@@ -1,0 +1,107 @@
+.top-orders-card .trezo-card-content .title .info-badge {
+  font-size: 13px;
+  color: #1E8308;
+  margin-left: 10px;
+  padding: 1px 8.3px;
+  border-radius: 100px;
+  border: 1px solid #82FC5A;
+  background-color: #D8FFC8;
+}
+.top-orders-card .trezo-card-content .title .info-badge.down {
+  border-color: #FFCEA9;
+  color: var(--dangerColor);
+  background-color: #FFE1DD;
+}
+.top-orders-card .trezo-card-content .title .days {
+  font-size: 13px;
+}
+.top-orders-card .trezo-card-content .title h5 {
+  margin-top: 4px;
+  font-size: 20px;
+}
+.top-orders-card .trezo-card-content .chart {
+  max-width: 150px;
+  margin-top: -24px;
+  margin-bottom: -16px;
+}
+.top-orders-card .trezo-card-content ul li {
+  font-size: 13px;
+  padding-left: 30px;
+  margin-bottom: 4px;
+}
+.top-orders-card .trezo-card-content ul li::before {
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 5px;
+  border-radius: 7px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.top-orders-card .trezo-card-content ul li:last-child {
+  margin-bottom: 0;
+}
+.top-orders-card .trezo-card-content ul li.completed::before {
+  background: var(--primaryColor);
+}
+.top-orders-card .trezo-card-content ul li.pending::before {
+  background: #C2CDFF;
+}
+.top-orders-card.component-rtl-enabled .trezo-card-content .title .info-badge {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.top-orders-card.component-rtl-enabled .trezo-card-content ul li {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.top-orders-card.component-rtl-enabled .trezo-card-content ul li::before {
+  left: auto;
+  right: 0;
+}
+
+::ng-deep .top-orders-card .trezo-card-content apx-chart .apexcharts-tooltip-series-group.apexcharts-active {
+  padding-bottom: 4px;
+}
+::ng-deep .top-orders-card.component-dark-theme apx-chart .apexcharts-gridline {
+  stroke: transparent;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .top-orders-card .trezo-card-content .title .info-badge {
+    font-size: 12px;
+  }
+  .top-orders-card .trezo-card-content .title .days {
+    font-size: 12px;
+  }
+  .top-orders-card .trezo-card-content .title h5 {
+    margin-top: 4px;
+    font-size: 18px;
+  }
+  .top-orders-card .trezo-card-content .chart {
+    max-width: 150px;
+    margin-top: -20px;
+    margin-bottom: -14px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-orders-card .trezo-card-content .title .days {
+    margin-top: 7px;
+  }
+  .top-orders-card .trezo-card-content .title h5 {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .top-orders-card .trezo-card-content .chart {
+    max-width: 150px;
+    margin-top: -18px;
+    margin-bottom: -12px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=top-orders.component.css.map */

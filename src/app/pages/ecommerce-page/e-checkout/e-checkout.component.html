@@ -1,0 +1,338 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Checkout
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Checkout
+        </li>
+    </ol>
+</div>
+
+<!-- Checkout -->
+<div class="row">
+    <div class="col-lg-8">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Billing Information
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Customer Name
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. Ava Turner">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Phone Number
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. +1 555-123-4567">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Email Address
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. ava@trezo.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    State
+                                </label>
+                                <select class="form-select">
+                                    <option selected>
+                                        Select
+                                    </option>
+                                    <option value="1">
+                                        Florida
+                                    </option>
+                                    <option value="2">
+                                        Wisconsin
+                                    </option>
+                                    <option value="3">
+                                        Washington
+                                    </option>
+                                    <option value="4">
+                                        Nebraska
+                                    </option>
+                                    <option value="5">
+                                        Minnesota
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    City
+                                </label>
+                                <select class="form-select">
+                                    <option selected>
+                                        Select
+                                    </option>
+                                    <option value="1">
+                                        New York
+                                    </option>
+                                    <option value="2">
+                                        Tokyo
+                                    </option>
+                                    <option value="3">
+                                        London
+                                    </option>
+                                    <option value="4">
+                                        Amsterdam
+                                    </option>
+                                    <option value="5">
+                                        Paris
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    ZIP / Postcode
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. 3100">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Street Address
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. 123 Main Street, Anytown, USA">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Country
+                                </label>
+                                <select class="form-select">
+                                    <option selected>
+                                        Select
+                                    </option>
+                                    <option value="1">
+                                        Switzerland
+                                    </option>
+                                    <option value="2">
+                                        New Zealand
+                                    </option>
+                                    <option value="3">
+                                        Germany
+                                    </option>
+                                    <option value="4">
+                                        United States
+                                    </option>
+                                    <option value="5">
+                                        Japan
+                                    </option>
+                                    <option value="6">
+                                        Netherlands
+                                    </option>
+                                    <option value="7">
+                                        Sweden
+                                    </option>
+                                    <option value="8">
+                                        Canada
+                                    </option>
+                                    <option value="9">
+                                        United Kingdom
+                                    </option>
+                                    <option value="10">
+                                        Australia
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Order Note (optional)
+                                </label>
+                                <textarea class="form-control" placeholder="E.g. It makes me feel..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-btn-box">
+                        <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    add
+                                </i>
+                                Proceed To Shipping
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Shopping Cart
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium">
+                                    Description
+                                </th>
+                                <th scope="col" class="fw-medium text-end">
+                                    Price
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-body">
+                                    Grand Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Discount :
+                                </td>
+                                <td class="text-body text-end">
+                                    -$105.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Tax :
+                                </td>
+                                <td class="text-body text-end">
+                                    $75.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Subtotal :
+                                </td>
+                                <td class="text-body text-end">
+                                    $1,000.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Shipping Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $80.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body">
+                                    Coupon Charge :
+                                </td>
+                                <td class="text-body text-end">
+                                    $20.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">
+                                    Total :
+                                </td>
+                                <td class="text-body text-end">
+                                    $900.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Payment Method
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <form>
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Payment Card
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                PayPal
+                            </option>
+                            <option value="2">
+                                Stax
+                            </option>
+                            <option value="3">
+                                Helcim
+                            </option>
+                            <option value="4">
+                                Square
+                            </option>
+                            <option value="5">
+                                Stripe
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Card Number
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. 3588XXXXXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Expiration Date
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. MM / YY">
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="main-label d-block fw-medium text-black">
+                            Security Code
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. CVV">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,889 @@
+.sidebar-area {
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 260px;
+  z-index: 6;
+  left: 0;
+  top: 0;
+}
+.sidebar-area .logo {
+  border-bottom: 1px solid var(--borderColor);
+  padding: 19px 25px 15px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.sidebar-area .logo a {
+  transition: unset;
+}
+.sidebar-area .logo a span {
+  margin-left: 8px;
+  font-size: 24px;
+  top: 1px;
+}
+.sidebar-area .burger-menu {
+  top: 23px;
+  z-index: 3;
+  opacity: 0;
+  right: 25px;
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+}
+.sidebar-area .burger-menu span {
+  height: 1px;
+  width: 25px;
+  margin: 6px 0;
+}
+.sidebar-area .burger-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar-area .burger-menu.active span.top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.sidebar-area .burger-menu.active span.middle-bar {
+  opacity: 0;
+}
+.sidebar-area .burger-menu.active span.bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  margin-top: 5px;
+}
+.sidebar-area .sidebar-inner {
+  padding-top: 89px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .sub-title {
+  font-size: 12px;
+  color: #8695AA;
+  margin-bottom: 8px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .sub-title:not(:first-child) {
+  margin-top: 22px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item {
+  background-color: transparent;
+  color: var(--blackColor);
+  margin-bottom: 5px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+  color: var(--blackColor);
+  font-size: var(--fontSize);
+  background-color: transparent;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 41px;
+  padding-top: 9px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+  transition: var(--transition);
+  transform: translateY(-50%);
+  color: var(--bodyColor);
+  position: absolute;
+  font-size: 22px;
+  line-height: 1;
+  left: 12px;
+  top: 50%;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge {
+  top: 50%;
+  padding: 0;
+  right: 34px;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  line-height: 20px;
+  position: absolute;
+  color: var(--orangeColor);
+  transform: translateY(-50%);
+  background-color: #FFF5ED;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge.style-two {
+  color: #00b69b;
+  background: rgba(0, 182, 155, 0.07);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge.style-three {
+  color: #ee368c;
+  background: rgba(238, 54, 140, 0.1);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::after {
+  display: none;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before {
+  top: 50%;
+  right: 8px;
+  content: "\ea6e";
+  position: absolute;
+  color: var(--bodyColor);
+  transform: translateY(-50%);
+  transition: var(--transition);
+  font-size: 19px;
+  font-family: remixicon;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover {
+  color: var(--blackColor);
+  background-color: #F6F7F9;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open i, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover i {
+  color: var(--blackColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open::before, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover::before {
+  color: var(--blackColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open::before {
+  content: "\ea4e";
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button {
+  color: var(--blackColor);
+  background-color: #F6F7F9;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button i {
+  color: var(--blackColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button::before {
+  color: var(--blackColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse {
+  display: none;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 4px 0 0;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button {
+  color: var(--bodyColor);
+  font-size: var(--fontSize);
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 38px;
+  padding-top: 9px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button::after {
+  top: 50%;
+  left: 18px;
+  width: 10px;
+  content: "";
+  height: 10px;
+  transition: 0.3s;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  transform: translateY(-50%);
+  background: unset !important;
+  border: 1px solid var(--bodyColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button:hover, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button.active {
+  background-color: #ECF0FF;
+  color: var(--primaryColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button:hover::after, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button.active::after {
+  border-color: var(--primaryColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button .trezo-badge {
+  top: 50%;
+  padding: 0;
+  right: 34px;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  line-height: 20px;
+  position: absolute;
+  color: var(--orangeColor);
+  transform: translateY(-50%);
+  background-color: #FFF5ED;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button .trezo-badge.style-two {
+  color: #00b69b;
+  background: rgba(0, 182, 155, 0.07);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button .trezo-badge.style-three {
+  color: #ee368c;
+  background: rgba(238, 54, 140, 0.1);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-collapse .accordion-body {
+  padding-left: 20px;
+  padding-top: 6px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item {
+  margin-bottom: 4px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link {
+  color: var(--bodyColor);
+  font-size: var(--fontSize);
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 38px;
+  padding-top: 9px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link::after {
+  top: 50%;
+  left: 18px;
+  width: 10px;
+  content: "";
+  height: 10px;
+  transition: 0.3s;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  border: 1px solid var(--bodyColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link:hover, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link.active {
+  background-color: #ECF0FF;
+  color: var(--primaryColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link:hover::after, .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link.active::after {
+  border-color: var(--primaryColor);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge {
+  top: -1px;
+  padding: 2px 6px;
+  margin-left: 5px;
+  border-radius: 3px;
+  line-height: initial;
+  color: var(--orangeColor);
+  background-color: #FFE8D4;
+  font-size: 10px;
+  font-weight: normal;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge::before {
+  top: 50%;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  background: #FFE8D4;
+  transform: translateY(-50%) rotate(45deg);
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge.style-two {
+  color: var(--successColor);
+  background-color: #D8FFC8;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge.style-two::before {
+  background: #D8FFC8;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse.open {
+  display: block;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+  font-size: var(--fontSize);
+  color: var(--blackColor);
+  padding-bottom: 9.5px;
+  padding-right: 30px;
+  padding-top: 9.5px;
+  padding-left: 40px;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+  transition: var(--transition);
+  transform: translateY(-50%);
+  color: var(--bodyColor);
+  position: absolute;
+  font-size: 22px;
+  line-height: 1;
+  left: 12px;
+  top: 50%;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link:hover, .sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link.active {
+  color: var(--primaryColor);
+  background-color: #F6F7F9;
+}
+.sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link:hover i, .sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link.active i {
+  color: var(--primaryColor);
+}
+.sidebar-area.right-sidebar {
+  left: auto;
+  right: 0;
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open, .sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover {
+  color: var(--whiteColor);
+  background-color: #15203c;
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open i, .sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover i {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open::before, .sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover::before {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button {
+  color: var(--whiteColor);
+  background-color: #15203c;
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button i {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button::before {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button:hover, .sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button.active {
+  background-color: #15203c;
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link:hover, .sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link.active {
+  background-color: #15203c;
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+  color: var(--whiteColor);
+}
+.sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link:hover, .sidebar-area.component-dark-theme .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link.active {
+  color: var(--primaryColor);
+  background-color: #15203c;
+}
+.sidebar-area.dark-sidebar {
+  --borderColor: #172036;
+  color: var(--bodyColor);
+  --bodyColor: #8695AA;
+}
+.sidebar-area.dark-sidebar a {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar a:hover {
+  color: var(--primaryColor);
+}
+.sidebar-area.dark-sidebar .text-black {
+  color: var(--whiteColor) !important;
+}
+.sidebar-area.dark-sidebar.bg-white, .sidebar-area.dark-sidebar .bg-white {
+  background-color: #0C1427 !important;
+}
+.sidebar-area.dark-sidebar .bg-black {
+  background-color: var(--whiteColor) !important;
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open, .sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover {
+  color: var(--whiteColor);
+  background-color: #15203c;
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open i, .sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover i {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open::before, .sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button:hover::before {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button {
+  color: var(--whiteColor);
+  background-color: #15203c;
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button i {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item:has(.active) .accordion-button::before {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button:hover, .sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button.active {
+  background-color: #15203c;
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link:hover, .sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link.active {
+  background-color: #15203c;
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+  color: var(--whiteColor);
+}
+.sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link:hover, .sidebar-area.dark-sidebar .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link.active {
+  color: var(--primaryColor);
+  background-color: #15203c;
+}
+.sidebar-area.card-borderd {
+  border-right: 1px solid var(--borderColor) !important;
+}
+.sidebar-area.card-with-box-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+.sidebar-area.component-rtl-enabled {
+  text-align: end;
+  left: auto;
+  right: 0;
+}
+.sidebar-area.component-rtl-enabled .logo a span {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.sidebar-area.component-rtl-enabled .burger-menu {
+  right: auto;
+  left: 25px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+  text-align: end !important;
+  padding-right: 41px;
+  padding-left: 30px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+  left: auto;
+  right: 12px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge {
+  right: auto;
+  left: 34px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before {
+  content: "\ea64";
+  right: auto;
+  left: 8px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button.open::before {
+  content: "\ea4e";
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button {
+  padding-left: 10px;
+  padding-right: 38px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button::after {
+  left: auto;
+  right: 18px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button .trezo-badge {
+  right: auto;
+  left: 34px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-collapse .accordion-body {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link {
+  padding-left: 10px;
+  padding-right: 38px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link::after {
+  left: auto;
+  right: 18px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge::before {
+  left: auto;
+  right: -3px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+  left: auto;
+  right: 12px;
+}
+.sidebar-area.component-rtl-enabled.right-sidebar {
+  left: 0;
+  right: auto;
+}
+
+::ng-deep .sidebar-area .ng-scrollbar {
+  height: 100vh;
+}
+::ng-deep .sidebar-area .ng-scrollbar .ng-scroll-content {
+  padding-right: 0 !important;
+}
+::ng-deep .sidebar-area.component-rtl-enabled .ng-scrollbar .ng-scroll-content .ng-scrollbar-sticky {
+  right: auto;
+  left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .sidebar-area {
+    width: 250px;
+    left: -100%;
+  }
+  .sidebar-area .logo {
+    padding: 18px;
+  }
+  .sidebar-area .burger-menu {
+    top: 20px;
+    right: 18px;
+  }
+  .sidebar-area .sidebar-inner {
+    padding-top: 84px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .sub-title:not(:first-child) {
+    margin-top: 15px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+    font-size: 13px;
+    padding-bottom: 8px;
+    padding-right: 25px;
+    padding-left: 37px;
+    padding-top: 8px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+    font-size: 18px;
+    left: 12px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge {
+    right: 28px;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before {
+    right: 8px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button {
+    font-size: 13px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 35px;
+    padding-top: 7px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button::after {
+    left: 16px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button .trezo-badge {
+    right: 28px;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-collapse .accordion-body {
+    padding-left: 10px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link {
+    font-size: 13px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 35px;
+    padding-top: 7px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link::after {
+    left: 16px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+    font-size: 13px;
+    padding-bottom: 8px;
+    padding-right: 25px;
+    padding-left: 37px;
+    padding-top: 8px;
+  }
+  .sidebar-area .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+    font-size: 18px;
+    left: 12px;
+  }
+  .sidebar-area.active {
+    left: 0;
+  }
+  .sidebar-area.right-sidebar {
+    left: auto;
+    right: -100%;
+  }
+  .sidebar-area.right-sidebar.active {
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled {
+    right: -100%;
+  }
+  .sidebar-area.component-rtl-enabled .burger-menu {
+    left: 18px;
+    right: auto;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+    padding-left: 25px;
+    padding-right: 37px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+    left: auto;
+    right: 12px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge {
+    right: auto;
+    left: 28px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before {
+    right: auto;
+    left: 8px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button {
+    padding-left: 10px;
+    padding-right: 35px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button::after {
+    left: auto;
+    right: 16px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-button .trezo-badge {
+    right: auto;
+    left: 28px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .accordion-collapse .accordion-body {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link {
+    padding-left: 10px;
+    padding-right: 35px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body .sidebar-sub-menu .sidemenu-item .sidemenu-link::after {
+    left: auto;
+    right: 16px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+    padding-left: 25px;
+    padding-right: 37px;
+  }
+  .sidebar-area.component-rtl-enabled .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+    left: auto;
+    right: 12px;
+  }
+  .sidebar-area.component-rtl-enabled.active {
+    left: auto;
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled.right-sidebar {
+    left: -100%;
+    right: auto;
+  }
+  .sidebar-area.component-rtl-enabled.right-sidebar.active {
+    right: auto;
+    left: 0;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar-area {
+    left: -100%;
+  }
+  .sidebar-area.active {
+    left: 0;
+  }
+  .sidebar-area.right-sidebar {
+    left: auto;
+    right: -100%;
+  }
+  .sidebar-area.right-sidebar.active {
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled {
+    right: -100%;
+  }
+  .sidebar-area.component-rtl-enabled.active {
+    left: auto;
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled.right-sidebar {
+    right: auto;
+    left: -100%;
+  }
+  .sidebar-area.component-rtl-enabled.right-sidebar.active {
+    right: auto;
+    left: 0;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sidebar-area {
+    left: -100%;
+  }
+  .sidebar-area.active {
+    left: 0;
+  }
+  .sidebar-area.right-sidebar {
+    left: auto;
+    right: -100%;
+  }
+  .sidebar-area.right-sidebar.active {
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled {
+    right: -100%;
+  }
+  .sidebar-area.component-rtl-enabled.active {
+    left: auto;
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled.right-sidebar {
+    right: auto;
+    left: -100%;
+  }
+  .sidebar-area.component-rtl-enabled.right-sidebar.active {
+    right: auto;
+    left: 0;
+  }
+}
+/* Min width 1200px */
+@media (min-width: 1200px) {
+  .sidebar-area.active, .sidebar-area.hide-sidebar {
+    width: 60px;
+  }
+  .sidebar-area.active .logo, .sidebar-area.hide-sidebar .logo {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .sidebar-area.active .logo a, .sidebar-area.hide-sidebar .logo a {
+    left: 5px;
+  }
+  .sidebar-area.active .logo a span, .sidebar-area.hide-sidebar .logo a span {
+    display: none;
+  }
+  .sidebar-area.active .burger-menu, .sidebar-area.hide-sidebar .burger-menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar-area.active .sidebar-inner, .sidebar-area.hide-sidebar .sidebar-inner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .sub-title, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .sub-title {
+    display: none !important;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+    text-align: center;
+    right: 0;
+    left: 0;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .title, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .title {
+    display: none;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge {
+    display: none !important;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before {
+    display: none;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body {
+    display: none;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .sidebar-area.active .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link .title, .sidebar-area.hide-sidebar .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link .title {
+    display: none;
+  }
+  .sidebar-area.active:hover, .sidebar-area.hide-sidebar:hover {
+    width: 260px;
+  }
+  .sidebar-area.active:hover .logo, .sidebar-area.hide-sidebar:hover .logo {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sidebar-area.active:hover .logo a, .sidebar-area.hide-sidebar:hover .logo a {
+    left: 0;
+  }
+  .sidebar-area.active:hover .logo a span, .sidebar-area.hide-sidebar:hover .logo a span {
+    display: inline-block;
+  }
+  .sidebar-area.active:hover .burger-menu, .sidebar-area.hide-sidebar:hover .burger-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .sidebar-area.active:hover .sidebar-inner, .sidebar-area.hide-sidebar:hover .sidebar-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .sub-title, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .sub-title {
+    display: block !important;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+    height: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 41px;
+    padding-top: 9px;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+    right: auto;
+    left: 12px;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .title, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .title {
+    display: block;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button .trezo-badge {
+    display: inline-block !important;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button::before {
+    display: inline-block;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-collapse .accordion-body {
+    display: block;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+    height: auto;
+    width: 100%;
+    padding-bottom: 9.5px;
+    padding-right: 30px;
+    padding-top: 9.5px;
+    padding-left: 40px;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+    right: auto;
+    left: 12px;
+  }
+  .sidebar-area.active:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link .title, .sidebar-area.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link .title {
+    display: block;
+  }
+  .sidebar-area.hide-sidebar .burger-menu {
+    display: none !important;
+  }
+  .sidebar-area.component-rtl-enabled.active .logo a, .sidebar-area.component-rtl-enabled.hide-sidebar .logo a {
+    left: auto;
+    right: 5px;
+  }
+  .sidebar-area.component-rtl-enabled.active:hover .logo a, .sidebar-area.component-rtl-enabled.hide-sidebar:hover .logo a {
+    left: auto;
+    right: 0;
+  }
+  .sidebar-area.component-rtl-enabled.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button, .sidebar-area.component-rtl-enabled.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button {
+    padding-right: 41px;
+    padding-left: 30px;
+  }
+  .sidebar-area.component-rtl-enabled.active:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i, .sidebar-area.component-rtl-enabled.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .accordion-item .accordion-button i {
+    right: 12px;
+    left: auto;
+  }
+  .sidebar-area.component-rtl-enabled.active:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link, .sidebar-area.component-rtl-enabled.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link {
+    padding-right: 40px;
+    padding-left: 30px;
+  }
+  .sidebar-area.component-rtl-enabled.active:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i, .sidebar-area.component-rtl-enabled.hide-sidebar:hover .sidebar-inner .sidebar-menu .accordion .sidebar-menu-link i {
+    right: 12px;
+    left: auto;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sidebar-area {
+    width: 240px;
+  }
+  .sidebar-area.active, .sidebar-area.hide-sidebar {
+    width: 60px;
+  }
+  .sidebar-area.active:hover, .sidebar-area.hide-sidebar:hover {
+    width: 240px;
+  }
+}
+/* Min width 1600px *//*# sourceMappingURL=sidebar.component.css.map */

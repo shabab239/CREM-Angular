@@ -1,0 +1,85 @@
+.invoice-details-card .trezo-card-content .invoice-info {
+  margin-bottom: 25px;
+}
+.invoice-details-card .trezo-card-content .invoice-info span {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.invoice-details-card .trezo-card-content .invoice-info span.title {
+  margin-bottom: 25px;
+}
+.invoice-details-card .trezo-card-content .invoice-info span:last-child {
+  margin-bottom: 0;
+}
+.invoice-details-card .trezo-card-content .invoice-info div:last-child {
+  text-align: end;
+}
+.invoice-details-card .trezo-card-content .invoice-info .qr-code-image {
+  width: 150px;
+}
+.invoice-details-card .trezo-card-content .basic-table {
+  margin-bottom: 25px;
+}
+.invoice-details-card .trezo-card-content .form-btn-box button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.invoice-details-card .trezo-card-content .form-btn-box button:first-child {
+  margin-left: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .invoice-details-card .trezo-card-content .invoice-info {
+    margin-bottom: 17px;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info span {
+    font-size: 13px;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info span.title {
+    margin-bottom: 8px;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info div:last-child {
+    text-align: start;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info .qr-code-image {
+    width: 150px;
+    margin-top: 17px;
+    margin-bottom: 15px;
+  }
+  .invoice-details-card .trezo-card-content .basic-table {
+    margin-bottom: 17px;
+  }
+  .invoice-details-card .trezo-card-content .form-btn-box button {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .invoice-details-card .trezo-card-content .invoice-info {
+    margin-bottom: 20px;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info .qr-code-image {
+    margin-top: 20px;
+    margin-bottom: 17px;
+  }
+  .invoice-details-card .trezo-card-content .basic-table {
+    margin-bottom: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .invoice-details-card .trezo-card-content .invoice-info span {
+    font-size: 14px;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info span.title {
+    margin-bottom: 25px;
+  }
+  .invoice-details-card .trezo-card-content .invoice-info .qr-code-image {
+    width: 140px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=invoice-details.component.css.map */

@@ -1,0 +1,183 @@
+<div
+    class="bt-my-tasks-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                My Tasks
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        All Tasks
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Project Name
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Deadline
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page/" class="fw-medium"> Web Development </a>
+                        </td>
+                        <td>10 Jan 2024</td>
+                        <td>
+                            <span class="trezo-badge"> Completed </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page/" class="fw-medium"> UX/UI Design </a>
+                        </td>
+                        <td>05 Feb 2024</td>
+                        <td>
+                            <span class="trezo-badge inProgress"> In Progress </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page/" class="fw-medium"> React Development </a>
+                        </td>
+                        <td>28 Mar 2024</td>
+                        <td>
+                            <span class="trezo-badge rejected"> Cancelled </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page/" class="fw-medium"> Python Research </a>
+                        </td>
+                        <td>09 Mar 2024</td>
+                        <td>
+                            <span class="trezo-badge pending"> Pending </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                        </td>
+                        <td>
+                            <a routerLink="/dashboard/project-management-page/" class="fw-medium"> Web Development </a>
+                        </td>
+                        <td>10 Jan 2024</td>
+                        <td>
+                            <span class="trezo-badge"> Completed </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 4 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

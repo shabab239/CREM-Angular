@@ -1,0 +1,324 @@
+.sidebar-card {
+    .trezo-card-content {
+        .search-box {
+            margin-bottom: 28px;
+            
+            input {
+                background-color: #F6F7F9;
+                border: 1px solid #F6F7F9;
+                color: var(--blackColor);
+                height: 44px;
+                padding: {
+                    left: 15px;
+                    right: 15px;
+                };
+                &::placeholder {
+                    color: var(--bodyColor);
+                    transition: var(--transition);
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            button {
+                top: 50%;
+                right: 15px;
+                margin-top: 1px;
+                position: absolute;
+                color: var(--primaryColor);
+                transform: translateY(-50%);
+                
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+        .sidebar-list {
+            margin-bottom: 28px;
+
+            li {
+                font-weight: 500;
+                margin-bottom: 19px;
+
+                a {
+                    padding-left: 28px;
+                    
+                    i {
+                        transform: translateY(-50%);
+                        color: var(--primaryColor);
+                        position: absolute;
+                        margin-top: -.5px;
+                        font-size: 18px;
+                        top: 50%;
+                        left: 0;
+                    }
+                    &.active {
+                        color: var(--primaryColor);
+                    }
+                }
+                ul {
+                    padding-left: 28px;
+                    margin: {
+                        top: 17px;
+                        bottom: 21px;
+                    };
+                    li {
+                        margin-bottom: 14px;
+                        font-weight: normal;
+
+                        a {
+                            padding-left: 15px;
+                            color: var(--bodyColor);
+
+                            &::before {
+                                left: 0;
+                                top: 50%;
+                                width: 6px;
+                                content: '';
+                                height: 6px;
+                                border-radius: 50%;
+                                position: absolute;
+                                transform: translateY(-50%);
+                                transition: var(--transition);
+                                border: 1px solid var(--primaryColor);
+                            }
+                            &.active, &:hover {
+                                color: var(--primaryColor);
+
+                                &::before {
+                                    background: var(--primaryColor);
+                                }
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                span {
+                    font: {
+                        size: 13px;
+                        weight: normal;
+                    };
+                }
+                &:nth-child(2) {
+                    a {
+                        i {
+                            color: var(--successColor);
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    a {
+                        i {
+                            color: var(--infoColor);
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    a {
+                        i {
+                            color: var(--purpleColor);
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    a {
+                        i {
+                            color: var(--warningColor);
+                        }
+                    }
+                }
+                &:nth-child(6) {
+                    a {
+                        i {
+                            color: var(--secondaryColor);
+                        }
+                    }
+                }
+                &:nth-child(7) {
+                    a {
+                        i {
+                            color: var(--dangerColor);
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .storage-status {
+            border-top: 1px solid var(--borderColor);
+            padding: {
+                top: 30px;
+                left: 30px;
+                right: 30px;
+            };
+            margin: {
+                left: -25px;
+                right: -25px;
+            };
+            h6 {
+                margin-bottom: 11px;
+            }
+            span {
+                font-size: 13px;
+            }
+            .progress {
+                margin-top: 11px;
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .search-box {
+                button {
+                    right: auto;
+                    left: 15px;
+                }
+            }
+            .sidebar-list {
+                li {
+                    a {
+                        padding: {
+                            left: 0;
+                            right: 28px;
+                        };
+                        i {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                    ul {
+                        padding: {
+                            left: 0;
+                            right: 28px;
+                        };
+                        li {
+                            a {
+                                padding: {
+                                    left: 0;
+                                    right: 15px;
+                                };
+                                &::before {
+                                    left: auto;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .search-box {
+                input {
+                    background-color: #15203c;
+                    color: var(--whiteColor);
+                    border-color: #15203c;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .sidebar-card {
+        .trezo-card-content {
+            .search-box {
+                margin-bottom: 20px;
+                
+                button {
+                    right: 13px;
+                }
+            }
+            .sidebar-list {
+                margin-bottom: 20px;
+    
+                li {
+                    margin-bottom: 19px;
+    
+                    ul {
+                        margin: {
+                            top: 17px;
+                            bottom: 21px;
+                        };
+                        li {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+            .storage-status {
+                padding: {
+                    top: 20px;
+                    left: 17px;
+                    right: 17px;
+                };
+                margin: {
+                    left: -17px;
+                    right: -17px;
+                };
+                h6 {
+                    margin-bottom: 10px;
+                }
+                .progress {
+                    margin-top: 10px;
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .search-box {
+                    button {
+                        left: 13px;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .sidebar-card {
+        .trezo-card-content {
+            .search-box {
+                margin-bottom: 25px;
+            }
+            .sidebar-list {
+                margin-bottom: 25px;
+    
+                li {
+                    margin-bottom: 22px;
+                }
+            }
+            .storage-status {
+                padding-top: 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

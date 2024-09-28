@@ -1,0 +1,247 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Add User
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Users
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Add User
+        </li>
+    </ol>
+</div>
+
+<!-- Add User -->
+<form>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="add-user-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+                <div class="trezo-card-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    User ID
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. #JAN-123">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    User Name
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. Olivia John">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Email Address
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. olivia@trezo.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Location
+                                </label>
+                                <select class="form-select">
+                                    <option selected>
+                                        Select
+                                    </option>
+                                    <option value="1">
+                                        Washington D.C
+                                    </option>
+                                    <option value="2">
+                                        Chicago
+                                    </option>
+                                    <option value="3">
+                                        Oklahoma City
+                                    </option>
+                                    <option value="4">
+                                        San Diego
+                                    </option>
+                                    <option value="5">
+                                        Los Angeles
+                                    </option>
+                                    <option value="6">
+                                        Las Vegas
+                                    </option>
+                                    <option value="7">
+                                        San Francisco
+                                    </option>
+                                    <option value="8">
+                                        Istanbul
+                                    </option>
+                                    <option value="9">
+                                        London
+                                    </option>
+                                    <option value="10">
+                                        Dubai
+                                    </option>
+                                    <option value="11">
+                                        Antalya
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Phone Number
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. +1 555-445-4455">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Projects
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. 27">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Add Some Info
+                                </label>
+                                <textarea class="form-control" placeholder="E.g. It makes me feel..."></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Facebook
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. https://www.facebook.com/">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    X
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. https://x.com/">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Linkedin
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. https://www.linkedin.com/">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    GitHub
+                                </label>
+                                <input type="text" class="form-control" placeholder="E.g. https://github.com/">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-0">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Upload Product Images
+                                </label>
+                                <file-upload class="file-uploader" [multiple]="multiple"></file-upload>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div
+                class="add-user-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+                [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            >
+                <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+                    <div class="trezo-card-title">
+                        <h5 class="mb-0">
+                            Privacy Policy
+                        </h5>
+                    </div>
+                </div>
+                <div class="trezo-card-content">
+                    <div class="boxes">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="allowUsersToShowYourEmail">
+                            <label class="form-check-label" for="allowUsersToShowYourEmail">
+                                Allow users to show your email
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="allowUsersToShowYourExperiences">
+                            <label class="form-check-label" for="allowUsersToShowYourExperiences">
+                                Allow users to show your experiences
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="allowUsersToShowYourFollowers">
+                            <label class="form-check-label" for="allowUsersToShowYourFollowers">
+                                Allow users to show your followers
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="main-label d-block fw-medium text-black">
+                            Select Your Skills
+                        </label>
+                        <select class="form-select">
+                            <option selected>
+                                Select
+                            </option>
+                            <option value="1">
+                                Leadership
+                            </option>
+                            <option value="2">
+                                Project Management
+                            </option>
+                            <option value="3">
+                                Data Analysis
+                            </option>
+                            <option value="4">
+                                Teamwork
+                            </option>
+                            <option value="5">
+                                Web Development
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card mb-25 border-radius d-block bg-transparent p-0 border-0 shadow-none">
+        <div class="trezo-card-content">
+            <div class="form-btn-box">
+                <button type="button" class="warn d-inline-block fw-medium border-radius border-0 transition">
+                    Cancel
+                </button>
+                <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                    <span class="d-inline-block position-relative">
+                        <i class="material-symbols-outlined">
+                            add
+                        </i>
+                        Add User
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

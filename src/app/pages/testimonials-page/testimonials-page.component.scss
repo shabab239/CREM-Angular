@@ -1,0 +1,119 @@
+.testimonial-item {
+    padding: 25px;
+
+    h5 {
+        margin: {
+            top: 16px;
+            bottom: 7px;
+        };
+    }
+    .ratings {
+        color: #FE7A36;
+        margin: {
+            top: 16px;
+            bottom: 15px;
+        };
+        i {
+            font-size: 16px;
+            margin: {
+                left: 1px;
+                right: 1px;
+            };
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .user {
+        margin-bottom: 18px;
+
+        .title {
+            margin-left: 15px;
+
+            h5 {
+                margin-top: 0;
+            }
+            .ratings {
+                margin: {
+                    bottom: 0;
+                    top: 13px;
+                };
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    .testimonial-item {
+        .user {
+            .title {
+                margin: {
+                    left: 0;
+                    right: 15px;
+                };
+            }
+        }
+    }
+}
+.testimonials-list {
+    margin-bottom: -25px !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .testimonial-item {
+        padding: 17px;
+    
+        h5 {
+            margin: {
+                top: 12px;
+                bottom: 8px;
+            };
+        }
+        .ratings {
+            margin: {
+                top: 15px;
+                bottom: 13px;
+            };
+            i {
+                font-size: 14px;
+            }
+        }
+        .user {
+            margin-bottom: 15px;
+    
+            .title {
+                .ratings {
+                    margin: {
+                        top: 12px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .testimonial-item {
+        padding: 20px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

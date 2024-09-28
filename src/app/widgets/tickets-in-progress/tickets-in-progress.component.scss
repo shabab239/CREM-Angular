@@ -1,0 +1,90 @@
+.tickets-in-progress-card {
+    .trezo-card-content {
+        h5 {
+            font-size: 20px;
+            margin-top: 3px;
+        }
+        .chart {
+            margin: {
+                top: -14px;
+                bottom: -15px;
+            };
+        }
+        .info {
+            span {
+                font-size: 13px;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .tickets-in-progress-card {
+        .trezo-card-content {
+            h5 {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .tickets-in-progress-card {
+        .trezo-card-content {
+            h5 {
+                font-size: 19px;
+            }
+            .chart {
+                margin-top: -15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .tickets-in-progress-card {
+        .trezo-card-content {
+            .chart {
+                margin: {
+                    top: -30px;
+                    bottom: -20px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .tickets-in-progress-card {
+        .trezo-card-content {
+            .chart {
+                margin: {
+                    top: -30px;
+                    bottom: -20px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

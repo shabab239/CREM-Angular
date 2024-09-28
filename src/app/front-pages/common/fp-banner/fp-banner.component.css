@@ -1,0 +1,186 @@
+.banner-area {
+  padding-top: 185px;
+}
+.banner-area .shape1 {
+  z-index: -1;
+  right: -30px;
+  bottom: 50px;
+  position: absolute;
+  filter: blur(150px);
+}
+.banner-area .shape2 {
+  left: 25px;
+  top: -210px;
+  z-index: -1;
+  position: absolute;
+  filter: blur(125px);
+}
+.banner-area .shape3 {
+  top: -125px;
+  z-index: -1;
+  right: 260px;
+  position: absolute;
+  filter: blur(75px);
+}
+.banner-area .shape4 {
+  bottom: 0;
+  left: -50px;
+  z-index: -1;
+  filter: blur(75px);
+  position: absolute;
+}
+.banner-area.component-rtl-enabled .shape1 {
+  left: -30px;
+  right: auto;
+}
+.banner-area.component-rtl-enabled .shape2 {
+  right: 25px;
+  left: auto;
+}
+.banner-area.component-rtl-enabled .shape3 {
+  left: 260px;
+  right: auto;
+}
+.banner-area.component-rtl-enabled .shape4 {
+  right: -50px;
+  left: auto;
+}
+
+.banner-content {
+  max-width: 935px;
+  margin-bottom: 60px;
+}
+.banner-content h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  letter-spacing: -1.5px;
+}
+.banner-content p {
+  max-width: 740px;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-content .btn-box {
+  font-size: 16px;
+  margin-top: 25px;
+  padding: 12px 17px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+.banner-content .btn-box:not(:disabled) {
+  color: var(--whiteColor);
+}
+.banner-content .btn-box span {
+  padding-left: 29px;
+}
+.banner-content .btn-box span i {
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.banner-content .btn-box:hover {
+  background-color: var(--purpleColor);
+}
+
+.component-rtl-enabled .banner-content .btn-box span {
+  padding-left: 0;
+  padding-right: 29px;
+}
+.component-rtl-enabled .banner-content .btn-box span i {
+  left: auto;
+  right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .banner-area {
+    padding-top: 125px;
+  }
+  .banner-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-content h1 {
+    font-size: 32px;
+    margin-bottom: 13px;
+    letter-spacing: -0.5px;
+  }
+  .banner-content p {
+    max-width: 100%;
+    font-size: 13px;
+  }
+  .banner-content .btn-box {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .banner-content .btn-box span {
+    padding-left: 25px;
+  }
+  .banner-content .btn-box span i {
+    font-size: 20px;
+  }
+  .component-rtl-enabled .banner-content .btn-box span {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-area {
+    padding-top: 145px;
+  }
+  .banner-content {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+  .banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 22px;
+    letter-spacing: -1px;
+  }
+  .banner-content p {
+    max-width: 600px;
+    font-size: 15px;
+  }
+  .banner-content .btn-box {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .banner-content .btn-box span {
+    padding-left: 28px;
+  }
+  .banner-content .btn-box span i {
+    font-size: 22px;
+  }
+  .component-rtl-enabled .banner-content .btn-box span {
+    padding-left: 0;
+    padding-right: 28px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-area {
+    padding-top: 185px;
+  }
+  .banner-content {
+    max-width: 100%;
+  }
+  .banner-content h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+  }
+  .banner-content p {
+    max-width: 650px;
+    font-size: 16px;
+  }
+  .banner-content .btn-box {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=fp-banner.component.css.map */

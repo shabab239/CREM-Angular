@@ -1,0 +1,68 @@
+.bt-group-lessons-card .trezo-card-content .basic-table .table tbody tr td, .bt-group-lessons-card .trezo-card-content .basic-table table tbody tr td {
+  padding-top: 17.2px;
+  padding-bottom: 17.2px;
+}
+.bt-group-lessons-card .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-group-lessons-card .trezo-card-content .basic-table table tbody tr td:first-child {
+  padding-left: 0;
+  border-left-width: 0;
+}
+.bt-group-lessons-card .trezo-card-content .basic-table .table tbody tr td:last-child, .bt-group-lessons-card .trezo-card-content .basic-table table tbody tr td:last-child {
+  text-align: end;
+  padding-right: 0;
+  border-right-width: 0;
+}
+.bt-group-lessons-card .trezo-card-content .trezo-card-pagination {
+  padding: 17px 0 0;
+  border-radius: 0;
+  border-width: 0;
+}
+.bt-group-lessons-card .trezo-card-content .trezo-card-pagination div ol, .bt-group-lessons-card .trezo-card-content .trezo-card-pagination div ul {
+  margin-left: 10px;
+}
+.bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+  border-right-width: 0;
+  padding-left: 20px;
+  padding-right: 0;
+}
+.bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:last-child, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:last-child {
+  border-left-width: 0;
+  padding-left: 0;
+  padding-right: 20px;
+}
+.bt-group-lessons-card.component-rtl-enabled .trezo-card-content .trezo-card-pagination div ol, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .trezo-card-pagination div ul {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .bt-group-lessons-card .trezo-card-content .basic-table .table tbody tr td, .bt-group-lessons-card .trezo-card-content .basic-table table tbody tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-left: 17px;
+  }
+  .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:last-child, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:last-child {
+    padding-right: 17px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:first-child, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:first-child {
+    padding-left: 20px;
+  }
+  .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table .table tbody tr td:last-child, .bt-group-lessons-card.component-rtl-enabled .trezo-card-content .basic-table table tbody tr td:last-child {
+    padding-right: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bt-group-lessons-card .trezo-card-content .basic-table .table tbody tr td, .bt-group-lessons-card .trezo-card-content .basic-table table tbody tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=bt-group-lessons.component.css.map */

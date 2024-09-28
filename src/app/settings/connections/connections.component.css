@@ -1,0 +1,65 @@
+.connections-card h5 {
+  margin-bottom: 23px;
+}
+.connections-card ul li {
+  margin-bottom: 21px;
+}
+.connections-card ul li .icon img {
+  width: 40px;
+}
+.connections-card ul li .title {
+  margin-left: 15px;
+}
+.connections-card ul li .title span:not(:first-child) {
+  margin-top: 3px;
+}
+.connections-card ul li:last-child {
+  margin-bottom: 0;
+}
+.connections-card .border-top {
+  border-color: var(--borderColor) !important;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.connections-card.component-rtl-enabled ul li .title {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .connections-card h5 {
+    margin-bottom: 17px;
+  }
+  .connections-card ul li {
+    margin-bottom: 17px;
+  }
+  .connections-card ul li .title {
+    margin-left: 12px;
+  }
+  .connections-card .border-top {
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+  .connections-card.component-rtl-enabled ul li .title {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .connections-card h5 {
+    margin-bottom: 20px;
+  }
+  .connections-card ul li {
+    margin-bottom: 20px;
+  }
+  .connections-card .border-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=connections.component.css.map */

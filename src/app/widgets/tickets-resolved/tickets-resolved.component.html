@@ -1,0 +1,37 @@
+<div class="tickets-resolved-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-content">
+        <span class="d-block">
+            Tickets Resolved
+        </span>
+        <h5 class="mb-0">
+            2.4k
+        </h5>
+        <div class="chart">
+            <apx-chart
+                [grid]="chartOptions.grid!"
+                [fill]="chartOptions.fill!"
+                [chart]="chartOptions.chart!"
+                [xaxis]="chartOptions.xaxis!"
+                [yaxis]="chartOptions.yaxis!"
+                [title]="chartOptions.title!"
+                [stroke]="chartOptions.stroke!"
+                [series]="chartOptions.series!"
+                [labels]="chartOptions.labels!"
+                [legend]="chartOptions.legend!"
+                [colors]="chartOptions.colors!"
+                [subtitle]="chartOptions.subtitle!"
+                [dataLabels]="chartOptions.dataLabels!"
+            ></apx-chart>
+        </div>
+        <div class="info d-flex align-items-center justify-content-between">
+            <span class="d-block">
+                This Month
+            </span>
+            <span class="lh-1 text-success">
+                <i class="material-symbols-outlined">
+                    trending_up
+                </i>
+            </span>
+        </div>
+    </div>
+</div>

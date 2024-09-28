@@ -1,0 +1,151 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Profile
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Profile
+        </li>
+    </ol>
+</div>
+
+<!-- Profile -->
+<div
+    class="profile-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none p-0"
+    [class.card-without-border-radius]="themeService.isCardWithoutBorderRadius()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    [class.component-dark-theme]="themeService.isDark()"
+>
+    <div class="trezo-card-content">
+        <div class="cover-image position-relative border-top-radius">
+            <img src="images/profile-cover.jpg" class="border-top-radius" alt="cover-image">
+            <div class="update-cover-photo-menu">
+                <button class="button border-radius transition d-inline-block border-radius" (click)="toggleUpdateCoverPhotoMenuOpen()">
+                    Update Cover Photo
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isUpdateCoverPhotoMenuOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Upload Photo
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Reposition
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            Remove
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile-content">
+            <div class="d-md-flex align-items-end justify-content-between">
+                <div class="d-md-flex align-items-end">
+                    <div class="image position-relative">
+                        <img src="images/profile.jpg" class="profile-image rounded-circle" alt="profile-image">
+                        <img src="images/icons/verified.svg" class="verified" alt="verified">
+                    </div>
+                    <div class="title">
+                        <span class="d-block text-black fw-bold">
+                            Alice Johnson
+                        </span>
+                        <span class="d-block fw-medium">
+                            Product Designer
+                        </span>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <div class="edit-profile-menu position-relative d-inline-block">
+                        <button class="button fw-medium border-radius transition d-inline-block border-radius" (click)="toggleEditProfileMenuOpen()">
+                            <span class="d-flex align-items-center">
+                                <i class="material-symbols-outlined">
+                                    edit
+                                </i>
+                                Edit
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isEditProfileMenuOpen">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    See Photo
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Upload Photo
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Remove
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="share-profile-menu position-relative d-inline-block">
+                        <button class="button fw-medium border-radius transition d-inline-block border-radius" (click)="toggleShareProfileMenuOpen()">
+                            <span class="d-flex align-items-center">
+                                <i class="material-symbols-outlined">
+                                    share
+                                </i>
+                                Share
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isShareProfileMenuOpen">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Facebook
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    X
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Instagram
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Profile Nav Links -->
+<ul class="profile-nav-links text-center p-0 mb-25 list-unstyled">
+    <li class="d-inline-block">
+        <a class="d-block border-radius fw-medium" routerLink="/dashboard/profile" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            Profile
+        </a>
+    </li>
+    <li class="d-inline-block">
+        <a class="d-block border-radius fw-medium" routerLink="/dashboard/profile/teams" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            Teams
+        </a>
+    </li>
+    <li class="d-inline-block">
+        <a class="d-block border-radius fw-medium" routerLink="/dashboard/profile/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            Projects
+        </a>
+    </li>
+</ul>
+
+<!-- Router Outlet -->
+<router-outlet />

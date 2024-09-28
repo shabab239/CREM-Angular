@@ -1,0 +1,507 @@
+.sign-up-area {
+    background-color: var(--whiteColor);
+    padding: {
+        top: 135px;
+        bottom: 135px;
+    };
+    &.dark-theme {
+        background-color: #0A0E19;
+    }
+}
+.trezo-form {
+    max-width: 1255px;
+    padding: {
+        left: 12.5px;
+        right: 12.5px;
+    };
+    .form-image {
+        border-radius: 24px;
+        margin-right: -25px;
+
+        img {
+            border-radius: 24px;
+        }
+    }
+    .form-content {
+        padding-left: 90px;
+
+        .title {
+            margin: {
+                top: 25px;
+                bottom: 23px;
+            };
+            h1 {
+                font-size: 28px;
+                margin-bottom: 7px;
+            }
+            p {
+                font-size: 16px;
+                color: #445164;
+            }
+        }
+        .with-socials {
+            margin-bottom: 23px;
+            
+            div {
+                flex-grow: 1;
+                margin: {
+                    left: 6px;
+                    right: 6px;
+                };
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            button {
+                padding: 10.5px 25px;
+                color: var(--blackColor);
+                border: 1px solid #D6DAE1;
+                background: var(--whiteColor);
+                box-shadow: 0px 4px 16px -2px rgba(27, 37, 51, 0.06);
+            }
+        }
+        form {
+            .form-group {
+                margin-bottom: 15px;
+    
+                .main-label {
+                    margin-bottom: 12px;
+                }
+                .icon-button {
+                    right: 20px;
+                    bottom: 12px;
+                    font-size: 18px;
+                    position: absolute;
+                    color: var(--bodyColor);
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+            .btn-box {
+                font-size: 16px;
+                margin-top: 24px;
+                padding: 12px 25px;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+                margin: {
+                    top: 24px;
+                    bottom: 24px;
+                };
+                i {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    background-color: var(--secondaryColor);
+                }
+            }
+            .info {
+                line-height: 1.6;
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .form-content {
+            .logo {
+                img {
+                    display: none;
+
+                    &.d-none {
+                        display: inline !important;
+                    }
+                }
+            }
+            .title {
+                p {
+                    color: var(--bodyColor);
+                }
+            }
+            .with-socials {
+                button {
+                    background: #0A0E19;
+                    color: var(--whiteColor);
+                    border-color: var(--borderColor);
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .form-image {
+            margin: {
+                right: 0;
+                left: -24px;
+            };
+        }
+        .form-content {
+            padding: {
+                left: 0;
+                right: 90px;
+            };
+            .with-socials {
+                div {
+                    &:first-child {
+                        margin: {
+                            left: 6px;
+                            right: 0;
+                        };
+                    }
+                    &:last-child {
+                        margin: {
+                            right: 6px;
+                            left: 0;
+                        };
+                    }
+                }
+            }
+            form {
+                .btn-box {
+                    span {
+                        i {
+                            margin: {
+                                right: 0;
+                                left: 5px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .sign-up-area {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+    }
+    .trezo-form {
+        max-width: 100%;
+
+        .form-image {
+            border-radius: 15px;
+            margin: {
+                right: 0;
+                top: 25px;
+            };
+            img {
+                border-radius: 15px;
+            }
+        }
+        .form-content {
+            padding-left: 0;
+    
+            .title {
+                margin: {
+                    top: 17px;
+                    bottom: 15px;
+                };
+                h1 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+            .with-socials {
+                margin-bottom: 20px;
+                
+                div {
+                    margin: {
+                        left: 5px;
+                        right: 5px;
+                    };
+                }
+                button {
+                    padding: 8px 15px;
+                }
+            }
+            form {
+                .form-group {
+                    .main-label {
+                        margin-bottom: 10px;
+                    }
+                    .icon-button {
+                        right: 15px;
+                        bottom: 12px;
+                        font-size: 16px;
+                    }
+                }
+                .btn-box {
+                    padding: 12px 25px;
+                    font-size: 13px;
+                    margin: {
+                        top: 17px;
+                        bottom: 17px;
+                    };
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .form-image {
+                margin: {
+                    left: 0;
+                };
+            }
+            .form-content {
+                padding-right: 0;
+                
+                .with-socials {
+                    div {
+                        &:first-child {
+                            margin: {
+                                left: 5px;
+                            };
+                        }
+                        &:last-child {
+                            margin: {
+                                right: 5px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .trezo-form {
+        max-width: 540px;
+
+        .form-content {
+            .title {
+                margin: {
+                    top: 20px;
+                    bottom: 17px;
+                };
+            }
+            form {
+                .btn-box {
+                    margin: {
+                        top: 20px;
+                        bottom: 20px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .sign-up-area {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+    }
+    .trezo-form {
+        max-width: 720px;
+
+        .form-image {
+            margin: {
+                right: 0;
+                top: 25px;
+            };
+        }
+        .form-content {
+            padding-left: 0;
+    
+            .title {
+                margin: {
+                    top: 20px;
+                    bottom: 20px;
+                };
+                h1 {
+                    font-size: 24px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .with-socials {
+                margin-bottom: 20px;
+                
+                div {
+                    margin: {
+                        left: 5px;
+                        right: 5px;
+                    };
+                }
+            }
+            form {
+                .btn-box {
+                    font-size: 14px;
+                    padding: 12px 25px;
+                    margin: {
+                        top: 20px;
+                        bottom: 20px;
+                    };
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .form-image {
+                margin: {
+                    left: 0;
+                };
+            }
+            .form-content {
+                padding-right: 0;
+        
+                .with-socials {
+                    div {
+                        &:first-child {
+                            margin: {
+                                left: 5px;
+                            };
+                        }
+                        &:last-child {
+                            margin: {
+                                right: 5px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .sign-up-area {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        };
+    }
+    .trezo-form {
+        max-width: 960px;
+
+        .form-image {
+            margin-right: 0;
+        }
+        .form-content {
+            padding-left: 15px;
+    
+            .title {
+                h1 {
+                    font-size: 26px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+            form {
+                .btn-box {
+                    font-size: 15px;
+                    margin: {
+                        top: 20px;
+                        bottom: 20px;
+                    };
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .form-image {
+                margin-left: 0;
+            }
+            .form-content {
+                padding: {
+                    left: 0;
+                    right: 15px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .sign-up-area {
+        padding: {
+            top: 120px;
+            bottom: 120px;
+        };
+    }
+    .trezo-form {
+        max-width: 1140px;
+
+        .form-image {
+            margin-right: 0;
+        }
+        .form-content {
+            padding-left: 25px;
+        }
+        &.component-rtl-enabled {
+            .form-image {
+                margin-left: 0;
+            }
+            .form-content {
+                padding: {
+                    left: 0;
+                    right: 25px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .trezo-form {
+        .form-image {
+            margin-right: -45px;
+        }
+        .form-content {
+            padding-left: 120px;
+        }
+        &.component-rtl-enabled {
+            .form-image {
+                margin: {
+                    right: 0;
+                    left: -45px;
+                };
+            }
+            .form-content {
+                padding: {
+                    left: 0;
+                    right: 120px;
+                };
+            }
+        }
+    }
+
+}

@@ -1,0 +1,223 @@
+.sidebar-card .trezo-card-content .search-box {
+  margin-bottom: 28px;
+}
+.sidebar-card .trezo-card-content .search-box input {
+  background-color: #F6F7F9;
+  border: 1px solid #F6F7F9;
+  color: var(--blackColor);
+  height: 44px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sidebar-card .trezo-card-content .search-box input::-moz-placeholder {
+  color: var(--bodyColor);
+  -moz-transition: var(--transition);
+  transition: var(--transition);
+}
+.sidebar-card .trezo-card-content .search-box input::placeholder {
+  color: var(--bodyColor);
+  transition: var(--transition);
+}
+.sidebar-card .trezo-card-content .search-box input:focus::-moz-placeholder {
+  color: transparent;
+}
+.sidebar-card .trezo-card-content .search-box input:focus::placeholder {
+  color: transparent;
+}
+.sidebar-card .trezo-card-content .search-box button {
+  top: 50%;
+  right: 15px;
+  margin-top: 1px;
+  position: absolute;
+  color: var(--primaryColor);
+  transform: translateY(-50%);
+}
+.sidebar-card .trezo-card-content .search-box button i {
+  font-size: 20px;
+}
+.sidebar-card .trezo-card-content .sidebar-list {
+  margin-bottom: 28px;
+}
+.sidebar-card .trezo-card-content .sidebar-list li {
+  font-weight: 500;
+  margin-bottom: 19px;
+}
+.sidebar-card .trezo-card-content .sidebar-list li a {
+  padding-left: 28px;
+}
+.sidebar-card .trezo-card-content .sidebar-list li a i {
+  transform: translateY(-50%);
+  color: var(--primaryColor);
+  position: absolute;
+  margin-top: -0.5px;
+  font-size: 18px;
+  top: 50%;
+  left: 0;
+}
+.sidebar-card .trezo-card-content .sidebar-list li a.active {
+  color: var(--primaryColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul {
+  padding-left: 28px;
+  margin-top: 17px;
+  margin-bottom: 21px;
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul li {
+  margin-bottom: 14px;
+  font-weight: normal;
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul li a {
+  padding-left: 15px;
+  color: var(--bodyColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul li a::before {
+  left: 0;
+  top: 50%;
+  width: 6px;
+  content: "";
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: var(--transition);
+  border: 1px solid var(--primaryColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul li a.active, .sidebar-card .trezo-card-content .sidebar-list li ul li a:hover {
+  color: var(--primaryColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul li a.active::before, .sidebar-card .trezo-card-content .sidebar-list li ul li a:hover::before {
+  background: var(--primaryColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li ul li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-card .trezo-card-content .sidebar-list li span {
+  font-size: 13px;
+  font-weight: normal;
+}
+.sidebar-card .trezo-card-content .sidebar-list li:nth-child(2) a i {
+  color: var(--successColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li:nth-child(3) a i {
+  color: var(--infoColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li:nth-child(4) a i {
+  color: var(--purpleColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li:nth-child(5) a i {
+  color: var(--warningColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li:nth-child(6) a i {
+  color: var(--secondaryColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li:nth-child(7) a i {
+  color: var(--dangerColor);
+}
+.sidebar-card .trezo-card-content .sidebar-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-card .trezo-card-content .storage-status {
+  border-top: 1px solid var(--borderColor);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.sidebar-card .trezo-card-content .storage-status h6 {
+  margin-bottom: 11px;
+}
+.sidebar-card .trezo-card-content .storage-status span {
+  font-size: 13px;
+}
+.sidebar-card .trezo-card-content .storage-status .progress {
+  margin-top: 11px;
+}
+.sidebar-card.component-rtl-enabled .trezo-card-content .search-box button {
+  right: auto;
+  left: 15px;
+}
+.sidebar-card.component-rtl-enabled .trezo-card-content .sidebar-list li a {
+  padding-left: 0;
+  padding-right: 28px;
+}
+.sidebar-card.component-rtl-enabled .trezo-card-content .sidebar-list li a i {
+  left: auto;
+  right: 0;
+}
+.sidebar-card.component-rtl-enabled .trezo-card-content .sidebar-list li ul {
+  padding-left: 0;
+  padding-right: 28px;
+}
+.sidebar-card.component-rtl-enabled .trezo-card-content .sidebar-list li ul li a {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.sidebar-card.component-rtl-enabled .trezo-card-content .sidebar-list li ul li a::before {
+  left: auto;
+  right: 0;
+}
+.sidebar-card.component-dark-theme .trezo-card-content .search-box input {
+  background-color: #15203c;
+  color: var(--whiteColor);
+  border-color: #15203c;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .sidebar-card .trezo-card-content .search-box {
+    margin-bottom: 20px;
+  }
+  .sidebar-card .trezo-card-content .search-box button {
+    right: 13px;
+  }
+  .sidebar-card .trezo-card-content .sidebar-list {
+    margin-bottom: 20px;
+  }
+  .sidebar-card .trezo-card-content .sidebar-list li {
+    margin-bottom: 19px;
+  }
+  .sidebar-card .trezo-card-content .sidebar-list li ul {
+    margin-top: 17px;
+    margin-bottom: 21px;
+  }
+  .sidebar-card .trezo-card-content .sidebar-list li ul li {
+    margin-bottom: 16px;
+  }
+  .sidebar-card .trezo-card-content .storage-status {
+    padding-top: 20px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+  .sidebar-card .trezo-card-content .storage-status h6 {
+    margin-bottom: 10px;
+  }
+  .sidebar-card .trezo-card-content .storage-status .progress {
+    margin-top: 10px;
+  }
+  .sidebar-card.component-rtl-enabled .trezo-card-content .search-box button {
+    left: 13px;
+    right: auto;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar-card .trezo-card-content .search-box {
+    margin-bottom: 25px;
+  }
+  .sidebar-card .trezo-card-content .sidebar-list {
+    margin-bottom: 25px;
+  }
+  .sidebar-card .trezo-card-content .sidebar-list li {
+    margin-bottom: 22px;
+  }
+  .sidebar-card .trezo-card-content .storage-status {
+    padding-top: 25px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=sidebar.component.css.map */

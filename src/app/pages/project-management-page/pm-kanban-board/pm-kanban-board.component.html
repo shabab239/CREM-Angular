@@ -1,0 +1,300 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Kanban Board
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Kanban Board
+        </li>
+    </ol>
+</div>
+
+<!-- Kanban Board -->
+<div
+    class="row"
+    cdkDropListGroup
+>
+    <div class="col-sm-6 col-lg-4">
+        <div
+            class="kanban-board-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        To Do
+                    </h5>
+                </div>
+            </div>
+            @for (item of toDo; track item) {
+                <div
+                    class="trezo-card-content border-radius"
+                    [ngClass]="item.bgClass"
+                >
+                    <div class="title d-flex align-items-center justify-content-between">
+                        <span class="d-block text-black fw-semibold">
+                            {{item.title}}
+                        </span>
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                edit
+                            </i>
+                        </button>
+                    </div>
+                    <p>
+                        {{item.description}}
+                    </p>
+                    <div class="info d-flex align-items-center justify-content-between">
+                        <div class="users d-flex align-items-center">
+                            @for (user of item.users; track user) {
+                                <img [src]="user.img" class="rounded-circle" alt="user-image">
+                            }
+                        </div>
+                        <span class="days-left d-block text-secondary">
+                            5 days left
+                        </span>
+                    </div>
+                </div>
+            }
+            <button
+                class="add-new-card-btn d-inline-block border-radius transition fw-medium"
+                (click)="toggleClass()"
+                type="button"
+            >
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Card
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+        <div
+            class="kanban-board-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Doing
+                    </h5>
+                </div>
+            </div>
+            @for (item of doing; track item) {
+                <div
+                    class="trezo-card-content border-radius"
+                    [ngClass]="item.bgClass"
+                >
+                    <div class="title d-flex align-items-center justify-content-between">
+                        <span class="d-block text-black fw-semibold">
+                            {{item.title}}
+                        </span>
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                edit
+                            </i>
+                        </button>
+                    </div>
+                    <p>
+                        {{item.description}}
+                    </p>
+                    <div class="info d-flex align-items-center justify-content-between">
+                        <div class="users d-flex align-items-center">
+                            @for (user of item.users; track user) {
+                                <img [src]="user.img" class="rounded-circle" alt="user-image">
+                            }
+                        </div>
+                        <span class="days-left d-block text-secondary">
+                            5 days left
+                        </span>
+                    </div>
+                </div>
+            }
+            <button
+                class="add-new-card-btn d-inline-block border-radius transition fw-medium"
+                (click)="toggleClass()"
+                type="button"
+            >
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Card
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+        <div
+            class="kanban-board-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Done
+                    </h5>
+                </div>
+            </div>
+            @for (item of done; track item) {
+                <div
+                    class="trezo-card-content border-radius"
+                    [ngClass]="item.bgClass"
+                >
+                    <div class="title d-flex align-items-center justify-content-between">
+                        <span class="d-block text-black fw-semibold">
+                            {{item.title}}
+                        </span>
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                edit
+                            </i>
+                        </button>
+                    </div>
+                    <p>
+                        {{item.description}}
+                    </p>
+                    <div class="info d-flex align-items-center justify-content-between">
+                        <div class="users d-flex align-items-center">
+                            @for (user of item.users; track user) {
+                                <img [src]="user.img" class="rounded-circle" alt="user-image">
+                            }
+                        </div>
+                        <span class="days-left d-block text-secondary">
+                            5 days left
+                        </span>
+                    </div>
+                </div>
+            }
+            <button
+                class="add-new-card-btn d-inline-block border-radius transition fw-medium"
+                (click)="toggleClass()"
+                type="button"
+            >
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Card
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied"
+>
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Add New Card
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleClass()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Card Name
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. Trezo Dashboard">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Card Description
+                            </label>
+                            <textarea name="description" class="form-control" placeholder="It makes me feel..."></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Team Members
+                            </label>
+                            <select class="form-select">
+                                <option selected>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Shawn Kennedy
+                                </option>
+                                <option value="2">
+                                    Roberto Cruz
+                                </option>
+                                <option value="3">
+                                    Juli Johnson
+                                </option>
+                                <option value="4">
+                                    Catalina Engles
+                                </option>
+                                <option value="5">
+                                    Louis Nagle
+                                </option>
+                                <option value="6">
+                                    Michael Marquez
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Deadline Date
+                            </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleClass()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

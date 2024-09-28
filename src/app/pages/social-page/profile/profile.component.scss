@@ -1,0 +1,965 @@
+.profile-card {
+    .trezo-card-content {
+        .cover-image {
+            .update-cover-photo-menu {
+                right: 28px;
+                bottom: 28px;
+                position: absolute;
+
+                .button {
+                    padding: 8.5px 16px;
+                    color: var(--whiteColor);
+                    background-color: transparent;
+                    border: 1px solid var(--whiteColor);
+                }
+                .dropdown-menu {
+                    right: 0;
+                    top: 100%;
+                    left: auto;
+                    width: 195px;
+                    padding: 15px 0;
+                    margin-top: 10px;
+    
+                    li {
+                        .dropdown-item {
+                            i {
+                                top: 50%;
+                                left: 20px;
+                                font-size: 20px;
+                                position: absolute;
+                                transform: translateY(-50%);
+                            }
+                            &::before {
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                width: 2px;
+                                content: '';
+                                position: absolute;
+                                transform: scaleY(0);
+                                transition: var(--transition);
+                                background: var(--primaryColor);
+                            }
+                            &.with-icon {
+                                padding: {
+                                    left: 47px;
+                                    right: 20px;
+                                };
+                            }
+                            &:hover {
+                                &::before {
+                                    transform: scaleY(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .profile-content {
+            margin-top: -60px;
+            padding: {
+                left: 30px;
+                right: 30px;
+                bottom: 45px;
+            };
+            .image {
+                width: 160px;
+
+                .profile-image {
+                    border: 2px solid var(--whiteColor);
+                }
+                .verified {
+                    right: -7px;
+                    bottom: 11px;
+                    position: absolute;
+                }
+            }
+            .title {
+                margin-left: 30px;
+
+                span {
+                    font-size: 24px;
+
+                    &:not(:first-child) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .btn-box {
+                .button {
+                    font-size: 16px;
+                    padding: 11px 27px;
+                    color: var(--bodyColor);
+                    background-color: transparent;
+                    border: 1px solid var(--borderColor);
+
+                    i {
+                        font-size: 20px;
+                        margin-right: 8px;
+                    }
+                }
+                .dropdown-menu {
+                    right: 0;
+                    top: 100%;
+                    left: auto;
+                    width: 195px;
+                    padding: 15px 0;
+                    margin-top: 10px;
+    
+                    li {
+                        .dropdown-item {
+                            i {
+                                top: 50%;
+                                left: 20px;
+                                font-size: 20px;
+                                position: absolute;
+                                transform: translateY(-50%);
+                            }
+                            &::before {
+                                top: 0;
+                                left: 0;
+                                bottom: 0;
+                                width: 2px;
+                                content: '';
+                                position: absolute;
+                                transform: scaleY(0);
+                                transition: var(--transition);
+                                background: var(--primaryColor);
+                            }
+                            &.with-icon {
+                                padding: {
+                                    left: 47px;
+                                    right: 20px;
+                                };
+                            }
+                            &:hover {
+                                &::before {
+                                    transform: scaleY(1);
+                                }
+                            }
+                        }
+                    }
+                }
+                .share-profile-menu {
+                    margin-left: 12px;
+
+                    .button {
+                        color: var(--whiteColor);
+                        border-color: var(--primaryColor);
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .profile-content {
+                .image {
+                    .profile-image {
+                        border-color: #0C1427;
+                    }
+                }
+            }
+        }
+    }
+    &.card-without-border-radius {
+        .trezo-card-content {
+            .cover-image {
+                border-radius: 0 !important;
+
+                img {
+                    border-radius: 0 !important;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .cover-image {
+                .update-cover-photo-menu {
+                    right: auto;
+                    left: 28px;
+    
+                    .dropdown-menu {
+                        right: auto;
+                        left: 0;
+        
+                        li {
+                            .dropdown-item {
+                                i {
+                                    left: auto;
+                                    right: 20px;
+                                }
+                                &::before {
+                                    left: auto;
+                                    right: 0;
+                                }
+                                &.with-icon {
+                                    padding: {
+                                        right: 47px;
+                                        left: 20px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .profile-content {
+                .image {
+                    .verified {
+                        left: -7px;
+                        right: auto;
+                    }
+                }
+                .title {
+                    margin: {
+                        left: 0;
+                        right: 30px;
+                    };
+                }
+                .btn-box {
+                    .button {
+                        i {
+                            margin: {
+                                right: 0;
+                                left: 8px;
+                            };
+                        }
+                    }
+                    .dropdown-menu {
+                        right: auto;
+                        left: 0;
+        
+                        li {
+                            .dropdown-item {
+                                i {
+                                    left: auto;
+                                    right: 20px;
+                                }
+                                &::before {
+                                    left: auto;
+                                    right: 0;
+                                }
+                                &.with-icon {
+                                    padding: {
+                                        right: 47px;
+                                        left: 20px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                    .share-profile-menu {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+.profile-nav-links {
+    li {
+        margin: {
+            left: 5px;
+            right: 5px;
+        };
+        a {
+            padding: 8.5px 15px;
+            color: var(--primaryColor);
+            background-color: transparent;
+            border: 1px solid var(--primaryColor);
+
+            &.active, &:hover {
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+}
+.friends-card {
+    .trezo-card-content {
+        .search-box {
+            margin-bottom: 20px;
+
+            label {
+                top: 50%;
+                left: 13px;
+                margin-top: 2px;
+                position: absolute;
+                transform: translateY(-50%);
+
+                i {
+                    font-size: 20px;
+                }
+            }
+            .input-search {
+                background-color: #F6F7F9;
+                font-size: var(--fontSize);
+                color: var(--blackColor);
+                height: 44px;
+                padding: {
+                    left: 38px;
+                    right: 15px;
+                };
+                &::placeholder {
+                    color: var(--bodyColor);
+                    transition: var(--transition);
+                }
+            }
+        }
+        .user {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--borderColor);
+
+            .img {
+                margin-right: 13px;
+                
+                img {
+                    width: 45px;
+                }
+                .active-status {
+                    right: -2px;
+                    bottom: 4px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background: var(--successColor);
+                    border: 2px solid var(--whiteColor);
+
+                    &.off {
+                        background: var(--dangerColor);
+                    }
+                }
+            }
+            .title {
+                span {
+                    &:not(:first-child) {
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .link-btn {
+                width: 36px;
+                height: 36px;
+                color: var(--bodyColor);
+                border: 1px solid var(--borderColor);
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    font-size: 18px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &:hover {
+                    color: var(--whiteColor);
+                    border-color: var(--primaryColor);
+                    background-color: var(--primaryColor);
+                }
+            }
+            &:last-child {
+                border-bottom-width: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .search-box {
+                .input-search {
+                    background-color: #15203c;
+                    color: var(--whiteColor);
+                }
+            }
+            .user {
+                .img {
+                    .active-status {
+                        border-color: #0C1427;
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .search-box {
+                label {
+                    left: auto;
+                    right: 13px;
+                }
+                .input-search {
+                    padding: {
+                        left: 15px;
+                        right: 38px;
+                    };
+                }
+            }
+            .user {
+                .img {
+                    margin: {
+                        right: 0;
+                        left: 13px;
+                    };
+                    .active-status {
+                        right: auto;
+                        left: -2px;
+                    }
+                }
+            }
+        }
+    }
+}
+.profile-intro-card {
+    .trezo-card-content {
+        .user {
+            margin-bottom: 16px;
+
+            .image {
+                img {
+                    width: 75px;
+                }
+            }
+            .title {
+                margin-left: 15px;
+                
+                span {
+                    font-size: 17px;
+
+                    &:not(:first-child) {
+                        margin-top: 1px;
+                        font-size: var(--fontSize);
+                    }
+                }
+            }
+        }
+        .sub-title {
+            margin-bottom: 5px;
+        }
+        h6 {
+            font-size: var(--fontSize);
+            margin: {
+                bottom: 12px;
+                top: 18px;
+            };
+        }
+        .socials-link {
+            a {
+                width: 28px;
+                height: 28px;
+                margin-right: 7px;
+                text-align: center;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &.facebook {
+                    background-color: #3A559F;
+                }
+                &.x {
+                    background-color: #03A9F4;
+                }
+                &.linkedin {
+                    background-color: #007AB9;
+                }
+                &.mail {
+                    background-color: #2196F3;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .user {
+                .title {
+                    margin: {
+                        left: 0;
+                        right: 15px;
+                    };
+                }
+            }
+            .socials-link {
+                a {
+                    margin: {
+                        right: 0;
+                        left: 7px;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.followers-card {
+    .trezo-card-content {
+        .follower {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--borderColor);
+
+            .image {
+                img {
+                    width: 42px;
+                }
+            }
+            .title {
+                margin-left: 12px;
+                
+                span {
+                    &:not(:first-child) {
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .link-btn {
+                width: 36px;
+                height: 36px;
+                color: var(--bodyColor);
+                border: 1px solid var(--borderColor);
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    font-size: 18px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &:hover {
+                    color: var(--whiteColor);
+                    border-color: var(--primaryColor);
+                    background-color: var(--primaryColor);
+                }
+            }
+            &:last-child {
+                border-bottom-width: 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .follower {
+                .title {
+                    margin: {
+                        left: 0;
+                        right: 12px;
+                    };
+                }
+            }
+        }
+    }
+}
+.photos-card {
+    .trezo-card-content {
+        a {
+            border-radius: 5px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+        .row {
+            margin: -5px;
+
+            .col-4 {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .profile-card {
+        .trezo-card-content {
+            .cover-image {
+                .update-cover-photo-menu {
+                    right: 0;
+                    bottom: 0;
+                    position: relative;
+                    margin: {
+                        left: 17px;
+                        top: 17px;
+                    };
+                    .button {
+                        color: var(--blackColor);
+                        border-color: var(--blackColor);
+                    }
+                    .dropdown-menu {
+                        padding: 10px 0;
+                        width: 150px;
+                        right: auto;
+                        left: 0;
+        
+                        li {
+                            .dropdown-item {
+                                i {
+                                    left: 20px;
+                                    font-size: 20px;
+                                }
+                                &.with-icon {
+                                    padding: {
+                                        left: 47px;
+                                        right: 20px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .profile-content {
+                margin-top: 17px;
+                padding: {
+                    left: 20px;
+                    right: 20px;
+                    bottom: 17px;
+                };
+                .image {
+                    .profile-image {
+                        border-color: #f7f7f7;
+                    }
+                }
+                .title {
+                    margin: {
+                        left: 0;
+                        top: 12px;
+                    };
+                    span {
+                        font-size: 18px;
+    
+                        &:not(:first-child) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .btn-box {
+                    margin-top: 17px;
+
+                    .button {
+                        padding: 10px 25px;
+                        font-size: 13px;
+    
+                        i {
+                            font-size: 18px;
+                            margin-right: 5px;
+                        }
+                    }
+                    .dropdown-menu {
+                        right: 0;
+                        top: 100%;
+                        left: auto;
+                        width: 195px;
+                        padding: 15px 0;
+                        margin-top: 10px;
+        
+                        li {
+                            .dropdown-item {
+                                i {
+                                    left: 20px;
+                                    font-size: 20px;
+                                }
+                                &.with-icon {
+                                    padding: {
+                                        left: 47px;
+                                        right: 20px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                    .share-profile-menu {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .cover-image {
+                    .update-cover-photo-menu {
+                        left: 0;
+                        margin: {
+                            left: 0;
+                            right: 17px;
+                        };
+                        .dropdown-menu {
+                            right: 0;
+                            left: auto;
+            
+                            li {
+                                .dropdown-item {
+                                    i {
+                                        left: auto;
+                                        right: 20px;
+                                    }
+                                    &.with-icon {
+                                        padding: {
+                                            right: 47px;
+                                            left: 20px;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .profile-content {
+                    .title {
+                        margin: {
+                            right: 0;
+                        };
+                    }
+                    .btn-box {
+                        .button {
+                            i {
+                                margin: {
+                                    right: 0;
+                                    left: 5px;
+                                };
+                            }
+                        }
+                        .dropdown-menu {
+                            li {
+                                .dropdown-item {
+                                    i {
+                                        left: auto;
+                                        right: 20px;
+                                    }
+                                    &.with-icon {
+                                        padding: {
+                                            right: 47px;
+                                            left: 20px;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                        .share-profile-menu {
+                            margin-left: 10px;
+                            margin: {
+                                left: 0;
+                                right: 10px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .friends-card {
+        .trezo-card-content {
+            .search-box {
+                margin-bottom: 15px;
+
+                label {
+                    left: 12px;
+
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                .input-search {
+                    padding-left: 37px;
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .search-box {
+                    label {
+                        left: auto;
+                        right: 12px;
+                    }
+                    .input-search {
+                        padding: {
+                            left: 15px;
+                            right: 37px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    .profile-intro-card {
+        .trezo-card-content {
+            .user {
+                margin-bottom: 15px;
+
+                .image {
+                    img {
+                        width: 60px;
+                    }
+                }
+                .title {
+                    margin-left: 12px;
+                    
+                    span {
+                        font-size: 15px;
+
+                        &:not(:first-child) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .sub-title {
+                margin-bottom: 8px;
+            }
+            h6 {
+                font-size: 13px;
+                margin: {
+                    bottom: 12px;
+                    top: 15px;
+                };
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .user {
+                    .title {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .profile-card {
+        .trezo-card-content {
+            .cover-image {
+                .update-cover-photo-menu {
+                    margin: {
+                        left: 20px;
+                        top: 20px;
+                    };
+                }
+            }
+            .profile-content {
+                padding-bottom: 20px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .cover-image {
+                    .update-cover-photo-menu {
+                        margin: {
+                            left: 0;
+                            right: 20px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .profile-card {
+        .trezo-card-content {
+            .cover-image {
+                .update-cover-photo-menu {
+                    right: 25px;
+                    bottom: 20px;
+                }
+            }
+            .profile-content {
+                padding: {
+                    left: 25px;
+                    right: 25px;
+                    bottom: 40px;
+                };
+                .title {
+                    margin-left: 25px;
+    
+                    span {
+                        font-size: 20px;
+    
+                        &:not(:first-child) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .btn-box {
+                    .button {
+                        padding: 11px 25px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .cover-image {
+                    .update-cover-photo-menu {
+                        right: auto;
+                        left: 25px;
+                    }
+                }
+                .profile-content {
+                    .title {
+                        margin: {
+                            left: 0;
+                            right: 25px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    .profile-intro-card {
+        .trezo-card-content {
+            .user {
+                .title {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

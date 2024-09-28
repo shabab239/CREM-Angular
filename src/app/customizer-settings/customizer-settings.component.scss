@@ -1,0 +1,126 @@
+::ng-deep {
+    .settings-sidebar {
+        bottom: 0;
+        opacity: 0;
+        z-index: 7;
+        right: -100%;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        visibility: hidden;
+    
+        .settings-header {
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            padding: 19px 20px;
+            position: absolute;
+
+            .logo {
+                img {
+                    margin-right: 8px;
+                }
+            }
+            .close-btn {
+                color: var(--blackColor);
+            }
+        }
+        .settings-body {
+            padding-top: 80px;
+    
+            .title {
+                margin-bottom: 10px;
+            }
+            .switch-btn {
+                width: 60px;
+                height: 30px;
+                cursor: pointer;
+                position: relative;
+                border-radius: 30px;
+                display: inline-block;
+                background-color: transparent;
+                border: 1px solid var(--borderColor);
+    
+                &::before {
+                    left: 4px;
+                    width: 22px;
+                    content: "";
+                    bottom: 3px;
+                    height: 22px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background-color: #dad9d9;
+                    transition: var(--transition);
+                }
+                &.active {
+                    &::before {
+                        left: 31px;
+                        background-color: var(--primaryColor) !important;
+                    }
+                }
+            }
+            .border-top {
+                border-color: var(--borderColor) !important;
+            }
+            .p-20 {
+                padding: 18px 20px;
+            }
+        }
+        .ng-scroll-content {
+            padding-right: 0 !important;
+        }
+        &.active {
+            right: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+        &.component-dark-theme {
+            .settings-header {
+                .close-btn {
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            text-align: end;
+            right: auto;
+            left: -100%;
+    
+            .settings-header {
+                .logo {
+                    img {
+                        margin: {
+                            left: 8px;
+                            right: 0;
+                        };
+                    }
+                }
+            }
+            &.active {
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .settings-sidebar {
+        width: 260px;
+
+        .settings-header {
+            padding: 15px;
+        }
+        .settings-body {
+            padding-top: 70px;
+    
+            .p-20 {
+                padding: 15px;
+            }
+        }
+    }
+    
+}

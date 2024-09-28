@@ -1,0 +1,267 @@
+.email-read-card {
+    .trezo-card-header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--borderColor);
+
+        .trezo-card-title {
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+    .trezo-card-content {
+        .info {
+            margin-bottom: 25px;
+
+            .user {
+                .img {
+                    margin-right: 12px;
+                    
+                    img {
+                        width: 45px;
+                    }
+                }
+                .title {
+                    span {
+                        &:not(:first-child) {
+                            margin-top: 2px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            button {
+                top: 1px;
+                margin-right: 10px;
+                color: var(--bodyColor);
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+        .content {
+            padding-left: 57px;
+
+            .title {
+                margin-bottom: 26px;
+            }
+            .sub-title {
+                margin-bottom: 26px;
+            }
+            p {
+                margin-bottom: 21px;
+                line-height: 1.6;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .regards {
+                margin-top: 51px;
+
+                span {
+                    margin-bottom: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .btn-box {
+            border-top: 1px solid var(--borderColor);
+            margin-top: 26px;
+            padding: {
+                top: 26px;
+                left: 57px;
+            };
+            button {
+                font-size: 16px;
+                padding: 7px 25px;
+                margin-right: 16px;
+                color: var(--primaryColor);
+                background-color: transparent;
+                border: 1px solid var(--primaryColor);
+                
+                &.primary {
+                    color: var(--whiteColor);
+                    border-color: var(--primaryColor);
+                    background-color: var(--primaryColor);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .info {
+                .user {
+                    .img {
+                        margin: {
+                            right: 0;
+                            left: 12px;
+                        };
+                    }
+                }
+                button {
+                    margin: {
+                        right: 0;
+                        left: 10px;
+                    };
+                }
+            }
+            .content {
+                padding: {
+                    left: 0;
+                    right: 57px;
+                };
+            }
+            .btn-box {
+                padding: {
+                    right: 57px;
+                    left: 0;
+                };
+                button {
+                    margin: {
+                        right: 0;
+                        left: 16px;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .email-read-card {
+        .trezo-card-header {
+            padding-bottom: 15px;
+
+            .trezo-card-title {
+                h5 {
+                    font-size: 15px;
+                }
+            }
+        }
+        .trezo-card-content {
+            .info {
+                margin-bottom: 15px;
+
+                .user {
+                    margin-bottom: 15px;
+                }
+                button {
+                    margin-right: 8px;
+
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .content {
+                padding-left: 0;
+
+                .title {
+                    margin-bottom: 15px;
+                }
+                .sub-title {
+                    margin-bottom: 15px;
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+                .regards {
+                    margin-top: 15px;
+                }
+            }
+            .btn-box {
+                margin-top: 20px;
+                padding: {
+                    top: 20px;
+                    left: 0;
+                };
+                button {
+                    margin-right: 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .info {
+                    button {
+                        margin: {
+                            right: 0;
+                            left: 8px;
+                        };
+                    }
+                }
+                .content {
+                    padding-right: 0;
+                }
+                .btn-box {
+                    padding: {
+                        right: 0;
+                    };
+                    button {
+                        margin: {
+                            left: 15px;
+                            right: 0;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .email-read-card {
+        .trezo-card-header {
+            padding-bottom: 18px;
+        }
+        .trezo-card-content {
+            .btn-box {
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .email-read-card {
+        .trezo-card-content {
+            .btn-box {
+                button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

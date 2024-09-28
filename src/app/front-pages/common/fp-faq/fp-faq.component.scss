@@ -1,0 +1,191 @@
+.faq-accordion {
+    &.accordion {
+        max-width: 738px;
+
+        .accordion-item {
+            margin-bottom: 15px;
+            color: var(--blackColor);
+            background-color: var(--whiteColor);
+            
+            .accordion-button {
+                color: var(--blackColor);
+                padding: 13px 25px;
+                font-size: 16px;
+
+                &::after {
+                    top: 50%;
+                    right: 25px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &.open {
+                    &::after {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+            .accordion-collapse {
+                display: none;
+
+                .accordion-body {
+                    padding: {
+                        top: 0;
+                        left: 25px;
+                        right: 25px;
+                        bottom: 20px;
+                    };
+                    p {
+                        line-height: 1.7;
+                    }
+                    ol, ul {
+                        padding-left: 18px;
+                        margin: {
+                            top: 15px;
+                            bottom: 15px;
+                        };
+                        li {
+                            line-height: 1.6;
+                            margin-bottom: 7px;
+                            color: var(--bodyColor);
+                            
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                &.open {
+                    display: block;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.component-dark-theme {
+    &.faq-accordion {
+        &.accordion {
+            .accordion-item {
+                color: var(--whiteColor);
+                background-color: #15203c;
+
+                .accordion-button {
+                    color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    &.faq-accordion {
+        &.accordion {
+            .accordion-item {
+                .accordion-button {
+                    &::after {
+                        right: auto;
+                        left: 25px;
+                    }
+                }
+                .accordion-collapse {
+                    .accordion-body {
+                        ol, ul {
+                            padding: {
+                                left: 0;
+                                right: 18px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .faq-accordion {
+        &.accordion {
+            max-width: 100%;
+    
+            .accordion-item {
+                .accordion-button {
+                    padding: 12px 17px;
+                    font-size: 14px;
+    
+                    &::after {
+                        right: 17px;
+                    }
+                }
+                .accordion-collapse {
+                    .accordion-body {
+                        padding: {
+                            left: 17px;
+                            right: 17px;
+                            bottom: 17px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .faq-accordion {
+        &.accordion {
+            .accordion-item {
+                .accordion-button {
+                    padding: {
+                        left: 20px;
+                        right: 20px;
+                    };
+                }
+                .accordion-collapse {
+                    .accordion-body {
+                        padding: {
+                            left: 20px;
+                            right: 20px;
+                            bottom: 20px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .faq-accordion {
+        &.accordion {
+            max-width: 100%;
+            
+            .accordion-item {
+                .accordion-button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

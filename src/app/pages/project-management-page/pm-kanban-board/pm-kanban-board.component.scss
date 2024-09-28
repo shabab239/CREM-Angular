@@ -1,0 +1,178 @@
+.kanban-board-card {
+    .trezo-card-header {
+        margin-bottom: 22px;
+    }
+    .trezo-card-content {
+        padding: 25px;
+        margin-bottom: 25px;
+
+        .title {
+            margin-bottom: 12px;
+
+            button {
+                color: var(--blackColor);
+
+                i {
+                    font-size: 18px;
+                }
+                &:hover {
+                    color: var(--primaryColor);
+                }
+            }
+        }
+        .info {
+            margin-top: 20px;
+
+            .users {
+                img {
+                    width: 34px;
+                    height: 34px;
+                    margin-right: -10px;
+                    border: 2px solid var(--whiteColor);
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .add-new-card-btn {
+        padding: 6px 13px;
+        color: var(--primaryColor);
+        background-color: transparent;
+        border: 1px solid var(--primaryColor);
+        
+        span {
+            padding-left: 22px;
+
+            i {
+                top: 50%;
+                left: -4px;
+                font-size: 22px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+        }
+        &:hover {
+            color: var(--whiteColor);
+            background-color: var(--primaryColor);
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            background-color: #15203c !important;
+
+            .title {
+                --blackColor: var(--whiteColor);
+
+                .trezo-button {
+                    color: var(--whiteColor);
+                }
+            }
+            p {
+                color: var(--bodyColor);
+            }
+            .info {
+                .users {
+                    img {
+                        border-color: #0C1427;
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .info {
+                .users {
+                    img {
+                        margin: {
+                            right: 0;
+                            left: -10px;
+                        };
+                        &:last-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .add-new-card-btn {
+            span {
+                padding: {
+                    left: 0;
+                    right: 22px;
+                };
+                i {
+                    left: auto;
+                    right: -4px;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .kanban-board-card {
+        .trezo-card-header {
+            margin-bottom: 17px;
+        }
+        .trezo-card-content {
+            margin-bottom: 17px;
+            padding: 17px;
+    
+            .title {
+                margin-bottom: 12px;
+
+                button {
+                    span {
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .info {
+                margin-top: 15px;
+
+                .users {
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .kanban-board-card {
+        .trezo-card-header {
+            margin-bottom: 20px;
+        }
+        .trezo-card-content {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

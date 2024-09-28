@@ -1,0 +1,581 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Events Grid
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Events Grid
+        </li>
+    </ol>
+</div>
+
+<!-- Events Grid -->
+<div
+    class="row"
+    [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event1.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $120
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Annual Conference 2024
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user6.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user7.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user8.jpg" class="rounded-circle" alt="user-image">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-medium">
+                            +4
+                        </div>
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                1156
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event2.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $59
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Leadership Summit 2024
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user10.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user11.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                556
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 24%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event3.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $123
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Product Launch Webinar
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user12.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user13.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user14.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                356
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event4.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $99
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            AI in Healthcare Symposium
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user15.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                3226
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event5.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $35
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Tech Summit 2024
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user16.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user17.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                4109
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 48%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event6.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $76
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Startup Pitch Day
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user18.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user19.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user20.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                432
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 37%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event7.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $30
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Workshop: Digital Marketing
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user21.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                1728
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event8.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $87
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Charity Gala Dinner
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user22.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user23.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user24.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user25.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                1306
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event9.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $50
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Web Development Seminar
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user26.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user27.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                2756
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event10.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $89
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Networking Mixer
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user28.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user29.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                1467
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event1.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $105
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Annual Conference 2024
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user30.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user6.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user7.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                799
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xxxl-3 col-sm-6 col-lg-4">
+        <div class="event-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <div class="image position-relative">
+                    <a routerLink="/dashboard/events/event-details" class="d-block border-radius">
+                        <img src="images/events/event2.jpg" class="border-radius" alt="event-image">
+                    </a>
+                    <div class="price d-flex align-items-center text-center justify-content-center fw-bold bg-primary text-white">
+                        $100
+                    </div>
+                </div>
+                <div class="content">
+                    <h6>
+                        <a routerLink="/dashboard/events/event-details">
+                            Leadership Summit 2024
+                        </a>
+                    </h6>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                    </p>
+                    <div class="members d-flex align-items-center">
+                        <img src="images/users/user8.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user9.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user10.jpg" class="rounded-circle" alt="user-image">
+                        <img src="images/users/user11.jpg" class="rounded-circle" alt="user-image">
+                    </div>
+                    <div class="t-progress">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="d-block">
+                                Seat Booked
+                            </span>
+                            <span class="d-block text-black fw-semibold">
+                                3241
+                            </span>
+                        </div>
+                        <div class="progress trezo-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination -->
+<div class="pagination-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-content">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <p class="mb-0">
+                Showing 9 of 36 results
+            </p>
+            <ol class="list-unstyled mb-0 p-0">
+                <li class="d-inline-block">
+                    <a class="prev" routerLink=".">
+                        <span class="opacity-0">
+                            0
+                        </span>
+                        <i class="material-symbols-outlined">
+                            chevron_left
+                        </i>
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink="." class="active">
+                        1
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink=".">
+                        2
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink=".">
+                        3
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a routerLink=".">
+                        4
+                    </a>
+                </li>
+                <li class="d-inline-block">
+                    <a class="next" routerLink=".">
+                        <span class="opacity-0">
+                            0
+                        </span>
+                        <i class="material-symbols-outlined">
+                            chevron_right
+                        </i>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

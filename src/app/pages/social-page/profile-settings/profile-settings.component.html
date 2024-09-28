@@ -1,0 +1,387 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Settings
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Social
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Profile
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Settings
+        </li>
+    </ol>
+</div>
+
+<!-- Profile Settings -->
+<div class="row">
+    <div class="col-xxl-7 col-xxxl-8">
+        <div
+            class="profile-settings-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Profile Settings
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                First Name
+                            </label>
+                            <input type="text" class="form-control" value="Alice">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Last Name
+                            </label>
+                            <input type="text" class="form-control" value="Johnson">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Email Address
+                            </label>
+                            <input type="text" class="form-control" value="johnson@trezo.com">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Phone Number
+                            </label>
+                            <input type="text" class="form-control" value="+1 444 555 6699">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Password
+                            </label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Confirm Password
+                            </label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Address
+                            </label>
+                            <input type="text" class="form-control" value="84 S. Arrowhead Court Branford">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Country
+                            </label>
+                            <select class="form-select">
+                                <option>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Switzerland
+                                </option>
+                                <option value="2">
+                                    New Zealand
+                                </option>
+                                <option value="3">
+                                    Germany
+                                </option>
+                                <option value="4">
+                                    United States
+                                </option>
+                                <option value="5">
+                                    Japan
+                                </option>
+                                <option value="6">
+                                    Netherlands
+                                </option>
+                                <option value="7">
+                                    Sweden
+                                </option>
+                                <option value="8">
+                                    Canada
+                                </option>
+                                <option value="9" selected>
+                                    United Kingdom
+                                </option>
+                                <option value="10">
+                                    Australia
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Add Your Bio
+                            </label>
+                            <textarea name="description" class="form-control">It makes me feel...</textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Who will be able to see your profile?
+                            </label>
+                            <div class="radio-boxes d-flex align-items-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="whoWillSeeMyProfile" id="onlyMe">
+                                    <label class="form-check-label" for="onlyMe">
+                                        Only me
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="whoWillSeeMyProfile" id="myFollowers">
+                                    <label class="form-check-label" for="myFollowers">
+                                        My followers
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="whoWillSeeMyProfile" id="everyone">
+                                    <label class="form-check-label" for="everyone">
+                                        Everyone
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Your Skills
+                            </label>
+                            <select class="form-select">
+                                <option>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Leadership
+                                </option>
+                                <option value="2" selected>
+                                    Project Management
+                                </option>
+                                <option value="3">
+                                    Data Analysis
+                                </option>
+                                <option value="4">
+                                    Teamwork
+                                </option>
+                                <option value="5">
+                                    Web Development
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Your Profession
+                            </label>
+                            <select class="form-select">
+                                <option>
+                                    Select
+                                </option>
+                                <option value="1">
+                                    Financial Manager
+                                </option>
+                                <option value="2" selected>
+                                    IT Manager
+                                </option>
+                                <option value="3">
+                                    Software Developer
+                                </option>
+                                <option value="4">
+                                    Physician Assistant
+                                </option>
+                                <option value="5">
+                                    Data Scientist
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Company Name
+                            </label>
+                            <input type="text" class="form-control" value="Trezo Admin">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Company Website
+                            </label>
+                            <input type="text" class="form-control" value="http://website.com/">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Facebook
+                            </label>
+                            <input type="text" class="form-control" value="https://www.facebook.com/">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                X
+                            </label>
+                            <input type="text" class="form-control" value="https://x.com/">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Linkedin
+                            </label>
+                            <input type="text" class="form-control" value="https://www.linkedin.com/">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                YouTube
+                            </label>
+                            <input type="text" class="form-control" value="https://www.youtube.com/">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Profile Picture
+                            </label>
+                            <file-upload class="file-uploader" [multiple]="multiple"></file-upload>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Cover Photo
+                            </label>
+                            <file-upload class="file-uploader" [multiple]="multiple"></file-upload>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-btn-box">
+                    <button type="button" class="warn d-inline-block fw-medium border-radius border-0 transition">
+                        Cancel
+                    </button>
+                    <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                        <span class="d-inline-block position-relative">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Save Information
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-5 col-xxxl-4">
+        <div
+            class="profile-settings-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Privacy Policy
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="boxes">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="allowUsersToShowYourEmail">
+                        <label class="form-check-label" for="allowUsersToShowYourEmail">
+                            Allow users to show your email
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="allowUsersToShowYourExperiences">
+                        <label class="form-check-label" for="allowUsersToShowYourExperiences">
+                            Allow users to show your experiences
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="allowUsersToShowYourFollowers">
+                        <label class="form-check-label" for="allowUsersToShowYourFollowers">
+                            Allow users to show your followers
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="main-label d-block fw-medium text-black">
+                        Who can tag you?
+                    </label>
+                    <div class="radio-boxes d-flex align-items-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="whoCanTagYou" id="wctyOnlyMe">
+                            <label class="form-check-label" for="wctyOnlyMe">
+                                Everyone
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="whoCanTagYou" id="wctyMyFollowers">
+                            <label class="form-check-label" for="wctyMyFollowers">
+                                Group Member
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="main-label d-block fw-medium text-black">
+                        Account Deletion Or Transfer
+                    </label>
+                    <p class="minus">
+                        Transfer this account to another person or to a company repositories.
+                    </p>
+                </div>
+                <div class="form-btn-box">
+                    <button type="button" class="warn d-inline-block fw-medium border-radius border-0 transition">
+                        Delete Account
+                    </button>
+                    <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                        <span class="d-inline-block position-relative">
+                            <i class="material-symbols-outlined">
+                                swap_horiz
+                            </i>
+                            Transfer Account
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

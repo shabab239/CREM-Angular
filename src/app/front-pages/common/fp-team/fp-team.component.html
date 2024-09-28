@@ -1,0 +1,140 @@
+<div
+    class="team-area"
+    [class.component-dark-theme]="themeService.isDark()"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="container position-relative z-1">
+        <div class="section-title">
+            <div class="sub-title d-inline-block position-relative">
+                <span class="d-inline-block position-relative text-purple">
+                    Our Team
+                </span>
+            </div>
+            <h2 class="mb-0">
+                Introducing Our Exceptional Team. Meet the Minds Driving Our Success
+            </h2>
+        </div>
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <div class="image border-radius">
+                            <img src="images/front-pages/team1.jpg" class="border-radius" alt="team-image">
+                        </div>
+                        <div class="content border-radius d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fw-semibold">
+                                    Michael Johnson
+                                </h3>
+                                <span class="d-block">
+                                    CEO
+                                </span>
+                            </div>
+                            <div class="socials">
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-twitter-x-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <div class="image border-radius">
+                            <img src="images/front-pages/team2.jpg" class="border-radius" alt="team-image">
+                        </div>
+                        <div class="content border-radius d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fw-semibold">
+                                    Emily Davis
+                                </h3>
+                                <span class="d-block">
+                                    Project Manager
+                                </span>
+                            </div>
+                            <div class="socials">
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-twitter-x-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <div class="image border-radius">
+                            <img src="images/front-pages/team3.jpg" class="border-radius" alt="team-image">
+                        </div>
+                        <div class="content border-radius d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fw-semibold">
+                                    Daniel Lee
+                                </h3>
+                                <span class="d-block">
+                                    Sales Team Lead
+                                </span>
+                            </div>
+                            <div class="socials">
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-twitter-x-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team-member">
+                        <div class="image border-radius">
+                            <img src="images/front-pages/team4.jpg" class="border-radius" alt="team-image">
+                        </div>
+                        <div class="content border-radius d-flex align-items-center justify-content-between">
+                            <div>
+                                <h3 class="fw-semibold">
+                                    Olivia John
+                                </h3>
+                                <span class="d-block">
+                                    Frontend Lead
+                                </span>
+                            </div>
+                            <div class="socials">
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-twitter-x-fill"></i>
+                                </a>
+                                <a href="#" class="d-inline-block lh-1" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <div class="shape1">
+            <img src="images/front-pages/shape1.png" alt="shape1">
+        </div>
+        <div class="shape2">
+            <img src="images/front-pages/shape2.png" alt="shape2">
+        </div>
+    </div>
+</div>

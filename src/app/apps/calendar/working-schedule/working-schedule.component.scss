@@ -1,0 +1,266 @@
+.calendar-working-schedule-card {
+    .trezo-card-content {
+        .calendar {
+            .header {
+                margin-bottom: 20px;
+
+                button {
+                    background-color: var(--borderColor);
+                    color: var(--blackColor);
+                    height: 30px;
+                    width: 30px;
+
+                    &:hover {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+            .weekdays {
+                margin-bottom: 6px;
+            }
+            .weekdays, .days {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+            }
+            .days {
+                div {
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
+                    line-height: 31px;
+                    border-radius: 50%;
+                    margin: {
+                        top: 7px;
+                        left: auto;
+                        bottom: 7px;
+                        right: auto;
+                    };
+                }
+                .current-day {
+                    background-color: var(--primaryColor);
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        .upcoming-events {
+            margin-top: 13px;
+
+            .title {
+                margin-bottom: 15px;
+            }
+            .event-item {
+                padding-left: 14px;
+
+                h6 {
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 12px;
+                }
+                &::before {
+                    left: 0;
+                    top: 3px;
+                    width: 7px;
+                    content: '';
+                    height: 7px;
+                    position: absolute;
+                    border-radius: 2px;
+                    background: var(--primaryColor);
+                }
+            }
+        }
+        .add-new-event-btn {
+            margin-top: 25px;
+            padding: 6px 13px;
+            color: var(--primaryColor);
+            background-color: transparent;
+            border: 1px solid var(--primaryColor);
+            
+            span {
+                padding-left: 22px;
+
+                i {
+                    top: 50%;
+                    left: -4px;
+                    font-size: 22px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+            }
+            &:hover {
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .calendar {
+                .header {
+                    button {
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .calendar {
+                .header {
+                    button {
+                        i {
+                            transform: scaleX(-1);
+                        }
+                    }
+                }
+            }
+            .upcoming-events {
+                .event-item {
+                    direction: rtl;
+                    padding: {
+                        left: 0;
+                        right: 14px;
+                    };
+                    &::before {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+            .add-new-event-btn {
+                span {
+                    padding: {
+                        left: 0;
+                        right: 22px;
+                    };
+                    i {
+                        left: auto;
+                        right: -4px;
+                    }
+                }
+            }
+        }
+    }
+}
+::ng-deep {
+    .calendar-working-schedule-card {
+        .trezo-card-content {
+            .owl-theme {
+                .owl-nav {
+                    &.disabled + .owl-dots {
+                        margin-top: 0;
+                    }
+                }
+                .owl-dots {
+                    right: 0;
+                    top: -33px;
+                    position: absolute;
+
+                    .owl-dot {
+                        span {
+                            width: 7px;
+                            height: 7px;
+                            margin: 0 4px 0 0;
+                            border-radius: 50%;
+                            background: var(--borderColor);
+                            transition: var(--transition);
+                        }
+                        &:last-child {
+                            span {
+                                margin-right: 0;
+                            }
+                        }
+                        &:hover, &.active {
+                            span {
+                                background: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .owl-theme {
+                    .owl-dots {
+                        right: auto;
+                        left: 0;
+
+                        .owl-dot {
+                            span {
+                                margin: {
+                                    right: 0;
+                                    left: 4px;
+                                };
+                            }
+                            &:last-child {
+                                span {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .calendar-working-schedule-card {
+        .trezo-card-content {
+            .upcoming-events {
+                margin-top: 10px;
+    
+                .title {
+                    margin-bottom: 12px;
+                }
+                .event-item {
+                    h6 {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .calendar-working-schedule-card {
+        .trezo-card-content {
+            .calendar  {
+                .header {
+                    margin-bottom: 18px;
+                }
+            }
+            .upcoming-events {
+                margin-top: 9px;
+    
+                .title {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,52 @@
+<div
+    class="confirm-email-area"
+    [class.dark-theme]="themeService.isDark()"
+>
+    <div
+        class="trezo-form mx-auto"
+        [class.component-dark-theme]="themeService.isDark()"
+        [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    >
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="form-image">
+                    <img src="images/confirm-email.jpg" alt="confirm-email-image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                <div class="form-content">
+                    <div class="logo">
+                        <img src="images/logo-big.svg" alt="logo">
+                        <img src="images/white-logo-big.svg" class="d-none" alt="logo">
+                    </div>
+                    <div class="title">
+                        <h1 class="fw-semibold">
+                            Welcome back to Trezo!
+                        </h1>
+                        <p class="fw-medium">
+                            Your mail is verified! Your account is now safe from unwanted activities.
+                        </p>
+                    </div>
+                    <div class="admin">
+                        <div class="logo d-flex align-items-center justify-content-center bg-gray text-success rounded-circle">
+                            <i class="material-symbols-outlined">
+                                done
+                            </i>
+                        </div>
+                        <span class="d-block text-black fw-medium">
+                            Your Email Verified <span class="text-success">Successfully!</span>
+                        </span>
+                    </div>
+                    <a routerLink="/dashboard" class="btn-box d-block w-100 border-0 transition fw-medium border-radius">
+                        <span class="d-flex align-items-center justify-content-center">
+                            <i class="material-symbols-outlined">
+                                login
+                            </i>
+                            Back To Home
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

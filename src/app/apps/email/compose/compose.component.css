@@ -1,0 +1,194 @@
+.email-compose-card .trezo-card-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--borderColor);
+}
+.email-compose-card .trezo-card-header .trezo-card-title h5 {
+  font-size: 16px;
+}
+.email-compose-card .trezo-card-content .buttons-list .button {
+  top: 2px;
+  margin-left: 15px;
+  color: var(--bodyColor);
+}
+.email-compose-card .trezo-card-content .buttons-list .button i {
+  font-size: 20px;
+}
+.email-compose-card .trezo-card-content .buttons-list .button:hover {
+  color: var(--primaryColor);
+}
+.email-compose-card .trezo-card-content .buttons-list .button.warn {
+  color: var(--dangerColor);
+}
+.email-compose-card .trezo-card-content .buttons-list .button.primary {
+  top: 0;
+  font-size: 16px;
+  padding: 8px 26px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  margin-right: 2px;
+  margin-left: 0;
+}
+.email-compose-card .trezo-card-content .buttons-list .button.primary:hover {
+  background-color: var(--secondaryColor);
+}
+.email-compose-card .trezo-card-content .buttons-list .dropdown-menu {
+  right: 0;
+  left: auto;
+  bottom: 100%;
+  width: 195px;
+  padding: 15px 0;
+}
+.email-compose-card .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item i {
+  top: 50%;
+  left: 20px;
+  font-size: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.email-compose-card .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  transition: var(--transition);
+  background: var(--primaryColor);
+}
+.email-compose-card .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+  padding-left: 47px;
+  padding-right: 20px;
+}
+.email-compose-card .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item:hover::before {
+  transform: scaleY(1);
+}
+.email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .button {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .button.primary {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item i {
+  left: auto;
+  right: 20px;
+}
+.email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item::before {
+  left: auto;
+  right: 0;
+}
+.email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+  padding-left: 47px;
+  padding-left: 20px;
+}
+
+::ng-deep .email-compose-card .trezo-card-content .NgxEditor__Wrapper .NgxEditor .NgxEditor__Content {
+  min-height: 245px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .email-compose-card .trezo-card-header {
+    padding-bottom: 15px;
+  }
+  .email-compose-card .trezo-card-header .trezo-card-title h5 {
+    font-size: 15px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button {
+    margin-left: 12px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button i {
+    font-size: 16px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button.primary {
+    padding: 10px 20px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button.warn {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .dropdown-menu {
+    padding: 10px 0;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item i {
+    left: 20px;
+    font-size: 20px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+    padding-left: 47px;
+    padding-right: 20px;
+  }
+  .email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .button {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  .email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .button.primary {
+    margin-left: 0;
+  }
+  .email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .button.warn {
+    margin-right: 0;
+  }
+  .email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item i {
+    left: auto;
+    right: 20px;
+  }
+  .email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .dropdown-menu li .dropdown-item.with-icon {
+    padding-right: 47px;
+    padding-left: 20px;
+  }
+  ::ng-deep .email-compose-card .trezo-card-content .NgxEditor__Wrapper .NgxEditor .NgxEditor__Content {
+    min-height: 190px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .email-compose-card .trezo-card-content .buttons-list .button {
+    margin-left: 15px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button.warn {
+    margin-top: 0;
+  }
+  .email-compose-card.component-rtl-enabled .trezo-card-content .buttons-list .button {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .email-compose-card .trezo-card-header {
+    padding-bottom: 18px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button i {
+    font-size: 18px;
+  }
+  .email-compose-card .trezo-card-content .buttons-list .button.primary {
+    font-size: 14px;
+  }
+  ::ng-deep .email-compose-card .trezo-card-content .NgxEditor__Wrapper .NgxEditor .NgxEditor__Content {
+    min-height: 200px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .email-compose-card .trezo-card-content .buttons-list .button.primary {
+    font-size: 15px;
+  }
+  ::ng-deep .email-compose-card .trezo-card-content .NgxEditor__Wrapper .NgxEditor .NgxEditor__Content {
+    min-height: 215px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  ::ng-deep .email-compose-card .trezo-card-content .NgxEditor__Wrapper .NgxEditor .NgxEditor__Content {
+    min-height: 212px;
+  }
+}
+/* Min width 1600px *//*# sourceMappingURL=compose.component.css.map */

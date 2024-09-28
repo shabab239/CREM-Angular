@@ -1,0 +1,86 @@
+.response-time-card {
+    .trezo-card-content {
+        height: 140px;
+
+        .info {
+            span {
+                font-size: 18px;
+            }
+        }
+        .chart {
+            left: 0;
+            right: 0;
+            bottom: -61px;
+            position: absolute;
+            margin: {
+                left: -37px;
+                right: -35px;
+            };
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .response-time-card {
+        .trezo-card-content {
+            .info {
+                span {
+                    font-size: 16px;
+                }
+            }
+            .chart {
+                bottom: -53px;
+                margin: {
+                    left: -29px;
+                    right: -27px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .response-time-card {
+        .trezo-card-content {
+            .info {
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .response-time-card {
+        .trezo-card-content {
+            height: 173px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .response-time-card {
+        .trezo-card-content {
+            height: 173px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

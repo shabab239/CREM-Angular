@@ -1,0 +1,162 @@
+.order-tracking-card {
+    .trezo-card-content {
+        .text {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .numbers {
+            margin: {
+                top: 45px;
+                bottom: 45px;
+            };
+            .box {
+                div {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 48px;
+                    background-color: var(--whiteColor);
+                    border: 1px dashed var(--primaryColor);
+                }
+                span {
+                    margin-top: 17px;
+                    font-size: 16px;
+
+                    &:last-child {
+                        margin-top: 7px;
+                        font-size: 14px;
+                    }
+                }
+                &.active {
+                    div {
+                        color: var(--whiteColor) !important;
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+            &::before {
+                left: 0;
+                right: 0;
+                top: 25px;
+                content: '';
+                z-index: -1;
+                position: absolute;
+                border: {
+                    left: 0px dashed var(--primaryColor);
+                    top: 1px dashed var(--primaryColor);
+                };
+            }
+        }
+        .title {
+            margin-bottom: 12px;
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .numbers {
+                .box {
+                    div {
+                        background-color: #0C1427;
+                    }
+                    &.active {
+                        div {
+                            background-color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .order-tracking-card {
+        .trezo-card-content {
+            .numbers {
+                margin: {
+                    top: 25px;
+                    bottom: 25px;
+                };
+                .box {
+                    span {
+                        padding-left: 45px;
+                        margin-top: 15px;
+                        font-size: 14px;
+    
+                        &:last-child {
+                            font-size: 13px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                &::before {
+                    top: 0;
+                    bottom: 0;
+                    left: 25px;
+                    right: auto;
+                    border-left-width: 1px;
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .numbers {
+                    .box {
+                        span {
+                            padding: {
+                                left: 0;
+                                right: 45px;
+                            };
+                        }
+                    }
+                    &::before {
+                        left: auto;
+                        right: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .order-tracking-card {
+        .trezo-card-content {
+            .numbers {
+                margin: {
+                    top: 40px;
+                    bottom: 40px;
+                };
+                .box {
+                    span {
+                        font-size: 15px;
+    
+                        &:last-child {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

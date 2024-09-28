@@ -1,0 +1,199 @@
+.event-details-card .trezo-card-content .title {
+  margin-bottom: 10px;
+}
+.event-details-card .trezo-card-content .info {
+  margin-top: 20px;
+}
+.event-details-card .trezo-card-content .info .icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  background-color: #f4f6fc;
+}
+.event-details-card .trezo-card-content .info .icon i {
+  left: 0;
+  right: 0;
+  top: 50%;
+  font-size: 35px;
+  margin-top: -1px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.event-details-card .trezo-card-content .info span:not(:first-child) {
+  margin-top: 3px;
+}
+.event-details-card .trezo-card-content .info .d-flex {
+  margin-right: 30px;
+}
+.event-details-card .trezo-card-content .info .d-flex:last-child {
+  margin-right: 0;
+}
+.event-details-card .trezo-card-content .btn-box {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px dashed var(--borderColor);
+}
+.event-details-card .trezo-card-content .btn-box button {
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 11px 27px;
+  color: var(--bodyColor);
+  background-color: transparent;
+  border: 1px solid var(--borderColor);
+}
+.event-details-card .trezo-card-content .btn-box button span i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+.event-details-card .trezo-card-content .btn-box button:nth-child(1) {
+  color: var(--whiteColor);
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+.event-details-card .trezo-card-content .btn-box button:last-child {
+  margin-right: 0;
+}
+.event-details-card .trezo-card-content h5 {
+  margin-bottom: 16px;
+  margin-top: 23px;
+}
+.event-details-card .trezo-card-content .list li {
+  margin-bottom: 12.5px;
+}
+.event-details-card .trezo-card-content .list li:last-child {
+  margin-bottom: 0;
+}
+.event-details-card .trezo-card-content .features-list {
+  margin-top: 20px;
+}
+.event-details-card .trezo-card-content .features-list li {
+  margin-bottom: 11px;
+  padding-left: 15px;
+}
+.event-details-card .trezo-card-content .features-list li::before {
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: var(--primaryColor);
+}
+.event-details-card .trezo-card-content .features-list li:last-child {
+  margin-bottom: 0;
+}
+.event-details-card.component-dark-theme .trezo-card-content .info .icon {
+  background-color: #15203c;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .info .icon {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .info .d-flex {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .info .d-flex:last-child {
+  margin-left: 0;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .btn-box button {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .btn-box button span i {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .btn-box button:last-child {
+  margin-left: 0;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .features-list li {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.event-details-card.component-rtl-enabled .trezo-card-content .features-list li::before {
+  left: auto;
+  right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .event-details-card .trezo-card-content .info {
+    margin-top: 0;
+  }
+  .event-details-card .trezo-card-content .info .d-flex {
+    margin-top: 15px;
+    margin-right: 0;
+  }
+  .event-details-card .trezo-card-content .info .icon {
+    width: 55px;
+    height: 55px;
+    margin-right: 12px;
+  }
+  .event-details-card .trezo-card-content .info .icon i {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .event-details-card .trezo-card-content .btn-box {
+    margin-top: 15px;
+    padding-top: 5px;
+  }
+  .event-details-card .trezo-card-content .btn-box button {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 10px 25px;
+  }
+  .event-details-card .trezo-card-content h5 {
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  .event-details-card .trezo-card-content .list li {
+    margin-bottom: 12px;
+  }
+  .event-details-card .trezo-card-content .features-list {
+    margin-top: 15px;
+  }
+  .event-details-card.component-rtl-enabled .trezo-card-content .info .d-flex {
+    margin-left: 0;
+  }
+  .event-details-card.component-rtl-enabled .trezo-card-content .info .icon {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .event-details-card .trezo-card-content .info {
+    margin-top: 20px;
+  }
+  .event-details-card .trezo-card-content .info .icon {
+    width: 65px;
+    height: 65px;
+  }
+  .event-details-card .trezo-card-content .info .icon i {
+    font-size: 40px;
+  }
+  .event-details-card .trezo-card-content .btn-box {
+    margin-top: 25px;
+    padding-top: 25px;
+  }
+  .event-details-card .trezo-card-content .btn-box button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .event-details-card .trezo-card-content h5 {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .event-details-card .trezo-card-content .btn-box button {
+    font-size: 15px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=event-details.component.css.map */

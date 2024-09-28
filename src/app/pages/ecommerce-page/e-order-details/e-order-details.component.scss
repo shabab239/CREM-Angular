@@ -1,0 +1,190 @@
+.tracking-id-card {
+    .trezo-card-content {
+        .numbers {
+            .box {
+                div {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 48px;
+                    border: 1px dashed var(--whiteColor);
+                }
+                span {
+                    margin-top: 13px;
+                }
+                &.active {
+                    div {
+                        background-color: var(--infoColor) !important;
+                    }
+                }
+                &:last-child {
+                    text-align: end;
+
+                    div {
+                        margin-left: auto;
+                    }
+                }
+            }
+            &::before {
+                left: 0;
+                right: 0;
+                top: 25px;
+                content: '';
+                z-index: -1;
+                position: absolute;
+                border-top: 1px dashed var(--whiteColor);
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .numbers {
+                .box {
+                    &:last-child {
+                        div {
+                            margin: {
+                                left: 0;
+                                right: auto;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.order-summary-card {
+    .trezo-card-content {
+        h6 {
+            margin: {
+                bottom: 10px;
+                top: 25px;
+            };
+        }
+        .payment-method {
+            .info {
+                margin-left: 12px;
+
+                span {
+                    &:nth-child(2) {
+                        font-size: 13px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .payment-method {
+                .info {
+                    margin: {
+                        left: 0;
+                        right: 12px;
+                    };
+                }
+            }
+        }
+    }
+}
+.order-details-card {
+    .trezo-card-content {
+        ul {
+            li {
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .tracking-id-card {
+        .trezo-card-content {
+            .numbers {
+                .box {
+                    display: inline-block;
+                    margin: {
+                        right: 25px;
+                        top: 15px;
+                    };
+                    div {
+                        width: 45px;
+                        height: 45px;
+                        line-height: 43px;
+                    }
+                    span {
+                        margin-top: 12px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        text-align: start;
+    
+                        div {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .numbers {
+                    .box {
+                        margin: {
+                            right: 0;
+                            left: 25px;
+                        };
+                        &:last-child {
+                            margin-left: 0;
+        
+                            div {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .order-summary-card {
+        .trezo-card-content {
+            h6 {
+                margin-top: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .order-summary-card {
+        .trezo-card-content {
+            h6 {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

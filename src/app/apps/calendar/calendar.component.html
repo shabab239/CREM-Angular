@@ -1,0 +1,42 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Calendar
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Apps
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Calendar
+        </li>
+    </ol>
+</div>
+
+<!-- Calendar -->
+<div class="row">
+    <div class="col-xxxl-8">
+        <div
+            class="full-calendar-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-content">
+                <full-calendar [options]="calendarOptions"></full-calendar>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxxl-4 col-lg-5 col-md-12">
+
+        <!-- Working Schedule -->
+        <app-working-schedule />
+
+    </div>
+</div>

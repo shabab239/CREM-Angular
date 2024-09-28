@@ -1,0 +1,88 @@
+<div
+    class="sign-up-area"
+    [class.dark-theme]="themeService.isDark()"
+>
+    <div
+        class="trezo-form mx-auto"
+        [class.component-dark-theme]="themeService.isDark()"
+        [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+    >
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <div class="form-image">
+                    <img src="images/sign-up.jpg" alt="sign-up-image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                <div class="form-content">
+                    <div class="logo">
+                        <img src="images/logo-big.svg" alt="logo">
+                        <img src="images/white-logo-big.svg" class="d-none" alt="logo">
+                    </div>
+                    <div class="title">
+                        <h1 class="fw-semibold">
+                            Sign up to Trezo Dashboard
+                        </h1>
+                        <p class="fw-medium">
+                            Sign up with social account or enter your details
+                        </p>
+                    </div>
+                    <div class="with-socials d-flex align-items-center justify-content-between">
+                        <div>
+                            <button type="button" class="d-block w-100 border-radius transition">
+                                <img src="images/icons/google.svg" alt="google">
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="d-block w-100 border-radius transition">
+                                <img src="images/icons/facebook2.svg" alt="facebook">
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="d-block w-100 border-radius transition">
+                                <img src="images/icons/apple.svg" alt="apple">
+                            </button>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Full Name
+                            </label>
+                            <input type="text" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Email Address
+                            </label>
+                            <input type="text" class="form-control" placeholder="example&#64;trezo.com">
+                        </div>
+                        <div class="form-group position-relative">
+                            <label class="main-label d-block fw-medium text-black">
+                                Password
+                            </label>
+                            <input [type]="isPasswordVisible ? 'text' : 'password'" [value]="password" (input)="onPasswordInput($event)" class="form-control" placeholder="Type password">
+                            <button type="button" (click)="togglePasswordVisibility()" class="icon-button p-0 border-0 bg-transparent transition">
+                                <i [ngClass]="isPasswordVisible ? 'ri-eye-line' : 'ri-eye-off-line'"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="btn-box d-block w-100 border-0 transition fw-medium border-radius">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <i class="material-symbols-outlined">
+                                    person_4
+                                </i>
+                                Sign Up
+                            </span>
+                        </button>
+                        <p class="info">
+                            By confirming your email, you agree to our <a class="fw-medium" routerLink=".">Terms of Service</a> and that you have read and understood our <a class="fw-medium" routerLink=".">Privacy Policy</a>.
+                        </p>
+                        <p class="info">
+                            Already have an account. <a routerLink="/authentication" class="fw-semibold text-primary">Sign In</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

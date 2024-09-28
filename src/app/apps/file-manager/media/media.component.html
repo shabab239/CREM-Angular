@@ -1,0 +1,316 @@
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Media
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        Today
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> File Name </th>
+                        <th scope="col" class="fw-medium"> Owner </th>
+                        <th scope="col" class="fw-medium"> Listed Date </th>
+                        <th scope="col" class="fw-medium"> File Type </th>
+                        <th scope="col" class="fw-medium"> File Size </th>
+                        <th scope="col" class="fw-medium"> File Items </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                dashboard_design1
+                            </a>
+                        </td>
+                        <td class="text-body"> Linda Maddox </td>
+                        <td class="text-body"> 20 Nov 2024 </td>
+                        <td class="text-body"> .pdf </td>
+                        <td class="text-body"> 1.2 GB </td>
+                        <td class="text-body"> 69 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                important_documents
+                            </a>
+                        </td>
+                        <td class="text-body"> Juanita Lavigne </td>
+                        <td class="text-body"> 18 Nov 2024 </td>
+                        <td class="text-body"> .zip </td>
+                        <td class="text-body"> 2.6 GB </td>
+                        <td class="text-body"> 236 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                product_design
+                            </a>
+                        </td>
+                        <td class="text-body"> Roy Pope </td>
+                        <td class="text-body"> 17 Nov 2024 </td>
+                        <td class="text-body"> .psd </td>
+                        <td class="text-body"> 3.2 GB </td>
+                        <td class="text-body"> 365 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                dashboard_design2
+                            </a>
+                        </td>
+                        <td class="text-body"> Cecil Jones </td>
+                        <td class="text-body"> 15 Nov 2024 </td>
+                        <td class="text-body"> .fig </td>
+                        <td class="text-body"> 1 GB </td>
+                        <td class="text-body"> 25 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                media_files
+                            </a>
+                        </td>
+                        <td class="text-body"> Trudy Venegas </td>
+                        <td class="text-body"> 14 Nov 2024 </td>
+                        <td class="text-body"> .jpg </td>
+                        <td class="text-body"> 1.5 GB </td>
+                        <td class="text-body"> 153 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                graphic_design_file
+                            </a>
+                        </td>
+                        <td class="text-body"> Sharilyn Goodall </td>
+                        <td class="text-body"> 13 Nov 2024 </td>
+                        <td class="text-body"> .png </td>
+                        <td class="text-body"> 1.6 GB </td>
+                        <td class="text-body"> 142 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                personal_photo
+                            </a>
+                        </td>
+                        <td class="text-body"> Annie Carver </td>
+                        <td class="text-body"> 09 Nov 2024 </td>
+                        <td class="text-body"> .gif </td>
+                        <td class="text-body"> 1.2 GB </td>
+                        <td class="text-body"> 175 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a routerLink="." class="file-name d-flex align-items-center fw-medium">
+                                <i class="material-symbols-outlined"> folder </i>
+                                audio_file
+                            </a>
+                        </td>
+                        <td class="text-body"> Winona Etzel </td>
+                        <td class="text-body"> 08 Nov 2024 </td>
+                        <td class="text-body"> .mp3 </td>
+                        <td class="text-body"> 1.3 GB </td>
+                        <td class="text-body"> 136 </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 5 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

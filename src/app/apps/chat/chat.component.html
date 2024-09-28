@@ -1,0 +1,789 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Chat
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Apps
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Chat
+        </li>
+    </ol>
+</div>
+
+<!-- Chat -->
+<div class="row">
+    <div class="col-lg-4 col-md-12">
+        <div
+            class="chat-sidebar-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0 fw-medium">
+                        Messages
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <form class="search-box position-relative">
+                    <label>
+                        <i class="material-symbols-outlined">
+                            search
+                        </i>
+                    </label>
+                    <input type="text" class="input-search d-block w-100 border-radius border-0" placeholder="Search">
+                </form>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" [ngClass]="{'active': currentTab === 'tab1'}">
+                        <button type="button" class="nav-link" (click)="switchTab($event, 'tab1')">
+                            All Message
+                        </button>
+                    </li>
+                    <li class="nav-item" [ngClass]="{'active': currentTab === 'tab2'}">
+                        <button type="button" class="nav-link" (click)="switchTab($event, 'tab2')">
+                            Group Chat
+                        </button>
+                    </li>
+                    <li class="nav-item" [ngClass]="{'active': currentTab === 'tab3'}">
+                        <button type="button" class="nav-link" (click)="switchTab($event, 'tab3')">
+                            Contacts
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="tab1" *ngIf="currentTab === 'tab1'">
+                        <div class="chat-users-list">
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user31.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Sarah Smith
+                                        </span>
+                                        <span class="d-block text-success">
+                                            Typing...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        Just Now
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user6.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Michael Johnson
+                                        </span>
+                                        <span class="attachment d-block">
+                                            <i class="ri-file-text-line"></i>
+                                            Attachment...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        10:20 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user7.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Emily Brown
+                                        </span>
+                                        <span class="voice d-block">
+                                            <i class="ri-mic-line"></i>
+                                            Voice message
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        9:30 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user8.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            David Martinez
+                                        </span>
+                                        <span class="d-block">
+                                            Excellent work...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        3:20 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user9.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Jessica Taylor
+                                        </span>
+                                        <span class="d-block">
+                                            Hello! Mr.. 🔥
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        12:00 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user10.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Christopher Lee
+                                        </span>
+                                        <span class="d-block">
+                                            Very good...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        8:30 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user11.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Amanda Rodriguez
+                                        </span>
+                                        <span class="d-block">
+                                            That’s cool...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        2:20 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user12.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Daniel Garcia
+                                        </span>
+                                        <span class="d-block">
+                                            Good morning!😀
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        10:00 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user13.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Jennifer Thomas
+                                        </span>
+                                        <span class="d-block">
+                                            Hi John!
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        11:10 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user14.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Elizabeth Clark
+                                        </span>
+                                        <span class="d-block">
+                                            Sounds good...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        12:30 PM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user15.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            William Lewis
+                                        </span>
+                                        <span class="d-block">
+                                            How are you?😐
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        11:20 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user16.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Michelle King
+                                        </span>
+                                        <span class="d-block">
+                                            Good evening!
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        10:40 PM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab2" *ngIf="currentTab === 'tab2'">
+                        <div class="btn-box">
+                            <button type="button" class="d-block w-100 border-0">
+                                + Create New Group 
+                            </button>
+                        </div>
+                        <div class="chat-users-list">
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/products/product1.jpg" class="rounded-circle" alt="group-image">
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            UI/UX Designer Group
+                                        </span>
+                                        <span class="d-block">
+                                            Divan: Sure I’ll submit the file...
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        Just Now
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/products/product2.jpg" class="rounded-circle" alt="group-image">
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Web Development Group
+                                        </span>
+                                        <span class="d-block">
+                                            Divan: <span class="text-success">Typing...</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        10:20 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/products/product3.jpg" class="rounded-circle" alt="group-image">
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Discussion Group
+                                        </span>
+                                        <span class="d-block">
+                                            Divan: Great ! 🔥
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        9:30 AM
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/products/product4.jpg" class="rounded-circle" alt="group-image">
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Design Group
+                                        </span>
+                                        <span class="d-block">
+                                            Olivia: Hello! Mr..
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="time d-block">
+                                        12:00 AM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" *ngIf="currentTab === 'tab3'">
+                        <div class="chat-users-list">
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user31.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Sarah Smith
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user6.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Michael Johnson
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user7.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Emily Brown
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user8.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            David Martinez
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user9.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Jessica Taylor
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user10.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Christopher Lee
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user11.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Amanda Rodriguez
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user12.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Daniel Garcia
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user13.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Jennifer Thomas
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user14.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Elizabeth Clark
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user15.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            William Lewis
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-user-item cursor-pointer d-flex align-items-center justify-content-between">
+                                <div class="user d-flex align-items-center">
+                                    <div class="img position-relative">
+                                        <img src="images/users/user16.jpg" class="rounded-circle" alt="user-image">
+                                        <span class="active-status off"></span>
+                                    </div>
+                                    <div class="title">
+                                        <span class="d-block fw-semibold text-black">
+                                            Michelle King
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-12">
+        <div
+            class="chat-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-content">
+                <div class="chat-header d-sm-flex align-items-center justify-content-between">
+                    <div class="user d-flex align-items-center">
+                        <div class="img position-relative">
+                            <img src="images/users/user31.jpg" class="rounded-circle" alt="user-image">
+                            <span class="active-status"></span>
+                        </div>
+                        <div class="title">
+                            <span class="d-block text-black fw-semibold">
+                                Sarah Smith
+                            </span>
+                            <span class="d-block">
+                                Active Now
+                            </span>
+                        </div>
+                    </div>
+                    <div class="buttons-list d-flex align-items-center">
+                        <button class="button p-0 bg-transparent border-0 transition">
+                            <i class="material-symbols-outlined">
+                                call
+                            </i>
+                        </button>
+                        <button class="button p-0 bg-transparent border-0 transition">
+                            <i class="material-symbols-outlined">
+                                videocam
+                            </i>
+                        </button>
+                        <div class="trezo-card-header-menu position-relative">
+                            <button
+                                class="dot-menu p-0 border-0 bg-transparent position-relative d-inline-block transition lh-1"
+                                (click)="toggleCardHeaderMenu()"
+                            >
+                                <i class="ri-more-fill"></i>
+                            </button>
+                            <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Mute Chat
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Delete
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                        Block
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top"></div>
+                <span class="d-block current-time">
+                    2023-11-10 09:15 AM
+                </span>
+                <div class="chat-body">
+                    <ul class="list-unstyled mb-0 mt-0">
+                        <li class="position-relative">
+                            <img src="images/users/user31.jpg" width="35" class="rounded-circle user" alt="user">
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Hey Olivia, have you had a chance to check out the new admin dashboard?
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        Oh, they've got this Kanban board for task management. You can drag and drop tasks between columns – it's so intuitive. Makes managing tasks a breeze. 🔥
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:10 AM
+                            </span>
+                        </li>
+                        <li class="position-relative right">
+                            <!-- <img src="images/admin.png" width="35" class="rounded-circle user" alt="user"> -->
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Oh, you mean the one for project management?
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:20 AM
+                            </span>
+                        </li>
+                        <li class="position-relative">
+                            <img src="images/users/user31.jpg" width="35" class="rounded-circle user" alt="user">
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Yeah, that's the one! It's got a sleek Material Design, and the features are pretty robust.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:20 AM
+                            </span>
+                        </li>
+                        <li class="position-relative right">
+                            <!-- <img src="images/admin.png" width="35" class="rounded-circle user" alt="user"> -->
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Nice! What features are you finding interesting?
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:21 AM
+                            </span>
+                        </li>
+                        <li class="position-relative">
+                            <img src="images/users/user31.jpg" width="35" class="rounded-circle user" alt="user">
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Well, it has a project overview with all the key metrics on the landing page – project
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:22 AM
+                            </span>
+                        </li>
+                        <li class="position-relative right">
+                            <!-- <img src="images/admin.png" width="35" class="rounded-circle user" alt="user"> -->
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        That sounds handy. How about the task management features?
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:25 AM
+                            </span>
+                        </li>
+                        <li class="position-relative">
+                            <img src="images/users/user31.jpg" width="35" class="rounded-circle user" alt="user">
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Oh, they've got this Kanban board for task management. You can drag and drop tasks between columns – it's so intuitive.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:30 AM
+                            </span>
+                        </li>
+                        <li class="position-relative right">
+                            <!-- <img src="images/admin.png" width="35" class="rounded-circle user" alt="user"> -->
+                            <div class="message">
+                                <div>
+                                    <p>
+                                        Sweet! What about team collaboration?
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time d-block">
+                                09:31 AM
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat-footer border-radius d-md-flex align-items-center">
+                    <div class="buttons-list d-flex align-items-center">
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                sentiment_satisfied
+                            </i>
+                        </button>
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                attach_file
+                            </i>
+                        </button>
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                mic_none
+                            </i>
+                        </button>
+                        <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                            <i class="material-symbols-outlined">
+                                image
+                            </i>
+                        </button>
+                    </div>
+                    <form class="position-relative">
+                        <input type="text" class="d-block w-100 border-0 border-radius" placeholder="Type your message">
+                        <button type="button" class="d-inline-block p-0 border-0 transition">
+                            <i class="material-symbols-outlined">
+                                send
+                            </i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

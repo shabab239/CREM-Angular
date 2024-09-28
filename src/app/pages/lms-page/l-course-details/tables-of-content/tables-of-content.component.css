@@ -1,0 +1,215 @@
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item {
+  margin-bottom: 10px;
+  color: var(--blackColor);
+  background-color: #f6f7f9;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button {
+  font-size: 15px;
+  padding: 19px 25px;
+  color: var(--blackColor);
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button::after {
+  top: 50%;
+  right: 25px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button.open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse {
+  display: none;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 0 25px 18px;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li {
+  border-bottom: 1px solid var(--borderColor);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+  padding-left: 27px;
+  color: var(--bodyColor);
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a i {
+  left: 0;
+  top: 50%;
+  font-size: 20px;
+  margin-top: -0.5px;
+  position: absolute;
+  color: var(--primaryColor);
+  transform: translateY(-50%);
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a:hover {
+  color: var(--primaryColor);
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li:first-child {
+  padding-top: 0;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li:last-child {
+  padding-bottom: 0;
+  border-bottom-width: 0;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse.open {
+  display: block;
+}
+.tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.tables-of-content-card .trezo-card-content .unlock-library-box {
+  padding: 50px 30px;
+}
+.tables-of-content-card .trezo-card-content .unlock-library-box h4 {
+  margin-bottom: 10px;
+}
+.tables-of-content-card .trezo-card-content .unlock-library-box p {
+  color: #e3eaef;
+  margin-bottom: 20px;
+}
+.tables-of-content-card .trezo-card-content .unlock-library-box .btn-box {
+  font-size: 16px;
+  padding: 13px 22px;
+  margin-bottom: 15px;
+  color: var(--whiteColor);
+  background: rgba(255, 255, 255, 0.08);
+}
+.tables-of-content-card .trezo-card-content .unlock-library-box .btn-box:hover {
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+}
+.tables-of-content-card.component-dark-theme .trezo-card-content .tables-of-content-list .accordion .accordion-item {
+  color: var(--whiteColor);
+  background: #15203c;
+}
+.tables-of-content-card.component-dark-theme .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button {
+  color: var(--whiteColor);
+}
+.tables-of-content-card.component-dark-theme .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li {
+  border-bottom-color: #1c2846;
+}
+.tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button::after {
+  right: auto;
+  left: 25px;
+}
+.tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+  padding-left: 0;
+  padding-right: 27px;
+}
+.tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a i {
+  left: auto;
+  right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button {
+    padding: 15px 17px;
+    font-size: 14px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button::after {
+    right: 17px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 0 17px 15px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+    padding-left: 25px;
+    margin-bottom: 5px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box {
+    padding: 30px 20px;
+    margin-top: 17px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box h4 {
+    margin-bottom: 8px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box p {
+    margin-bottom: 15px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box .btn-box {
+    margin-bottom: 12px;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+  .tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button::after {
+    right: auto;
+    left: 17px;
+  }
+  .tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button::after {
+    right: 20px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+    margin-bottom: 0;
+  }
+  .tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button::after {
+    right: auto;
+    left: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-button {
+    padding: 16px 25px;
+  }
+  .tables-of-content-card .trezo-card-content .tables-of-content-list .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: 0 25px 16px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box {
+    padding: 35px 30px;
+    margin-top: 25px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box .btn-box {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tables-of-content-card .trezo-card-content .unlock-library-box {
+    margin-top: 25px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tables-of-content-card .trezo-card-content .unlock-library-box {
+    margin-top: 25px;
+  }
+}
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+  .tables-of-content-card .trezo-card-content .tables-of-content-list {
+    padding-right: 120px;
+  }
+  .tables-of-content-card .trezo-card-content .unlock-library-box {
+    margin-right: 85px;
+    margin-left: -30px;
+  }
+  .tables-of-content-card.component-rtl-enabled .trezo-card-content .tables-of-content-list {
+    padding-right: 0;
+    padding-left: 120px;
+  }
+  .tables-of-content-card.component-rtl-enabled .trezo-card-content .unlock-library-box {
+    margin-right: -30px;
+    margin-left: 85px;
+  }
+}/*# sourceMappingURL=tables-of-content.component.css.map */

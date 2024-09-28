@@ -1,0 +1,139 @@
+<div
+    class="our-top-courses-card trezo-card mb-25 border-radius d-block border-0 shadow-none z-2 position-relative"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0 text-white">
+                Our Top Courses
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content position-relative">
+        <owl-carousel-o [options]="ourTopCoursesSlides">
+            <ng-template carouselSlide>
+                <div class="d-flex align-items-center">
+                    <div class="image border-radius flex-shrink-1">
+                        <img src="images/courses/course1.jpg" class="border-radius" alt="course-image">
+                    </div>
+                    <div class="content flex-grow-0">
+                        <span class="d-block text-white">
+                            Basic Python
+                        </span>
+                        <div class="price text-white fw-semibold">
+                            $35.99
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <span class="title d-block text-white fw-semibold">
+                        Course content
+                    </span>
+                    <ul class="text-white mt-0 mb-0 list-unstyled p-0">
+                        <li class="d-inline-block position-relative">
+                            10 sections
+                        </li>
+                        <li class="d-inline-block position-relative">
+                            45 lectures
+                        </li>
+                        <li class="d-inline-block position-relative">
+                            25h 50m
+                        </li>
+                    </ul>
+                    <div class="text-end">
+                        <a routerLink="/dashboard/lms" class="view-details-btn border-radius d-inline-block">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    add
+                                </i>
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="d-flex align-items-center">
+                    <div class="image border-radius flex-shrink-1">
+                        <img src="images/courses/course2.jpg" class="border-radius" alt="course-image">
+                    </div>
+                    <div class="content flex-grow-0">
+                        <span class="d-block text-white">
+                            HTML Developer
+                        </span>
+                        <div class="price text-white fw-semibold">
+                            $49.99
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <span class="title d-block text-white fw-semibold">
+                        Course content
+                    </span>
+                    <ul class="text-white mt-0 mb-0 list-unstyled p-0">
+                        <li class="d-inline-block position-relative">
+                            12 sections
+                        </li>
+                        <li class="d-inline-block position-relative">
+                            54 lectures
+                        </li>
+                        <li class="d-inline-block position-relative">
+                            35h 40m
+                        </li>
+                    </ul>
+                    <div class="text-end">
+                        <a routerLink="/dashboard/lms" class="view-details-btn border-radius d-inline-block">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    add
+                                </i>
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="d-flex align-items-center">
+                    <div class="image border-radius flex-shrink-1">
+                        <img src="images/courses/course3.jpg" class="border-radius" alt="course-image">
+                    </div>
+                    <div class="content flex-grow-0">
+                        <span class="d-block text-white">
+                            Basic Angular
+                        </span>
+                        <div class="price text-white fw-semibold">
+                            $55.99
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <span class="title d-block text-white fw-semibold">
+                        Course content
+                    </span>
+                    <ul class="text-white mt-0 mb-0 list-unstyled p-0">
+                        <li class="d-inline-block position-relative">
+                            12 sections
+                        </li>
+                        <li class="d-inline-block position-relative">
+                            48 lectures
+                        </li>
+                        <li class="d-inline-block position-relative">
+                            29h 30m
+                        </li>
+                    </ul>
+                    <div class="text-end">
+                        <a routerLink="/dashboard/lms" class="view-details-btn border-radius d-inline-block">
+                            <span class="d-inline-block position-relative">
+                                <i class="material-symbols-outlined">
+                                    add
+                                </i>
+                                View Details
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

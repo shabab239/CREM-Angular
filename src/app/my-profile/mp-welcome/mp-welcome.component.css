@@ -1,0 +1,221 @@
+.mp-welcome-card {
+  background: linear-gradient(81deg, var(--primaryColor) 3.39%, #9747FF 93.3%);
+}
+.mp-welcome-card .trezo-card-content {
+  padding-right: 130px;
+  position: relative;
+}
+.mp-welcome-card .trezo-card-content .content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.mp-welcome-card .trezo-card-content .content h5 {
+  margin-bottom: 2px;
+}
+.mp-welcome-card .trezo-card-content .content h5 span {
+  color: #FFE8D4;
+}
+.mp-welcome-card .trezo-card-content .content .extra-space {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.mp-welcome-card .trezo-card-content .content .item {
+  margin-right: 27px;
+}
+.mp-welcome-card .trezo-card-content .content .item .icon {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+.mp-welcome-card .trezo-card-content .content .item .title {
+  font-size: 16px;
+}
+.mp-welcome-card .trezo-card-content .content .item span {
+  color: #D5D9E2;
+}
+.mp-welcome-card .trezo-card-content .content .item:last-child {
+  margin-right: 0;
+}
+.mp-welcome-card .trezo-card-content .image {
+  top: 50%;
+  right: -35px;
+  max-width: 285px;
+  margin-top: -8px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.mp-welcome-card.component-rtl-enabled .trezo-card-content {
+  padding-left: 130px;
+  padding-right: 0;
+}
+.mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item {
+  margin-right: 0;
+  margin-left: 27px;
+}
+.mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item .icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item:last-child {
+  margin-left: 0;
+}
+.mp-welcome-card.component-rtl-enabled .trezo-card-content .image {
+  right: auto;
+  left: -35px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .mp-welcome-card .trezo-card-content {
+    padding-right: 0;
+  }
+  .mp-welcome-card .trezo-card-content .content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mp-welcome-card .trezo-card-content .content h5 {
+    margin-bottom: 4px;
+  }
+  .mp-welcome-card .trezo-card-content .content .extra-space {
+    margin-top: 15px;
+    margin-bottom: 17px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item .title {
+    font-size: 14px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item:last-child {
+    margin-bottom: 0;
+  }
+  .mp-welcome-card .trezo-card-content .image {
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    max-width: 100%;
+    position: relative;
+    transform: translateY(0);
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content {
+    padding-left: 0;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item {
+    margin-left: 0;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item .icon {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .image {
+    left: 0;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .mp-welcome-card .trezo-card-content {
+    padding-right: 185px;
+  }
+  .mp-welcome-card .trezo-card-content .image {
+    top: 50%;
+    right: -20px;
+    max-width: 280px;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content {
+    padding-right: 0;
+    padding-left: 185px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .image {
+    left: -20px;
+    right: auto;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mp-welcome-card .trezo-card-content {
+    padding-right: 220px;
+  }
+  .mp-welcome-card .trezo-card-content .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mp-welcome-card .trezo-card-content .content .extra-space {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item {
+    margin-right: 25px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item .title {
+    font-size: 15px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content {
+    padding-right: 0;
+    padding-left: 220px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item {
+    margin-right: 0;
+    margin-left: 25px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mp-welcome-card .trezo-card-content {
+    padding-right: 250px;
+  }
+  .mp-welcome-card .trezo-card-content .image {
+    right: -25px;
+    max-width: 300px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content {
+    padding-right: 0;
+    padding-left: 250px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .image {
+    right: auto;
+    left: -25px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .mp-welcome-card .trezo-card-content .image {
+    right: -25px;
+    max-width: 300px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .image {
+    right: auto;
+    left: -25px;
+  }
+}
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+  .mp-welcome-card .trezo-card-content {
+    padding-right: 250px;
+  }
+  .mp-welcome-card .trezo-card-content .content .item {
+    margin-right: 35px;
+  }
+  .mp-welcome-card .trezo-card-content .image {
+    right: -15px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content {
+    padding-left: 250px;
+    padding-right: 0;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .content .item {
+    margin-right: 0;
+    margin-left: 35px;
+  }
+  .mp-welcome-card.component-rtl-enabled .trezo-card-content .image {
+    right: auto;
+    left: -15px;
+  }
+}/*# sourceMappingURL=mp-welcome.component.css.map */

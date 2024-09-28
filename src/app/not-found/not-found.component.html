@@ -1,0 +1,21 @@
+<div
+    class="not-found-area"
+    [class.dark-theme]="themeService.isDark()"
+>
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="not-found-content text-center mx-auto">
+                <img src="images/error.png" alt="error-image">
+                <h4>
+                    Looks like we did not find this page, please try again later.
+                </h4>
+                <p>
+                    But no worries! Our team is looking ever where while you wait safely.
+                </p>
+                <a class="btn-box border-radius fw-medium d-inline-block" routerLink="/">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

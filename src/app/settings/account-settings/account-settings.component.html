@@ -1,0 +1,259 @@
+<div class="account-settings-card">
+    <h5>
+        Profile
+    </h5>
+    <p>
+        Update your photo and personal details here.
+    </p>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    First Name
+                </label>
+                <input type="text" class="form-control" value="Olivia">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Last Name
+                </label>
+                <input type="text" class="form-control" value="John">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Email Address
+                </label>
+                <input type="text" class="form-control" value="olivia@trezo.com">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Phone Number
+                </label>
+                <input type="text" class="form-control" value="+1 444 555 6699">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Address
+                </label>
+                <input type="text" class="form-control" value="84 S. Arrowhead Court Branford">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Country
+                </label>
+                <select class="form-select">
+                    <option>
+                        Select
+                    </option>
+                    <option value="1">
+                        Switzerland
+                    </option>
+                    <option value="2">
+                        New Zealand
+                    </option>
+                    <option value="3">
+                        Germany
+                    </option>
+                    <option value="4">
+                        United States
+                    </option>
+                    <option value="5">
+                        Japan
+                    </option>
+                    <option value="6" selected>
+                        Netherlands
+                    </option>
+                    <option value="7">
+                        Sweden
+                    </option>
+                    <option value="8">
+                        Canada
+                    </option>
+                    <option value="9">
+                        United Kingdom
+                    </option>
+                    <option value="10">
+                        Australia
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Date Of Birth
+                </label>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Gender
+                </label>
+                <select class="form-select">
+                    <option>
+                        Select
+                    </option>
+                    <option value="1" selected>
+                        Male
+                    </option>
+                    <option value="2">
+                        Female
+                    </option>
+                    <option value="3">
+                        Custom
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Your Skills
+                </label>
+                <select class="form-select">
+                    <option>
+                        Select
+                    </option>
+                    <option value="1" selected>
+                        Leadership
+                    </option>
+                    <option value="2">
+                        Project Management
+                    </option>
+                    <option value="3">
+                        Data Analysis
+                    </option>
+                    <option value="4">
+                        Teamwork
+                    </option>
+                    <option value="5">
+                        Web Development
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Your Profession
+                </label>
+                <select class="form-select">
+                    <option>
+                        Select
+                    </option>
+                    <option value="1" selected>
+                        Financial Manager
+                    </option>
+                    <option value="2">
+                        IT Manager
+                    </option>
+                    <option value="3">
+                        Software Developer
+                    </option>
+                    <option value="4">
+                        Physician Assistant
+                    </option>
+                    <option value="5">
+                        Data Scientist
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Company Name
+                </label>
+                <input type="text" class="form-control" value="Trezo Admin">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Company Website
+                </label>
+                <input type="text" class="form-control" value="http://website.com/">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Add Your Bio
+                </label>
+                <textarea class="form-control">It makes me feel...</textarea>
+            </div>
+        </div>
+    </div>
+    <h4>
+        Your Photo
+    </h4>
+    <p>
+        This will be displayed on your profile.
+    </p>
+    <div class="form-group">
+        <file-upload class="file-uploader" [multiple]="multiple"></file-upload>
+    </div>
+    <h4>
+        Socials Profile
+    </h4>
+    <p></p>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Facebook
+                </label>
+                <input type="text" class="form-control" value="https://www.facebook.com/">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    X
+                </label>
+                <input type="text" class="form-control" value="https://x.com/">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Linkedin
+                </label>
+                <input type="text" class="form-control" value="https://www.linkedin.com/">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    YouTube
+                </label>
+                <input type="text" class="form-control" value="https://www.youtube.com/">
+            </div>
+        </div>
+    </div>
+    <div class="form-btn-box">
+        <button type="button" class="warn d-inline-block fw-medium border-radius border-0 transition">
+            Cancel
+        </button>
+        <button type="button" class="primary d-inline-block fw-medium border-radius border-0 transition">
+            <span class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    check
+                </i>
+                Update Profile
+            </span>
+        </button>
+    </div>
+</div>

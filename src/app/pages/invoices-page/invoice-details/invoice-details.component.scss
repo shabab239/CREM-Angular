@@ -1,0 +1,139 @@
+.invoice-details-card {
+    .trezo-card-content {
+        .invoice-info {
+            margin-bottom: 25px;
+            
+            span {
+                font-size: 15px;
+                margin-bottom: 4px;
+
+                &.title {
+                    margin-bottom: 25px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            div {
+                &:last-child {
+                    text-align: end;
+                }
+            }
+            .qr-code-image {
+                width: 150px;
+            }
+        }
+        .basic-table {
+            margin-bottom: 25px;
+        }
+        .form-btn-box {
+            button {
+                margin: {
+                    left: 10px;
+                    right: 10px;
+                };
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .invoice-details-card {
+        .trezo-card-content {
+            .invoice-info {
+                margin-bottom: 17px;
+                
+                span {
+                    font-size: 13px;
+
+                    &.title {
+                        margin-bottom: 8px;
+                    }
+                }
+                div {
+                    &:last-child {
+                        text-align: start;
+                    }
+                }
+                .qr-code-image {
+                    width: 150px;
+                    margin: {
+                        top: 17px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .basic-table {
+                margin-bottom: 17px;
+            }
+            .form-btn-box {
+                button {
+                    margin: {
+                        left: 7px;
+                        right: 7px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .invoice-details-card {
+        .trezo-card-content {
+            .invoice-info {
+                margin-bottom: 20px;
+                
+                .qr-code-image {
+                    margin: {
+                        top: 20px;
+                        bottom: 17px;
+                    };
+                }
+            }
+            .basic-table {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .invoice-details-card {
+        .trezo-card-content {
+            .invoice-info {
+                span {
+                    font-size: 14px;
+    
+                    &.title {
+                        margin-bottom: 25px;
+                    }
+                }
+                .qr-code-image {
+                    width: 140px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

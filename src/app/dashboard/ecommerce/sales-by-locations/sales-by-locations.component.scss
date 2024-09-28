@@ -1,0 +1,114 @@
+.sales-by-locations-card {
+    .trezo-card-content {
+        ul {
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 11px;
+
+                .flag {
+                    margin-right: 15px;
+                }
+                .title {
+                    margin-bottom: -1.5px;
+                }
+                .percentage {
+                    margin-left: 15px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            ul {
+                li {
+                    .flag {
+                        margin: {
+                            right: 0;
+                            left: 15px;
+                        };
+                    }
+                    .percentage {
+                        margin: {
+                            left: 0;
+                            right: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .sales-by-locations-card {
+        .trezo-card-content {
+            ul {
+                margin-top: 17px;
+    
+                li {
+                    margin-bottom: 10px;
+    
+                    .flag {
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                ul {
+                    li {
+                        .flag {
+                            margin: {
+                                right: 0;
+                                left: 12px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .sales-by-locations-card {
+        .trezo-card-content {
+            ul {
+                margin-top: 24px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .sales-by-locations-card {
+        .trezo-card-content {
+            ul {
+                margin-top: 24px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

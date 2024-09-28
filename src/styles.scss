@@ -1,0 +1,307 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --fontFamily: "Inter", sans-serif;
+    --blackColor: #3A4252;
+    --whiteColor: #ffffff;
+    --bodyColor: #64748B;
+    --borderColor: #ECEEF2;
+    --transition: .5s;
+    --fontSize: 14px;
+    --primaryColor: #605DFF;
+    --secondaryColor: #3584FC;
+    --successColor: #25B003;
+    --dangerColor: #FF4023;
+    --warningColor: #ffc107;
+    --infoColor: #0dcaf0;
+    --lightColor: #f8f9fa;
+    --darkColor: #212529;
+    --purpleColor: #AD63F6;
+    --orangeColor: #FD5812;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--bodyColor);
+    background-color: #F6F7F9;
+    font: {
+        size: var(--fontSize);
+        family: var(--fontFamily);
+    };
+}
+a {
+    transition: var(--transition);
+    color: var(--blackColor);
+    text-decoration: none;
+    outline: 0 !important;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--primaryColor);
+    }
+}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .display-4, .display-3, .display-2, .display-1 {
+    color: var(--blackColor);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+p {
+    color: var(--bodyColor);
+    margin-bottom: 15px;
+    line-height: 1.8;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.d-table {
+    width: 100%;
+    height: 100%;
+
+    &-cell {
+        vertical-align: middle;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+:focus {
+    outline: 0 !important;
+}
+button {
+    cursor: pointer;
+}
+.ptb-150 {
+    padding: {
+        top: 150px;
+        bottom: 150px;
+    }
+}
+.pt-150 {
+    padding-top: 150px;
+}
+.pb-150 {
+    padding-bottom: 150px;
+}
+.ptb-120 {
+    padding: {
+        top: 120px;
+        bottom: 120px;
+    }
+}
+.pt-120 {
+    padding-top: 120px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+// Section Title
+.section-title {
+    max-width: 785px;
+    margin-bottom: 90px;
+
+    .sub-title {
+        margin: {
+            bottom: 20px;
+            top: 10px;
+        };
+        span {
+            border: 1px solid var(--purpleColor);
+            transform: rotate(-6.536deg);
+            padding: 5.5px 17.2px;
+
+            &::before {
+                width: 5px;
+                height: 5px;
+                content: '';
+                left: -3.5px;
+                bottom: -2.5px;
+                position: absolute;
+                transform: rotate(-6.536deg);
+                background: var(--purpleColor);
+            }
+            &::after {
+                width: 5px;
+                height: 5px;
+                content: '';
+                right: -3.5px;
+                bottom: -2.5px;
+                position: absolute;
+                transform: rotate(-6.536deg);
+                background: var(--purpleColor);
+            }
+        }
+        &::before {
+            top: 4.5px;
+            width: 5px;
+            height: 5px;
+            content: '';
+            left: -3.6px;
+            position: absolute;
+            transform: rotate(-6.536deg);
+            background: var(--purpleColor);
+        }
+        &::after {
+            right: 0;
+            width: 5px;
+            height: 5px;
+            content: '';
+            top: -9.5px;
+            position: absolute;
+            transform: rotate(-6.536deg);
+            background: var(--purpleColor);
+        }
+    }
+    h2 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+}
+
+// Utilities CSS
+@import "./utilities";
+
+// UI Kit CSS
+@import "./ui-kit";
+
+// Dark Mode CSS
+@import "./dark";
+
+// RTL CSS
+@import "./rtl";
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    body {
+        font-size: 13px;
+    }
+    .ptb-150 {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+    }
+    .pt-150 {
+        padding-top: 60px;
+    }
+    .pb-150 {
+        padding-bottom: 60px;
+    }
+    .ptb-120 {
+        padding: {
+            top: 30px;
+            bottom: 30px;
+        }
+    }
+    .pt-120 {
+        padding-top: 30px;
+    }
+    .pb-120 {
+        padding-bottom: 30px;
+    }
+
+    // Section Title
+    .section-title {
+        max-width: 100%;
+        margin-bottom: 35px;
+    
+        h2 {
+            font-size: 24px;
+            letter-spacing: -.5px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .ptb-150 {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        }
+    }
+    .pt-150 {
+        padding-top: 80px;
+    }
+    .pb-150 {
+        padding-bottom: 80px;
+    }
+    .ptb-120 {
+        padding: {
+            top: 50px;
+            bottom: 50px;
+        }
+    }
+    .pt-120 {
+        padding-top: 50px;
+    }
+    .pb-120 {
+        padding-bottom: 50px;
+    }
+
+    // Section Title
+    .section-title {
+        max-width: 650px;
+        margin-bottom: 50px;
+    
+        h2 {
+            font-size: 28px;
+            letter-spacing: -.6px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .ptb-150 {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        }
+    }
+    .pt-150 {
+        padding-top: 100px;
+    }
+    .pb-150 {
+        padding-bottom: 100px;
+    }
+    .ptb-120 {
+        padding: {
+            top: 70px;
+            bottom: 70px;
+        }
+    }
+    .pt-120 {
+        padding-top: 70px;
+    }
+    .pb-120 {
+        padding-bottom: 70px;
+    }
+
+    // Section Title
+    .section-title {
+        max-width: 810px;
+        margin-bottom: 65px;
+    
+        h2 {
+            font-size: 34px;
+            letter-spacing: -.8px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

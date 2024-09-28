@@ -1,0 +1,168 @@
+.primary-emails-table {
+    table, .table {
+        tbody {
+            tr {
+                td {
+                    position: relative;
+                    padding: {
+                        top: 14.3px;
+                        bottom: 14.3px;
+                    };
+                    .icon {
+                        top: 2px;
+                        margin-left: 10px;
+
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                    &:first-child {
+                        border-left-width: 0;
+                        padding: {
+                            left: 0;
+                            right: 0;
+                        };
+                    }
+                    &:last-child {
+                        border-right-width: 0;
+                        padding-right: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+.trezo-card-pagination {
+    top: 25px !important;
+    padding: 0 !important;
+    right: 25px !important;
+    border-width: 0 !important;
+    border-radius: 0 !important;
+    position: absolute !important;
+
+    div {
+        ol, ul {
+            margin: {
+                left: 10px !important;
+                top: 0 !important;
+            };
+        }
+    }
+}
+.component-rtl-enabled {
+    .primary-emails-table {
+        table, .table {
+            tbody {
+                tr {
+                    td {
+                        .icon {
+                            margin: {
+                                left: 0;
+                                right: 10px;
+                            };
+                        }
+                        &:first-child {
+                            border-right-width: 0;
+                        }
+                        &:last-child {
+                            border-left-width: 0;
+                            padding: {
+                                right: 20px;
+                                left: 0;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .trezo-card-pagination {
+        left: 25px !important;
+        right: auto !important;
+
+        div {
+            ol, ul {
+                margin: {
+                    left: 0 !important;
+                    right: 10px !important;
+                };
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .primary-emails-table {
+        table, .table {
+            tbody {
+                tr {
+                    td {
+                        padding: {
+                            top: 14px;
+                            bottom: 14px;
+                        };
+                        .icon {
+                            top: 2.5px;
+
+                            i {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .trezo-card-pagination {
+        top: 0 !important;
+        right: 0 !important;
+        position: relative !important;
+    }
+    .component-rtl-enabled {
+        .primary-emails-table {
+            table, .table {
+                tbody {
+                    tr {
+                        td {
+                            &:last-child {
+                                padding: {
+                                    right: 17px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .trezo-card-pagination {
+            left: 0 !important;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .component-rtl-enabled {
+        .primary-emails-table {
+            table, .table {
+                tbody {
+                    tr {
+                        td {
+                            &:last-child {
+                                padding: {
+                                    right: 20px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

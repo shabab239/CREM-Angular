@@ -1,0 +1,697 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Reviews
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Reviews
+        </li>
+    </ol>
+</div>
+
+<!-- Reviews -->
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search review.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        This Week
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> ID </th>
+                        <th scope="col" class="fw-medium"> Reviewer </th>
+                        <th scope="col" class="fw-medium"> Review </th>
+                        <th scope="col" class="fw-medium"> Product </th>
+                        <th scope="col" class="fw-medium"> Date </th>
+                        <th scope="col" class="fw-medium"> Status </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-body"> #999 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user6.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Olivia Clark </span>
+                                    <span class="email d-block text-body"> olivia&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="text-black"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product1.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Smart Band </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #998 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user7.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Zephyr Zing </span>
+                                    <span class="email d-block text-body"> zephyr&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                                <p class="text-black"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product2.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Headphone </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #997 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user8.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Nova Nectar </span>
+                                    <span class="email d-block text-body"> nova&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                                <p class="text-black"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product3.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> iPhone 15 Plus </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #996 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user9.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Isabella Chang </span>
+                                    <span class="email d-block text-body"> isabella&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                                <p class="text-black"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product4.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Bluetooth Speaker </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #995 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user10.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Alina Bennett </span>
+                                    <span class="email d-block text-body"> alina&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="text-black"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product5.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Airbuds 2nd Gen </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Published </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #994 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user11.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Marcia Baker </span>
+                                    <span class="email d-block text-body"> marcia&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="text-black"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product1.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Smart Band </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #993 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user12.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Carolyn Barnes </span>
+                                    <span class="email d-block text-body"> carolyn&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                                <p class="text-black"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product2.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Headphone </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #992 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user13.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Donna Miller </span>
+                                    <span class="email d-block text-body"> donna&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                                <p class="text-black"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product3.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> iPhone 15 Plus </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #991 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user14.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Barbara Cross </span>
+                                    <span class="email d-block text-body"> barbara&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                    <i class="ri-star-line"></i>
+                                </div>
+                                <p class="text-black"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product4.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Bluetooth Speaker </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge"> Pending </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-body"> #990 </td>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="reviewer-image" class="rounded-circle" src="images/users/user15.jpg">
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block"> Rebecca Block </span>
+                                    <span class="email d-block text-body"> rebecca&#64;trezo.com </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="white-space: normal;">
+                            <div class="review">
+                                <div class="ratings lh-1">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <p class="text-black"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/products/product5.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/ecommerce-page/product-details" class="fw-medium d-inline-block"> Airbuds 2nd Gen </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">
+                            <span class="d-block"> 17 Dec 2024 </span>
+                            <span class="d-block"> 08:30 PM </span>
+                        </td>
+                        <td>
+                            <span class="trezo-badge cancelled"> Published </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> download_done </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> reply </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

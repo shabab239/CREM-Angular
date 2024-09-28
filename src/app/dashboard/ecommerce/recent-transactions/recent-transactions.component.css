@@ -1,0 +1,58 @@
+.recent-transactions-card .trezo-card-content ul li {
+  margin-bottom: 21.5px;
+}
+.recent-transactions-card .trezo-card-content ul li .icon {
+  width: 41px;
+  height: 41px;
+  margin-right: 12px;
+}
+.recent-transactions-card .trezo-card-content ul li .title {
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+.recent-transactions-card .trezo-card-content ul li .date {
+  font-size: 13px;
+}
+.recent-transactions-card .trezo-card-content ul li:last-child {
+  margin-bottom: 0;
+}
+.recent-transactions-card.component-rtl-enabled .trezo-card-content ul li .icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .recent-transactions-card .trezo-card-content ul li {
+    margin-bottom: 15px;
+  }
+  .recent-transactions-card .trezo-card-content ul li .icon {
+    margin-right: 10px;
+  }
+  .recent-transactions-card .trezo-card-content ul li .title {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  .recent-transactions-card.component-rtl-enabled .trezo-card-content ul li .icon {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .recent-transactions-card .trezo-card-content ul li {
+    margin-bottom: 22px;
+  }
+  .recent-transactions-card .trezo-card-content ul li .title {
+    font-size: 15px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .recent-transactions-card .trezo-card-content ul li .icon {
+    margin-right: 9px;
+  }
+}
+/* Min width 1600px *//*# sourceMappingURL=recent-transactions.component.css.map */

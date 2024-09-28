@@ -1,0 +1,207 @@
+.project-overview-card {
+    padding-bottom: 0;
+
+    .trezo-card-content {
+        .box {
+            padding: 20px 20px 22px;
+            margin-bottom: 25px;
+
+            .icon {
+                margin-right: 10px;
+
+                i {
+                    font-size: 40px;
+                }
+            }
+            h5 {
+                font-size: 20px;
+                margin-top: 3px;
+            }
+            .info {
+                margin-top: 25px;
+
+                .sub-title {
+                    font-size: 13px;
+                }
+                .info-badge {
+                    font-size: 13px;
+                    color: #1E8308;
+                    padding: 1px 8.3px;
+                    border-radius: 100px;
+                    border: 1px solid #82FC5A;
+                    background-color: #D8FFC8;
+        
+                    &.down {
+                        border-color: #FFCEA9;
+                        color: var(--dangerColor);
+                        background-color: #FFE1DD;
+                    }
+                }
+                .users {
+                    img {
+                        width: 34px;
+                        height: 34px;
+                        margin-right: -14px;
+                        border: 1px solid var(--whiteColor);
+                    }
+                    span {
+                        width: 34px;
+                        height: 34px;
+                        font-size: 12px;
+                        border: 1px solid var(--whiteColor);
+                    }
+                }
+            }
+        }
+        .col-sm-6 {
+            &:nth-child(4) {
+                .box {
+                    .info {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &.component-dark-theme {
+        .trezo-card-content {
+            .bg-primary-50, .bg-orange-50, .bg-success-50, .bg-purple-50 {
+                background-color: #15203c !important;
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .box {
+                .icon {
+                    margin: {
+                        right: 0;
+                        left: 10px;
+                    };
+                }
+                .info {
+                    .users {
+                        img {
+                            margin: {
+                                right: 0;
+                                left: -14px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .project-overview-card {
+        .trezo-card-content {
+            .box {
+                padding: 17px;
+                margin-bottom: 17px;
+    
+                .icon {
+                    i {
+                        font-size: 35px;
+                    }
+                }
+                h5 {
+                    font-size: 18px;
+                }
+                .info {
+                    margin-top: 12px;
+                }
+            }
+            .col-sm-6 {
+                &:nth-child(4) {
+                    .box {
+                        .info {
+                            margin-top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .project-overview-card {
+        .trezo-card-content {
+            .row {
+                margin: {
+                    left: -8.5px;
+                    right: -8.5px;
+                };
+                .col-sm-6 {
+                    padding: {
+                        left: 8.5px;
+                        right: 8.5px;
+                    };
+                }
+            }
+            .box {
+                padding: 20px;
+                margin-bottom: 20px;
+    
+                .info {
+                    margin-top: 20px;
+                }
+            }
+            .col-sm-6 {
+                &:nth-child(4) {
+                    .box {
+                        .info {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .project-overview-card {
+        .trezo-card-content {
+            .box {
+                padding: 20px;
+    
+                h5 {
+                    font-size: 19px;
+                }
+                .info {
+                    margin-top: 20px;
+                }
+            }
+            .col-sm-6 {
+                &:nth-child(4) {
+                    .box {
+                        .info {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

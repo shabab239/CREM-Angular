@@ -1,0 +1,23 @@
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Monochrome Polar Chart
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <apx-chart
+            [series]="chartOptions.series!"
+            [chart]="chartOptions.chart!"
+            [labels]="chartOptions.labels!"
+            [title]="chartOptions.title!"
+            [theme]="chartOptions.theme!"
+            [fill]="chartOptions.fill!"
+            [yaxis]="chartOptions.yaxis!"
+            [stroke]="chartOptions.stroke!"
+            [legend]="chartOptions.legend!"
+            [plotOptions]="chartOptions.plotOptions!"
+        ></apx-chart>
+    </div>
+</div>

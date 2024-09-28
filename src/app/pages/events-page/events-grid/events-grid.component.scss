@@ -1,0 +1,220 @@
+.event-card {
+    .trezo-card-content {
+        .image {
+            .price {
+                top: 0;
+                right: 0;
+                width: 60px;
+                height: 60px;
+                font-size: 16px;
+                position: absolute;
+                border-radius: 7px;
+            }
+            &::before {
+                top: 0;
+                right: 0;
+                width: 65px;
+                content: '';
+                height: 65px;
+                position: absolute;
+                border-radius: 0 7px 0 7px;
+                background: var(--whiteColor);
+            }
+        }
+        .content {
+            margin-top: 22px;
+
+            h6 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .members {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: -12px;
+                    border: 2px solid var(--borderColor);
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                div {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 12px;
+                    border-radius: 50%;
+                    margin-right: -12px;
+                    border: 2px solid var(--whiteColor);
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .t-progress {
+                margin-top: 20px;
+
+                span {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
+.component-dark-theme {
+    .event-card {
+        .trezo-card-content {
+            .image {
+                &::before {
+                    background: #0A0E19;
+                }
+            }
+            .content {
+                .members {
+                    div {
+                        border-color: #0A0E19;
+                    }
+                }
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    .event-card {
+        .trezo-card-content {
+            .image {
+                .price {
+                    right: auto;
+                    left: 0;
+                }
+                &::before {
+                    left: 0;
+                    right: auto;
+                    border-radius: 0 0 7px 0;
+                }
+            }
+            .content {
+                .members {
+                    img {
+                        margin: {
+                            left: -12px;
+                            right: 0;
+                        };
+                        &:last-child {
+                            margin-left: 0;
+                        }
+                    }
+                    div {
+                        margin: {
+                            left: -12px;
+                            right: 0;
+                        };
+                        &:last-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .event-card {
+        .trezo-card-content {
+            .image {
+                .price {
+                    width: 55px;
+                    height: 55px;
+                    font-size: 14px;
+                }
+                &::before {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .content {
+                margin-top: 18px;
+    
+                h6 {
+                    font-size: 15px;
+                    margin-bottom: 8px;
+                }
+                .members {
+                    img {
+                        width: 38px;
+                        height: 38px;
+                        margin-right: -10px;
+                    }
+                }
+                .t-progress {
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+    .component-rtl-enabled {
+        .event-card {
+            .trezo-card-content {
+                .content {
+                    .members {
+                        img {
+                            margin: {
+                                left: -10px;
+                                right: 0;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .event-card {
+        .trezo-card-content {
+            .content {
+                margin-top: 20px;
+    
+                h6 {
+                    font-size: 16px;
+                }
+                .t-progress {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .event-card {
+        .trezo-card-content {
+            .content {
+                h6 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,306 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Customer Details
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            eCommerce
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Customers
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Customer Details
+        </li>
+    </ol>
+</div>
+
+<!-- Customer Details -->
+<div class="row">
+    <div class="col-xxl-9 col-lg-8">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Transactions History
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <div class="trezo-card-header-menu position-relative">
+                        <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                            <span class="d-block position-relative">
+                                Last Month
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Last Day
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Last Week
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Last Month
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Last Year
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="basic-table table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium"> Order ID </th>
+                                <th scope="col" class="fw-medium"> Status </th>
+                                <th scope="col" class="fw-medium"> Amount </th>
+                                <th scope="col" class="fw-medium"> Rewards </th>
+                                <th scope="col" class="fw-medium"> Date </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-body"> #JAN-121 </td>
+                                <td>
+                                    <span class="trezo-badge pending"> Pending </span>
+                                </td>
+                                <td> $6,855.00 </td>
+                                <td> $12.00 </td>
+                                <td class="text-body"> 14 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-120 </td>
+                                <td>
+                                    <span class="trezo-badge"> Successful </span>
+                                </td>
+                                <td> $258.00 </td>
+                                <td> $9.00 </td>
+                                <td class="text-body"> 13 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-119 </td>
+                                <td>
+                                    <span class="trezo-badge rejected"> Rejected </span>
+                                </td>
+                                <td> $3,890.00 </td>
+                                <td> $11.00 </td>
+                                <td class="text-body"> 12 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-118 </td>
+                                <td>
+                                    <span class="trezo-badge"> Successful </span>
+                                </td>
+                                <td> $2,500.00 </td>
+                                <td> $23.42 </td>
+                                <td class="text-body"> 11 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-117 </td>
+                                <td>
+                                    <span class="trezo-badge"> Successful </span>
+                                </td>
+                                <td> $8,200.00 </td>
+                                <td> $10.84 </td>
+                                <td class="text-body"> 10 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-116 </td>
+                                <td>
+                                    <span class="trezo-badge rejected"> Rejected </span>
+                                </td>
+                                <td> $640.00 </td>
+                                <td> $3.21 </td>
+                                <td class="text-body"> 09 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-115 </td>
+                                <td>
+                                    <span class="trezo-badge"> Successful </span>
+                                </td>
+                                <td> $9,100.00 </td>
+                                <td> $43.21 </td>
+                                <td class="text-body"> 08 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-114 </td>
+                                <td>
+                                    <span class="trezo-badge pending"> Pending </span>
+                                </td>
+                                <td> $7,300.00 </td>
+                                <td> $42.42 </td>
+                                <td class="text-body"> 07 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-113 </td>
+                                <td>
+                                    <span class="trezo-badge"> Successful </span>
+                                </td>
+                                <td> $2,800.00 </td>
+                                <td> $11.21 </td>
+                                <td class="text-body"> 06 Jan 2024 </td>
+                            </tr>
+                            <tr>
+                                <td class="text-body"> #JAN-112 </td>
+                                <td>
+                                    <span class="trezo-badge"> Successful </span>
+                                </td>
+                                <td> $6,600.00 </td>
+                                <td> $14.32 </td>
+                                <td class="text-body"> 05 Jan 2024 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="trezo-card-pagination">
+                    <div class="d-md-flex align-items-center justify-content-between">
+                        <p class="mb-0">
+                            Showing 10 of 36 results
+                        </p>
+                        <ol class="list-unstyled mb-0 p-0">
+                            <li class="d-inline-block">
+                                <a class="prev" routerLink=".">
+                                    <span class="opacity-0">
+                                        0
+                                    </span>
+                                    <i class="material-symbols-outlined">
+                                        chevron_left
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a routerLink="." class="active">
+                                    1
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a routerLink=".">
+                                    2
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a routerLink=".">
+                                    3
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a routerLink=".">
+                                    4
+                                </a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a class="next" routerLink=".">
+                                    <span class="opacity-0">
+                                        0
+                                    </span>
+                                    <i class="material-symbols-outlined">
+                                        chevron_right
+                                    </i>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-3 col-lg-4">
+        <div
+            class="customer-details-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-content">
+                <div class="info d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <img src="images/users/user11.jpg" class="rounded-circle" alt="user-image">
+                        </div>
+                        <div>
+                            <span class="title d-block fw-medium text-black">
+                                Ava Turner
+                            </span>
+                            <span class="d-block">
+                                Team Leader
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trezo-card-header-menu2 position-relative">
+                        <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu2()">
+                            <i class="ri-more-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen2">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Block
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Delete
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Report
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="list p-0 mb-0 list-unstyled">
+                    <li class="text-black fw-medium">
+                        <span class="text-body d-block fw-normal">
+                            Account ID:
+                        </span> 
+                        ID-12174123
+                    </li>
+                    <li class="text-black fw-medium">
+                        <span class="text-body d-block fw-normal">
+                            Billing Email:
+                        </span> 
+                        ava&#64;trezo.com
+                    </li>
+                    <li class="text-black fw-medium">
+                        <span class="text-body d-block fw-normal">
+                            Delivery Address:
+                        </span> 
+                        715 Maple St, Hamletville, England
+                    </li>
+                    <li class="text-black fw-medium">
+                        <span class="text-body d-block fw-normal">
+                            Language:
+                        </span> 
+                        English, Spanish
+                    </li>
+                    <li class="text-black fw-medium">
+                        <span class="text-body d-block fw-normal">
+                            Latest Transaction:
+                        </span> 
+                        #JAN-121
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

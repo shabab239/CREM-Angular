@@ -1,0 +1,114 @@
+<div
+    class="leads-by-source-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Leads by Source
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="menu-btn transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                    <span class="d-block position-relative">
+                        This Month
+                    </span>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="chart">
+            <apx-chart
+                [chart]="chartOptions.chart!"
+                [legend]="chartOptions.legend!"
+                [colors]="chartOptions.colors!"
+                [stroke]="chartOptions.stroke!"
+                [labels]="chartOptions.labels!"
+                [series]="chartOptions.series!"
+                [tooltip]="chartOptions.tooltip!"
+                [dataLabels]="chartOptions.dataLabels!"
+                [plotOptions]="chartOptions.plotOptions!"
+            ></apx-chart>
+        </div>
+        <ul class="list p-0 list-unstyled mb-0 d-flex flex-wrap">
+            <li>
+                <span class="d-block title d-flex align-items-center">
+                    <span class="dot d-block bg-primary"></span>
+                    Organic
+                </span>
+                <h6 class="mb-0 fw-medium lh-1">
+                    320
+                </h6>
+            </li>
+            <li>
+                <span class="d-block title d-flex align-items-center">
+                    <span class="dot d-block bg-secondary"></span>
+                    Paid
+                </span>
+                <h6 class="mb-0 fw-medium lh-1">
+                    60
+                </h6>
+            </li>
+            <li>
+                <span class="d-block title d-flex align-items-center">
+                    <span class="dot d-block bg-purple"></span>
+                    Direct
+                </span>
+                <h6 class="mb-0 fw-medium lh-1">
+                    30
+                </h6>
+            </li>
+            <li>
+                <span class="d-block title d-flex align-items-center">
+                    <span class="dot d-block bg-info"></span>
+                    Social
+                </span>
+                <h6 class="mb-0 fw-medium lh-1">
+                    160
+                </h6>
+            </li>
+            <li>
+                <span class="d-block title d-flex align-items-center">
+                    <span class="dot d-block bg-success"></span>
+                    Referrals
+                </span>
+                <h6 class="mb-0 fw-medium lh-1">
+                    279
+                </h6>
+            </li>
+            <li>
+                <span class="d-block title d-flex align-items-center">
+                    <span class="dot d-block bg-orange"></span>
+                    Others
+                </span>
+                <h6 class="mb-0 fw-medium lh-1">
+                    19
+                </h6>
+            </li>
+        </ul>
+    </div>
+</div>

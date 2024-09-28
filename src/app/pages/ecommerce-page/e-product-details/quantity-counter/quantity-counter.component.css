@@ -1,0 +1,40 @@
+.quantity-counter {
+  width: 102px;
+}
+.quantity-counter input {
+  height: 34px;
+  font-size: 14px;
+  border-radius: 7px;
+  background: #ECF0FF;
+  color: var(--blackColor);
+}
+.quantity-counter input[type=number]::-webkit-inner-spin-button, .quantity-counter input[type=number]::-webkit-outer-spin-button {
+  display: none;
+}
+.quantity-counter button {
+  top: 50%;
+  left: 17px;
+  font-size: 20px;
+  position: absolute;
+  color: var(--bodyColor);
+  transform: translateY(-50%);
+}
+.quantity-counter button:last-child {
+  left: auto;
+  right: 17px;
+}
+.quantity-counter button:hover {
+  color: var(--primaryColor);
+}
+.quantity-counter.component-dark-theme input {
+  background: #15203c;
+  color: var(--whiteColor);
+}
+.quantity-counter.component-rtl-enabled button {
+  right: 17px;
+  left: auto;
+}
+.quantity-counter.component-rtl-enabled button:last-child {
+  right: auto;
+  left: 17px;
+}/*# sourceMappingURL=quantity-counter.component.css.map */

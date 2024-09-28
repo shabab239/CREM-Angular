@@ -1,0 +1,120 @@
+<div
+    class="enrolled-by-countries-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Enrolled by Countries
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="text-center">
+            <img src="images/vector-map.png" alt="vector-map">
+        </div>
+        <ul class="p-0 mb-0 list-unstyled">
+            <li class="d-flex align-items-center">
+                <div class="flag flex-shrink-0">
+                    <img src="images/flags/usa.svg" alt="usa">
+                </div>
+                <div class="flex-grow-1">
+                    <span class="title d-block fw-medium">
+                        United States
+                    </span>
+                    <div class="d-flex align-items-center">
+                        <div class="progress trezo-progress w-100" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                        <span class="d-block percentage">
+                            85%
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="d-flex align-items-center">
+                <div class="flag flex-shrink-0">
+                    <img src="images/flags/germany.svg" alt="germany">
+                </div>
+                <div class="flex-grow-1">
+                    <span class="title d-block fw-medium">
+                        Germany
+                    </span>
+                    <div class="d-flex align-items-center">
+                        <div class="progress trezo-progress w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                        <span class="d-block percentage">
+                            75%
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="d-flex align-items-center">
+                <div class="flag flex-shrink-0">
+                    <img src="images/flags/uk.svg" alt="uk">
+                </div>
+                <div class="flex-grow-1">
+                    <span class="title d-block fw-medium">
+                        United Kingdom
+                    </span>
+                    <div class="d-flex align-items-center">
+                        <div class="progress trezo-progress w-100" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 40%"></div>
+                        </div>
+                        <span class="d-block percentage">
+                            40%
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="d-flex align-items-center">
+                <div class="flag flex-shrink-0">
+                    <img src="images/flags/canada.svg" alt="canada">
+                </div>
+                <div class="flex-grow-1">
+                    <span class="title d-block fw-medium">
+                        Canada
+                    </span>
+                    <div class="d-flex align-items-center">
+                        <div class="progress trezo-progress w-100" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 10%"></div>
+                        </div>
+                        <span class="d-block percentage">
+                            10%
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

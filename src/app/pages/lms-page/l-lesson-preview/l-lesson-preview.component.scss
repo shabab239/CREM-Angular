@@ -1,0 +1,78 @@
+.lesson-preview-card {
+    .trezo-card-content {
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+        }
+        h4 {
+            margin: {
+                top: 25px;
+                bottom: 10px;
+            };
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .btn-box {
+            font-size: 16px;
+            padding: 12px 22px;
+            color: var(--whiteColor);
+            background-color: var(--primaryColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .lesson-preview-card {
+        .trezo-card-content {
+            h4 {
+                margin: {
+                    top: 17px;
+                    bottom: 10px;
+                };
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            .btn-box {
+                padding: 11px 20px;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .lesson-preview-card {
+        .trezo-card-content {
+            h4 {
+                margin: {
+                    top: 20px;
+                    bottom: 10px;
+                };
+            }
+            .btn-box {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

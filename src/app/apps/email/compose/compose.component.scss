@@ -1,0 +1,363 @@
+.email-compose-card {
+    .trezo-card-header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--borderColor);
+
+        .trezo-card-title {
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+    .trezo-card-content {
+        .buttons-list {
+            .button {
+                top: 2px;
+                margin-left: 15px;
+                color: var(--bodyColor);
+
+                i {
+                    font-size: 20px;
+                }
+                &:hover {
+                    color: var(--primaryColor);
+                }
+                &.warn {
+                    color: var(--dangerColor);
+                }
+                &.primary {
+                    top: 0;
+                    font-size: 16px;
+                    padding: 8px 26px;
+                    color: var(--whiteColor);
+                    background-color: var(--primaryColor);
+                    margin: {
+                        right: 2px;
+                        left: 0;
+                    };
+                    &:hover {
+                        background-color: var(--secondaryColor);
+                    }
+                }
+            }
+            .dropdown-menu {
+                right: 0;
+                left: auto;
+                bottom: 100%;
+                width: 195px;
+                padding: 15px 0;
+
+                li {
+                    .dropdown-item {
+                        i {
+                            top: 50%;
+                            left: 20px;
+                            font-size: 20px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                        }
+                        &::before {
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            width: 2px;
+                            content: '';
+                            position: absolute;
+                            transform: scaleY(0);
+                            transition: var(--transition);
+                            background: var(--primaryColor);
+                        }
+                        &.with-icon {
+                            padding: {
+                                left: 47px;
+                                right: 20px;
+                            };
+                        }
+                        &:hover {
+                            &::before {
+                                transform: scaleY(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .buttons-list {
+                .button {
+                    margin: {
+                        left: 0;
+                        right: 15px;
+                    };
+                    &.primary {
+                        margin: {
+                            right: 0;
+                            left: 2px;
+                        };
+                    }
+                }
+                .dropdown-menu {
+                    right: auto;
+                    left: 0;
+    
+                    li {
+                        .dropdown-item {
+                            i {
+                                left: auto;
+                                right: 20px;
+                            }
+                            &::before {
+                                left: auto;
+                                right: 0;
+                            }
+                            &.with-icon {
+                                padding: {
+                                    left: 47px;
+                                    left: 20px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+::ng-deep {
+    .email-compose-card {
+        .trezo-card-content {
+            .NgxEditor__Wrapper {
+                .NgxEditor {
+                    .NgxEditor__Content {
+                        min-height: 245px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .email-compose-card {
+        .trezo-card-header {
+            padding-bottom: 15px;
+
+            .trezo-card-title {
+                h5 {
+                    font-size: 15px;
+                }
+            }
+        }
+        .trezo-card-content {
+            .buttons-list {
+                .button {
+                    margin-left: 12px;
+
+                    i {
+                        font-size: 16px;
+                    }
+                    &.primary {
+                        padding: 10px 20px;
+                        margin-right: 0;
+                        font-size: 14px;
+                    }
+                    &.warn {
+                        margin: {
+                            left: 0;
+                            top: 12px;
+                        };
+                    }
+                }
+                .dropdown-menu {
+                    padding: 10px 0;
+    
+                    li {
+                        .dropdown-item {
+                            i {
+                                left: 20px;
+                                font-size: 20px;
+                            }
+                            &.with-icon {
+                                padding: {
+                                    left: 47px;
+                                    right: 20px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .buttons-list {
+                    .button {
+                        margin: {
+                            left: 0;
+                            right: 12px;
+                        };
+                        &.primary {
+                            margin-left: 0;
+                        }
+                        &.warn {
+                            margin-right: 0;
+                        }
+                    }
+                    .dropdown-menu {
+                        li {
+                            .dropdown-item {
+                                i {
+                                    left: auto;
+                                    right: 20px;
+                                }
+                                &.with-icon {
+                                    padding: {
+                                        right: 47px;
+                                        left: 20px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .email-compose-card {
+            .trezo-card-content {
+                .NgxEditor__Wrapper {
+                    .NgxEditor {
+                        .NgxEditor__Content {
+                            min-height: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .email-compose-card {
+        .trezo-card-content {
+            .buttons-list {
+                .button {
+                    margin-left: 15px;
+
+                    &.warn {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .buttons-list {
+                    .button {
+                        margin: {
+                            left: 0;
+                            right: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .email-compose-card {
+        .trezo-card-header {
+            padding-bottom: 18px;
+        }
+        .trezo-card-content {
+            .buttons-list {
+                .button {
+                    i {
+                        font-size: 18px;
+                    }
+                    &.primary {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .email-compose-card {
+            .trezo-card-content {
+                .NgxEditor__Wrapper {
+                    .NgxEditor {
+                        .NgxEditor__Content {
+                            min-height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .email-compose-card {
+        .trezo-card-content {
+            .buttons-list {
+                .button {
+                    &.primary {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .email-compose-card {
+            .trezo-card-content {
+                .NgxEditor__Wrapper {
+                    .NgxEditor {
+                        .NgxEditor__Content {
+                            min-height: 215px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    ::ng-deep {
+        .email-compose-card {
+            .trezo-card-content {
+                .NgxEditor__Wrapper {
+                    .NgxEditor {
+                        .NgxEditor__Content {
+                            min-height: 212px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

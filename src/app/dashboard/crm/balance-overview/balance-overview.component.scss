@@ -1,0 +1,180 @@
+.balance-overview-card {
+    .trezo-card-content {
+        .chart {
+            margin: {
+                bottom: -3px;
+                left: -10px;
+            };
+        }
+        .list {
+            li {
+                margin: {
+                    left: 15px;
+                    right: 15px;
+                };
+                span {
+                    &:nth-child(1) {
+                        margin-right: 10px;
+                        font-size: 20px;
+                    }
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .list {
+                li {
+                    span {
+                        &:nth-child(1) {
+                            margin: {
+                                right: 0;
+                                left: 10px;
+                            };
+                        }
+                    }
+                    &:first-child {
+                        margin: {
+                            left: 15px;
+                            right: 0;
+                        };
+                    }
+                    &:last-child {
+                        margin: {
+                            right: 15px;
+                            left: 0;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .balance-overview-card {
+        .trezo-card-content {
+            .chart {
+                margin: {
+                    bottom: -20px;
+                    left: -10px;
+                };
+            }
+            .list {
+                li {
+                    margin: {
+                        left: 10px;
+                        right: 10px;
+                    };
+                    span {
+                        &:nth-child(1) {
+                            font-size: 20px;
+                            margin-right: 0;
+                        }
+                        &:nth-child(2) {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .list {
+                    li {
+                        span {
+                            &:nth-child(1) {
+                                margin-left: 0;
+                            }
+                        }
+                        &:first-child {
+                            margin: {
+                                left: 10px;
+                            };
+                        }
+                        &:last-child {
+                            margin: {
+                                right: 10px;
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .balance-overview-card {
+        .trezo-card-content {
+            .list {
+                li {
+                    span {
+                        &:nth-child(1) {
+                            margin-right: 8px;
+                        }
+                        &:nth-child(2) {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .list {
+                    li {
+                        span {
+                            &:nth-child(1) {
+                                margin: {
+                                    right: 0;
+                                    left: 8px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .balance-overview-card {
+        .trezo-card-content {
+            .list {
+                li {
+                    span {
+                        &:nth-child(1) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

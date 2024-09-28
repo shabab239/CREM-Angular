@@ -1,0 +1,64 @@
+.not-found-area {
+  background-color: var(--whiteColor);
+  overflow-x: hidden;
+  height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.not-found-area.dark-theme {
+  background-color: #0A0E19;
+}
+
+.not-found-content {
+  max-width: 960px;
+}
+.not-found-content h4 {
+  margin-top: 33px;
+  margin-bottom: 13px;
+}
+.not-found-content .btn-box {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 12px 25px;
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .not-found-content {
+    max-width: 100%;
+  }
+  .not-found-content h4 {
+    margin-top: 25px;
+  }
+  .not-found-content .btn-box {
+    padding: 12px 25px;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .not-found-content {
+    max-width: 540px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .not-found-content {
+    max-width: 720px;
+  }
+  .not-found-content .btn-box {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .not-found-content .btn-box {
+    font-size: 15px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px *//*# sourceMappingURL=not-found.component.css.map */

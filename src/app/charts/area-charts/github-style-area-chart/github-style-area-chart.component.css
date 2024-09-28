@@ -1,0 +1,13 @@
+.github-user .title {
+  margin-left: 12px;
+}
+.github-user .title span:not(:first-child) {
+  margin-top: 4px;
+}
+
+.chart:first-child {
+  margin-top: -20px;
+}
+.chart:last-child {
+  margin-bottom: -20px !important;
+}/*# sourceMappingURL=github-style-area-chart.component.css.map */

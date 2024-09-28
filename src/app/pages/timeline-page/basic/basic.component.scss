@@ -1,0 +1,245 @@
+.basic-timeline-card {
+    .trezo-card-content {
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        };
+        .list {
+            li {
+                padding-left: 180px;
+                margin-bottom: 25px;
+
+                .time {
+                    top: 0;
+                    left: 0;
+                    width: 120px;
+                    font-size: 13px;
+                    text-align: end;
+                    position: absolute;
+                    display: inline-block;
+                }
+                .title {
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 1.7;
+                    margin-bottom: 12px;
+                }
+                .author {
+                    font-size: 13px;
+                }
+                .members {
+                    margin-bottom: 12px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: -12px;
+                        border: 2px solid var(--borderColor);
+                        
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    div {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 12px;
+                        border-radius: 50%;
+                        margin-right: -12px;
+                        border: 2px solid var(--whiteColor);
+                        
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &::before {
+                    top: 3px;
+                    left: 144px;
+                    width: 12px;
+                    content: '';
+                    height: 12px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background: #37D80A;
+                }
+                &:nth-child(2) {
+                    &::before {
+                        background: var(--orangeColor);
+                    }
+                }
+                &:nth-child(3) {
+                    &::before {
+                        background: var(--purpleColor);
+                    }
+                }
+                &:nth-child(4) {
+                    &::before {
+                        background: var(--secondaryColor);
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &::before {
+                top: 0;
+                bottom: 0;
+                left: 150px;
+                content: '';
+                margin-top: 5px;
+                position: absolute;
+                border-left: 1px dashed var(--borderColor);
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .list {
+                li {
+                    padding: {
+                        left: 0;
+                        right: 180px;
+                    };
+                    .time {
+                        left: auto;
+                        right: 0;
+                    }
+                    .members {
+                        img {
+                            margin: {
+                                right: 0;
+                                left: -12px;
+                            };
+                            &:last-child {
+                                margin-left: 0;
+                            }
+                        }
+                        div {
+                            margin: {
+                                left: -12px;
+                                right: 0;
+                            };
+                            &:last-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    &::before {
+                        right: 144px;
+                        left: auto;
+                    }
+                }
+                &::before {
+                    left: auto;
+                    right: 150px;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .basic-timeline-card {
+        .trezo-card-content {
+            .list {
+                li {
+                    padding-left: 25px;
+                    margin-bottom: 25px;
+    
+                    .time {
+                        left: 0;
+                        width: auto;
+                        text-align: start;
+                        position: relative;
+                        margin-bottom: 12px;
+                    }
+                    .title {
+                        margin-bottom: 11px;
+                    }
+                    p {
+                        margin-bottom: 12px;
+                    }
+                    &::before {
+                        left: 0;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                &::before {
+                    left: 4px;
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .list {
+                    li {
+                        padding: {
+                            left: 0;
+                            right: 25px;
+                        };
+                        .time {
+                            left: auto;
+                            right: 0;
+                        }
+                        &::before {
+                            left: auto;
+                            right: 0;
+                        }
+                    }
+                    &::before {
+                        left: auto;
+                        right: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .basic-timeline-card {
+        .trezo-card-content {
+            .list {
+                li {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .basic-timeline-card {
+        .trezo-card-content {
+            .list {
+                li {
+                    p {
+                        max-width: 770px;
+                    }
+                }
+            }
+        }
+    }
+
+}

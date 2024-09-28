@@ -1,0 +1,433 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Events List
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Events List
+        </li>
+    </ol>
+</div>
+
+<!-- Events List -->
+<div class="events-list-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search event here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/events/create-an-event">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Event
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> Event ID </th>
+                        <th scope="col" class="fw-medium"> Event </th>
+                        <th scope="col" class="fw-medium"> Date and Time </th>
+                        <th scope="col" class="fw-medium"> Location </th>
+                        <th scope="col" class="fw-medium"> Organizer </th>
+                        <th scope="col" class="fw-medium"> Status </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> #JAN-258 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event1.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Annual Conference 2024 </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 01 Dec 2024 09:00 AM </td>
+                        <td> Convention Center </td>
+                        <td> ABC Corporation </td>
+                        <td>
+                            <span class="trezo-badge"> Happening </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-648 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event2.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Leadership Summit 2024 </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 10 Dec 2024 03:00 AM </td>
+                        <td> Online </td>
+                        <td> Marketing Pros </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-945 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event3.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Product Launch Webinar </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 15 Dec 2024 06:00 PM </td>
+                        <td> City Sky Lounge </td>
+                        <td> Tech Solutions Inc. </td>
+                        <td>
+                            <span class="trezo-badge rejected"> Past </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-186 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event4.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> AI in Healthcare Symposium </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 20 Dec 2024 09:00 AM </td>
+                        <td> Training Center </td>
+                        <td> Startup Hub </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-439 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event5.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Tech Summit 2024 </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 25 Dec 2024 02:30 PM </td>
+                        <td> Tech Park Auditorium </td>
+                        <td> Community Foundation </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-752 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event6.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Startup Pitch Day </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 30 Dec 2024 11:00 AM </td>
+                        <td> Grand Hotel Ballroom </td>
+                        <td> FutureTech Solutions </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-658 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event7.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Workshop: Digital Marketing </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 01 Jan 2024 07:00 AM </td>
+                        <td> Innovation Hub </td>
+                        <td> Leadership Institute </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-951 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event8.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Charity Gala Dinner </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 10 Jan 2024 03:00PM </td>
+                        <td> Medical Center </td>
+                        <td> XYZ Innovations </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-357 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event9.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Web Development Seminar </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 20 Jan 2024 01:00 PM </td>
+                        <td> Corporate HQ </td>
+                        <td> DTech Institute </td>
+                        <td>
+                            <span class="trezo-badge rejected"> Past </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #JAN-851 </td>
+                        <td>
+                            <div class="product-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="product-image" src="images/events/event10.jpg">
+                                </div>
+                                <div class="info">
+                                    <a routerLink="/dashboard/events/event-details" class="fw-medium d-inline-block"> Networking Mixer </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td> 30 Jan 2024 10:00 AM </td>
+                        <td> Online </td>
+                        <td> ABC Corporation </td>
+                        <td>
+                            <span class="trezo-badge inProgress"> Upcoming </span>
+                        </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <a routerLink="/dashboard/events/event-details" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </a>
+                                <a routerLink="/dashboard/events/edit-an-event" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </a>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 10 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,269 @@
+// Main Content
+.main-content {
+    overflow: hidden;
+    min-height: 100vh;
+    padding: {
+        top: 95px;
+        left: 285px;
+        right: 25px;
+    };
+    &.active, &.hide-sidebar {
+        padding-left: 85px;
+    }
+    &.right-sidebar {
+        padding: {
+            left: 25px;
+            right: 285px;
+        };
+        &.active, &.hide-sidebar {
+            padding-right: 85px;
+        }
+    }
+}
+
+// RTL
+::ng-deep {
+    .rtl-enabled {
+        .main-content {
+            padding: {
+                left: 25px;
+                right: 285px;
+            };
+            &.active, &.hide-sidebar {
+                padding: {
+                    left: 25px;
+                    right: 85px;
+                };
+            }
+            &.right-sidebar {
+                padding: {
+                    left: 285px;
+                    right: 25px;
+                };
+                &.active, &.hide-sidebar {
+                    padding-right: 85px;
+                    padding: {
+                        left: 85px;
+                        right: 25px;
+                    };
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    // Main Content
+    .main-content {
+        padding: {
+            top: 143px;
+            left: 15px;
+            right: 15px;
+        };
+        &.active, &.hide-sidebar {
+            padding-left: 15px;
+        }
+        &.right-sidebar {
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+            &.active, &.hide-sidebar {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    // RTL
+    ::ng-deep {
+        .rtl-enabled {
+            .main-content {
+                padding: {
+                    left: 15px;
+                    right: 15px;
+                };
+                &.active, &.hide-sidebar {
+                    padding: {
+                        left: 15px;
+                        right: 15px;
+                    };
+                }
+                &.right-sidebar {
+                    padding: {
+                        left: 15px;
+                        right: 15px;
+                    };
+                    &.active, &.hide-sidebar {
+                        padding: {
+                            left: 15px;
+                            right: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Main Content
+    .main-content {
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+        &.active, &.hide-sidebar {
+            padding-left: 25px;
+        }
+        &.right-sidebar {
+            padding-right: 25px;
+            
+            &.active, &.hide-sidebar {
+                padding-right: 25px;
+            }
+        }
+    }
+
+    // RTL
+    ::ng-deep {
+        .rtl-enabled {
+            .main-content {
+                padding-right: 25px;
+    
+                &.active, &.hide-sidebar {
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                    };
+                }
+                &.right-sidebar {
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                    };
+                    &.active, &.hide-sidebar {
+                        padding: {
+                            left: 25px;
+                            right: 25px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Main Content
+    .main-content {
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+        &.active, &.hide-sidebar {
+            padding-left: 25px;
+        }
+        &.right-sidebar {
+            padding-right: 25px;
+
+            &.active, &.hide-sidebar {
+                padding-right: 25px;
+            }
+        }
+    }
+
+    // RTL
+    ::ng-deep {
+        .rtl-enabled {
+            .main-content {
+                padding-right: 25px;
+                
+                &.active, &.hide-sidebar {
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                    };
+                }
+                &.right-sidebar {
+                    padding: {
+                        left: 25px;
+                        right: 25px;
+                    };
+                    &.active, &.hide-sidebar {
+                        padding: {
+                            left: 25px;
+                            right: 25px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Main Content
+    .main-content {
+        padding-left: 265px;
+        
+        &.active, &.hide-sidebar {
+            padding-left: 85px;
+        }
+        &.right-sidebar {
+            padding-right: 265px;
+
+            &.active, &.hide-sidebar {
+                padding: {
+                    right: 85px;
+                    left: 25px;
+                };
+            }
+        }
+    }
+
+    // RTL
+    ::ng-deep {
+        .rtl-enabled {
+            .main-content {
+                padding-right: 265px;
+            
+                &.active, &.hide-sidebar {
+                    padding: {
+                        left: 25px;
+                        right: 85px;
+                    };
+                }
+                &.right-sidebar {
+                    padding: {
+                        left: 265px;
+                        right: 25px;
+                    };
+                    &.active, &.hide-sidebar {
+                        padding: {
+                            left: 85px;
+                            right: 25px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

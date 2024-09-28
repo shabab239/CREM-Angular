@@ -1,0 +1,153 @@
+<div class="faq-area pt-150">
+    <div class="container">
+        <div class="section-title text-center mx-auto">
+            <div class="sub-title d-inline-block position-relative">
+                <span class="d-inline-block position-relative text-purple">
+                    FAQ's
+                </span>
+            </div>
+            <h2 class="mb-0">
+                Do You Have Questions? We Have Answers (Well, Most of the Time!)
+            </h2>
+        </div>
+        <div
+            class="faq-accordion accordion mx-auto"
+            [class.component-dark-theme]="themeService.isDark()"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+        >
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(0)"
+                    [ngClass]="{ 'open': isSectionOpen(0) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    What is Trezo?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(1)"
+                    [ngClass]="{ 'open': isSectionOpen(1) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    What features does Trezo offer?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                        <ul>
+                            <li class="position-relative">
+                                Pellentesque viverra lorem malesuada nunc tristique sapien.
+                            </li>
+                            <li class="position-relative">
+                                Imperdiet sit hendrerit tincidunt bibendum donec adipiscing.
+                            </li>
+                            <li class="position-relative">
+                                Tellus non morbi nascetur cursus etiam facilisis mi.
+                            </li>
+                            <li class="position-relative">
+                                Imperdiet sit hendrerit tincidunt bibendum donec adipiscing.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(2)"
+                    [ngClass]="{ 'open': isSectionOpen(2) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    How can Trezo benefit my team?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(3)"
+                    [ngClass]="{ 'open': isSectionOpen(3) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    Is Trezo suitable for small businesses?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(4)"
+                    [ngClass]="{ 'open': isSectionOpen(4) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    Can I customize Trezo to fit my team's specific needs?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(5)"
+                    [ngClass]="{ 'open': isSectionOpen(5) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    Is Trezo cloud-based or on-premises?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-radius border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(6)"
+                    [ngClass]="{ 'open': isSectionOpen(6) }"
+                    class="accordion-button d-block text-start shadow-none bg-transparent fw-medium border-0"
+                >
+                    Does Trezo integrate with other tools?
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(6) }">
+                    <div class="accordion-body">
+                        <p>
+                            Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

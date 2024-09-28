@@ -1,0 +1,149 @@
+.mp-recent-activity-card .trezo-card-content .list li {
+  padding-left: 132px;
+  margin-bottom: 25px;
+}
+.mp-recent-activity-card .trezo-card-content .list li .time {
+  top: 0;
+  left: 5px;
+  font-size: 13px;
+  position: absolute;
+}
+.mp-recent-activity-card .trezo-card-content .list li .title {
+  margin-bottom: 9px;
+}
+.mp-recent-activity-card .trezo-card-content .list li p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.mp-recent-activity-card .trezo-card-content .list li .author {
+  font-size: 13px;
+}
+.mp-recent-activity-card .trezo-card-content .list li::before {
+  top: 3px;
+  left: 93px;
+  width: 12px;
+  content: "";
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  background: #37D80A;
+}
+.mp-recent-activity-card .trezo-card-content .list li:nth-child(2)::before {
+  background: var(--orangeColor);
+}
+.mp-recent-activity-card .trezo-card-content .list li:nth-child(3)::before {
+  background: var(--purpleColor);
+}
+.mp-recent-activity-card .trezo-card-content .list li:nth-child(4)::before {
+  background: var(--secondaryColor);
+}
+.mp-recent-activity-card .trezo-card-content .list li:last-child {
+  margin-bottom: 0;
+}
+.mp-recent-activity-card .trezo-card-content .list::before {
+  top: 0;
+  bottom: 0;
+  left: 98px;
+  content: "";
+  margin-top: 5px;
+  position: absolute;
+  border-left: 1px dashed var(--borderColor);
+}
+.mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li {
+  padding-left: 0;
+  padding-right: 132px;
+}
+.mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li .time {
+  left: auto;
+  right: 5px;
+}
+.mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li::before {
+  right: 93px;
+  left: auto;
+}
+.mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list::before {
+  right: 98px;
+  left: auto;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .mp-recent-activity-card .trezo-card-content .list li {
+    padding-left: 25px;
+    margin-bottom: 25px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list li .time {
+    left: 0;
+    position: relative;
+    margin-bottom: 11px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list li .title {
+    margin-bottom: 10px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list li p {
+    margin-bottom: 11px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list li::before {
+    left: 0;
+    width: 10px;
+    height: 10px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list::before {
+    left: 4px;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li .time {
+    left: auto;
+    right: 0;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li::before {
+    left: auto;
+    right: 0;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list::before {
+    right: 4px;
+    left: auto;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mp-recent-activity-card .trezo-card-content .list li {
+    padding-left: 125px;
+    margin-bottom: 25px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list li::before {
+    left: 90px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list::before {
+    left: 95px;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li {
+    padding-left: 0;
+    padding-right: 125px;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list li::before {
+    right: 90px;
+    left: auto;
+  }
+  .mp-recent-activity-card.component-rtl-enabled .trezo-card-content .list::before {
+    left: auto;
+    right: 95px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+  .mp-recent-activity-card .trezo-card-content {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  .mp-recent-activity-card .trezo-card-content .list li p {
+    max-width: 500px;
+  }
+}/*# sourceMappingURL=mp-recent-activity.component.css.map */

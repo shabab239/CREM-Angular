@@ -1,0 +1,9 @@
+.users-card .trezo-card-content .basic-table tbody thead tr th:last-child {
+  text-align: end;
+}
+.users-card .trezo-card-content .basic-table tbody tbody tr td:last-child {
+  text-align: end;
+}
+.users-card .trezo-card-content .basic-table tbody tbody tr td:last-child .action-buttons {
+  justify-content: end;
+}/*# sourceMappingURL=pm-users.component.css.map */

@@ -1,0 +1,238 @@
+<div class="trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Recent Customer Ratings
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <div class="trezo-card-header-menu position-relative">
+                <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu()">
+                    <i class="ri-more-fill"></i>
+                </button>
+                <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Day
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Week
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Month
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                            This Year
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium">
+                            Name
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Date
+                        </th>
+                        <th scope="col" class="fw-medium">
+                            Ratings
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user13.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Olivia Clark
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        Big Data
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">28 April 2024</td>
+                        <td>
+                            <div class="ratings lh-1">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user16.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Ethan Parker
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        Python
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">25 April 2024</td>
+                        <td>
+                            <div class="ratings lh-1">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user17.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Ava Turner
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        UX/UI
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">23 April 2024</td>
+                        <td>
+                            <div class="ratings lh-1">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user18.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Lucas Morgan
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        Developer
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">20 April 2024</td>
+                        <td>
+                            <div class="ratings lh-1">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="user-info d-flex align-items-center">
+                                <div class="image">
+                                    <img alt="user-image" class="rounded-circle" src="images/users/user19.jpg" />
+                                </div>
+                                <div class="info">
+                                    <span class="fw-medium d-block">
+                                        Isabella Cooper
+                                    </span>
+                                    <span class="email d-block text-body">
+                                        Designer
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-body">15 April 2024</td>
+                        <td>
+                            <div class="ratings lh-1">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing 6 of 36 results
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>

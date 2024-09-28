@@ -1,0 +1,251 @@
+.pm-to-do-list-card {
+    .trezo-card-content {
+        .basic-table {
+            .table, table {
+                thead {
+                    tr {
+                        th {
+                            &:first-child {
+                                padding-right: 0;
+                            }
+                            &:nth-child(2) {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &:first-child {
+                                padding-right: 0;
+                            }
+                            &:nth-child(2) {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .add-new-task-btn {
+            padding: 6px 13px;
+            color: var(--primaryColor);
+            background-color: transparent;
+            border: 1px solid var(--primaryColor);
+            margin: {
+                top: 15px;
+                right: 25px;
+            };
+            span {
+                padding-left: 22px;
+
+                i {
+                    top: 50%;
+                    left: -4px;
+                    font-size: 22px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+            }
+            &:hover {
+                color: var(--whiteColor);
+                border-color: var(--primaryColor);
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .trezo-card-content {
+            .add-new-task-btn {
+                margin: {
+                    right: 0;
+                    left: 25px;
+                };
+                span {
+                    padding: {
+                        left: 0;
+                        right: 22px;
+                    };
+                    i {
+                        left: auto;
+                        right: -4px;
+                    }
+                }
+            }
+            .basic-table {
+                .table, table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding: {
+                                        right: 25px !important;
+                                        left: 0 !important;
+                                    };
+                                }
+                                &:nth-child(2) {
+                                    padding: {
+                                        left: 25px !important;
+                                        right: 15px !important;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:first-child {
+                                    padding: {
+                                        right: 25px !important;
+                                        left: 0 !important;
+                                    };
+                                }
+                                &:nth-child(2) {
+                                    padding: {
+                                        left: 25px !important;
+                                        right: 15px !important;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .pm-to-do-list-card {
+        .trezo-card-header {
+            .trezo-card-subtitle {
+                margin-top: 12px;
+            }
+        }
+        .trezo-card-content {
+            .add-new-task-btn {
+                margin-right: 17px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .basic-table {
+                    .table, table {
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        padding: {
+                                            right: 17px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 17px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    &:first-child {
+                                        padding: {
+                                            right: 17px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 17px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .add-new-task-btn {
+                    margin: {
+                        left: 17px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .pm-to-do-list-card {
+        .trezo-card-content {
+            .add-new-task-btn {
+                margin-right: 20px;
+            }
+        }
+        &.component-rtl-enabled {
+            .trezo-card-content {
+                .basic-table {
+                    .table, table {
+                        thead {
+                            tr {
+                                th {
+                                    &:first-child {
+                                        padding: {
+                                            right: 20px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 20px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    &:first-child {
+                                        padding: {
+                                            right: 20px !important;
+                                        };
+                                    }
+                                    &:nth-child(2) {
+                                        padding: {
+                                            left: 20px !important;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .add-new-task-btn {
+                    margin: {
+                        left: 20px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

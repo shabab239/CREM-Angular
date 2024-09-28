@@ -1,0 +1,30 @@
+.users-card {
+    .trezo-card-content {
+        .basic-table {
+            tbody {
+                thead {
+                    tr {
+                        th {
+                            &:last-child {
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &:last-child {
+                                text-align: end;
+
+                                .action-buttons {
+                                    justify-content: end;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

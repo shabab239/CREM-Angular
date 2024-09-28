@@ -1,0 +1,165 @@
+.main-content {
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 95px;
+  padding-left: 285px;
+  padding-right: 25px;
+}
+.main-content.active, .main-content.hide-sidebar {
+  padding-left: 85px;
+}
+.main-content.right-sidebar {
+  padding-left: 25px;
+  padding-right: 285px;
+}
+.main-content.right-sidebar.active, .main-content.right-sidebar.hide-sidebar {
+  padding-right: 85px;
+}
+
+::ng-deep .rtl-enabled .main-content {
+  padding-left: 25px;
+  padding-right: 285px;
+}
+::ng-deep .rtl-enabled .main-content.active, ::ng-deep .rtl-enabled .main-content.hide-sidebar {
+  padding-left: 25px;
+  padding-right: 85px;
+}
+::ng-deep .rtl-enabled .main-content.right-sidebar {
+  padding-left: 285px;
+  padding-right: 25px;
+}
+::ng-deep .rtl-enabled .main-content.right-sidebar.active, ::ng-deep .rtl-enabled .main-content.right-sidebar.hide-sidebar {
+  padding-right: 85px;
+  padding-left: 85px;
+  padding-right: 25px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .main-content {
+    padding-top: 143px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-content.active, .main-content.hide-sidebar {
+    padding-left: 15px;
+  }
+  .main-content.right-sidebar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-content.right-sidebar.active, .main-content.right-sidebar.hide-sidebar {
+    padding-right: 15px;
+  }
+  ::ng-deep .rtl-enabled .main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ::ng-deep .rtl-enabled .main-content.active, ::ng-deep .rtl-enabled .main-content.hide-sidebar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar.active, ::ng-deep .rtl-enabled .main-content.right-sidebar.hide-sidebar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* Min width 576px to Max width 767px */
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .main-content.active, .main-content.hide-sidebar {
+    padding-left: 25px;
+  }
+  .main-content.right-sidebar {
+    padding-right: 25px;
+  }
+  .main-content.right-sidebar.active, .main-content.right-sidebar.hide-sidebar {
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content {
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.active, ::ng-deep .rtl-enabled .main-content.hide-sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar.active, ::ng-deep .rtl-enabled .main-content.right-sidebar.hide-sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .main-content.active, .main-content.hide-sidebar {
+    padding-left: 25px;
+  }
+  .main-content.right-sidebar {
+    padding-right: 25px;
+  }
+  .main-content.right-sidebar.active, .main-content.right-sidebar.hide-sidebar {
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content {
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.active, ::ng-deep .rtl-enabled .main-content.hide-sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar.active, ::ng-deep .rtl-enabled .main-content.right-sidebar.hide-sidebar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .main-content {
+    padding-left: 265px;
+  }
+  .main-content.active, .main-content.hide-sidebar {
+    padding-left: 85px;
+  }
+  .main-content.right-sidebar {
+    padding-right: 265px;
+  }
+  .main-content.right-sidebar.active, .main-content.right-sidebar.hide-sidebar {
+    padding-right: 85px;
+    padding-left: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content {
+    padding-right: 265px;
+  }
+  ::ng-deep .rtl-enabled .main-content.active, ::ng-deep .rtl-enabled .main-content.hide-sidebar {
+    padding-left: 25px;
+    padding-right: 85px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar {
+    padding-left: 265px;
+    padding-right: 25px;
+  }
+  ::ng-deep .rtl-enabled .main-content.right-sidebar.active, ::ng-deep .rtl-enabled .main-content.right-sidebar.hide-sidebar {
+    padding-left: 85px;
+    padding-right: 25px;
+  }
+}
+/* Min width 1600px *//*# sourceMappingURL=dashboard.component.css.map */

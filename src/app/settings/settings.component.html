@@ -1,0 +1,61 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Settings
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Settings
+        </li>
+    </ol>
+</div>
+
+<!-- Settings -->
+<div
+    class="settings-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-content">
+
+        <!-- Nav Links -->
+        <ul class="nav-links p-0 mt-0 list-unstyled">
+            <li class="d-inline-block">
+                <a routerLink="/dashboard/settings" class="d-block border-radius fw-medium" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Account Settings
+                </a>
+            </li>
+            <li class="d-inline-block">
+                <a routerLink="/dashboard/settings/change-password" class="d-block border-radius fw-medium" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Change Password
+                </a>
+            </li>
+            <li class="d-inline-block">
+                <a routerLink="/dashboard/settings/connections" class="d-block border-radius fw-medium" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Connections
+                </a>
+            </li>
+            <li class="d-inline-block">
+                <a routerLink="/dashboard/settings/privacy-policy" class="d-block border-radius fw-medium" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Privacy Policy
+                </a>
+            </li>
+            <li class="d-inline-block">
+                <a routerLink="/dashboard/settings/terms-conditions" class="d-block border-radius fw-medium" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Terms & Conditions
+                </a>
+            </li>
+        </ul>
+
+        <!-- Router Outlet -->
+        <router-outlet />
+        
+    </div>
+</div>

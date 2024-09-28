@@ -1,0 +1,30 @@
+.lms-instructors-card {
+    .trezo-card-content {
+        .basic-table {
+            .table, table {
+                thead {
+                    tr {
+                        th {
+                            &:last-child {
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &:last-child {
+                                text-align: end;
+
+                                .action-buttons {
+                                    justify-content: end;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
