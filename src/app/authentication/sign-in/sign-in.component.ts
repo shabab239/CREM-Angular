@@ -6,7 +6,6 @@ import {FormsModule} from "@angular/forms";
 import {Token} from "../model/token.model";
 import {AuthService} from "../auth.service";
 import {AlertUtil} from "../../util/alert.util";
-import {AlertService} from "../../util/alert.service";
 
 @Component({
     selector: 'app-sign-in',
@@ -27,7 +26,6 @@ export class SignInComponent {
     constructor(
         public themeService: CustomizerSettingsService,
         private authService: AuthService,
-        private alertService: AlertService,
         private router: Router
     ) {
         this.themeService.isToggled$.subscribe(isToggled => {
@@ -52,7 +50,7 @@ export class SignInComponent {
                 }
             },
             error: error => {
-                AlertUtil.showError(error, this.alertService);
+                AlertUtil.error(error);
             }
         })
     }

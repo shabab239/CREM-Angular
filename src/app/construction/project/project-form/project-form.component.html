@@ -1,0 +1,149 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Project
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Create Project
+        </li>
+    </ol>
+</div>
+
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Create Project
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <form (ngSubmit)="save()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Name
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. Project CyberSphere"
+                               [(ngModel)]="project.name" name="name">
+                        <small *ngIf="errors['name']" class="form-text text-danger">{{ errors['name'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Location
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. Dhaka" [(ngModel)]="project.location"
+                               name="location">
+                        <small *ngIf="errors['location']" class="form-text text-danger">{{ errors['location'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Start Date
+                        </label>
+                        <input type="date" class="form-control" [(ngModel)]="project.startDate" name="startDate">
+                        <small *ngIf="errors['startDate']"
+                               class="form-text text-danger">{{ errors['startDate'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            End Date
+                        </label>
+                        <input type="date" class="form-control" [(ngModel)]="project.endDate" name="endDate">
+                        <small *ngIf="errors['endDate']" class="form-text text-danger">{{ errors['endDate'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Budget
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. $90" [(ngModel)]="project.budget"
+                               name="budget">
+                        <small *ngIf="errors['budget']" class="form-text text-danger">{{ errors['budget'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Status
+                        </label>
+                        <select class="form-select" [(ngModel)]="project.status" name="status">
+                            <option *ngFor="let status of projectStatusOptions" [value]="status.value">
+                                {{ status.label }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['status']" class="form-text text-danger">{{ errors['status'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Manager
+                        </label>
+                        <select class="form-select" name="manager" [(ngModel)]="project.manager.id">
+                            <option *ngFor="let user of users" [value]="user.id">
+                                {{ user.name }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['manager']" class="form-text text-danger">{{ errors['manager'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Team Members
+                        </label>
+                        <select class="form-select" multiple name="teamMembers" [(ngModel)]="project.teamMembers">
+                            <option *ngFor="let user of users" [value]="user">
+                                {{ user.name }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['teamMembers']"
+                               class="form-text text-danger">{{ errors['teamMembers'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Project Description
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. Description"
+                               [(ngModel)]="project.description"
+                               name="description">
+                        <small *ngIf="errors['description']"
+                               class="form-text text-danger">{{ errors['description'] }}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn-box">
+                <button type="submit" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                    <span class="d-inline-block position-relative">
+                        <i class="material-symbols-outlined">
+                            add
+                        </i>
+                        Create Project
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

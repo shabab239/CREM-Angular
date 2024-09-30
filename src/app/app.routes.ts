@@ -14,7 +14,6 @@ import { ChatComponent } from './apps/chat/chat.component';
 import { FileManagerComponent } from './apps/file-manager/file-manager.component';
 import { MyDriveComponent } from './apps/file-manager/my-drive/my-drive.component';
 import { AssetsComponent } from './apps/file-manager/assets/assets.component';
-import { ProjectsComponent } from './apps/file-manager/projects/projects.component';
 import { PersonalComponent } from './apps/file-manager/personal/personal.component';
 import { ApplicationsComponent } from './apps/file-manager/applications/applications.component';
 import { DocumentsComponent } from './apps/file-manager/documents/documents.component';
@@ -52,14 +51,14 @@ import { CContactsComponent } from './pages/crm-page/c-contacts/c-contacts.compo
 import { CCustomersComponent } from './pages/crm-page/c-customers/c-customers.component';
 import { CLeadsComponent } from './pages/crm-page/c-leads/c-leads.component';
 import { CDealsComponent } from './pages/crm-page/c-deals/c-deals.component';
-import { ProjectManagementPageComponent } from './construction/project-management-page/project-management-page.component';
-import { PmProjectOverviewComponent } from './construction/project-management-page/pm-project-overview/pm-project-overview.component';
-import { PmProjectsListComponent } from './construction/project-management-page/pm-projects-list/pm-projects-list.component';
-import { PmCreateProjectComponent } from './construction/project-management-page/pm-create-project/pm-create-project.component';
-import { PmClientsComponent } from './construction/project-management-page/pm-clients/pm-clients.component';
-import { PmTeamsComponent } from './construction/project-management-page/pm-teams/pm-teams.component';
-import { PmKanbanBoardComponent } from './construction/project-management-page/pm-kanban-board/pm-kanban-board.component';
-import { PmUsersComponent } from './construction/project-management-page/pm-users/pm-users.component';
+import { ProjectManagementPageComponent } from './construction/project/project-management-page.component';
+import { PmProjectOverviewComponent } from './construction/project/pm-project-overview/pm-project-overview.component';
+import { ProjectsComponent } from './construction/project/projects/projects.component';
+import { ProjectFormComponent } from './construction/project/project-form/project-form.component';
+import { PmClientsComponent } from './construction/project/pm-clients/pm-clients.component';
+import { PmTeamsComponent } from './construction/project/pm-teams/pm-teams.component';
+import { PmKanbanBoardComponent } from './construction/project/pm-kanban-board/pm-kanban-board.component';
+import { UsersComponent } from './hr/users/users.component';
 import { LmsPageComponent } from './pages/lms-page/lms-page.component';
 import { LCoursesComponent } from './pages/lms-page/l-courses/l-courses.component';
 import { LCourseDetailsComponent } from './pages/lms-page/l-course-details/l-course-details.component';
@@ -147,43 +146,9 @@ import { FeaturesComponent } from './front-pages/features/features.component';
 import { TeamComponent } from './front-pages/team/team.component';
 import { FaqComponent } from './front-pages/faq/faq.component';
 import { ContactComponent } from './front-pages/contact/contact.component';
-import { UiElementsComponent } from './ui-elements/ui-elements.component';
-import { AvatarsComponent } from './ui-elements/avatars/avatars.component';
 import { FormsComponent } from './forms/forms.component';
 import { FileUploaderComponent } from './forms/file-uploader/file-uploader.component';
 import { EditorsComponent } from './forms/editors/editors.component';
-import { VideosComponent } from './ui-elements/videos/videos.component';
-import { UtilitiesComponent } from './ui-elements/utilities/utilities.component';
-import { AlertsComponent } from './ui-elements/alerts/alerts.component';
-import { BadgesComponent } from './ui-elements/badges/badges.component';
-import { BreadcrumbComponent } from './ui-elements/breadcrumb/breadcrumb.component';
-import { ButtonsComponent } from './ui-elements/buttons/buttons.component';
-import { ButtonGroupComponent } from './ui-elements/button-group/button-group.component';
-import { AccordionComponent } from './ui-elements/accordion/accordion.component';
-import { TypographyComponent } from './ui-elements/typography/typography.component';
-import { TableComponent } from './ui-elements/table/table.component';
-import { ImagesComponent } from './ui-elements/images/images.component';
-import { FiguresComponent } from './ui-elements/figures/figures.component';
-import { CardComponent } from './ui-elements/card/card.component';
-import { CarouselComponent } from './ui-elements/carousel/carousel.component';
-import { CloseButtonComponent } from './ui-elements/close-button/close-button.component';
-import { DropdownsComponent } from './ui-elements/dropdowns/dropdowns.component';
-import { ListGroupComponent } from './ui-elements/list-group/list-group.component';
-import { ModalComponent } from './ui-elements/modal/modal.component';
-import { NavsTabsComponent } from './ui-elements/navs-tabs/navs-tabs.component';
-import { OffcanvasComponent } from './ui-elements/offcanvas/offcanvas.component';
-import { PaginationComponent } from './ui-elements/pagination/pagination.component';
-import { ProgressComponent } from './ui-elements/progress/progress.component';
-import { SpinnersComponent } from './ui-elements/spinners/spinners.component';
-import { ToastsComponent } from './ui-elements/toasts/toasts.component';
-import { ColorBackgroundComponent } from './ui-elements/color-background/color-background.component';
-import { ColoredLinksComponent } from './ui-elements/colored-links/colored-links.component';
-import { RatioComponent } from './ui-elements/ratio/ratio.component';
-import { StacksComponent } from './ui-elements/stacks/stacks.component';
-import { BordersComponent } from './ui-elements/borders/borders.component';
-import { ShadowsComponent } from './ui-elements/shadows/shadows.component';
-import { TextComponent } from './ui-elements/text/text.component';
-import { ColorPickerComponent } from './ui-elements/color-picker/color-picker.component';
 import { FormControlsComponent } from './forms/form-controls/form-controls.component';
 import { SelectComponent } from './forms/select/select.component';
 import { ChecksRadiosComponent } from './forms/checks-radios/checks-radios.component';
@@ -193,6 +158,10 @@ import { FloatingLabelsComponent } from './forms/floating-labels/floating-labels
 import { LayoutComponent } from './forms/layout/layout.component';
 import { ElementsComponent } from './forms/elements/elements.component';
 import {AuthGuard} from "./authentication/auth.guard";
+import {BuildingsComponent} from "./construction/building/buildings/buildings.component";
+import {BuildingFormComponent} from "./construction/building/building-form/building-form.component";
+import {FloorFormComponent} from "./construction/floor/floor-form/floor-form.component";
+import {FloorsComponent} from "./construction/floor/floors/floors.component";
 
 export const routes: Routes = [
     {
@@ -298,12 +267,16 @@ export const routes: Routes = [
                 component: ProjectManagementPageComponent,
                 children: [
                     {path: '', component: PmProjectOverviewComponent},
-                    {path: 'projects-list', component: PmProjectsListComponent},
-                    {path: 'create-project', component: PmCreateProjectComponent},
+                    {path: 'projects-list', component: ProjectsComponent},
+                    {path: 'create-project', component: ProjectFormComponent},
+                    {path: 'building-list', component: BuildingsComponent},
+                    {path: 'create-building', component: BuildingFormComponent},
+                    {path: 'floor-list', component: FloorsComponent},
+                    {path: 'create-floor', component: FloorFormComponent},
                     {path: 'clients', component: PmClientsComponent},
                     {path: 'teams', component: PmTeamsComponent},
                     {path: 'kanban-board', component: PmKanbanBoardComponent},
-                    {path: 'users', component: PmUsersComponent}
+                    {path: 'users', component: UsersComponent}
                 ]
             },
             {
@@ -390,45 +363,6 @@ export const routes: Routes = [
                 children: [
                     {path: '', component: MaterialSymbolsComponent},
                     {path: 'remixicon', component: RemixiconComponent}
-                ]
-            },
-            {
-                path: 'ui-kit',
-                component: UiElementsComponent,
-                children: [
-                    {path: '', component: AlertsComponent},
-                    {path: 'avatars', component: AvatarsComponent},
-                    {path: 'accordion', component: AccordionComponent},
-                    {path: 'badges', component: BadgesComponent},
-                    {path: 'buttons', component: ButtonsComponent},
-                    {path: 'button-group', component: ButtonGroupComponent},
-                    {path: 'breadcrumb', component: BreadcrumbComponent},
-                    {path: 'borders', component: BordersComponent},
-                    {path: 'card', component: CardComponent},
-                    {path: 'carousel', component: CarouselComponent},
-                    {path: 'close-button', component: CloseButtonComponent},
-                    {path: 'colored-links', component: ColoredLinksComponent},
-                    {path: 'color-picker', component: ColorPickerComponent},
-                    {path: 'color-background', component: ColorBackgroundComponent},
-                    {path: 'dropdowns', component: DropdownsComponent},
-                    {path: 'figures', component: FiguresComponent},
-                    {path: 'images', component: ImagesComponent},
-                    {path: 'list-group', component: ListGroupComponent},
-                    {path: 'text', component: TextComponent},
-                    {path: 'modal', component: ModalComponent},
-                    {path: 'navs-tabs', component: NavsTabsComponent},
-                    {path: 'offcanvas', component: OffcanvasComponent},
-                    {path: 'pagination', component: PaginationComponent},
-                    {path: 'progress', component: ProgressComponent},
-                    {path: 'shadows', component: ShadowsComponent},
-                    {path: 'ratio', component: RatioComponent},
-                    {path: 'spinners', component: SpinnersComponent},
-                    {path: 'stacks', component: StacksComponent},
-                    {path: 'table', component: TableComponent},
-                    {path: 'toasts', component: ToastsComponent},
-                    {path: 'typography', component: TypographyComponent},
-                    {path: 'videos', component: VideosComponent},
-                    {path: 'utilities', component: UtilitiesComponent}
                 ]
             },
             {
