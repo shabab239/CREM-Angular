@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
     }
 
     loadProjects(): void {
-        this.projectService.getAll().subscribe({
+        this.projectService.getAllProjects().subscribe({
             next: (response: ApiResponse) => {
                 if (response && response.successful) {
                     this.projects = response.data['projects'];
@@ -43,7 +43,7 @@ export class ProjectsComponent implements OnInit {
     }
 
     deleteProject(id: number): void {
-        this.projectService.delete(id).subscribe({
+        this.projectService.deleteProjectById(id).subscribe({
             next: (response: ApiResponse) => {
                 if (response && response.successful) {
                     this.loadProjects();

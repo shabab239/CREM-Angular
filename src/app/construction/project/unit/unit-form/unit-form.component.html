@@ -1,0 +1,114 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Unit
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Create Unit
+        </li>
+    </ol>
+</div>
+
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Create Unit
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <form (ngSubmit)="save()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Unit Number
+                        </label>
+                        <input type="text" class="form-control" placeholder="E.g. Unit 101"
+                               [(ngModel)]="unit.name" name="name" required>
+                        <small *ngIf="errors['name']"
+                               class="form-text text-danger">{{ errors['name'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Size
+                        </label>
+                        <input type="number" class="form-control" placeholder="E.g. 1200"
+                               [(ngModel)]="unit.size" name="size" required>
+                        <small *ngIf="errors['size']" class="form-text text-danger">{{ errors['size'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Price
+                        </label>
+                        <input type="number" class="form-control" placeholder="E.g. 500000"
+                               [(ngModel)]="unit.price" name="price" required>
+                        <small *ngIf="errors['price']" class="form-text text-danger">{{ errors['price'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Type
+                        </label>
+                        <select class="form-select" [(ngModel)]="unit.type" name="type" required>
+                            <option *ngFor="let option of unitTypeOptions"  [value]="option.value">{{ option.label }}</option>
+                        </select>
+                        <small *ngIf="errors['type']" class="form-text text-danger">{{ errors['type'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Status
+                        </label>
+                        <select class="form-select" [(ngModel)]="unit.status" name="status" required>
+                            <option *ngFor="let option of unitStatusOptions" [value]="option.value">{{ option.label }}</option>
+                        </select>
+                        <small *ngIf="errors['status']" class="form-text text-danger">{{ errors['status'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Floor
+                        </label>
+                        <select class="form-select" [(ngModel)]="unit.floor.id" name="floor" required>
+                            <option *ngFor="let floor of floors" [value]="floor.id">
+                                {{ floor.name }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['floor']" class="form-text text-danger">{{ errors['floor'] }}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn-box">
+                <button type="submit" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                    <span class="d-inline-block position-relative">
+                        <i class="material-symbols-outlined">
+                            add
+                        </i>
+                        {{ unit.id ? 'Update' : 'Create' }} Unit
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

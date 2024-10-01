@@ -1,0 +1,111 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Accordion
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            UI Elements
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Accordion
+        </li>
+    </ol>
+</div>
+
+<!-- Accordion -->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Basic
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            (click)="toggleSection(0)"
+                            [ngClass]="{ 'open': isSectionOpen(0) }"
+                        >
+                            Accordion Item #1
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            (click)="toggleSection(1)"
+                            [ngClass]="{ 'open': isSectionOpen(1) }"
+                        >
+                            Accordion Item #2
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            (click)="toggleSection(2)"
+                            [ngClass]="{ 'open': isSectionOpen(2) }"
+                        >
+                            Accordion Item #3
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Flush
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div
+                    class="bg-light p-4"
+                    [class.component-dark-theme]="themeService.isDark()"
+                >
+                    <app-flush />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,361 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Construction Stages of <span class="text-info">{{ stageOf.toUpperCase() }} - {{ stageOfEntity.name }}</span>
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Construction Stages
+        </li>
+    </ol>
+</div>
+
+<!-- Kanban Board -->
+<div class="row" cdkDropListGroup>
+    <div class="col-sm-6 col-lg-4">
+        <div
+            class="kanban-board-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        <span class="text-danger">Not Started</span>
+                    </h5>
+                </div>
+            </div>
+            @for (stage of notStartedStages; track stage) {
+                <div
+                    class="trezo-card-content border-radius bg-orange-100"
+                >
+                    <div class="title d-flex align-items-center justify-content-between">
+                        <span class="d-block text-black display-5">
+                            {{ stage.name }}
+                        </span>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                                    <i class="material-symbols-outlined">
+                                        edit
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="col-md-1">
+                                <button (click)="deleteStage(stage.id)" type="button"
+                                        class="d-inline-block p-0 border-0 bg-transparent transition">
+                                    <i class="material-symbols-outlined">
+                                        delete
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="display-6">Start Date:</span> {{ stage.startDate }}
+                    </p>
+                    <p>
+                        <span class="display-6">End Date:</span> {{ stage.endDate }}
+                    </p>
+                    <p>
+                        <button type="button" (click)="toggleWorkers(stage)" class="btn btn-sm btn-outline-secondary me-2">
+                            <i class="ri-group-fill"></i> Workers
+                        </button>
+                        <button type="button" routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
+                                class="btn btn-sm btn-outline-secondary">
+                            <i class="ri-group-fill"></i> Attendance
+                        </button>
+                    </p>
+                    <div class="info d-flex align-items-center justify-content-between">
+                        <div class="users d-flex align-items-center">
+
+                        </div>
+                        <span class="days-left d-block text-danger">
+                            {{ calculateRemainingDays(stage.startDate, stage.endDate) }} days left
+                        </span>
+                    </div>
+                </div>
+            }
+            <button
+                class="add-new-card-btn d-inline-block border-radius transition fw-medium"
+                (click)="toggleNewStage('NOT_STARTED', false)"
+                type="button"
+            >
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Stage
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+        <div
+            class="kanban-board-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        <span class="text-primary">In Progress</span>
+                    </h5>
+                </div>
+            </div>
+            @for (stage of inProgressStages; track stage) {
+                <div
+                    class="trezo-card-content border-radius bg-primary-100"
+                >
+                    <div class="title d-flex align-items-center justify-content-between">
+                        <span class="d-block text-black display-5">
+                            {{ stage.name }}
+                        </span>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                                    <i class="material-symbols-outlined">
+                                        edit
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="col-md-1">
+                                <button (click)="deleteStage(stage.id)" type="button"
+                                        class="d-inline-block p-0 border-0 bg-transparent transition">
+                                    <i class="material-symbols-outlined">
+                                        delete
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="display-6">Start Date:</span> {{ stage.startDate }}
+                    </p>
+                    <p>
+                        <span class="display-6">End Date:</span> {{ stage.endDate }}
+                    </p>
+                    <p>
+                        <button type="button" (click)="toggleWorkers(stage)" class="btn btn-sm btn-outline-secondary me-2">
+                            <i class="ri-group-fill"></i> Workers
+                        </button>
+                        <button type="button" routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
+                                class="btn btn-sm btn-outline-secondary">
+                            <i class="ri-group-fill"></i> Attendance
+                        </button>
+                    </p>
+                    <div class="info d-flex align-items-center justify-content-between">
+                        <div class="users d-flex align-items-center">
+
+                        </div>
+                        <span class="days-left d-block text-danger">
+                            {{ calculateRemainingDays(stage.startDate, stage.endDate) }} days left
+                        </span>
+                    </div>
+                </div>
+            }
+            <button
+                class="add-new-card-btn d-inline-block border-radius transition fw-medium"
+                (click)="toggleNewStage('IN_PROGRESS', false)"
+                type="button"
+            >
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Stage
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+        <div
+            class="kanban-board-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+            [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+            [class.component-dark-theme]="themeService.isDark()"
+        >
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        <span class="text-success">Completed</span>
+                    </h5>
+                </div>
+            </div>
+            @for (stage of completedStages; track stage) {
+                <div
+                    class="trezo-card-content border-radius bg-success-100"
+                >
+                    <div class="title d-flex align-items-center justify-content-between">
+                        <span class="d-block text-black display-5">
+                            {{ stage.name }}
+                        </span>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                                    <i class="material-symbols-outlined">
+                                        edit
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="col-md-1">
+                                <button (click)="deleteStage(stage.id)" type="button"
+                                        class="d-inline-block p-0 border-0 bg-transparent transition">
+                                    <i class="material-symbols-outlined">
+                                        delete
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="display-6">Start Date:</span> {{ stage.startDate }}
+                    </p>
+                    <p>
+                        <span class="display-6">End Date:</span> {{ stage.endDate }}
+                    </p>
+                    <p>
+                        <button type="button" (click)="toggleWorkers(stage)" class="btn btn-sm btn-outline-secondary me-2">
+                            <i class="ri-group-fill"></i> Workers
+                        </button>
+                        <button type="button" routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
+                                class="btn btn-sm btn-outline-secondary">
+                            <i class="ri-group-fill"></i> Attendance
+                        </button>
+                    </p>
+                    <div class="info d-flex align-items-center justify-content-between">
+                        <div class="users d-flex align-items-center">
+
+                        </div>
+                        <span class="days-left d-block text-danger">
+                            {{ calculateRemainingDays(stage.startDate, stage.endDate) }} days left
+                        </span>
+                    </div>
+                </div>
+            }
+            <button
+                class="add-new-card-btn d-inline-block border-radius transition fw-medium"
+                (click)="toggleNewStage('COMPLETED', false)"
+                type="button"
+            >
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Stage
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div class="add-new-popup" [class.active]="showNewStage">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Add New Stage
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleNewStage('', true)"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Stage Name
+                            </label>
+                            <input type="text" class="form-control" placeholder="E.g. Piling, Slab..."
+                                   [(ngModel)]="newStage.name">
+                            <small *ngIf="errors['name']" class="form-text text-danger">{{ errors['name'] }}</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Start Date
+                                </label>
+                                <input type="date" class="form-control" [(ngModel)]="newStage.startDate">
+                                <small *ngIf="errors['startDate']"
+                                       class="form-text text-danger">{{ errors['startDate'] }}</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    End Date
+                                </label>
+                                <input type="date" class="form-control" [(ngModel)]="newStage.endDate">
+                                <small *ngIf="errors['endDate']"
+                                       class="form-text text-danger">{{ errors['endDate'] }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleNewStage('', true)"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button (click)="saveStage()"
+                            class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Assigned Workers -->
+<div class="offcanvas offcanvas-end" tabindex="-1" [class.show]="showWorkers">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Workers Assignment</h5>
+        <button type="button" class="btn-close shadow-none" aria-label="Close"
+                (click)="toggleWorkers(undefined)"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-content">
+                <h5 class="mb-0">Workers for <span style="color: tomato">{{ currentStage?.name }}</span></h5>
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let worker of workers">
+                        <input class="form-check-input me-2" type="checkbox" (change)="addWorkerToStage(worker.id)"
+                               [checked]="isWorkerAssigned(worker.id)" style="transform: scale(1.3);">
+                        <label class="form-check-label">{{ worker.name }}</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-backdrop fade" [class.show]="showWorkers"></div>

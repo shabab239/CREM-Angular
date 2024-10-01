@@ -8,6 +8,6 @@ export const API_URLS = {
 
     dashboard: `${baseUrl}/admin/dashboard`,
     project: `${baseUrl}/project`,
-    building: `${baseUrl}/building`,
-    floor: `${baseUrl}/floor`,
+    stage: `${baseUrl}/stage`,
+    worker: `${baseUrl}/worker`,
 };

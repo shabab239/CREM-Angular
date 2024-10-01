@@ -1,0 +1,34 @@
+.ratio {
+    width: 10rem;
+    margin-right: 15px;
+    display: inline-block;
+    color: var(--bs-secondary-color);
+    background-color: var(--bs-tertiary-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.ratio>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.component-dark-theme {
+    .ratio {
+        color: var(--bodyColor);
+        background-color: #0A0E19;
+    }
+}
+.component-rtl-enabled {
+    .ratio {
+        margin: {
+            right: 0;
+            left: 15px;
+        };
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}

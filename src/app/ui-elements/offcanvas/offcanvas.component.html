@@ -1,0 +1,131 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Offcanvas
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            UI Elements
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Offcanvas
+        </li>
+    </ol>
+</div>
+
+<!-- Offcanvas -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Live Demo
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <button type="button" class="btn btn-primary" (click)="toggleClass()">
+                    Launch demo Offcanvas
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Body Scrolling
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <button type="button" class="btn btn-primary" (click)="toggleClass2()">
+                    Launch demo Offcanvas
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Live Demo Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" [class.show]="classApplied">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Offcanvas</h5>
+        <button type="button" class="btn-close shadow-none" aria-label="Close" (click)="toggleClass()"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </p>
+    </div>
+</div>
+<div class="offcanvas-backdrop fade" [class.show]="classApplied"></div>
+
+<!-- Body Scrolling Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" [class.show]="classApplied2">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Offcanvas</h5>
+        <button type="button" class="btn-close shadow-none" aria-label="Close" (click)="toggleClass2()"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+<div class="offcanvas-backdrop fade" [class.show]="classApplied2"></div>

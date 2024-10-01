@@ -1,0 +1,15 @@
+.style [class^=border] {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.25rem;
+  display: inline-block;
+  background-color: var(--bs-tertiary-bg);
+}
+.style img {
+  margin: 0.25rem;
+  display: inline-block;
+}
+
+.component-dark-theme .style [class^=border] {
+  background-color: #0A0E19;
+}/*# sourceMappingURL=borders.component.css.map */

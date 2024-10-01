@@ -7,6 +7,8 @@ import {UserService} from "../../../hr/user.service";
 import {FormsModule} from "@angular/forms";
 import {ProjectService} from "../project.service";
 import {AlertUtil} from "../../../util/alert.util";
+import {ApiResponse} from "../../../util/api.response.model";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-pm-create-project',
@@ -35,8 +37,8 @@ export class ProjectFormComponent implements OnInit {
 
         let projectId = this.route.snapshot.params['id'];
         if (projectId) {
-            this.projectService.getById(projectId).subscribe({
-                next: response => {
+            this.projectService.getProjectById(projectId).subscribe({
+                next: (response: ApiResponse) => {
                     if (response && response.successful) {
                         this.project = response.data['project'];
                     } else {
@@ -52,11 +54,15 @@ export class ProjectFormComponent implements OnInit {
     }
 
     protected save(): void {
-        this.projectService.save(this.project).subscribe({
+        let apiResponse: Observable<ApiResponse> = this.project.id ?
+            this.projectService.updateProject(this.project) :
+            this.projectService.saveProject(this.project);
+
+        apiResponse.subscribe({
             next: response => {
                 if (response && response.successful) {
                     AlertUtil.success(response);
-                    this.router.navigate(['/dashboard/project-management-page/projects-list']);
+                    this.router.navigate(['/dashboard/project/projects']);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);

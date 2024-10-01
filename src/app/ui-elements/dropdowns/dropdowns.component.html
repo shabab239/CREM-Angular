@@ -1,0 +1,152 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Dropdowns
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            UI Elements
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Dropdowns
+        </li>
+    </ol>
+</div>
+
+<!-- Dropdowns -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Single Button
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="dropdown dropdown1">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" (click)="toggleDropdownBtn()">
+                        Dropdown link
+                    </button>
+                    <ul class="dropdown-menu show" *ngIf="isDropdownOpen">
+                        <li><a class="dropdown-item" routerLink=".">Action</a></li>
+                        <li><a class="dropdown-item" routerLink=".">Another action</a></li>
+                        <li><a class="dropdown-item" routerLink=".">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Split Button
+                    </h5>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="btn-group dropdown2">
+                    <button type="button" class="btn btn-danger">Action</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" (click)="toggleDropdownBtn2()">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu show" *ngIf="isDropdownOpen2">
+                        <li><a class="dropdown-item" routerLink=".">Action</a></li>
+                        <li><a class="dropdown-item" routerLink=".">Another action</a></li>
+                        <li><a class="dropdown-item" routerLink=".">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" routerLink=".">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header mb-0 d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Total Sales
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <div class="trezo-card-header-menu trezo-card-header-menu1 position-relative">
+                        <button class="menu-btn transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
+                            <span class="d-block position-relative">
+                                Monthly
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Weekly
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Monthly
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    Yearly
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header mb-0 d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Sales by Locations
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <div class="trezo-card-header-menu trezo-card-header-menu2 position-relative">
+                        <button class="dot-menu p-0 border-0 bg-transparent d-inline-block transition lh-1" (click)="toggleCardHeaderMenu2()">
+                            <i class="ri-more-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen2">
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    This Day
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    This Week
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    This Month
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                                    This Year
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

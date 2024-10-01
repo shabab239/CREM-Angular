@@ -1,0 +1,143 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Worker
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Worker Attendance
+        </li>
+    </ol>
+</div>
+<div
+    class="bt-recent-orders-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
+>
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Worker Attendance - <span class="text-info">({{ stageOf.toUpperCase() }}: {{ stageOfEntity.name }}, Stage: {{ stage.name }}
+                )</span>
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle d-flex align-items-center">
+            <form class="search-box position-relative me-2">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search here.....">
+            </form>
+            <div class="trezo-card-header-menu position-relative">
+                <input type="date" [(ngModel)]="attendanceDate"
+                       class="menu-btn transition d-inline-block bg-transparent border-radius">
+            </div>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                <tr>
+                    <th scope="col" class="fw-medium"> SL</th>
+                    <th scope="col" class="fw-medium"> Name</th>
+                    <th scope="col" class="fw-medium"> Cell</th>
+                    <th scope="col" class="fw-medium"> Gender</th>
+                    <th scope="col" class="fw-medium"> Present / Absent / On Leave</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let attendance of attendances; let i = index">
+                    <td class="text-body"> {{ i + 1 }}</td>
+                    <td class="text-body"> {{ attendance.worker.name }}</td>
+                    <td class="text-body"> {{ attendance.worker.cell }}</td>
+                    <td class="text-body"> {{ attendance.worker.gender }}</td>
+                    <td class="text-body">
+                        <button class="btn btn-sm me-2" (click)="recordAttendance(attendance.id, 'PRESENT')"
+                                [ngClass]="attendance.status === 'PRESENT' ? 'btn-primary' : 'btn-outline-primary'"
+                                title="Present">
+                            <i class="material-symbols-outlined">
+                                check
+                            </i>
+                        </button>
+                        <button class="btn btn-sm me-2" (click)="recordAttendance(attendance.id, 'ABSENT')"
+                                [ngClass]="attendance.status === 'ABSENT' ? 'btn-primary' : 'btn-outline-primary'"
+                                title="Absent">
+                            <i class="material-symbols-outlined">
+                                close
+                            </i>
+                        </button>
+                        <button class="btn btn-sm" (click)="recordAttendance(attendance.id, 'ON_LEAVE')"
+                                [ngClass]="attendance.status === 'ON_LEAVE' ? 'btn-primary' : 'btn-outline-primary'"
+                                title="On Leave">
+                            <i class="material-symbols-outlined">
+                                square
+                            </i>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing {{ workers.length }} of {{ workers.length }} result(s)
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
