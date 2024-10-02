@@ -8,6 +8,8 @@ import {AlertUtil} from "../../../util/alert.util";
 import {StageStatusOptions} from "../../project/stage/stage.model";
 import {FormsModule} from "@angular/forms";
 import {WorkerAttendance} from "../worker.attendance.model";
+import {TransactionService} from "../../../accounting/transaction.service";
+import {Transaction} from "../../../accounting/transaction.model";
 
 @Component({
     selector: 'app-workers',
@@ -24,7 +26,7 @@ export class WorkersComponent implements OnInit {
     attendanceDate: string = new Date().toISOString().substring(0, 10);
     attendances: WorkerAttendance[] = [];
 
-    constructor(private workerService: WorkerService) {
+    constructor(private workerService: WorkerService, private transactionService: TransactionService) {
     }
 
     ngOnInit(): void {
@@ -77,6 +79,25 @@ export class WorkersComponent implements OnInit {
         });
     }
 
+    payWorkers() {
+        let transaction: Transaction = new Transaction();
+        transaction.amount = this.calculateTotalSalary();
+        this.transactionService.payWorkers(transaction).subscribe({
+            next: (response: ApiResponse) => {
+                if (response && response.successful) {
+                    this.loadWorkers();
+                    this.showAllAttendance = false;
+                    AlertUtil.success(response);
+                } else {
+                    AlertUtil.error(response);
+                }
+            },
+            error: error => {
+                AlertUtil.error(error);
+            }
+        });
+    }
+
     deleteWorker(id: number): void {
         this.workerService.deleteById(id).subscribe({
             next: (response: ApiResponse) => {
@@ -91,6 +112,14 @@ export class WorkersComponent implements OnInit {
                 AlertUtil.error(error);
             }
         });
+    }
+
+    calculateTotalSalary(): number {
+        let total = 0;
+        this.attendances.forEach(attendance => {
+            total += attendance.worker.salary;
+        });
+        return total;
     }
 
     protected readonly StageStatusOptions = StageStatusOptions;

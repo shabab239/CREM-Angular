@@ -85,6 +85,7 @@
                     <th scope="col" class="fw-medium">Payment Date</th>
                     <th scope="col" class="fw-medium">Amount</th>
                     <th scope="col" class="fw-medium">Group Transaction ID</th>
+                    <th scope="col" class="fw-medium"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -93,6 +94,11 @@
                     <td class="text-body">{{ payment.date | date }}</td>
                     <td class="text-body">{{ payment.amount }}</td>
                     <td class="text-body">{{ payment.groupTransactionId }}</td>
+                    <td class="text-body">
+                        <button class="btn btn-outline-info btn-sm" routerLink="/dashboard/project/invoice/{{payment.groupTransactionId}}">
+                            Invoice
+                        </button>
+                    </td>
                 </tr>
                 </tbody>
             </table>

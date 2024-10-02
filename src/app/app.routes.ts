@@ -46,11 +46,6 @@ import {ESellerDetailsComponent} from './pages/ecommerce-page/e-seller-details/e
 import {ECreateSellerComponent} from './pages/ecommerce-page/e-create-seller/e-create-seller.component';
 import {EReviewsComponent} from './pages/ecommerce-page/e-reviews/e-reviews.component';
 import {ERefundsComponent} from './pages/ecommerce-page/e-refunds/e-refunds.component';
-import {CrmPageComponent} from './pages/crm-page/crm-page.component';
-import {CContactsComponent} from './pages/crm-page/c-contacts/c-contacts.component';
-import {CCustomersComponent} from './pages/crm-page/c-customers/c-customers.component';
-import {CLeadsComponent} from './pages/crm-page/c-leads/c-leads.component';
-import {CDealsComponent} from './pages/crm-page/c-deals/c-deals.component';
 import {ProjectManagementPageComponent} from './construction/project/project-management-page.component';
 import {PmProjectOverviewComponent} from './construction/project/pm-project-overview/pm-project-overview.component';
 import {ProjectsComponent} from './construction/project/projects/projects.component';
@@ -214,6 +209,10 @@ import {
 import {BookingViewComponent} from "./construction/project/unit/booking-view/booking-view.component";
 import {TransactionsComponent} from "./accounting/transactions/transactions.component";
 import {AccountsComponent} from "./accounting/accounts/accounts.component";
+import {CrmPageComponent} from "./crm-page/crm-page.component";
+import {CCustomersComponent} from "./crm-page/c-customers/c-customers.component";
+import {CLeadsComponent} from "./crm-page/c-leads/c-leads.component";
+import {InvoiceComponent} from "./construction/project/unit/invoice/invoice.component";
 
 export const routes: Routes = [
     {
@@ -308,10 +307,8 @@ export const routes: Routes = [
                 path: 'crm-page',
                 component: CrmPageComponent,
                 children: [
-                    {path: '', component: CContactsComponent},
                     {path: 'customers', component: CCustomersComponent},
-                    {path: 'leads', component: CLeadsComponent},
-                    {path: 'deals', component: CDealsComponent}
+                    {path: 'leads', component: CLeadsComponent}
                 ]
             },
             {
@@ -332,9 +329,10 @@ export const routes: Routes = [
                     {path: 'unit-form', component: UnitFormComponent},
                     {path: 'unit-form/:id', component: UnitFormComponent},
                     {path: 'stages/:stageOf/:stageOfId', component: StagesComponent},
+                    {path: 'invoice/:groupTransactionId', component: InvoiceComponent},
                     {path: 'clients', component: PmClientsComponent},
                     {path: 'teams', component: PmTeamsComponent},
-                    {path: 'users', component: UsersComponent}
+                    {path: 'users', component: UsersComponent},
                 ]
             },
             {path: 'workers', component: WorkersComponent,},

@@ -167,6 +167,7 @@
                                 <th scope="col" class="fw-medium"> Name</th>
                                 <th scope="col" class="fw-medium"> Stage</th>
                                 <th scope="col" class="fw-medium"> Status</th>
+                                <th scope="col" class="fw-medium"> Salary</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -175,13 +176,21 @@
                                 <td class="text-body"> {{ attendance.worker.name }}</td>
                                 <td class="text-body"> {{ attendance.stage.name }}</td>
                                 <td class="text-body"> {{ attendance.status }}</td>
+                                <td class="text-body"> {{ attendance.worker.salary }}</td>
                             </tr>
                             </tbody>
+                            <tfoot>
+                            <tr>
+                                <th scope="col" colspan="4">Total Salary:</th>
+                                <th scope="col">{{ calculateTotalSalary() }}</th>
+                            </tr>
+                            </tfoot>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-info" (click)="payWorkers()">Mark as Paid</button>
                 <button type="button" class="btn btn-secondary" (click)="toggleShowAllAttendance()">Close</button>
             </div>
         </div>
