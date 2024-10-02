@@ -30,6 +30,15 @@
             </h5>
         </div>
         <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius me-2"
+               (click)="toggleShowAllAttendance()" style="cursor: pointer;">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        event_note
+                    </i>
+                    Attendance
+                </span>
+            </a>
             <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/worker-form">
                 <span class="d-inline-block position-relative">
                     <i class="material-symbols-outlined">
@@ -44,40 +53,42 @@
         <div class="basic-table table-responsive">
             <table class="table mb-0">
                 <thead>
-                    <tr>
-                        <th scope="col" class="fw-medium"> SL </th>
-                        <th scope="col" class="fw-medium"> Name </th>
-                        <th scope="col" class="fw-medium"> Salary </th>
-                        <th scope="col" class="fw-medium"> Cell </th>
-                        <th scope="col" class="fw-medium"> Gender </th>
-                        <th scope="col" class="fw-medium"> Address </th>
-                        <th scope="col" class="fw-medium"> Joining Date </th>
-                        <th scope="col" class="fw-medium"> Action </th>
-                    </tr>
+                <tr>
+                    <th scope="col" class="fw-medium"> SL</th>
+                    <th scope="col" class="fw-medium"> Name</th>
+                    <th scope="col" class="fw-medium"> Salary</th>
+                    <th scope="col" class="fw-medium"> Cell</th>
+                    <th scope="col" class="fw-medium"> Gender</th>
+                    <th scope="col" class="fw-medium"> Address</th>
+                    <th scope="col" class="fw-medium"> Joining Date</th>
+                    <th scope="col" class="fw-medium"> Action</th>
+                </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let worker of workers; let i = index">
-                        <td class="text-body"> {{ i + 1 }} </td>
-                        <td class="text-body"> {{ worker.name }} </td>
-                        <td class="text-body"> {{ worker.salary }} </td>
-                        <td class="text-body"> {{ worker.cell }} </td>
-                        <td class="text-body"> {{ worker.gender }} </td>
-                        <td class="text-body"> {{ worker.address }} </td>
-                        <td class="text-body"> {{ worker.joiningDate }} </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button routerLink="/dashboard/worker-form/{{worker.id}}" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button (click)="deleteWorker(worker.id)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
+                <tr *ngFor="let worker of workers; let i = index">
+                    <td class="text-body"> {{ i + 1 }}</td>
+                    <td class="text-body"> {{ worker.name }}</td>
+                    <td class="text-body"> {{ worker.salary }}</td>
+                    <td class="text-body"> {{ worker.cell }}</td>
+                    <td class="text-body"> {{ worker.gender }}</td>
+                    <td class="text-body"> {{ worker.address }}</td>
+                    <td class="text-body"> {{ worker.joiningDate }}</td>
+                    <td>
+                        <div class="action-buttons d-flex align-items-center">
+                            <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> visibility </i>
+                            </button>
+                            <button routerLink="/dashboard/worker-form/{{worker.id}}" type="button"
+                                    class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> edit </i>
+                            </button>
+                            <button (click)="deleteWorker(worker.id)" type="button"
+                                    class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> delete </i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -131,4 +142,49 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="modal fade" tabindex="-1" [class.show]="showAllAttendance">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">All Attendance</h1>
+                <button type="button" class="btn-close shadow-none" aria-label="Close"
+                        (click)="toggleShowAllAttendance()"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <input type="date" [(ngModel)]="attendanceDate" (ngModelChange)="onFormDateChange($event)"
+                           class="form-control">
+                </div>
+                <br>
+                <div class="trezo-card-content">
+                    <div class="basic-table table-responsive">
+                        <table class="table mb-0">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="fw-medium"> SL</th>
+                                <th scope="col" class="fw-medium"> Name</th>
+                                <th scope="col" class="fw-medium"> Stage</th>
+                                <th scope="col" class="fw-medium"> Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let attendance of attendances; let i = index">
+                                <td class="text-body"> {{ i + 1 }}</td>
+                                <td class="text-body"> {{ attendance.worker.name }}</td>
+                                <td class="text-body"> {{ attendance.stage.name }}</td>
+                                <td class="text-body"> {{ attendance.status }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="toggleShowAllAttendance()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
 </div>

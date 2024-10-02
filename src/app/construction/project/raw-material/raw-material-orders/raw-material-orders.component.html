@@ -1,0 +1,328 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Project
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Raw Material Orders
+        </li>
+    </ol>
+</div>
+
+<!-- Raw Material Orders List -->
+<div class="raw-material-orders-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                All Orders
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius me-2" style="cursor: pointer" (click)="toggleSupplierForm()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    New Supplier
+                </span>
+            </a>
+            <a class="add-btn d-inline-block transition fw-medium border-radius" style="cursor: pointer" (click)="toggleOrderForm()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    New Order
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fw-medium"> SL </th>
+                        <th scope="col" class="fw-medium"> Quantity </th>
+                        <th scope="col" class="fw-medium"> Unit Price </th>
+                        <th scope="col" class="fw-medium"> Order Date </th>
+                        <th scope="col" class="fw-medium"> Delivery Date </th>
+                        <th scope="col" class="fw-medium"> Total Price </th>
+                        <th scope="col" class="fw-medium"> Status </th>
+                        <th scope="col" class="fw-medium"> Raw Material </th>
+                        <th scope="col" class="fw-medium"> Supplier </th>
+                        <th scope="col" class="fw-medium"> Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of orders; let i = index">
+                        <td class="text-body"> {{ i + 1 }} </td>
+                        <td class="text-body"> {{ order.quantity }} </td>
+                        <td class="text-body"> {{ order.unitPrice }} </td>
+                        <td class="text-body"> {{ order.orderDate }} </td>
+                        <td class="text-body"> {{ order.deliveryDate }} </td>
+                        <td class="text-body"> {{ order.totalPrice }} </td>
+                        <td class="text-body"> {{ order.status }} </td>
+                        <td class="text-body"> {{ order.rawMaterial.name }} </td>
+                        <td class="text-body"> {{ order.supplier.name }} </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button (click)="toggleOrderForm(order.id)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button (click)="deleteOrder(order.id)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing {{ orders.length }} of {{ orders.length }} result(s)
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Supplier Form -->
+<div class="add-new-popup" [class.active]="showSupplierForm">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Create Supplier
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleSupplierForm()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="main-label d-block fw-medium text-black">
+                                        Supplier Name
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="E.g. Supplier Name"
+                                           [(ngModel)]="supplier.name">
+                                    <small *ngIf="errors['name']" class="form-text text-danger">{{ errors['name'] }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleSupplierForm()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button (click)="createSupplier()"
+                            class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Save
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Order Form -->
+<div class="add-new-popup" [class.active]="showOrderForm">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Create/Update Order
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleOrderForm()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Quantity
+                            </label>
+                            <input type="number" class="form-control" placeholder="E.g. 100"
+                                   [(ngModel)]="order.quantity" (input)="calculateTotalPrice()">
+                            <small *ngIf="errors['quantity']" class="form-text text-danger">{{ errors['quantity'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Unit Price
+                            </label>
+                            <input type="number" class="form-control" placeholder="E.g. 50"
+                                   [(ngModel)]="order.unitPrice" (input)="calculateTotalPrice()">
+                            <small *ngIf="errors['unitPrice']" class="form-text text-danger">{{ errors['unitPrice'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Order Date
+                            </label>
+                            <input type="date" class="form-control"
+                                   [(ngModel)]="order.orderDate">
+                            <small *ngIf="errors['orderDate']" class="form-text text-danger">{{ errors['orderDate'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Delivery Date
+                            </label>
+                            <input type="date" class="form-control"
+                                   [(ngModel)]="order.deliveryDate">
+                            <small *ngIf="errors['deliveryDate']" class="form-text text-danger">{{ errors['deliveryDate'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Total Price
+                            </label>
+                            <input type="number" class="form-control" placeholder="E.g. 5000"
+                                   [(ngModel)]="order.totalPrice">
+                            <small *ngIf="errors['totalPrice']" class="form-text text-danger">{{ errors['totalPrice'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Status
+                            </label>
+                            <select class="form-control" [(ngModel)]="order.status">
+                                <option *ngFor="let status of orderStatusOptions" [value]="status">{{ status }}</option>
+                            </select>
+                            <small *ngIf="errors['status']" class="form-text text-danger">{{ errors['status'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Raw Material
+                            </label>
+                            <select class="form-control" [(ngModel)]="order.rawMaterial.id">
+                                <option *ngFor="let rawMaterial of rawMaterials" [value]="rawMaterial.id">{{ rawMaterial.name }}</option>
+                            </select>
+                            <small *ngIf="errors['rawMaterial']" class="form-text text-danger">{{ errors['rawMaterial'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Supplier
+                            </label>
+                            <select class="form-control" [(ngModel)]="order.supplier.id">
+                                <option *ngFor="let supplier of suppliers" [value]="supplier.id">{{ supplier.name }}</option>
+                            </select>
+                            <small *ngIf="errors['supplier']" class="form-text text-danger">{{ errors['supplier'] }}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleOrderForm()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button (click)="saveOrder()"
+                            class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Save/Update
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

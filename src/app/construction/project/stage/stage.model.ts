@@ -1,7 +1,7 @@
 import {Building} from "../building/building.model";
 import {Floor} from "../floor/floor.model";
 import {Unit} from "../unit/unit.model";
-import {RawMaterial} from "../raw-material/raw-material.model";
+import {RawMaterial} from "../raw-material/model/raw-material.model";
 import {Worker} from "../../worker/worker.model";
 
 export class ConstructionStage {

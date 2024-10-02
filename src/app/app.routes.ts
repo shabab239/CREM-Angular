@@ -201,6 +201,13 @@ import {UtilitiesComponent} from "./ui-elements/utilities/utilities.component";
 import {WorkersComponent} from "./construction/worker/workers/workers.component";
 import {WorkerFormComponent} from "./construction/worker/worker-form/worker-form.component";
 import {WorkerAttendanceComponent} from "./construction/worker/worker-attendance/worker-attendance.component";
+import {RawMaterialsComponent} from "./construction/project/raw-material/raw-materials/raw-materials.component";
+import {
+    RawMaterialFormComponent
+} from "./construction/project/raw-material/raw-material-form/raw-material-form.component";
+import {
+    RawMaterialOrdersComponent
+} from "./construction/project/raw-material/raw-material-orders/raw-material-orders.component";
 
 export const routes: Routes = [
     {
@@ -328,6 +335,12 @@ export const routes: Routes = [
             {path: 'worker-form', component: WorkerFormComponent,},
             {path: 'worker-form/:id', component: WorkerFormComponent,},
             {path: 'worker-attendance/:stageOf/:stageOfId/:stageId', component: WorkerAttendanceComponent,},
+            {path: 'raw-materials', component: RawMaterialsComponent,},
+            {path: 'raw-material-form', component: RawMaterialFormComponent,},
+            {path: 'raw-material-form/:id', component: RawMaterialFormComponent,},
+            {path: 'raw-material-orders', component: RawMaterialOrdersComponent,},
+            {path: 'payment-schedules', component: RawMaterialOrdersComponent,},
+            {path: 'payments', component: RawMaterialOrdersComponent,},
             {
                 path: 'lms-page',
                 component: LmsPageComponent,

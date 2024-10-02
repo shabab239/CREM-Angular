@@ -40,7 +40,7 @@
                 <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search here.....">
             </form>
             <div class="trezo-card-header-menu position-relative">
-                <input type="date" [(ngModel)]="attendanceDate"
+                <input type="date" [(ngModel)]="formDate" (ngModelChange)="onFormDateChange($event)"
                        class="menu-btn transition d-inline-block bg-transparent border-radius">
             </div>
         </div>

@@ -89,7 +89,7 @@ export class WorkerService {
     }
 
     getAttendanceByDate(date: Date): Observable<ApiResponse> {
-        return this.http.get<ApiResponse>(`${this.baseUrl}/attendance/getByDate`, {params: {date: date.toISOString()}});
+        return this.http.get<ApiResponse>(`${this.baseUrl}/attendance/getByDate`, {params: {date: formatDate(date, 'yyyy-MM-dd', 'en')}});
     }
 
     getAttendanceByWorkerIdAndDate(workerId: number, date: Date): Observable<ApiResponse> {

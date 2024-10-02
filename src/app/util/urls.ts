@@ -10,4 +10,6 @@ export const API_URLS = {
     project: `${baseUrl}/project`,
     stage: `${baseUrl}/stage`,
     worker: `${baseUrl}/worker`,
+    rawMaterial: `${baseUrl}/rawMaterial`,
+    supplier: `${baseUrl}/supplier`,
 };

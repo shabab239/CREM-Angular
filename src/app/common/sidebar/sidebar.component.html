@@ -88,363 +88,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item border-radius border-0">
-                        <button
-                            type="button"
-                            (click)="toggleSection(1)"
-                            [ngClass]="{ 'open': isSectionOpen(1) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
-                        >
-                            <i class="material-symbols-outlined">
-                                note_stack
-                            </i>
-                            <span class="title">
-                                Front Pages
-                            </span>
-                        </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/features" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Features
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/team" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Our Team
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/faq" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            FAQ’s
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     <span class="sub-title d-block fw-medium text-uppercase">
-                        APPS
+                        CORE
                     </span>
-                    <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                            <i class="material-symbols-outlined">
-                                format_list_bulleted
-                            </i>
-                            <span class="title">
-                                To Do List
-                            </span>
-                        </a>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/calendar" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                            <i class="material-symbols-outlined">
-                                date_range
-                            </i>
-                            <span class="title">
-                                Calendar
-                            </span>
-                        </a>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/contacts" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                            <i class="material-symbols-outlined">
-                                contact_page
-                            </i>
-                            <span class="title">
-                                Contacts
-                            </span>
-                        </a>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/chat" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                            <i class="material-symbols-outlined">
-                                chat
-                            </i>
-                            <span class="title">
-                                Chat
-                            </span>
-                        </a>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <button
-                            type="button"
-                            (click)="toggleSection(2)"
-                            [ngClass]="{ 'open': isSectionOpen(2) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
-                        >
-                            <i class="material-symbols-outlined">
-                                mail
-                            </i>
-                            <span class="title">
-                                Email
-                            </span>
-                            <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center style-two">
-                                3
-                            </span>
-                        </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/email" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Inbox
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/email/compose" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Compose
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/email/read" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Read
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/kanban-board" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                            <i class="material-symbols-outlined">
-                                team_dashboard
-                            </i>
-                            <span class="title">
-                                Kanban Board
-                            </span>
-                        </a>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <button
-                            type="button"
-                            (click)="toggleSection(3)"
-                            [ngClass]="{ 'open': isSectionOpen(3) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
-                        >
-                            <i class="material-symbols-outlined">
-                                folder_open
-                            </i>
-                            <span class="title">
-                                File Manager
-                            </span>
-                            <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center style-three">
-                                7
-                            </span>
-                        </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            My Drive
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager/assets" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Assets
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Projects
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager/personal" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Personal
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager/applications" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Applications
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager/documents" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Documents
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/apps/file-manager/media" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Media
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="sub-title d-block fw-medium text-uppercase">
-                        PAGES
-                    </span>
-                    <div class="accordion-item border-radius border-0">
-                        <button
-                            type="button"
-                            (click)="toggleSection(4)"
-                            [ngClass]="{ 'open': isSectionOpen(4) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
-                        >
-                            <i class="material-symbols-outlined">
-                                shopping_cart
-                            </i>
-                            <span class="title">
-                                eCommerce
-                            </span>
-                        </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Products Grid
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/products-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Products List
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/product-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Product Details
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/create-product" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Create Product
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/edit-product" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Edit Product
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/cart" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Cart
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/checkout" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Checkout
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/orders" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Orders
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/order-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Order Details
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/create-order" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Create Order
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/order-tracking" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Order Tracking
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Customers
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/customer-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Customer Details
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/categories" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Categories
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/sellers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Sellers
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/seller-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Seller Details
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/create-seller" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Create Seller
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/reviews" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Reviews
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/ecommerce-page/refunds" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Refunds
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <button
-                            type="button"
-                            (click)="toggleSection(5)"
-                            [ngClass]="{ 'open': isSectionOpen(5) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
-                        >
-                            <i class="material-symbols-outlined">
-                                handshake
-                            </i>
-                            <span class="title">
-                                CRM
-                            </span>
-                        </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/crm-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Contacts
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/crm-page/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Customers
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/crm-page/leads" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Leads
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/crm-page/deals" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Deals
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     <div class="accordion-item border-radius border-0">
                         <button
                             type="button"
@@ -453,10 +99,10 @@
                             class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
-                                description
+                                build
                             </i>
                             <span class="title">
-                                Project Management
+                                Construction
                             </span>
                         </button>
                         <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(6) }">
@@ -488,23 +134,8 @@
                                         </a>
                                     </li>
                                     <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/project" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Project Overview
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/project/clients" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Clients
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/project/teams" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Teams
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/project/users" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Users
+                                        <a routerLink="/dashboard/raw-materials" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Raw Materials
                                         </a>
                                     </li>
                                 </ul>
@@ -802,6 +433,82 @@
                                 Starter
                             </span>
                         </a>
+                    </div>
+                    <span class="sub-title d-block fw-medium text-uppercase">
+                        ACCOUNTING
+                    </span>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(5)"
+                            [ngClass]="{ 'open': isSectionOpen(5) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                money
+                            </i>
+                            <span class="title">
+                                PAYMENT
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/payment-schedules" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Pay Schedules
+                                        </a>
+                                        <a routerLink="/dashboard/payments" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Payments
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="sub-title d-block fw-medium text-uppercase">
+                        MARKETING
+                    </span>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(5)"
+                            [ngClass]="{ 'open': isSectionOpen(5) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                handshake
+                            </i>
+                            <span class="title">
+                                CRM
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/crm-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Contacts
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/crm-page/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Customers
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/crm-page/leads" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Leads
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/crm-page/deals" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Deals
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <span class="sub-title d-block fw-medium text-uppercase">
                         MODULES

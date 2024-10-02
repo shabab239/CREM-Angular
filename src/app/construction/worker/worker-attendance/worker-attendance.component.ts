@@ -26,6 +26,7 @@ import {attendanceStatusOptions, WorkerAttendance} from "../worker.attendance.mo
 })
 export class WorkerAttendanceComponent implements OnInit {
 
+    formDate: string = new Date().toISOString().substring(0, 10);
     attendanceDate: Date = new Date();
 
     stageOf: string;
@@ -102,6 +103,11 @@ export class WorkerAttendanceComponent implements OnInit {
                 AlertUtil.error(error);
             }
         });
+    }
+
+    onFormDateChange(newDate: string) {
+        this.attendanceDate = new Date(newDate);
+        this.loadAttendanceByStageIdAndDate();
     }
 
     getStageOfEntity() {

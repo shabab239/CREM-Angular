@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, RouterLink} from '@angular/router';
 import {NgClass, NgForOf, NgIf} from '@angular/common';
 import {CustomizerSettingsService} from '../../../../customizer-settings/customizer-settings.service';
-import {ConstructionStage, StageStatus} from "../stage.model";
+import {ConstructionStage, StageStatus, StageStatusOptions} from "../stage.model";
 import {CdkDropListGroup} from "@angular/cdk/drag-drop";
 import {StageService} from "../stage.service";
 import {ApiResponse} from "../../../../util/api.response.model";
@@ -23,6 +23,7 @@ export class StagesComponent implements OnInit {
 
     isToggled = false;
     errors: { [key: string]: string } = {};
+    showEditStage = false;
     showNewStage = false;
     showWorkers = false;
     currentStage: ConstructionStage | undefined;
@@ -76,6 +77,26 @@ export class StagesComponent implements OnInit {
         this.showNewStage = !this.showNewStage;
     }
 
+    toggleEditStage(stageId: any, dismiss: boolean) {
+        if (dismiss) {
+            this.newStage = new ConstructionStage();
+        } else {
+            this.stageService.getStageById(stageId).subscribe({
+                next: (response: ApiResponse) => {
+                    if (response && response.successful) {
+                        this.newStage = response.data['constructionStage'];
+                    } else {
+                        AlertUtil.error(response);
+                    }
+                },
+                error: error => {
+                    AlertUtil.error(error);
+                }
+            })
+        }
+        this.showEditStage = !this.showEditStage;
+    }
+
     saveStage() {
         this.stageService.saveStage(this.newStage).subscribe({
             next: (response: ApiResponse) => {
@@ -94,10 +115,29 @@ export class StagesComponent implements OnInit {
         });
     }
 
+    updateStage() {
+        this.stageService.updateStage(this.newStage).subscribe({
+            next: (response: ApiResponse) => {
+                if (response && response.successful) {
+                    this.showEditStage = false;
+                    this.newStage = new ConstructionStage();
+                    this.getStages();
+                } else {
+                    this.errors = response?.errors || {};
+                    AlertUtil.error(response);
+                }
+            },
+            error: error => {
+                AlertUtil.error(error);
+            }
+        });
+    }
+
     deleteStage(stageId: number) {
         this.stageService.deleteStageById(stageId).subscribe({
             next: (response: ApiResponse) => {
                 if (response && response.successful) {
+                    AlertUtil.success(response);
                     this.getStages();
                 } else {
                     AlertUtil.error(response);
@@ -273,4 +313,5 @@ export class StagesComponent implements OnInit {
         }
     }
 
+    protected readonly StageStatusOptions = StageStatusOptions;
 }

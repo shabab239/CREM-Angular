@@ -46,7 +46,7 @@
                         </span>
                         <div class="row">
                             <div class="col-md-1">
-                                <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                                <button type="button" (click)="toggleEditStage(stage.id, false)" class="d-inline-block p-0 border-0 bg-transparent transition">
                                     <i class="material-symbols-outlined">
                                         edit
                                     </i>
@@ -69,10 +69,12 @@
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
                     </p>
                     <p>
-                        <button type="button" (click)="toggleWorkers(stage)" class="btn btn-sm btn-outline-secondary me-2">
+                        <button type="button" (click)="toggleWorkers(stage)"
+                                class="btn btn-sm btn-outline-secondary me-2">
                             <i class="ri-group-fill"></i> Workers
                         </button>
-                        <button type="button" routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
+                        <button type="button"
+                                routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
                                 class="btn btn-sm btn-outline-secondary">
                             <i class="ri-group-fill"></i> Attendance
                         </button>
@@ -124,7 +126,7 @@
                         </span>
                         <div class="row">
                             <div class="col-md-1">
-                                <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                                <button type="button" (click)="toggleEditStage(stage.id, false)" class="d-inline-block p-0 border-0 bg-transparent transition">
                                     <i class="material-symbols-outlined">
                                         edit
                                     </i>
@@ -147,10 +149,12 @@
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
                     </p>
                     <p>
-                        <button type="button" (click)="toggleWorkers(stage)" class="btn btn-sm btn-outline-secondary me-2">
+                        <button type="button" (click)="toggleWorkers(stage)"
+                                class="btn btn-sm btn-outline-secondary me-2">
                             <i class="ri-group-fill"></i> Workers
                         </button>
-                        <button type="button" routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
+                        <button type="button"
+                                routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
                                 class="btn btn-sm btn-outline-secondary">
                             <i class="ri-group-fill"></i> Attendance
                         </button>
@@ -202,7 +206,7 @@
                         </span>
                         <div class="row">
                             <div class="col-md-1">
-                                <button type="button" class="d-inline-block p-0 border-0 bg-transparent transition">
+                                <button type="button" (click)="toggleEditStage(stage.id, false)" class="d-inline-block p-0 border-0 bg-transparent transition">
                                     <i class="material-symbols-outlined">
                                         edit
                                     </i>
@@ -225,10 +229,12 @@
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
                     </p>
                     <p>
-                        <button type="button" (click)="toggleWorkers(stage)" class="btn btn-sm btn-outline-secondary me-2">
+                        <button type="button" (click)="toggleWorkers(stage)"
+                                class="btn btn-sm btn-outline-secondary me-2">
                             <i class="ri-group-fill"></i> Workers
                         </button>
-                        <button type="button" routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
+                        <button type="button"
+                                routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
                                 class="btn btn-sm btn-outline-secondary">
                             <i class="ri-group-fill"></i> Attendance
                         </button>
@@ -327,6 +333,101 @@
                                 add
                             </i>
                             Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Edit Popup -->
+<div class="add-new-popup" [class.active]="showEditStage">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Update Stage
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleEditStage('', true)"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="main-label d-block fw-medium text-black">
+                                        Stage Name
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="E.g. Piling, Slab..."
+                                           [(ngModel)]="newStage.name">
+                                    <small *ngIf="errors['name']" class="form-text text-danger">{{ errors['name'] }}</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="main-label d-block fw-medium text-black">
+                                        Stage Name
+                                    </label>
+                                    <select class="form-select" [(ngModel)]="newStage.status">
+                                        <option *ngFor="let status of StageStatusOptions"
+                                                [value]="status.value">{{ status.label }}
+                                        </option>
+                                    </select>
+                                    <small *ngIf="errors['status']"
+                                           class="form-text text-danger">{{ errors['status'] }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Start Date
+                                </label>
+                                <input type="date" class="form-control" [(ngModel)]="newStage.startDate">
+                                <small *ngIf="errors['startDate']"
+                                       class="form-text text-danger">{{ errors['startDate'] }}</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    End Date
+                                </label>
+                                <input type="date" class="form-control" [(ngModel)]="newStage.endDate">
+                                <small *ngIf="errors['endDate']"
+                                       class="form-text text-danger">{{ errors['endDate'] }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleEditStage('', true)"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button (click)="updateStage()"
+                            class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Update
                         </span>
                     </button>
                 </div>
