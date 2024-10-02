@@ -212,6 +212,8 @@ import {
     RawMaterialUsageComponent
 } from "./construction/project/raw-material/raw-material-usage/raw-material-usage.component";
 import {BookingViewComponent} from "./construction/project/unit/booking-view/booking-view.component";
+import {TransactionsComponent} from "./accounting/transactions/transactions.component";
+import {AccountsComponent} from "./accounting/accounts/accounts.component";
 
 export const routes: Routes = [
     {
@@ -345,7 +347,8 @@ export const routes: Routes = [
             {path: 'raw-material-orders', component: RawMaterialOrdersComponent,},
             {path: 'raw-material-usage/:stageId', component: RawMaterialUsageComponent,},
             {path: 'booking-view/:unitId', component: BookingViewComponent,},
-            {path: 'payments', component: RawMaterialOrdersComponent,},
+            {path: 'transactions', component: TransactionsComponent,},
+            {path: 'accounts', component: AccountsComponent,},
             {
                 path: 'lms-page',
                 component: LmsPageComponent,

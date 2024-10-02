@@ -448,18 +448,22 @@
                                 money
                             </i>
                             <span class="title">
-                                PAYMENT
+                                Payment
                             </span>
                         </button>
                         <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
                             <div class="accordion-body">
                                 <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
                                     <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/payment-schedules" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Pay Schedules
+                                        <a routerLink="/dashboard/accounts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Accounts
                                         </a>
-                                        <a routerLink="/dashboard/payments" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Payments
+                                    </li>
+                                </ul>
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/transactions" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Transactions
                                         </a>
                                     </li>
                                 </ul>
@@ -486,11 +490,11 @@
                         <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
                             <div class="accordion-body">
                                 <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
+                                    <!--<li class="sidemenu-item">
                                         <a routerLink="/dashboard/crm-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Contacts
                                         </a>
-                                    </li>
+                                    </li>-->
                                     <li class="sidemenu-item">
                                         <a routerLink="/dashboard/crm-page/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Customers
@@ -501,11 +505,11 @@
                                             Leads
                                         </a>
                                     </li>
-                                    <li class="sidemenu-item">
+                                    <!--<li class="sidemenu-item">
                                         <a routerLink="/dashboard/crm-page/deals" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Deals
                                         </a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </div>
                         </div>

@@ -14,4 +14,6 @@ export const API_URLS = {
     supplier: `${baseUrl}/supplier`,
     booking: `${baseUrl}/booking`,
     payment: `${baseUrl}/payment`,
+    account: `${baseUrl}/account`,
+    transaction: `${baseUrl}/transaction`,
 };
