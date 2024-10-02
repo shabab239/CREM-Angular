@@ -68,17 +68,6 @@
                     <p>
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
                     </p>
-                    <p>
-                        <button type="button" (click)="toggleWorkers(stage)"
-                                class="btn btn-sm btn-outline-secondary me-2">
-                            <i class="ri-group-fill"></i> Workers
-                        </button>
-                        <button type="button"
-                                routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
-                                class="btn btn-sm btn-outline-secondary">
-                            <i class="ri-group-fill"></i> Attendance
-                        </button>
-                    </p>
                     <div class="info d-flex align-items-center justify-content-between">
                         <div class="users d-flex align-items-center">
 
@@ -147,6 +136,12 @@
                     </p>
                     <p>
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
+                    </p>
+                    <p>
+                        <button type="button" routerLink="/dashboard/raw-material-usage/{{stage.id}}"
+                                class="btn btn-sm btn-outline-secondary me-2">
+                            <i class="ri-group-fill"></i> Material Usage
+                        </button>
                     </p>
                     <p>
                         <button type="button" (click)="toggleWorkers(stage)"
@@ -227,17 +222,6 @@
                     </p>
                     <p>
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
-                    </p>
-                    <p>
-                        <button type="button" (click)="toggleWorkers(stage)"
-                                class="btn btn-sm btn-outline-secondary me-2">
-                            <i class="ri-group-fill"></i> Workers
-                        </button>
-                        <button type="button"
-                                routerLink="/dashboard/worker-attendance/{{stageOf}}/{{stageOfId}}/{{stage.id}}"
-                                class="btn btn-sm btn-outline-secondary">
-                            <i class="ri-group-fill"></i> Attendance
-                        </button>
                     </p>
                     <div class="info d-flex align-items-center justify-content-between">
                         <div class="users d-flex align-items-center">

@@ -19,6 +19,10 @@ export class UserService {
         return this.http.get<ApiResponse>(`${this.apiUrl}/`);
     }
 
+    getAllCustomers(): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/customers`);
+    }
+
     getById(id: number): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(`${this.apiUrl}/${id}`);
     }

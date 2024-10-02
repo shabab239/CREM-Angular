@@ -67,6 +67,8 @@ export class RawMaterialOrdersComponent implements OnInit {
             next: response => {
                 if (response && response.successful) {
                     this.rawMaterials = response.data['rawMaterials'];
+                } else {
+                    AlertUtil.error(response);
                 }
             },
             error: error => {
@@ -80,6 +82,8 @@ export class RawMaterialOrdersComponent implements OnInit {
             next: response => {
                 if (response && response.successful) {
                     this.suppliers = response.data['suppliers'];
+                } else {
+                    AlertUtil.error(response);
                 }
             },
             error: error => {
@@ -105,6 +109,7 @@ export class RawMaterialOrdersComponent implements OnInit {
                     if (response && response.successful) {
                         this.order = response.data['order'];
                         this.showOrderForm = true;
+                        console.log(response)
                     } else {
                         AlertUtil.error(response);
                     }

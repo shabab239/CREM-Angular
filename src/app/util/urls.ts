@@ -12,4 +12,6 @@ export const API_URLS = {
     worker: `${baseUrl}/worker`,
     rawMaterial: `${baseUrl}/rawMaterial`,
     supplier: `${baseUrl}/supplier`,
+    booking: `${baseUrl}/booking`,
+    payment: `${baseUrl}/payment`,
 };

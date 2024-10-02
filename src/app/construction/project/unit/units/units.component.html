@@ -68,8 +68,11 @@
                                                     Stages
                                                 </button>
                                                 <br>
-                                                <button type="button" class="btn btn-outline-success btn-sm">
+                                                <button *ngIf="unit.status === 'AVAILABLE'" (click)="toggleBookingForm(unit)" type="button" class="btn btn-outline-success btn-sm">
                                                     Book Now
+                                                </button>
+                                                <button *ngIf="unit.status != 'AVAILABLE'" routerLink="/dashboard/booking-view/{{unit.id}}" type="button" class="btn btn-outline-warning btn-sm">
+                                                    View Booking
                                                 </button>
                                             </div>
                                         </div>
@@ -80,6 +83,81 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+
+<!-- Booking Form -->
+<div class="add-new-popup" [class.active]="showBookForm">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Create/Update Order
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleBookingForm()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Booking Date
+                </label>
+                <input type="date" class="form-control"
+                       [(ngModel)]="booking.bookingDate">
+                <small *ngIf="errors['bookingDate']" class="form-text text-danger">{{ errors['bookingDate'] }}</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Amount
+                </label>
+                <input type="number" class="form-control" placeholder="E.g. 5000"
+                       [(ngModel)]="booking.amount">
+                <small *ngIf="errors['amount']" class="form-text text-danger">{{ errors['amount'] }}</small>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="main-label d-block fw-medium text-black">
+                    Customer
+                </label>
+                <select class="form-control" [(ngModel)]="booking.customer.id">
+                    <option *ngFor="let customer of customers" [value]="customer.id">{{ customer.name }}</option>
+                </select>
+                <small *ngIf="errors['customer']" class="form-text text-danger">{{ errors['customer'] }}</small>
+            </div>
+        </div>
+    </div>
+    <div class="btn-box">
+        <button
+            (click)="toggleBookingForm()"
+            class="warn d-inline-block fw-medium border-0 border-radius transition"
+        >
+            Cancel
+        </button>
+        <button (click)="saveBooking()"
+                class="primary d-inline-block fw-medium border-0 border-radius transition">
+            <span class="position-relative d-inline-block">
+                <i class="material-symbols-outlined">
+                    add
+                </i>
+                Save/Update
+            </span>
+        </button>
+    </div>
+</div>
         </div>
     </div>
 </div>

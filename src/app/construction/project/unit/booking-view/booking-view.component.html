@@ -1,0 +1,154 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Booking
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Booking Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Booking List
+        </li>
+    </ol>
+</div>
+
+
+<div class="mp-profile-information-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Booking Information
+            </h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <ul class="info-list pr-0 pl-0 mb-0 mt-0 list-unstyled">
+            <li class="text-black fw-medium">
+                <h3>Customer: <span class="text-orange">{{ booking.customer.name }}</span></h3>
+            </li>
+            <li class="text-black fw-medium">
+                <span class="text-body fw-normal">Unit: </span> {{ booking.unit.name }}
+            </li>
+            <li class="text-black fw-medium">
+                <span class="text-body fw-normal">Booking Date: </span> {{ booking.bookingDate | date }}
+            </li>
+            <li class="text-black fw-medium">
+                <span class="text-body fw-normal">Unit Price: </span> {{ booking.unit.price }} /=
+            </li>
+            <li class="text-black fw-medium">
+                <span class="text-body fw-normal">Booking Amount: </span> {{ booking.amount }} /=
+            </li>
+            <li class="text-black fw-medium">
+                <span class="text-body fw-normal">Total Paid: </span> {{ getTotalPayments() }} /=
+            </li>
+            <li class="text-black fw-medium">
+                <span class="text-body fw-normal">Remaining Amount: </span> {{ getRemainingAmount() }} /=
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Payments List -->
+<div class="bookings-list-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                All Payments
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" (click)="togglePaymentForm()" style="cursor: pointer">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Receive Payment
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                <tr>
+                    <th scope="col" class="fw-medium col-md-1">SL</th>
+                    <th scope="col" class="fw-medium">Payment Date</th>
+                    <th scope="col" class="fw-medium">Amount</th>
+                    <th scope="col" class="fw-medium">Group Transaction ID</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let payment of payments; let i = index">
+                    <td class="text-body">{{ i + 1 }}</td>
+                    <td class="text-body">{{ payment.date | date }}</td>
+                    <td class="text-body">{{ payment.amount }}</td>
+                    <td class="text-body">{{ payment.groupTransactionId }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Payment Form Popup -->
+<div class="add-new-popup" [class.active]="showPaymentForm">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Receive Payment
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button (click)="togglePaymentForm()" class="p-0 border-0 lh-1 bg-transparent transition">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Payment Date
+                            </label>
+                            <input type="date" class="form-control" [(ngModel)]="newPayment.date">
+                            <small *ngIf="errors['date']" class="form-text text-danger">{{ errors['date'] }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Amount
+                            </label>
+                            <input type="number" class="form-control" placeholder="E.g. 5000" [(ngModel)]="newPayment.amount">
+                            <small *ngIf="errors['amount']" class="form-text text-danger">{{ errors['amount'] }}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button (click)="togglePaymentForm()" class="warn d-inline-block fw-medium border-0 border-radius transition">
+                        Cancel
+                    </button>
+                    <button (click)="savePayment()" class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">add</i>
+                            Save Payment
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

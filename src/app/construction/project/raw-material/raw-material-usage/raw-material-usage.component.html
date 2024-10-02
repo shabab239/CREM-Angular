@@ -1,0 +1,190 @@
+
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Project
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Project Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Raw Material Usage
+        </li>
+    </ol>
+</div>
+
+<!-- Raw Materials List -->
+<div class="raw-materials-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                Raw Material Usage
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" style="cursor: pointer" (click)="toggleUsageForm()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add Usage
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+    <table class="table mb-0">
+        <thead>
+        <tr>
+            <th scope="col" class="fw-medium"> SL </th>
+            <th scope="col" class="fw-medium"> Quantity </th>
+            <th scope="col" class="fw-medium"> Entry Date </th>
+            <th scope="col" class="fw-medium"> Raw Material </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let usage of usages; let i = index">
+            <td class="text-body"> {{ i + 1 }} </td>
+            <td class="text-body"> {{ usage.quantity }} </td>
+            <td class="text-body"> {{ usage.entryDate | date:'dd/MM/yyyy' }} </td>
+            <td class="text-body"> {{ usage.rawMaterial.name }} </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing {{ rawMaterials.length }} of {{ rawMaterials.length }} result(s)
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Usage Form -->
+<div class="add-new-popup" [class.active]="showUsageForm">
+  <div class="popup-dialog">
+    <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+      <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+          <h5 class="mb-0">
+            Create Usage
+          </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+          <button
+            (click)="toggleUsageForm()"
+            class="p-0 border-0 lh-1 bg-transparent transition"
+          >
+            <i class="ri-close-fill"></i>
+          </button>
+        </div>
+      </div>
+      <div class="trezo-card-content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="main-label d-block fw-medium text-black">
+                Quantity
+              </label>
+              <input type="number" class="form-control" placeholder="E.g. 100"
+                     [(ngModel)]="usage.quantity">
+              <small *ngIf="errors['quantity']" class="form-text text-danger">{{ errors['quantity'] }}</small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="main-label d-block fw-medium text-black">
+                Entry Date
+              </label>
+              <input type="date" class="form-control"
+                     [(ngModel)]="usage.entryDate">
+              <small *ngIf="errors['entryDate']" class="form-text text-danger">{{ errors['entryDate'] }}</small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="main-label d-block fw-medium text-black">
+                Raw Material
+              </label>
+              <select class="form-control" [(ngModel)]="usage.rawMaterial.id">
+                <option *ngFor="let rawMaterial of rawMaterials" [value]="rawMaterial.id">{{ rawMaterial.name }}</option>
+              </select>
+              <small *ngIf="errors['rawMaterial']" class="form-text text-danger">{{ errors['rawMaterial'] }}</small>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button
+            (click)="toggleUsageForm()"
+            class="warn d-inline-block fw-medium border-0 border-radius transition"
+          >
+            Cancel
+          </button>
+          <button (click)="saveUsage()"
+                  class="primary d-inline-block fw-medium border-0 border-radius transition">
+            <span class="position-relative d-inline-block">
+              <i class="material-symbols-outlined">
+                add
+              </i>
+              Save
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
