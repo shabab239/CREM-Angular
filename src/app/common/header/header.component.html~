@@ -58,7 +58,7 @@
                 >
                     <img src="images/admin.png" class="rounded-circle" alt="admin-image">
                     <span class="fw-semibold text-black">
-                        Shabab
+                        Olivia
                     </span>
                 </button>
                 <div class="profile-menu-dropdown bg-white border-radius" *ngIf="isProfileDropdownOpen">

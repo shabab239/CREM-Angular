@@ -28,6 +28,6 @@ export class CLeadsComponent {
         this.classApplied2 = !this.classApplied2;
     }
 
-
+    
 
 }

@@ -21,34 +21,6 @@
     </ol>
 </div>
 
-<!-- Stats -->
-<div class="row">
-    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
-
-        <!-- Revenue Growth -->
-        <app-revenue-growth />
-
-    </div>
-    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
-
-        <!-- Lead Conversion -->
-        <app-lead-conversion />
-
-    </div>
-    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
-
-        <!-- Total Orders -->
-        <app-total-orders />
-
-    </div>
-    <div class="col-xxl-3 col-xl-6 col-lg-3 col-sm-6">
-
-        <!-- Annual Profit -->
-        <app-annual-profit />
-
-    </div>
-</div>
-
 <!-- Leads -->
 <div class="crm-leads-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
     <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
@@ -78,17 +50,10 @@
             <table class="table mb-0">
                 <thead>
                     <tr>
-                        <th scope="col" class="fw-medium">
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </th>
-                        <th scope="col" class="fw-medium"> ID </th>
-                        <th scope="col" class="fw-medium"> Customer </th>
+                        <th scope="col" class="fw-medium">  </th>
                         <th scope="col" class="fw-medium"> Email </th>
                         <th scope="col" class="fw-medium"> Phone </th>
                         <th scope="col" class="fw-medium"> Created Date </th>
-                        <th scope="col" class="fw-medium"> Company </th>
                         <th scope="col" class="fw-medium"> Lead Source </th>
                         <th scope="col" class="fw-medium"> Status </th>
                         <th scope="col" class="fw-medium"> Action </th>
@@ -97,23 +62,16 @@
                 <tbody>
                     <tr>
                         <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #854 </td>
-                        <td>
                             <div class="customer-info d-flex align-items-center">
                                 <div class="img">
                                     <img alt="user-image" class="rounded-circle" src="images/users/user6.jpg">
                                 </div>
-                                <span class="d-block text-black fw-medium"> Oliver Khan </span>
+                                <span class="d-block text-black fw-medium"> Lead A</span>
                             </div>
                         </td>
                         <td> oliver&#64;trezo.com </td>
                         <td class="text-body"> +1 555-123-4567 </td>
                         <td class="text-body"> 19 Jun 2024 </td>
-                        <td class="text-body"> ABC Corporation </td>
                         <td class="text-body"> Organic </td>
                         <td>
                             <span class="trezo-badge"> Confirmed </span>
@@ -134,23 +92,16 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #853 </td>
-                        <td>
                             <div class="customer-info d-flex align-items-center">
                                 <div class="img">
                                     <img alt="user-image" class="rounded-circle" src="images/users/user7.jpg">
                                 </div>
-                                <span class="d-block text-black fw-medium"> Carolyn Barnes </span>
+                                <span class="d-block text-black fw-medium"> Lead B </span>
                             </div>
                         </td>
                         <td> carolyn&#64;trezo.com </td>
                         <td class="text-body"> +1 555-987-6543 </td>
                         <td class="text-body"> 18 Jun 2024 </td>
-                        <td class="text-body"> XYZ Ltd </td>
                         <td class="text-body"> Social </td>
                         <td>
                             <span class="trezo-badge inProgress"> In Progress </span>
@@ -171,285 +122,19 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #852 </td>
-                        <td>
                             <div class="customer-info d-flex align-items-center">
                                 <div class="img">
                                     <img alt="user-image" class="rounded-circle" src="images/users/user8.jpg">
                                 </div>
-                                <span class="d-block text-black fw-medium"> Donna Miller </span>
+                                <span class="d-block text-black fw-medium"> Lead C </span>
                             </div>
                         </td>
                         <td> donna&#64;trezo.com </td>
                         <td class="text-body"> +1 555-456-7890 </td>
                         <td class="text-body"> 17 Jun 2024 </td>
-                        <td class="text-body"> Tech Solutions </td>
                         <td class="text-body"> Website </td>
                         <td>
                             <span class="trezo-badge pending"> Pending </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #851 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user9.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Barbara Cross </span>
-                            </div>
-                        </td>
-                        <td> barbara&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-369-7878 </td>
-                        <td class="text-body"> 16 Jun 2024 </td>
-                        <td class="text-body"> Global Solutions </td>
-                        <td class="text-body"> Paid </td>
-                        <td>
-                            <span class="trezo-badge rejected"> Rejected </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #850 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user10.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Rebecca Block </span>
-                            </div>
-                        </td>
-                        <td> rebecca&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-658-4488 </td>
-                        <td class="text-body"> 15 Jun 2024 </td>
-                        <td class="text-body"> Acma Industries </td>
-                        <td class="text-body"> Others </td>
-                        <td>
-                            <span class="trezo-badge"> Confirmed </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #849 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user11.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Ramiro McCarty </span>
-                            </div>
-                        </td>
-                        <td> ramiro&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-558-9966 </td>
-                        <td class="text-body"> 14 Jun 2024 </td>
-                        <td class="text-body"> Synergy Ltd </td>
-                        <td class="text-body"> Facebook </td>
-                        <td>
-                            <span class="trezo-badge inProgress"> In Progress </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #848 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user12.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Robert Fairweather </span>
-                            </div>
-                        </td>
-                        <td> robert&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-357-5888 </td>
-                        <td class="text-body"> 13 Jun 2024 </td>
-                        <td class="text-body"> Summit Solutions </td>
-                        <td class="text-body"> Instagram </td>
-                        <td>
-                            <span class="trezo-badge pending"> Pending </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #847 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user13.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Marcelino Haddock </span>
-                            </div>
-                        </td>
-                        <td> marcelino&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-456-8877 </td>
-                        <td class="text-body"> 12 Jun 2024 </td>
-                        <td class="text-body"> Strategies Ltd </td>
-                        <td class="text-body"> X </td>
-                        <td>
-                            <span class="trezo-badge rejected"> Rejected </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #846 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user14.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Thomas Wilson </span>
-                            </div>
-                        </td>
-                        <td> thomas&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-622-4488 </td>
-                        <td class="text-body"> 11 Jun 2024 </td>
-                        <td class="text-body"> Tech Enterprises </td>
-                        <td class="text-body"> LinkedIn </td>
-                        <td>
-                            <span class="trezo-badge"> Confirmed </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0" (click)="toggleClass2()">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #845 </td>
-                        <td>
-                            <div class="customer-info d-flex align-items-center">
-                                <div class="img">
-                                    <img alt="user-image" class="rounded-circle" src="images/users/user15.jpg">
-                                </div>
-                                <span class="d-block text-black fw-medium"> Nathaniel Hulsey </span>
-                            </div>
-                        </td>
-                        <td> nathaniel&#64;trezo.com </td>
-                        <td class="text-body"> +1 555-225-4488 </td>
-                        <td class="text-body"> 10 Jun 2024 </td>
-                        <td class="text-body"> Synetic Solutions </td>
-                        <td class="text-body"> Pinterest </td>
-                        <td>
-                            <span class="trezo-badge inProgress"> In Progress </span>
                         </td>
                         <td>
                             <div class="action-buttons d-flex align-items-center">
@@ -571,36 +256,6 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label class="main-label d-block fw-medium text-black">
-                                Company
-                            </label>
-                            <select class="form-select">
-                                <option selected>
-                                    Select
-                                </option>
-                                <option value="1">
-                                    ABC Corporation
-                                </option>
-                                <option value="2">
-                                    XYZ Ltd
-                                </option>
-                                <option value="3">
-                                    Tech Solutions
-                                </option>
-                                <option value="4">
-                                    Global Solutions
-                                </option>
-                                <option value="5">
-                                    Acma Industries
-                                </option>
-                                <option value="6">
-                                    Synergy Ltd
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="main-label d-block fw-medium text-black">
                                 Lead Source
                             </label>
                             <select class="form-select">
@@ -647,14 +302,6 @@
                                     Rejected
                                 </option>
                             </select>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="main-label d-block fw-medium text-black">
-                                Image
-                            </label>
-                            <file-upload class="file-uploader"></file-upload>
                         </div>
                     </div>
                 </div>
@@ -708,7 +355,7 @@
                             <label class="main-label d-block fw-medium text-black">
                                 Name
                             </label>
-                            <input type="text" class="form-control" value="Olivia">
+                            <input type="text" class="form-control" placeholder="E.g. Olivia">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -716,7 +363,7 @@
                             <label class="main-label d-block fw-medium text-black">
                                 Email
                             </label>
-                            <input type="text" class="form-control" value="olivia&#64;trezo.com">
+                            <input type="text" class="form-control" placeholder="E.g. olivia&#64;trezo.com">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -724,37 +371,7 @@
                             <label class="main-label d-block fw-medium text-black">
                                 Phone
                             </label>
-                            <input type="text" class="form-control" value="+023-244-1342">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="main-label d-block fw-medium text-black">
-                                Company
-                            </label>
-                            <select class="form-select">
-                                <option>
-                                    Select
-                                </option>
-                                <option value="1" selected>
-                                    ABC Corporation
-                                </option>
-                                <option value="2">
-                                    XYZ Ltd
-                                </option>
-                                <option value="3">
-                                    Tech Solutions
-                                </option>
-                                <option value="4">
-                                    Global Solutions
-                                </option>
-                                <option value="5">
-                                    Acma Industries
-                                </option>
-                                <option value="6">
-                                    Synergy Ltd
-                                </option>
-                            </select>
+                            <input type="text" class="form-control" placeholder="E.g. +023-244-1342">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -763,10 +380,10 @@
                                 Lead Source
                             </label>
                             <select class="form-select">
-                                <option>
+                                <option selected>
                                     Select
                                 </option>
-                                <option value="1" selected>
+                                <option value="1">
                                     Organic
                                 </option>
                                 <option value="2">
@@ -790,10 +407,10 @@
                                 Status
                             </label>
                             <select class="form-select">
-                                <option>
+                                <option selected>
                                     Select
                                 </option>
-                                <option value="1" selected>
+                                <option value="1">
                                     Confirmed
                                 </option>
                                 <option value="2">
@@ -808,18 +425,10 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="main-label d-block fw-medium text-black">
-                                Image
-                            </label>
-                            <file-upload class="file-uploader"></file-upload>
-                        </div>
-                    </div>
                 </div>
                 <div class="btn-box">
                     <button
-                        (click)="toggleClass()"
+                        (click)="toggleClass2()"
                         class="warn d-inline-block fw-medium border-0 border-radius transition"
                     >
                         Cancel
@@ -829,7 +438,7 @@
                             <i class="material-symbols-outlined">
                                 add
                             </i>
-                            Save
+                            Update
                         </span>
                     </button>
                 </div>

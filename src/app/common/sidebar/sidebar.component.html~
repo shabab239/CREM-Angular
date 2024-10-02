@@ -54,8 +54,34 @@
                             <div class="accordion-body">
                                 <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
                                     <li class="sidemenu-item">
+                                        <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            eCommerce
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/crm" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            CRM
+                                            <span class="trezo-badge d-inline-block position-relative">
+                                                Hot
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
                                         <a routerLink="/dashboard/project-management" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Project Management
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            LMS
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/helpdesk" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            HelpDesk
+                                            <span class="trezo-badge d-inline-block position-relative style-two">
+                                                Top
+                                            </span>
                                         </a>
                                     </li>
                                 </ul>

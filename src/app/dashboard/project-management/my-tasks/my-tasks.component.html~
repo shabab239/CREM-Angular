@@ -71,7 +71,7 @@
                         <td>
                             <a routerLink="/dashboard/project-management-page/" class="fw-medium"> Piling </a>
                         </td>
-                        <td>10 Jan 2025</td>
+                        <td>10 Jan 2024</td>
                         <td>
                             <span class="trezo-badge"> Completed </span>
                         </td>
@@ -85,7 +85,7 @@
                         <td>
                             <a routerLink="/dashboard/project-management-page/" class="fw-medium"> Slab </a>
                         </td>
-                        <td>05 Feb 2025</td>
+                        <td>05 Feb 2024</td>
                         <td>
                             <span class="trezo-badge inProgress"> In Progress </span>
                         </td>
