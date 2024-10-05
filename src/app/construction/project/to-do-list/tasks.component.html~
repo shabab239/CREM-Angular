@@ -1,0 +1,223 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        To Do List
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Apps
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            To Do List
+        </li>
+    </ol>
+</div>
+
+<!-- To Do List -->
+<div
+    class="apps-to-do-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <form class="search-box position-relative">
+                <label class="text-black">
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search d-block w-100 border-radius" placeholder="Search task here.....">
+            </form>
+        </div>
+        <div class="trezo-card-subtitle">
+            <button class="add-btn d-inline-block transition fw-medium border-radius" type="button"
+                    (click)="toggleClass()">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Add New Task
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                <tr>
+                    <th scope="col" class="fw-medium">
+                        SL
+                    </th>
+                    <th scope="col" class="fw-medium">
+                        Description
+                    </th>
+                    <th scope="col" class="fw-medium">
+                        Start Date
+                    </th>
+                    <th scope="col" class="fw-medium">
+                        End Date
+                    </th>
+                    <th scope="col" class="fw-medium">
+                        Assigned To
+                    </th>
+                    <th scope="col" class="fw-medium">
+                        Status
+                    </th>
+                    <th scope="col" class="fw-medium">
+                        Action
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let task of tasks; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ task.description }}</td>
+                    <td>{{ task.startDate | date }}</td>
+                    <td>{{ task.endDate | date }}</td>
+                    <td>{{ getEmployeesString(task.employees) }}</td>
+                    <td>{{ task.status }}</td>
+                    <td>
+                        <div class="action-buttons d-flex align-items-center">
+                            <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> visibility </i>
+                            </button>
+                            <button (click)="toggleClass(task.id)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> edit </i>
+                            </button>
+                            <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> delete </i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied"
+>
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        <ng-container *ngIf="task.id">
+                            Update Task
+                        </ng-container>
+                        <ng-container *ngIf="!task.id">
+                            Add New Task
+                        </ng-container>
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleClass()"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Description
+                            </label>
+                            <textarea class="form-control" [(ngModel)]="task.description" name="description" rows="5"></textarea>
+                            <small *ngIf="errors['description']"
+                                   class="form-text text-danger">{{ errors['description'] }}</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Start Date
+                            </label>
+                            <input type="date" class="form-control" [(ngModel)]="task.startDate">
+                            <small *ngIf="errors['startDate']"
+                                   class="form-text text-danger">{{ errors['startDate'] }}</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                End Date
+                            </label>
+                            <input type="date" class="form-control" [(ngModel)]="task.endDate">
+                            <small *ngIf="errors['startDate']"
+                                   class="form-text text-danger">{{ errors['startDate'] }}</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Status
+                            </label>
+                            <select class="form-select" [(ngModel)]="task.status">
+                                <option value="PENDING">Pending</option>
+                                <option value="IN_PROGRESS">In Progress</option>
+                                <option value="COMPLETED">Completed</option>
+                            </select>
+                            <small *ngIf="errors['startDate']"
+                                   class="form-text text-danger">{{ errors['startDate'] }}</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Employees
+                            </label>
+                            <select multiple class="form-select" [(ngModel)]="task.employees">
+                                <option *ngFor="let employee of employees" [value]="employee">{{ employee.name }}
+                                </option>
+                            </select>
+                            <small *ngIf="errors['startDate']"
+                                   class="form-text text-danger">{{ errors['startDate'] }}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleClass()"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button (click)="submitTask()" class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            <ng-container *ngIf="task.id">
+                                Update
+                            </ng-container>
+                            <ng-container *ngIf="!task.id">
+                                Create
+                            </ng-container>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -138,10 +138,6 @@
                         <span class="display-6">End Date:</span> {{ stage.endDate }}
                     </p>
                     <p>
-                        <button type="button" routerLink="/dashboard/project/tasks/{{stage.id}}"
-                                class="btn btn-sm btn-outline-secondary me-2">
-                            <i class="ri-group-fill"></i> Tasks
-                        </button>
                         <button type="button" routerLink="/dashboard/raw-material-usage/{{stage.id}}"
                                 class="btn btn-sm btn-outline-secondary me-2">
                             <i class="ri-group-fill"></i> Material Usage

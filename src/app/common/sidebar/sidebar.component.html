@@ -13,7 +13,7 @@
         <a routerLink="/dashboard" class="d-flex align-items-center position-relative">
             <img src="images/logo-icon.svg" alt="logo-icon">
             <span class="fw-bold text-black position-relative">
-                CREMS
+                Trezo
             </span>
         </a>
     </div>
@@ -54,8 +54,34 @@
                             <div class="accordion-body">
                                 <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
                                     <li class="sidemenu-item">
+                                        <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            eCommerce
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/crm" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            CRM
+                                            <span class="trezo-badge d-inline-block position-relative">
+                                                Hot
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
                                         <a routerLink="/dashboard/project-management" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Project Management
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            LMS
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/helpdesk" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            HelpDesk
+                                            <span class="trezo-badge d-inline-block position-relative style-two">
+                                                Top
+                                            </span>
                                         </a>
                                     </li>
                                 </ul>
@@ -115,6 +141,298 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(7)"
+                            [ngClass]="{ 'open': isSectionOpen(7) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                auto_stories
+                            </i>
+                            <span class="title">
+                                LMS
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(7) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Courses List
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms-page/course-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Course Details
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms-page/lesson-preview" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Lesson Preview
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms-page/create-course" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Create Course
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms-page/edit-course" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Edit Course
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/lms-page/instructors" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Instructors
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(8)"
+                            [ngClass]="{ 'open': isSectionOpen(8) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                support
+                            </i>
+                            <span class="title">
+                                HelpDesk
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(8) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/helpdesk-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Tickets
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/helpdesk-page/ticket-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Ticket Details
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/helpdesk-page/agents" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Agents
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/helpdesk-page/reports" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Reports
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(9)"
+                            [ngClass]="{ 'open': isSectionOpen(9) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                local_activity
+                            </i>
+                            <span class="title">
+                                Events
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(9) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/events" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Events Grid
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/events/events-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Events List
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/events/event-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Event Details
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/events/create-an-event" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Create An Event
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/events/edit-an-event" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Edit An Event
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(10)"
+                            [ngClass]="{ 'open': isSectionOpen(10) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                share
+                            </i>
+                            <span class="title">
+                                Social
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(10) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/social" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/social/settings" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Settings
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(11)"
+                            [ngClass]="{ 'open': isSectionOpen(11) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                content_paste
+                            </i>
+                            <span class="title">
+                                Invoices
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(11) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/invoices" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Invoices
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/invoices/invoice-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Invoice Details
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/invoices/create-invoice" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Create Invoice
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/invoices/edit-invoice" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Edit Invoice
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(12)"
+                            [ngClass]="{ 'open': isSectionOpen(12) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                person
+                            </i>
+                            <span class="title">
+                                Users
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(12) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/users" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Team Members
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/users/users-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Users List
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/users/add-user" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Add User
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(13)"
+                            [ngClass]="{ 'open': isSectionOpen(13) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                account_box
+                            </i>
+                            <span class="title">
+                                Profile
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(13) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/profile" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            User Profile
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/profile/teams" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Teams
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/profile/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Projects
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/starter" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                star_border
+                            </i>
+                            <span class="title">
+                                Starter
+                            </span>
+                        </a>
                     </div>
                     <span class="sub-title d-block fw-medium text-uppercase">
                         ACCOUNTING
@@ -192,6 +510,696 @@
                                             Deals
                                         </a>
                                     </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="sub-title d-block fw-medium text-uppercase">
+                        MODULES
+                    </span>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(14)"
+                            [ngClass]="{ 'open': isSectionOpen(14) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                emoji_emotions
+                            </i>
+                            <span class="title">
+                                Icons
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(14) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/icons" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Material Symbols
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/icons/remixicon" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            RemixIcon
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(15)"
+                            [ngClass]="{ 'open': isSectionOpen(15) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                qr_code_scanner
+                            </i>
+                            <span class="title">
+                                UI Elements
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(15) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Alerts
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/avatars" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Avatars
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/accordion" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Accordion
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/badges" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Badges
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/buttons" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Buttons
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/button-group" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Button Group
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/breadcrumb" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Breadcrumb
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/borders" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Borders
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/card" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Card
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/carousel" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Carousel
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/close-button" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Close Button
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/colored-links" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Colored Links
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/color-picker" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Color Picker
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/color-background" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Color Background
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/dropdowns" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Dropdowns
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/figures" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Figures
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/images" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Images
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/list-group" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            List Group
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/text" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Text
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/modal" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Modal
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/navs-tabs" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Navs & Tabs
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/offcanvas" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Offcanvas
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/pagination" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Pagination
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/progress" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Progress
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/shadows" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Shadows
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/ratio" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Ratio
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/spinners" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Spinners
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/stacks" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Stacks
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/table" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Table
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/toasts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Toasts
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/typography" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Typography
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/videos" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Videos
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/ui-kit/utilities" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            _Utilities
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/tables" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                table_chart
+                            </i>
+                            <span class="title">
+                                Tables
+                            </span>
+                        </a>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(16)"
+                            [ngClass]="{ 'open': isSectionOpen(16) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                forum
+                            </i>
+                            <span class="title">
+                                Forms
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(16) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Form Controls
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/select" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Select
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/checks-radios" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Checks & Radios
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/range" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Range
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/input-group" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Input Group
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/floating-labels" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Floating Labels
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/layout" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Layout
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/elements" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Elements
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/editors" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Editors
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/forms/file-uploader" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            File Uploader
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(17)"
+                            [ngClass]="{ 'open': isSectionOpen(17) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                pie_chart
+                            </i>
+                            <span class="title">
+                                Charts
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(17) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Line
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/area" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Area
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/column" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Column
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/mixed" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Mixed
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/radialbar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            RadialBar
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/radar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Radar
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/pie" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Pie
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/polar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Polar
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/charts/more" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            More
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(18)"
+                            [ngClass]="{ 'open': isSectionOpen(18) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                lock_open
+                            </i>
+                            <span class="title">
+                                Authentication
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(18) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Sign In
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication/sign-up" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Sign Up
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication/forgot-password" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Forgot Password
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication/reset-password" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Reset Password
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication/confirm-email" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Confirm Email
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication/lock-screen" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Lock Screen
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/authentication/logout" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(19)"
+                            [ngClass]="{ 'open': isSectionOpen(19) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                content_copy
+                            </i>
+                            <span class="title">
+                                Extra Pages
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(19) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/pricing" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/timeline" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Timeline
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/faq" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/gallery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Gallery
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/testimonials" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Testimonials
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/search" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Search
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/coming-soon" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Coming Soon
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/blank-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Blank Page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(20)"
+                            [ngClass]="{ 'open': isSectionOpen(20) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                error
+                            </i>
+                            <span class="title">
+                                Errors
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(20) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/not-found" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            404 Error Page
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/internal-error" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Internal Error
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/widgets" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                widgets
+                            </i>
+                            <span class="title">
+                                Widgets
+                            </span>
+                        </a>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/maps" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                map
+                            </i>
+                            <span class="title">
+                                Maps
+                            </span>
+                        </a>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/notifications" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                notifications
+                            </i>
+                            <span class="title">
+                                Notifications
+                            </span>
+                        </a>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/members" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                people
+                            </i>
+                            <span class="title">
+                                Members
+                            </span>
+                        </a>
+                    </div>
+                    <span class="sub-title d-block fw-medium text-uppercase">
+                        OTHERS
+                    </span>
+                    <div class="accordion-item border-radius border-0">
+                        <a routerLink="/dashboard/my-profile" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="material-symbols-outlined">
+                                account_circle
+                            </i>
+                            <span class="title">
+                                My Profile
+                            </span>
+                        </a>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(21)"
+                            [ngClass]="{ 'open': isSectionOpen(21) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                settings
+                            </i>
+                            <span class="title">
+                                Settings
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(21) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/settings" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Account Settings
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/settings/change-password" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Change Password
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/settings/connections" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Connections
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/settings/privacy-policy" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/settings/terms-conditions" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Terms & Conditions
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(22)"
+                            [ngClass]="{ 'open': isSectionOpen(22) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                unfold_more
+                            </i>
+                            <span class="title">
+                                Multi Level Menu
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(22) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a href="javascript:void(0)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            First
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <button
+                                            type="button"
+                                            (click)="toggleSection2(0)"
+                                            [ngClass]="{ 'open': isSectionOpen2(0) }"
+                                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                                        >
+                                            Second
+                                            <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center">
+                                                2
+                                            </span>
+                                        </button>
+                                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen2(0) }">
+                                            <div class="accordion-body">
+                                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                                    <li class="sidemenu-item">
+                                                        <a href="javascript:void(0)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                                            Second 1
+                                                        </a>
+                                                    </li>
+                                                    <li class="sidemenu-item">
+                                                        <button
+                                                            type="button"
+                                                            (click)="toggleSection3(0)"
+                                                            [ngClass]="{ 'open': isSectionOpen3(0) }"
+                                                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                                                        >
+                                                            Second 2
+                                                        </button>
+                                                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen3(0) }">
+                                                            <div class="accordion-body">
+                                                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                                                    <li class="sidemenu-item">
+                                                                        <a href="javascript:void(0)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                                                            Third 1
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidemenu-item">
+                                        <a href="javascript:void(0)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Third
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

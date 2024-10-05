@@ -6,7 +6,7 @@ import {ProjectManagementComponent} from './dashboard/project-management/project
 import {LmsComponent} from './dashboard/lms/lms.component';
 import {HelpdeskComponent} from './dashboard/helpdesk/helpdesk.component';
 import {AppsComponent} from './apps/apps.component';
-import {ToDoListComponent} from './apps/to-do-list/to-do-list.component';
+import {TasksComponent} from './construction/project/to-do-list/tasks.component';
 import {CalendarComponent} from './apps/calendar/calendar.component';
 import {ContactsComponent} from './apps/contacts/contacts.component';
 import {KanbanBoardComponent} from './apps/kanban-board/kanban-board.component';
@@ -240,8 +240,7 @@ export const routes: Routes = [
                 path: 'apps',
                 component: AppsComponent,
                 children: [
-                    {path: '', component: ToDoListComponent},
-                    {path: 'calendar', component: CalendarComponent},
+                    {path: '', component: CalendarComponent},
                     {path: 'contacts', component: ContactsComponent},
                     {path: 'chat', component: ChatComponent},
                     {
@@ -330,6 +329,7 @@ export const routes: Routes = [
                     {path: 'unit-form/:id', component: UnitFormComponent},
                     {path: 'stages/:stageOf/:stageOfId', component: StagesComponent},
                     {path: 'invoice/:groupTransactionId', component: InvoiceComponent},
+                    {path: 'tasks/:stageId', component: TasksComponent},
                     {path: 'clients', component: PmClientsComponent},
                     {path: 'teams', component: PmTeamsComponent},
                     {path: 'users', component: UsersComponent},
