@@ -9,7 +9,7 @@ import {StageStatusOptions} from "../../project/stage/stage.model";
 import {FormsModule} from "@angular/forms";
 import {WorkerAttendance} from "../worker.attendance.model";
 import {TransactionService} from "../../../accounting/transaction.service";
-import {Transaction} from "../../../accounting/transaction.model";
+import {Transaction} from "../../../accounting/model/transaction.model";
 
 @Component({
     selector: 'app-workers',

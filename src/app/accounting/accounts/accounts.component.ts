@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Account} from '../account.model';
+import {Account} from '../model/account.model';
 import {AccountService} from '../account.service';
 import {ApiResponse} from '../../util/api.response.model';
 import {DatePipe, NgForOf} from '@angular/common';

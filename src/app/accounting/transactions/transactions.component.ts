@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Transaction} from "../transaction.model";
+import {Transaction} from "../model/transaction.model";
 import {TransactionService} from "../transaction.service";
 import {ApiResponse} from "../../util/api.response.model";
 import {DatePipe, NgForOf} from "@angular/common";

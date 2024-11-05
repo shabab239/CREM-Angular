@@ -1,0 +1,191 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Project
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Accounting
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Ledger
+        </li>
+    </ol>
+</div>
+
+<div class="projects-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">
+                All Ledger Heads
+            </h5>
+        </div>
+        <div class="trezo-card-subtitle">
+            <button (click)="toggleLedgerHeadForm(false)" class="add-btn d-inline-block transition fw-medium border-radius">
+                <span class="d-inline-block position-relative">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Create New Ledger Head
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <div class="basic-table table-responsive">
+            <table class="table mb-0">
+                <thead>
+                <tr>
+                    <th scope="col" class="fw-medium"> SL </th>
+                    <th scope="col" class="fw-medium"> Name </th>
+                    <th scope="col" class="fw-medium"> Type </th>
+                    <th scope="col" class="fw-medium">  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let ledgerHead of ledgerHeads; let i = index">
+                    <td class="text-body"> {{ i + 1 }} </td>
+                    <td class="text-body"> {{ ledgerHead.name }} </td>
+                    <td class="text-body"> {{ ledgerHead.type }} </td>
+                    <td>
+                        <div class="action-buttons d-flex align-items-center">
+                            <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> visibility </i>
+                            </button>
+                            <button (click)="toggleLedgerHeadForm(false, ledgerHead.id)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                <i class="material-symbols-outlined"> edit </i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="trezo-card-pagination">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <p class="mb-0">
+                    Showing {{ ledgerHeads.length }} of {{ ledgerHeads.length }} result(s)
+                </p>
+                <ol class="list-unstyled mb-0 p-0">
+                    <li class="d-inline-block">
+                        <a class="prev" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_left
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink="." class="active">
+                            1
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            2
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            3
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a routerLink=".">
+                            4
+                        </a>
+                    </li>
+                    <li class="d-inline-block">
+                        <a class="next" routerLink=".">
+                            <span class="opacity-0">
+                                0
+                            </span>
+                            <i class="material-symbols-outlined">
+                                chevron_right
+                            </i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add New Popup -->
+<div class="add-new-popup" [class.active]="showNewLedgerHead">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">
+                        Add New Ledger Head
+                    </h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button
+                        (click)="toggleLedgerHeadForm(false)"
+                        class="p-0 border-0 lh-1 bg-transparent transition"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Head Name
+                                </label>
+                                <input type="text" class="form-control" [(ngModel)]="ledgerHead.name" name="name">
+                                <small *ngIf="errors['name']"
+                                       class="form-text text-danger">{{ errors['name'] }}</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="main-label d-block fw-medium text-black">
+                                    Head Type
+                                </label>
+                                <select class="form-select" [(ngModel)]="ledgerHead.type" name="type">
+                                    <option *ngFor="let type of headTypeOptions" [value]="type">
+                                        {{ type }}
+                                    </option>
+                                </select>
+                                <small *ngIf="errors['type']" class="form-text text-danger">{{ errors['type'] }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        (click)="toggleLedgerHeadForm(true)"
+                        class="warn d-inline-block fw-medium border-0 border-radius transition"
+                    >
+                        Cancel
+                    </button>
+                    <button (click)="saveLedgerHead()"
+                            class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            <i class="material-symbols-outlined">
+                                add
+                            </i>
+                            Create
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Transaction} from './transaction.model';
+import {Transaction} from './model/transaction.model';
 import {API_URLS} from "../util/urls";
 import {ApiResponse} from "../util/api.response.model";
 

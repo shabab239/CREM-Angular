@@ -2,7 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {DatePipe, NgClass, NgForOf, NgIf} from '@angular/common';
 import { FileUploadModule } from '@iplab/ngx-file-upload';
-import {Transaction} from "../../accounting/transaction.model";
+import {Transaction} from "../../accounting/model/transaction.model";
 import {TransactionService} from "../../accounting/transaction.service";
 import {ApiResponse} from "../../util/api.response.model";
 import {AlertUtil} from "../../util/alert.util";

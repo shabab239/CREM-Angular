@@ -213,6 +213,7 @@ import {CrmPageComponent} from "./crm-page/crm-page.component";
 import {CCustomersComponent} from "./crm-page/c-customers/c-customers.component";
 import {CLeadsComponent} from "./crm-page/c-leads/c-leads.component";
 import {InvoiceComponent} from "./construction/project/unit/invoice/invoice.component";
+import {LedgerHeadsComponent} from "./accounting/ledger-heads/ledger-heads.component";
 
 export const routes: Routes = [
     {
@@ -347,6 +348,8 @@ export const routes: Routes = [
             {path: 'booking-view/:unitId', component: BookingViewComponent,},
             {path: 'transactions', component: TransactionsComponent,},
             {path: 'accounts', component: AccountsComponent,},
+            {path: 'ledger', component: LedgerHeadsComponent,},
+            {path: 'ledger-heads', component: LedgerHeadsComponent,},
             {
                 path: 'lms-page',
                 component: LmsPageComponent,

@@ -17,4 +17,5 @@ export const API_URLS = {
     payment: `${baseUrl}/payment`,
     account: `${baseUrl}/account`,
     transaction: `${baseUrl}/transaction`,
+    ledger: `${baseUrl}/ledger`,
 };

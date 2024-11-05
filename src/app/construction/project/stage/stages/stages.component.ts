@@ -104,6 +104,7 @@ export class StagesComponent implements OnInit {
                     this.showNewStage = false;
                     this.newStage = new ConstructionStage();
                     this.getStages();
+                    AlertUtil.success(response);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);

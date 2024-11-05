@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {ApiResponse} from "../util/api.response.model";
-import {Account} from "./account.model";
+import {Account} from "./model/account.model";
 import {API_URLS} from "../util/urls";
 
 @Injectable({

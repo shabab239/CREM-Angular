@@ -10,7 +10,7 @@ import {UserService} from "../../../../hr/user.service";
 import {ApiResponse} from "../../../../util/api.response.model";
 import {AlertUtil} from "../../../../util/alert.util";
 import {TransactionService} from "../../../../accounting/transaction.service";
-import {Transaction} from "../../../../accounting/transaction.model";
+import {Transaction} from "../../../../accounting/model/transaction.model";
 import {NgForOf} from "@angular/common";
 
 @Component({
