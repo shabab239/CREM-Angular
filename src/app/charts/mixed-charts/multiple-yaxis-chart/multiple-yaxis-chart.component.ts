@@ -208,10 +208,6 @@ export class MultipleYaxisChartComponent {
                     vertical: 0
                 },
                 markers: {
-                    width: 9,
-                    height: 9,
-                    offsetX: -2,
-                    offsetY: -.5
                 }
             }
         };

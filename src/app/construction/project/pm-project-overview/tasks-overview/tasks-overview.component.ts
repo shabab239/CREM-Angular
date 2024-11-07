@@ -75,11 +75,6 @@ export class TasksOverviewComponent {
                     colors: '#64748B'
                 },
                 markers: {
-                    width: 9,
-                    radius: 2,
-                    height: 9,
-                    offsetX: -2,
-                    offsetY: -.1,
                 }
             }
         };

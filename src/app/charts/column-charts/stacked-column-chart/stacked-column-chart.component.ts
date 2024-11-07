@@ -119,10 +119,6 @@ export class StackedColumnChartComponent {
                     vertical: 5
                 },
                 markers: {
-                    width: 9,
-                    height: 9,
-                    offsetX: -2,
-                    offsetY: -.5
                 }
             },
             fill: {

@@ -154,10 +154,6 @@ export class ProjectsProgressComponent {
                     colors: '#64748B'
                 },
                 markers: {
-                    width: 9,
-                    height: 9,
-                    offsetX: -2,
-                    offsetY: -.5
                 }
             }
         };
