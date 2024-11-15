@@ -3,7 +3,7 @@ import {Account} from "./account.model";
 export class Transaction {
     id: number;
     amount: number;
-    transactionDate: Date;
+    date: Date;
     groupTransactionId: string;
     particular: string;
     type: TransactionType;

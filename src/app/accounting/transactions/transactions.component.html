@@ -48,7 +48,7 @@
                 <tr *ngFor="let transaction of transactions; let i = index">
                     <td class="text-body"> {{ i + 1 }}</td>
                     <td class="text-body"> {{ transaction.amount }}</td>
-                    <td class="text-body"> {{ transaction.transactionDate | date }}</td>
+                    <td class="text-body"> {{ transaction.date | date }}</td>
                     <td class="text-body"> {{ transaction.groupTransactionId }}</td>
                     <td class="text-body"> {{ transaction.particular }}</td>
                     <td class="text-body"> {{ transaction.type }}</td>
