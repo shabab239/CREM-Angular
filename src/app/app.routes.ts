@@ -5,27 +5,7 @@ import {CrmComponent} from './dashboard/crm/crm.component';
 import {ProjectManagementComponent} from './dashboard/project-management/project-management.component';
 import {LmsComponent} from './dashboard/lms/lms.component';
 import {HelpdeskComponent} from './dashboard/helpdesk/helpdesk.component';
-import {AppsComponent} from './apps/apps.component';
 import {TasksComponent} from './construction/project/to-do-list/tasks.component';
-import {CalendarComponent} from './apps/calendar/calendar.component';
-import {ContactsComponent} from './apps/contacts/contacts.component';
-import {KanbanBoardComponent} from './apps/kanban-board/kanban-board.component';
-import {ChatComponent} from './apps/chat/chat.component';
-import {FileManagerComponent} from './apps/file-manager/file-manager.component';
-import {MyDriveComponent} from './apps/file-manager/my-drive/my-drive.component';
-import {AssetsComponent} from './apps/file-manager/assets/assets.component';
-import {PersonalComponent} from './apps/file-manager/personal/personal.component';
-import {ApplicationsComponent} from './apps/file-manager/applications/applications.component';
-import {DocumentsComponent} from './apps/file-manager/documents/documents.component';
-import {MediaComponent} from './apps/file-manager/media/media.component';
-import {RecentsComponent} from './apps/file-manager/recents/recents.component';
-import {ImportantComponent} from './apps/file-manager/important/important.component';
-import {EmailComponent} from './apps/email/email.component';
-import {InboxComponent} from './apps/email/inbox/inbox.component';
-import {PrimaryEmailsComponent} from './apps/email/inbox/primary-emails/primary-emails.component';
-import {PromotionsEmailsComponent} from './apps/email/inbox/promotions-emails/promotions-emails.component';
-import {ComposeComponent} from './apps/email/compose/compose.component';
-import {ReadComponent} from './apps/email/read/read.component';
 import {EcommercePageComponent} from './pages/ecommerce-page/ecommerce-page.component';
 import {EProductsGridComponent} from './pages/ecommerce-page/e-products-grid/e-products-grid.component';
 import {EProductsListComponent} from './pages/ecommerce-page/e-products-list/e-products-list.component';
@@ -92,19 +72,6 @@ import {ProfilePageComponent} from './pages/profile-page/profile-page.component'
 import {PUserProfileComponent} from './pages/profile-page/p-user-profile/p-user-profile.component';
 import {PTeamsComponent} from './pages/profile-page/p-teams/p-teams.component';
 import {PProjectsComponent} from './pages/profile-page/p-projects/p-projects.component';
-import {IconsComponent} from './icons/icons.component';
-import {MaterialSymbolsComponent} from './icons/material-symbols/material-symbols.component';
-import {RemixiconComponent} from './icons/remixicon/remixicon.component';
-import {ChartsComponent} from './charts/charts.component';
-import {LineChartsComponent} from './charts/line-charts/line-charts.component';
-import {AreaChartsComponent} from './charts/area-charts/area-charts.component';
-import {ColumnChartsComponent} from './charts/column-charts/column-charts.component';
-import {MixedChartsComponent} from './charts/mixed-charts/mixed-charts.component';
-import {RadialbarChartsComponent} from './charts/radialbar-charts/radialbar-charts.component';
-import {RadarChartsComponent} from './charts/radar-charts/radar-charts.component';
-import {PieChartsComponent} from './charts/pie-charts/pie-charts.component';
-import {PolarChartsComponent} from './charts/polar-charts/polar-charts.component';
-import {MoreChartsComponent} from './charts/more-charts/more-charts.component';
 import {AuthenticationComponent} from './authentication/authentication.component';
 import {SignInComponent} from './authentication/sign-in/sign-in.component';
 import {SignUpComponent} from './authentication/sign-up/sign-up.component';
@@ -126,32 +93,12 @@ import {BlankPageComponent} from './pages/blank-page/blank-page.component';
 import {PricingPageComponent} from './pages/pricing-page/pricing-page.component';
 import {TimelinePageComponent} from './pages/timeline-page/timeline-page.component';
 import {FaqPageComponent} from './pages/faq-page/faq-page.component';
-import {SettingsComponent} from './settings/settings.component';
-import {AccountSettingsComponent} from './settings/account-settings/account-settings.component';
-import {ChangePasswordComponent} from './settings/change-password/change-password.component';
-import {ConnectionsComponent} from './settings/connections/connections.component';
-import {PrivacyPolicyComponent} from './settings/privacy-policy/privacy-policy.component';
-import {TermsConditionsComponent} from './settings/terms-conditions/terms-conditions.component';
-import {MyProfileComponent} from './my-profile/my-profile.component';
-import {WidgetsComponent} from './widgets/widgets.component';
-import {TablesComponent} from './tables/tables.component';
 import {FrontPagesComponent} from './front-pages/front-pages.component';
 import {HomeComponent} from './front-pages/home/home.component';
 import {FeaturesComponent} from './front-pages/features/features.component';
 import {TeamComponent} from './front-pages/team/team.component';
 import {FaqComponent} from './front-pages/faq/faq.component';
 import {ContactComponent} from './front-pages/contact/contact.component';
-import {FormsComponent} from './forms/forms.component';
-import {FileUploaderComponent} from './forms/file-uploader/file-uploader.component';
-import {EditorsComponent} from './forms/editors/editors.component';
-import {FormControlsComponent} from './forms/form-controls/form-controls.component';
-import {SelectComponent} from './forms/select/select.component';
-import {ChecksRadiosComponent} from './forms/checks-radios/checks-radios.component';
-import {RangeComponent} from './forms/range/range.component';
-import {InputGroupComponent} from './forms/input-group/input-group.component';
-import {FloatingLabelsComponent} from './forms/floating-labels/floating-labels.component';
-import {LayoutComponent} from './forms/layout/layout.component';
-import {ElementsComponent} from './forms/elements/elements.component';
 import {AuthGuard} from "./authentication/auth.guard";
 import {BuildingsComponent} from "./construction/project/building/buildings/buildings.component";
 import {BuildingFormComponent} from "./construction/project/building/building-form/building-form.component";
@@ -159,40 +106,6 @@ import {FloorFormComponent} from "./construction/project/floor/floor-form/floor-
 import {FloorsComponent} from "./construction/project/floor/floors/floors.component";
 import {UnitsComponent} from "./construction/project/unit/units/units.component";
 import {UnitFormComponent} from "./construction/project/unit/unit-form/unit-form.component";
-import {UiElementsComponent} from "./ui-elements/ui-elements.component";
-import {AlertsComponent} from "./ui-elements/alerts/alerts.component";
-import {AvatarsComponent} from "./ui-elements/avatars/avatars.component";
-import {AccordionComponent} from "./ui-elements/accordion/accordion.component";
-import {BadgesComponent} from "./ui-elements/badges/badges.component";
-import {ButtonsComponent} from "./ui-elements/buttons/buttons.component";
-import {ButtonGroupComponent} from "./ui-elements/button-group/button-group.component";
-import {BreadcrumbComponent} from "./ui-elements/breadcrumb/breadcrumb.component";
-import {BordersComponent} from "./ui-elements/borders/borders.component";
-import {CardComponent} from "./ui-elements/card/card.component";
-import {CarouselComponent} from "./ui-elements/carousel/carousel.component";
-import {CloseButtonComponent} from "./ui-elements/close-button/close-button.component";
-import {ColoredLinksComponent} from "./ui-elements/colored-links/colored-links.component";
-import {ColorPickerComponent} from "./ui-elements/color-picker/color-picker.component";
-import {ColorBackgroundComponent} from "./ui-elements/color-background/color-background.component";
-import {DropdownsComponent} from "./ui-elements/dropdowns/dropdowns.component";
-import {FiguresComponent} from "./ui-elements/figures/figures.component";
-import {ImagesComponent} from "./ui-elements/images/images.component";
-import {ListGroupComponent} from "./ui-elements/list-group/list-group.component";
-import {TextComponent} from "./ui-elements/text/text.component";
-import {ModalComponent} from "./ui-elements/modal/modal.component";
-import {NavsTabsComponent} from "./ui-elements/navs-tabs/navs-tabs.component";
-import {OffcanvasComponent} from "./ui-elements/offcanvas/offcanvas.component";
-import {PaginationComponent} from "./ui-elements/pagination/pagination.component";
-import {ProgressComponent} from "./ui-elements/progress/progress.component";
-import {ShadowsComponent} from "./ui-elements/shadows/shadows.component";
-import {RatioComponent} from "./ui-elements/ratio/ratio.component";
-import {SpinnersComponent} from "./ui-elements/spinners/spinners.component";
-import {StacksComponent} from "./ui-elements/stacks/stacks.component";
-import {TableComponent} from "./ui-elements/table/table.component";
-import {ToastsComponent} from "./ui-elements/toasts/toasts.component";
-import {TypographyComponent} from "./ui-elements/typography/typography.component";
-import {VideosComponent} from "./ui-elements/videos/videos.component";
-import {UtilitiesComponent} from "./ui-elements/utilities/utilities.component";
 import {WorkersComponent} from "./construction/worker/workers/workers.component";
 import {WorkerFormComponent} from "./construction/worker/worker-form/worker-form.component";
 import {WorkerAttendanceComponent} from "./construction/worker/worker-attendance/worker-attendance.component";
@@ -209,11 +122,16 @@ import {
 import {BookingViewComponent} from "./construction/project/unit/booking-view/booking-view.component";
 import {TransactionsComponent} from "./accounting/transactions/transactions.component";
 import {AccountsComponent} from "./accounting/accounts/accounts.component";
-import {CrmPageComponent} from "./crm-page/crm-page.component";
-import {CCustomersComponent} from "./crm-page/c-customers/c-customers.component";
-import {CLeadsComponent} from "./crm-page/c-leads/c-leads.component";
 import {InvoiceComponent} from "./construction/project/unit/invoice/invoice.component";
 import {LedgerHeadsComponent} from "./accounting/ledger-heads/ledger-heads.component";
+import {CampaignsComponent} from "./marketing/campaigns/campaigns.component";
+import {ConversationsComponent} from "./marketing/conversations/conversations.component";
+import {LeadFormComponent} from "./marketing/lead-form/lead-form.component";
+import {CampaignFormComponent} from "./marketing/campaign-form/campaign-form.component";
+import {ConversationFormComponent} from "./marketing/conversation-form/conversation-form.component";
+import {MarketingComponent} from "./marketing/marketing.component";
+import {CustomersComponent} from "./marketing/customers/customers.component";
+import {LeadsComponent} from "./marketing/leads/leads.component";
 
 export const routes: Routes = [
     {
@@ -237,47 +155,6 @@ export const routes: Routes = [
             {path: 'project-management', component: ProjectManagementComponent},
             {path: 'lms', component: LmsComponent},
             {path: 'helpdesk', component: HelpdeskComponent},
-            {
-                path: 'apps',
-                component: AppsComponent,
-                children: [
-                    {path: '', component: CalendarComponent},
-                    {path: 'contacts', component: ContactsComponent},
-                    {path: 'chat', component: ChatComponent},
-                    {
-                        path: 'email',
-                        component: EmailComponent,
-                        children: [
-                            {
-                                path: '',
-                                component: InboxComponent,
-                                children: [
-                                    {path: '', component: PrimaryEmailsComponent},
-                                    {path: 'promotions', component: PromotionsEmailsComponent}
-                                ]
-                            },
-                            {path: 'compose', component: ComposeComponent},
-                            {path: 'read', component: ReadComponent}
-                        ]
-                    },
-                    {path: 'kanban-board', component: KanbanBoardComponent},
-                    {
-                        path: 'file-manager',
-                        component: FileManagerComponent,
-                        children: [
-                            {path: '', component: MyDriveComponent},
-                            {path: 'assets', component: AssetsComponent},
-                            {path: 'projects', component: ProjectsComponent},
-                            {path: 'personal', component: PersonalComponent},
-                            {path: 'applications', component: ApplicationsComponent},
-                            {path: 'documents', component: DocumentsComponent},
-                            {path: 'media', component: MediaComponent},
-                            {path: 'recents', component: RecentsComponent},
-                            {path: 'important', component: ImportantComponent}
-                        ]
-                    }
-                ]
-            },
             {
                 path: 'ecommerce-page',
                 component: EcommercePageComponent,
@@ -304,11 +181,16 @@ export const routes: Routes = [
                 ]
             },
             {
-                path: 'crm-page',
-                component: CrmPageComponent,
+                path: 'marketing',
+                component: MarketingComponent,
                 children: [
-                    {path: 'customers', component: CCustomersComponent},
-                    {path: 'leads', component: CLeadsComponent}
+                    {path: 'customers', component: CustomersComponent},
+                    {path: 'leads', component: LeadsComponent},
+                    {path: 'lead-form', component: LeadFormComponent},
+                    {path: 'campaigns', component: CampaignsComponent},
+                    {path: 'campaign-form', component: CampaignFormComponent},
+                    {path: 'conversations', component: ConversationsComponent},
+                    {path: 'conversation-form', component: ConversationFormComponent},
                 ]
             },
             {
@@ -428,87 +310,6 @@ export const routes: Routes = [
                 ]
             },
             {path: 'starter', component: StarterComponent},
-            {
-                path: 'icons',
-                component: IconsComponent,
-                children: [
-                    {path: '', component: MaterialSymbolsComponent},
-                    {path: 'remixicon', component: RemixiconComponent}
-                ]
-            },
-            {
-                path: 'ui-kit',
-                component: UiElementsComponent,
-                children: [
-                    {path: '', component: AlertsComponent},
-                    {path: 'avatars', component: AvatarsComponent},
-                    {path: 'accordion', component: AccordionComponent},
-                    {path: 'badges', component: BadgesComponent},
-                    {path: 'buttons', component: ButtonsComponent},
-                    {path: 'button-group', component: ButtonGroupComponent},
-                    {path: 'breadcrumb', component: BreadcrumbComponent},
-                    {path: 'borders', component: BordersComponent},
-                    {path: 'card', component: CardComponent},
-                    {path: 'carousel', component: CarouselComponent},
-                    {path: 'close-button', component: CloseButtonComponent},
-                    {path: 'colored-links', component: ColoredLinksComponent},
-                    {path: 'color-picker', component: ColorPickerComponent},
-                    {path: 'color-background', component: ColorBackgroundComponent},
-                    {path: 'dropdowns', component: DropdownsComponent},
-                    {path: 'figures', component: FiguresComponent},
-                    {path: 'images', component: ImagesComponent},
-                    {path: 'list-group', component: ListGroupComponent},
-                    {path: 'text', component: TextComponent},
-                    {path: 'modal', component: ModalComponent},
-                    {path: 'navs-tabs', component: NavsTabsComponent},
-                    {path: 'offcanvas', component: OffcanvasComponent},
-                    {path: 'pagination', component: PaginationComponent},
-                    {path: 'progress', component: ProgressComponent},
-                    {path: 'shadows', component: ShadowsComponent},
-                    {path: 'ratio', component: RatioComponent},
-                    {path: 'spinners', component: SpinnersComponent},
-                    {path: 'stacks', component: StacksComponent},
-                    {path: 'table', component: TableComponent},
-                    {path: 'toasts', component: ToastsComponent},
-                    {path: 'typography', component: TypographyComponent},
-                    {path: 'videos', component: VideosComponent},
-                    {path: 'utilities', component: UtilitiesComponent}
-                ]
-            },
-            {
-                path: 'charts',
-                component: ChartsComponent,
-                children: [
-                    {path: '', component: LineChartsComponent},
-                    {path: 'area', component: AreaChartsComponent},
-                    {path: 'column', component: ColumnChartsComponent},
-                    {path: 'mixed', component: MixedChartsComponent},
-                    {path: 'radialbar', component: RadialbarChartsComponent},
-                    {path: 'radar', component: RadarChartsComponent},
-                    {path: 'pie', component: PieChartsComponent},
-                    {path: 'polar', component: PolarChartsComponent},
-                    {path: 'more', component: MoreChartsComponent}
-                ]
-            },
-            {
-                path: 'tables', component: TablesComponent
-            },
-            {
-                path: 'forms',
-                component: FormsComponent,
-                children: [
-                    {path: '', component: FormControlsComponent},
-                    {path: 'select', component: SelectComponent},
-                    {path: 'checks-radios', component: ChecksRadiosComponent},
-                    {path: 'range', component: RangeComponent},
-                    {path: 'input-group', component: InputGroupComponent},
-                    {path: 'floating-labels', component: FloatingLabelsComponent},
-                    {path: 'layout', component: LayoutComponent},
-                    {path: 'elements', component: ElementsComponent},
-                    {path: 'editors', component: EditorsComponent},
-                    {path: 'file-uploader', component: FileUploaderComponent},
-                ]
-            },
             {path: 'timeline', component: TimelinePageComponent},
             {path: 'pricing', component: PricingPageComponent},
             {path: 'faq', component: FaqPageComponent},
@@ -517,22 +318,9 @@ export const routes: Routes = [
             {path: 'search', component: SearchPageComponent},
             {path: 'blank-page', component: BlankPageComponent},
             {path: 'internal-error', component: InternalErrorComponent},
-            {path: 'widgets', component: WidgetsComponent},
             {path: 'maps', component: MapsPageComponent},
             {path: 'notifications', component: NotificationsPageComponent},
             {path: 'members', component: MembersPageComponent},
-            {path: 'my-profile', component: MyProfileComponent},
-            {
-                path: 'settings',
-                component: SettingsComponent,
-                children: [
-                    {path: '', component: AccountSettingsComponent},
-                    {path: 'change-password', component: ChangePasswordComponent},
-                    {path: 'connections', component: ConnectionsComponent},
-                    {path: 'privacy-policy', component: PrivacyPolicyComponent},
-                    {path: 'terms-conditions', component: TermsConditionsComponent}
-                ]
-            }
         ]
     },
     {

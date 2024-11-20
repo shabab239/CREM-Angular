@@ -18,4 +18,8 @@ export const API_URLS = {
     account: `${baseUrl}/account`,
     transaction: `${baseUrl}/transaction`,
     ledger: `${baseUrl}/ledger`,
+
+    lead: `${baseUrl}/lead`,
+    campaign: `${baseUrl}/campaign`,
+    conversation: `${baseUrl}/conversation`,
 };

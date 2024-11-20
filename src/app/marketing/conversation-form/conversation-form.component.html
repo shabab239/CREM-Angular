@@ -1,0 +1,95 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">Conversation</h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">home</i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Conversation Management
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Create Conversation
+        </li>
+    </ol>
+</div>
+
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <div class="trezo-card-header d-flex align-items-center justify-content-between">
+        <div class="trezo-card-title">
+            <h5 class="mb-0">Create Conversation</h5>
+        </div>
+    </div>
+    <div class="trezo-card-content">
+        <form (ngSubmit)="save()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">Date</label>
+                        <input type="date" class="form-control" [(ngModel)]="conversation.date" name="date">
+                        <small *ngIf="errors['date']" class="form-text text-danger">{{ errors['date'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">Follow-Up Date</label>
+                        <input type="date" class="form-control" [(ngModel)]="conversation.followUpDate" name="followUpDate">
+                        <small *ngIf="errors['followUpDate']" class="form-text text-danger">{{ errors['followUpDate'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">Lead</label>
+                        <select class="form-select" [(ngModel)]="conversation.lead.id" name="leadId">
+                            <option *ngFor="let lead of leads" [value]="lead.id">
+                                {{ lead.name }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['leadId']" class="form-text text-danger">{{ errors['leadId'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">Customer</label>
+                        <select class="form-select" [(ngModel)]="conversation.customer.id" name="customerId">
+                            <option *ngFor="let user of users" [value]="user.id">
+                                {{ user.fullName }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['customerId']" class="form-text text-danger">{{ errors['customerId'] }}</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">Employee</label>
+                        <select class="form-select" [(ngModel)]="conversation.employee.id" name="employeeId">
+                            <option *ngFor="let user of users" [value]="user.id">
+                                {{ user.fullName }}
+                            </option>
+                        </select>
+                        <small *ngIf="errors['employeeId']" class="form-text text-danger">{{ errors['employeeId'] }}</small>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">Description</label>
+                        <textarea class="form-control" rows="4" [(ngModel)]="conversation.description" name="description"
+                                  placeholder="Enter conversation details..."></textarea>
+                        <small *ngIf="errors['description']" class="form-text text-danger">{{ errors['description'] }}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn-box">
+                <button type="submit" class="primary d-inline-block fw-medium border-radius border-0 transition">
+                    <span class="d-inline-block position-relative">
+                        <i class="material-symbols-outlined">add</i>
+                        {{ conversation.id ? 'Update' : 'Create' }} Conversation
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
