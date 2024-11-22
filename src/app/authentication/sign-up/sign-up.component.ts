@@ -1,37 +1,50 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { CustomizerSettingsService } from '../../customizer-settings/customizer-settings.service';
-import { NgClass } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import {Router, RouterLink} from '@angular/router';
+import { NgClass, NgIf } from '@angular/common';
+import { Observable } from 'rxjs';
+import { ApiResponse } from '../../util/api.response.model';
+import { AlertUtil } from '../../util/alert.util';
+import { User } from '../model/user.model';
+import {FormsModule} from "@angular/forms";
+import {AuthService} from "../auth.service";
 
 @Component({
     selector: 'app-sign-up',
     standalone: true,
-    imports: [RouterLink, NgClass],
+    imports: [FormsModule, NgIf, NgClass, RouterLink],
     templateUrl: './sign-up.component.html',
-    styleUrl: './sign-up.component.scss'
+    styleUrls: ['./sign-up.component.scss']
 })
-export class SignUpComponent {
-
-    // isToggled
-    isToggled = false;
-
-    constructor(
-        public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
-
-    // Password Show/Hide
-    password: string = '';
+export class SignUpComponent implements OnInit {
+    user: User = new User();
+    errors: { [key: string]: string } = {};
+    isLoading: boolean = false;
     isPasswordVisible: boolean = false;
     togglePasswordVisibility(): void {
         this.isPasswordVisible = !this.isPasswordVisible;
     }
-    onPasswordInput(event: Event): void {
-        const inputElement = event.target as HTMLInputElement;
-        this.password = inputElement.value;
+
+    ngOnInit(): void {
     }
 
+    constructor(private authService: AuthService, private router: Router) {}
+
+    signUp(): void {
+        this.isLoading = true;
+        this.authService.register(this.user).subscribe({
+            next: (response: ApiResponse) => {
+                this.isLoading = false;
+                if (response && response.successful) {
+                    this.router.navigate(['/authentication/sign-in']);
+                } else {
+                    this.errors = response?.errors || {};
+                    AlertUtil.error(response);
+                }
+            },
+            error: (error) => {
+                this.isLoading = false;
+                AlertUtil.error(error);
+            }
+        });
+    }
 }

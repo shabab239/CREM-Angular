@@ -45,6 +45,10 @@ export class AuthService {
         );
     }
 
+    register(user: User): Observable<ApiResponse> {
+        return this.httpClient.post<ApiResponse>(API_URLS.register, user);
+    }
+
     getRole(): Observable<Role | null> {
         return this.currentUser$.pipe(
             map(user => user?.role ?? null)
