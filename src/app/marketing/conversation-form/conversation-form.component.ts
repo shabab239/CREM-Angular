@@ -94,7 +94,7 @@ export class ConversationFormComponent implements OnInit {
             next: (response) => {
                 if (response && response.successful) {
                     AlertUtil.success(response);
-                    this.router.navigate(['/dashboard/conversations']);
+                    this.router.navigate(['/dashboard/marketing/conversations']);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);

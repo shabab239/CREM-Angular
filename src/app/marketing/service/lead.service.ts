@@ -33,4 +33,12 @@ export class LeadService {
     deleteById(id: number): Observable<ApiResponse> {
         return this.http.delete<ApiResponse>(`${this.apiUrl}/${id}`);
     }
+
+    getByStatus(status: string): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/status/${status}`);
+    }
+
+    getByCampaignId(campaignId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/campaign/${campaignId}`);
+    }
 }

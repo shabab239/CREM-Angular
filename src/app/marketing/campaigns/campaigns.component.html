@@ -30,7 +30,7 @@
             </h5>
         </div>
         <div class="trezo-card-subtitle">
-            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/campaign/campaign-form">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/marketing/campaign-form">
                 <span class="d-inline-block position-relative">
                     <i class="material-symbols-outlined">
                         add
@@ -67,10 +67,10 @@
                             <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
                                 <i class="material-symbols-outlined"> visibility </i>
                             </button>
-                            <button routerLink="/dashboard/campaign/campaign-form/{{campaign.id}}" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <button routerLink="/dashboard/marketing/campaign-form/{{campaign.id!}}" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
                                 <i class="material-symbols-outlined"> edit </i>
                             </button>
-                            <button (click)="deleteCampaign(campaign.id)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                            <button (click)="deleteCampaign(campaign.id!)" type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
                                 <i class="material-symbols-outlined"> delete </i>
                             </button>
                         </div>

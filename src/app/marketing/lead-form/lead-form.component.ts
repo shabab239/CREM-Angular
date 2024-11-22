@@ -75,7 +75,7 @@ export class LeadFormComponent implements OnInit {
             next: (response) => {
                 if (response && response.successful) {
                     AlertUtil.success(response);
-                    this.router.navigate(['/dashboard/leads']);
+                    this.router.navigate(['/dashboard/marketing/leads']);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);
