@@ -4,7 +4,7 @@ import { NgClass, NgIf } from '@angular/common';
 import { Observable } from 'rxjs';
 import { ApiResponse } from '../../util/api.response.model';
 import { AlertUtil } from '../../util/alert.util';
-import { User } from '../model/user.model';
+import {Role, User} from '../model/user.model';
 import {FormsModule} from "@angular/forms";
 import {AuthService} from "../auth.service";
 
@@ -30,12 +30,18 @@ export class SignUpComponent implements OnInit {
     constructor(private authService: AuthService, private router: Router) {}
 
     signUp(): void {
+        this.user.role = Role.CUSTOMER;
+        const token = {
+            "username": this.user.username,
+            "password": this.user.password
+        }
+        this.user.token = token;
         this.isLoading = true;
         this.authService.register(this.user).subscribe({
             next: (response: ApiResponse) => {
                 this.isLoading = false;
                 if (response && response.successful) {
-                    this.router.navigate(['/authentication/sign-in']);
+                    this.router.navigate(['/authentication/']);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);

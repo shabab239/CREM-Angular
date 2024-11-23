@@ -15,6 +15,7 @@ export class User {
     role!: Role;
     username: string; //transient
     password: string; //transient
+    token: {};
     company: Company = new Company();
 }
 

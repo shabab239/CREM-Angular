@@ -10,7 +10,7 @@ export function authInterceptor(req: HttpRequest<unknown>, next: HttpHandlerFn):
     const router = inject(Router);
     const jwt = authService.getAuthToken();
 
-    if (req.url.endsWith('/login')) {
+    if (req.url.includes('/auth')) {
         return next(req);
     } else {
         const newReq = req.clone({
