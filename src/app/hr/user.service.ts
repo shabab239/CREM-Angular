@@ -6,7 +6,7 @@ import {ApiResponse} from "../util/api.response.model";
 import {User} from "../authentication/model/user.model";
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class UserService {
 
@@ -54,4 +54,39 @@ export class UserService {
         return this.http.delete<ApiResponse>(`${this.apiUrl}/${id}`);
     }
 
+    getCustomerById(id: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/customer/${id}`);
+    }
+
+    getAllManagers(): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/managers`);
+    }
+
+    getManagerById(id: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/manager/${id}`);
+    }
+
+    getAllEmployees(): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/employees`);
+    }
+
+    getEmployeeById(id: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/employee/${id}`);
+    }
+
+    getAllAdmins(): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/admins`);
+    }
+
+    getAdminById(id: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/admin/${id}`);
+    }
+
+    getAllOwners(): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/owners`);
+    }
+
+    getOwnerById(id: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/owner/${id}`);
+    }
 }
