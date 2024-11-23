@@ -13,6 +13,8 @@ export class User {
     bloodGroup: string;
     status: string;
     role!: Role;
+    username: string; //transient
+    password: string; //transient
     company: Company = new Company();
 }
 

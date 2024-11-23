@@ -56,21 +56,10 @@
                         <label class="main-label d-block fw-medium text-black">Customer</label>
                         <select class="form-select" [(ngModel)]="conversation.customer.id" name="customerId">
                             <option *ngFor="let user of users" [value]="user.id">
-                                {{ user.fullName }}
+                                {{ user.name }}
                             </option>
                         </select>
                         <small *ngIf="errors['customerId']" class="form-text text-danger">{{ errors['customerId'] }}</small>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="main-label d-block fw-medium text-black">Employee</label>
-                        <select class="form-select" [(ngModel)]="conversation.employee.id" name="employeeId">
-                            <option *ngFor="let user of users" [value]="user.id">
-                                {{ user.fullName }}
-                            </option>
-                        </select>
-                        <small *ngIf="errors['employeeId']" class="form-text text-danger">{{ errors['employeeId'] }}</small>
                     </div>
                 </div>
                 <div class="col-12">

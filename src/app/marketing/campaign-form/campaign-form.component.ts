@@ -56,7 +56,7 @@ export class CampaignFormComponent implements OnInit {
             next: (response) => {
                 if (response && response.successful) {
                     AlertUtil.success(response);
-                    this.router.navigate(['/dashboard/campaigns']);
+                    this.router.navigate(['/dashboard/marketing/campaigns']);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);

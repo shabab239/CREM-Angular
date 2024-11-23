@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ApiResponse } from '../../util/api.response.model';
 import { API_URLS } from '../../util/urls';
-import {Conversation} from "../model/conversation.model";
+import { Conversation } from "../model/conversation.model";
 
 @Injectable({
     providedIn: 'root'
@@ -16,7 +16,7 @@ export class ConversationService {
 
     getAll(): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(`${this.apiUrl}/`);
-    }
+      }
 
     save(conversation: Conversation): Observable<ApiResponse> {
         return this.http.post<ApiResponse>(`${this.apiUrl}/save`, conversation);
@@ -33,4 +33,26 @@ export class ConversationService {
     deleteById(id: number): Observable<ApiResponse> {
         return this.http.delete<ApiResponse>(`${this.apiUrl}/${id}`);
     }
+
+    getByDateRange(startDate: Date, endDate: Date, companyId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/date-range/${companyId}`, {
+            params: {
+                startDate: startDate.toISOString(),
+                endDate: endDate.toISOString()
+            }
+        });
+    }
+
+    getByCustomerId(customerId: number, companyId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/customer/${customerId}/${companyId}`);
+    }
+
+    getByEmployeeId(employeeId: number, companyId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/employee/${employeeId}/${companyId}`);
+    }
+
+    getByLeadId(leadId: number, companyId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/lead/${leadId}/${companyId}`);
+    }
 }
+

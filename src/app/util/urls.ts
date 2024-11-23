@@ -3,6 +3,7 @@ const baseUrl: string = 'http://localhost/api';
 
 export const API_URLS = {
     login: `${baseUrl}/auth/login`,
+    register: `${baseUrl}/auth/register`,
     company: `${baseUrl}/company`,
     user: `${baseUrl}/user`,
 
