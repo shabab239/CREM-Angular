@@ -1,0 +1,18 @@
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-radius-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card {
+    transition: all 0.3s ease;
+}

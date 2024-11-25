@@ -23,4 +23,6 @@ export const API_URLS = {
     lead: `${baseUrl}/lead`,
     campaign: `${baseUrl}/campaign`,
     conversation: `${baseUrl}/conversation`,
+
+    marketplace: `${baseUrl}/marketplace`,
 };
