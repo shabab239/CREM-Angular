@@ -145,6 +145,7 @@ export const routes: Routes = [
             {path: 'faq', component: FaqComponent},
             {path: 'contact', component: ContactComponent},
             {path: 'marketplace', component: MarketplaceComponent},
+            {path: 'marketplace/units/:buildingId', component: MarketplaceComponent},
         ]
     },
     {

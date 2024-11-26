@@ -4,6 +4,8 @@ import {MarketplaceService} from "../service/marketplace.service";
 import {FormsModule} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
 import {API_URLS} from "../../util/urls";
+import {UnitTypeOptions} from "../../construction/project/unit/unit.model";
+import {BuildingTypeOptions} from "../../construction/project/building/building.model";
 
 @Component({
     selector: 'app-marketplace',
@@ -20,8 +22,10 @@ export class MarketplaceComponent implements OnInit {
     buildings: any[] = [];
     loading: boolean = false;
     selectedBuildingType: string = '';
-    searchTerm: string = '';
+    selectedUnitType: string = '';
     API_URLS = API_URLS;
+    buildingTypeOptions = BuildingTypeOptions;
+    unitTypeOptions = UnitTypeOptions;
 
     constructor(
         private marketplaceService: MarketplaceService,
@@ -71,17 +75,30 @@ export class MarketplaceComponent implements OnInit {
             });
     }
 
+    filterByUnitType() {
+        if (!this.selectedUnitType) {
+            this.loadBuildings();
+            return;
+        }
+
+        this.loading = true;
+        this.marketplaceService.getBuildingsByUnitType(this.selectedUnitType)
+            .subscribe({
+                next: (response) => {
+                    if (response.successful) {
+                        this.buildings = response.data.buildings;
+                    }
+                    this.loading = false;
+                },
+                error: (error) => {
+                    console.error('Error filtering buildings:', error);
+                    this.loading = false;
+                }
+            });
+    }
+
     viewBuildingDetails(buildingId: number) {
         this.router.navigate(['/marketplace/building', buildingId]);
     }
 
-    getAvailableUnits(building: any): number {
-        let count = 0;
-        building.floors?.forEach((floor: any) => {
-            count += floor.units?.filter((unit: any) =>
-                unit.status === 'AVAILABLE'
-            ).length || 0;
-        });
-        return count;
-    }
 }

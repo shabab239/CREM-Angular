@@ -7,6 +7,8 @@ export class Building {
     type: BuildingType;
     project: Project = new Project();
     companyId: number;
+    floorCount: number; //transient
+    unitCount: number; //transient
 }
 
 export enum BuildingType {
