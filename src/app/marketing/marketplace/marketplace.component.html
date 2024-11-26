@@ -53,7 +53,7 @@
                 <div class="card border-radius cursor-pointer hover-shadow" (click)="viewBuildingDetails(building.id)">
                     <!-- Building Image -->
                     <div class="position-relative">
-                        <img [src]="building.image || 'assets/images/placeholder-building.jpg'"
+                        <img [src]="API_URLS.image + '/buildingImages/' + building.image"
                              class="card-img-top border-radius-top"
                              alt="building-image"
                              style="height: 200px; object-fit: cover;">

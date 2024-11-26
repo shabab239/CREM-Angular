@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import {MarketplaceService} from "../service/marketplace.service";
 import {FormsModule} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
+import {API_URLS} from "../../util/urls";
 
 @Component({
     selector: 'app-marketplace',
@@ -20,6 +21,7 @@ export class MarketplaceComponent implements OnInit {
     loading: boolean = false;
     selectedBuildingType: string = '';
     searchTerm: string = '';
+    API_URLS = API_URLS;
 
     constructor(
         private marketplaceService: MarketplaceService,
@@ -54,7 +56,7 @@ export class MarketplaceComponent implements OnInit {
         }
 
         this.loading = true;
-        this.marketplaceService.getUnitsByBuildingType(this.selectedBuildingType)
+        this.marketplaceService.getBuildingsByBuildingType(this.selectedBuildingType)
             .subscribe({
                 next: (response) => {
                     if (response.successful) {

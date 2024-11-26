@@ -17,6 +17,10 @@ export class MarketplaceService {
         return this.http.get<ApiResponse>(`${this.apiUrl}/buildings`);
     }
 
+    getBuildingsByBuildingType(selectedBuildingType: string): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/getBuildingsByBuildingType?type=${selectedBuildingType}`);
+    }
+
     getBuildingWithAvailableUnits(buildingId: number): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(`${this.apiUrl}/buildings/${buildingId}`);
     }

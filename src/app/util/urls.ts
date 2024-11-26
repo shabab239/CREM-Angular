@@ -6,6 +6,7 @@ export const API_URLS = {
     register: `${baseUrl}/auth/register`,
     company: `${baseUrl}/company`,
     user: `${baseUrl}/user`,
+    image: `${baseUrl}/image`,
 
     dashboard: `${baseUrl}/admin/dashboard`,
     project: `${baseUrl}/project`,
