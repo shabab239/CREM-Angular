@@ -40,18 +40,23 @@
                 <div class="card border-radius hover-shadow">
                     <div class="position-relative">
                         <img [src]="API_URLS.image + '/unitImages/' + unit.image"
-                             class="card-img-top border-radius-top"
-                             alt="unit-image"
-                             style="height: 200px; object-fit: cover;">
+                             class="card-img-top">
                         <div class="position-absolute top-0 end-0 m-2">
                             <span class="badge bg-success">{{unit.type}}</span>
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 m-2" style="cursor: pointer"
+                             (click)="openViewer(unit)">
+                            <span class="badge bg-info">
+                                <i class="material-symbols-outlined align-middle">360</i>
+                                Click to view 360°
+                            </span>
                         </div>
                     </div>
 
                     <div class="card-body">
                         <h5 class="card-title mb-2">{{unit.name}}</h5>
                         <p class="card-text text-muted mb-2">
-                            Floor: {{unit.floor?.name}}
+                            Floor: {{unit.floor.name}}
                         </p>
 
                         <!-- Unit Details -->
@@ -84,6 +89,18 @@
             <div class="col-12 text-center" *ngIf="units.length === 0">
                 <p class="my-5 text-muted">No units available matching your criteria.</p>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="viewer-modal" [class.show]="showViewer">
+    <div class="viewer-content">
+        <div class="viewer-header">
+            <h5>{{selectedUnit?.name}} - 360° View</h5>
+            <button type="button" class="close-button" (click)="closeViewer()">×</button>
+        </div>
+        <div class="viewer-body">
+            <div id="viewer"></div>
         </div>
     </div>
 </div>
