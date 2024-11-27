@@ -133,6 +133,7 @@ import {MarketingComponent} from "./marketing/marketing.component";
 import {CustomersComponent} from "./marketing/customers/customers.component";
 import {LeadsComponent} from "./marketing/leads/leads.component";
 import {MarketplaceComponent} from "./marketing/marketplace/marketplace.component";
+import {BrowseUnitsComponent} from "./marketing/browse-units/browse-units.component";
 
 export const routes: Routes = [
     {
@@ -145,7 +146,7 @@ export const routes: Routes = [
             {path: 'faq', component: FaqComponent},
             {path: 'contact', component: ContactComponent},
             {path: 'marketplace', component: MarketplaceComponent},
-            {path: 'marketplace/units/:buildingId', component: MarketplaceComponent},
+            {path: 'marketplace/browse-units/:buildingId', component: BrowseUnitsComponent},
         ]
     },
     {

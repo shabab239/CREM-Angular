@@ -1,25 +1,17 @@
-
-
-<!-- Search and Filters -->
+<!-- Building Header -->
 <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none" style="margin-top: 15vh">
-    <h1 class="text-center">
-        Browse Units
-    </h1>
+
+    <div class="text-center">
+        <h2>Units of {{building?.name}}</h2>
+        <p class="mb-0">
+            <i class="material-symbols-outlined align-middle me-1">location_on</i>
+            {{building?.project?.location}}
+        </p>
+    </div>
     <br>
+    <!-- Unit Type Filter -->
     <div class="trezo-card-content">
         <div class="row align-items-center">
-            <!-- Building Type Filter -->
-            <div class="col-lg-3 col-md-6 mb-3">
-                <label class="form-label">Building Type</label>
-                <select class="form-select" [(ngModel)]="selectedBuildingType" (change)="filterByBuildingType()">
-                    <option value="">All Building Types</option>
-                    <option *ngFor="let type of buildingTypeOptions"
-                            [value]="type.value">
-                        {{type.label}}
-                    </option>
-                </select>
-            </div>
-            <!-- Unit Type Filter -->
             <div class="col-lg-3 col-md-6 mb-3">
                 <label class="form-label">Unit Type</label>
                 <select class="form-select" [(ngModel)]="selectedUnitType" (change)="filterByUnitType()">
@@ -34,59 +26,54 @@
     </div>
 </div>
 
-<!-- Buildings Listing -->
+<!-- Units Listing -->
 <div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
     <div class="trezo-card-header">
         <div class="trezo-card-title">
-            <h5 class="mb-0">
-                Available Properties
-            </h5>
+            <h5 class="mb-0">Available Units</h5>
         </div>
     </div>
     <div class="trezo-card-content">
         <div class="row">
-            <!-- Building Card -->
-            <div class="col-lg-4 col-md-6 mb-25" *ngFor="let building of buildings">
-                <div class="card border-radius cursor-pointer hover-shadow" (click)="viewBuildingDetails(building.id)">
-                    <!-- Building Image -->
+            <!-- Unit Card -->
+            <div class="col-lg-4 col-md-6 mb-25" *ngFor="let unit of units">
+                <div class="card border-radius hover-shadow">
                     <div class="position-relative">
-                        <img [src]="API_URLS.image + '/buildingImages/' + building.image"
+                        <img [src]="API_URLS.image + '/unitImages/' + unit.image"
                              class="card-img-top border-radius-top"
-                             alt="building-image"
+                             alt="unit-image"
                              style="height: 200px; object-fit: cover;">
                         <div class="position-absolute top-0 end-0 m-2">
-                            <span class="badge bg-primary">{{building.type}}</span>
+                            <span class="badge bg-success">{{unit.type}}</span>
                         </div>
                     </div>
 
-                    <!-- Building Details -->
                     <div class="card-body">
-                        <h5 class="card-title mb-2">{{building.name}}</h5>
+                        <h5 class="card-title mb-2">{{unit.name}}</h5>
                         <p class="card-text text-muted mb-2">
-                            <i class="material-symbols-outlined align-middle me-1">location_on</i>
-                            {{building.project?.location}}
+                            Floor: {{unit.floor?.name}}
                         </p>
 
-                        <!-- Features/Stats -->
+                        <!-- Unit Details -->
                         <div class="d-flex justify-content-between mt-3">
                             <div class="text-center">
-                                <i class="material-symbols-outlined">apartment</i>
-                                <small class="d-block">{{building.floorCount}} Floor(s)</small>
+                                <i class="material-symbols-outlined">square_foot</i>
+                                <small class="d-block">{{unit.size}} sqft</small>
                             </div>
                             <div class="text-center">
-                                <i class="material-symbols-outlined">door_front</i>
-                                <small class="d-block">{{building.unitCount}} Unit(s)</small>
+                                <i class="material-symbols-outlined">attach_money</i>
+                                <small class="d-block">{{unit.price | currency}}</small>
                             </div>
                             <div class="text-center">
-                                <i class="material-symbols-outlined">construction</i>
-                                <small class="d-block">{{building.project?.status}}</small>
+                                <i class="material-symbols-outlined">verified</i>
+                                <small class="d-block">{{unit.status}}</small>
                             </div>
                         </div>
 
-                        <!-- View Details Button -->
+                        <!-- Contact Button -->
                         <div class="text-center mt-3">
-                            <button class="btn btn-outline-primary btn-sm w-100">
-                                View Available Units
+                            <button class="btn btn-primary btn-sm w-100">
+                                Contact Agent
                             </button>
                         </div>
                     </div>
@@ -94,8 +81,8 @@
             </div>
 
             <!-- No Results Message -->
-            <div class="col-12 text-center" *ngIf="buildings.length === 0">
-                <p class="my-5 text-muted">No buildings available matching your criteria.</p>
+            <div class="col-12 text-center" *ngIf="units.length === 0">
+                <p class="my-5 text-muted">No units available matching your criteria.</p>
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ export class Unit {
   price: number;
   type: UnitType;
   status: UnitStatus;
+  image: string;
   floor: Floor = new Floor();
   companyId: number;
 }

@@ -98,7 +98,7 @@ export class MarketplaceComponent implements OnInit {
     }
 
     viewBuildingDetails(buildingId: number) {
-        this.router.navigate(['/marketplace/building', buildingId]);
+        this.router.navigate(['/marketplace/browse-units/', buildingId]);
     }
 
 }
