@@ -76,7 +76,7 @@
                         </div>
 
                         <!-- Contact Button -->
-                        <div class="text-center mt-3">
+                        <div class="text-center mt-3" (click)="toggleContactAgent(unit)">
                             <button class="btn btn-primary btn-sm w-100">
                                 Contact Agent
                             </button>
@@ -109,5 +109,50 @@
 <div class="text-center my-5" *ngIf="loading">
     <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<div class="add-new-popup" [class.active]="showContactAgent">
+    <div class="popup-dialog">
+        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
+            <div class="trezo-card-header d-flex align-items-center justify-content-between">
+                <div class="trezo-card-title">
+                    <h5 class="mb-0">Contact Agent</h5>
+                </div>
+                <div class="trezo-card-subtitle">
+                    <button (click)="toggleContactAgent()" class="p-0 border-0 lh-1 bg-transparent transition">
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="trezo-card-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">Your Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="lead.name" placeholder="Enter your name">
+                            <small *ngIf="errors['name']" class="form-text text-danger">{{errors['name']}}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">Contact Information</label>
+                            <input type="text" class="form-control" [(ngModel)]="lead.contactInfo" placeholder="Phone or Email">
+                            <small *ngIf="errors['contactInfo']" class="form-text text-danger">{{errors['contactInfo']}}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button (click)="toggleContactAgent()" class="warn d-inline-block fw-medium border-0 border-radius transition">
+                        Cancel
+                    </button>
+                    <button (click)="contactAgent()" class="primary d-inline-block fw-medium border-0 border-radius transition">
+                        <span class="position-relative d-inline-block">
+                            Submit
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

@@ -1,26 +1,36 @@
-<div
-    class="banner-area"
-    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
->
+<div class="banner-area" [class.component-rtl-enabled]="themeService.isRTLEnabled()">
     <div class="container position-relative z-1">
         <div class="banner-content text-center mx-auto">
-            <h1>
-                Insights On-the-Go: Access Your Dashboard Anywhere, Anytime
-            </h1>
+            <h1>Transform Your Real Estate Vision into Reality</h1>
             <p>
-                Our intuitive interface transforms complex data into actionable insights, empowering you to make informed decisions with confidence.
+                Comprehensive construction and property management platform for developers, agents, and property owners.
+                From project planning to sales management, streamline your entire real estate operations in one place.
             </p>
             <a routerLink="/dashboard" class="btn-box d-inline-block fw-medium border-radius transition">
                 <span class="d-inline-block position-relative">
-                    <i class="material-symbols-outlined">
-                        person
-                    </i>
-                    Get started - It is free
+                    <i class="material-symbols-outlined">apartment</i>
+                    Start Building Your Portfolio
                 </span>
             </a>
         </div>
-        <div class="banner-image text-center">
-            <img src="images/front-pages/dashboard.png" alt="dashboard-image">
+        <div class="banner-content-features text-center mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <i class="material-symbols-outlined">construction</i>
+                    <h4>Construction Management</h4>
+                    <p>Track projects, manage resources, and monitor progress in real-time</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="material-symbols-outlined">real_estate_agent</i>
+                    <h4>Property Sales</h4>
+                    <p>Streamline unit bookings, manage clients, and track sales performance</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="material-symbols-outlined">analytics</i>
+                    <h4>Business Intelligence</h4>
+                    <p>Make data-driven decisions with comprehensive analytics and reports</p>
+                </div>
+            </div>
         </div>
         <div class="shape1">
             <img src="images/front-pages/shape3.png" alt="shape3">

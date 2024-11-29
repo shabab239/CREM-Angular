@@ -6,6 +6,11 @@ import {API_URLS} from '../../util/urls';
 import {MarketplaceService} from "../service/marketplace.service";
 import {Unit, UnitType, UnitTypeOptions} from "../../construction/project/unit/unit.model";
 import {Viewer} from "@photo-sphere-viewer/core";
+import {LeadService} from "../service/lead.service";
+import {Lead, LeadStatus} from "../model/lead.model";
+import {StageStatusOptions} from "../../construction/project/stage/stage.model";
+import {ApiResponse} from "../../util/api.response.model";
+import {AlertUtil} from "../../util/alert.util";
 
 @Component({
     selector: 'app-browse-units',
@@ -30,6 +35,10 @@ export class BrowseUnitsComponent implements OnInit, OnDestroy {
 
     loading: boolean = false;
     showViewer: boolean = false;
+
+    showContactAgent = false;
+    lead: Lead = new Lead();
+    errors: any = {};
 
     private viewer: Viewer | null = null;
 
@@ -88,6 +97,36 @@ export class BrowseUnitsComponent implements OnInit, OnDestroy {
         });
     }
 
+    toggleContactAgent(unit?: Unit) {
+        this.showContactAgent = !this.showContactAgent;
+        if (unit) {
+            this.selectedUnit = unit;
+        } else {
+            this.selectedUnit = null;
+        }
+    }
+
+    contactAgent(): void {
+        if (this.selectedUnit) {
+            const unit = this.selectedUnit;
+            this.lead.interest = `${unit.name} - ${unit.type} - Floor ${unit.floor?.name}`;
+        }
+        this.marketplaceService.saveOpenLead(this.lead).subscribe({
+            next: (response: ApiResponse) => {
+                if (response && response.successful) {
+                    AlertUtil.success(response);
+                    this.toggleContactAgent();
+                } else {
+                    this.errors = response?.errors || {};
+                    AlertUtil.error(response);
+                }
+            },
+            error: error => {
+                AlertUtil.error(error);
+            }
+        });
+    }
+
     openViewer(unit: Unit) {
         this.selectedUnit = unit;
 
@@ -98,7 +137,6 @@ export class BrowseUnitsComponent implements OnInit, OnDestroy {
 
         this.showViewer = true;
 
-        // Short delay to ensure modal is visible
         setTimeout(() => {
             if (this.viewer) {
                 this.viewer.destroy();
@@ -129,7 +167,5 @@ export class BrowseUnitsComponent implements OnInit, OnDestroy {
         }
     }
 
-    contactAgent(unit: Unit): void {
-        console.log('Contact request for unit:', unit);
-    }
+    protected readonly StageStatusOptions = StageStatusOptions;
 }

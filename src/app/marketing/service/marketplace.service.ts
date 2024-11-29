@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { ApiResponse } from '../../util/api.response.model';
 import { API_URLS } from '../../util/urls';
 import {UnitSearchDTO} from "../dto/UnitSearchDTO";
+import {Lead} from "../model/lead.model";
 
 @Injectable({
     providedIn: 'root'
@@ -48,5 +49,9 @@ export class MarketplaceService {
 
     getUnitsByBuildingType(buildingType: string): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(`${this.apiUrl}/units/building-type/${buildingType}`);
+    }
+
+    saveOpenLead(lead: Lead): Observable<ApiResponse> {
+        return this.http.post<ApiResponse>(`${this.apiUrl}/saveOpenLead`, lead);
     }
 }

@@ -95,10 +95,6 @@ import {TimelinePageComponent} from './pages/timeline-page/timeline-page.compone
 import {FaqPageComponent} from './pages/faq-page/faq-page.component';
 import {FrontPagesComponent} from './front-pages/front-pages.component';
 import {HomeComponent} from './front-pages/home/home.component';
-import {FeaturesComponent} from './front-pages/features/features.component';
-import {TeamComponent} from './front-pages/team/team.component';
-import {FaqComponent} from './front-pages/faq/faq.component';
-import {ContactComponent} from './front-pages/contact/contact.component';
 import {AuthGuard} from "./authentication/auth.guard";
 import {BuildingsComponent} from "./construction/project/building/buildings/buildings.component";
 import {BuildingFormComponent} from "./construction/project/building/building-form/building-form.component";
@@ -141,10 +137,6 @@ export const routes: Routes = [
         component: FrontPagesComponent,
         children: [
             {path: '', component: HomeComponent},
-            {path: 'features', component: FeaturesComponent},
-            {path: 'team', component: TeamComponent},
-            {path: 'faq', component: FaqComponent},
-            {path: 'contact', component: ContactComponent},
             {path: 'marketplace', component: MarketplaceComponent},
             {path: 'marketplace/browse-units/:buildingId', component: BrowseUnitsComponent},
         ]
