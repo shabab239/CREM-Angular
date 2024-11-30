@@ -28,8 +28,6 @@ export class RawMaterialOrdersComponent implements OnInit {
     orders: RawMaterialOrder[] = [];
     showOrderForm: boolean = false;
     order: RawMaterialOrder = new RawMaterialOrder();
-    showSupplierForm: boolean = false;
-    supplier: Supplier = new Supplier();
     errors: { [key: string]: string } = {};
 
     rawMaterials: RawMaterial[] = [];
@@ -98,10 +96,6 @@ export class RawMaterialOrdersComponent implements OnInit {
         }
     }
 
-    toggleSupplierForm(): void {
-        this.showSupplierForm = !this.showSupplierForm;
-    }
-
     toggleOrderForm(orderId?: number): void {
         if (orderId) {
             this.rawMaterialService.getOrderById(orderId).subscribe({
@@ -151,28 +145,6 @@ export class RawMaterialOrdersComponent implements OnInit {
                     this.loadOrders();
                     AlertUtil.success(response);
                 } else {
-                    AlertUtil.error(response);
-                }
-            },
-            error: error => {
-                AlertUtil.error(error);
-            }
-        });
-    }
-
-    createSupplier(): void {
-        let apiResponse: Observable<ApiResponse> = this.supplier.id ?
-            this.supplierService.update(this.supplier) :
-            this.supplierService.save(this.supplier);
-
-        apiResponse.subscribe({
-            next: response => {
-                if (response && response.successful) {
-                    this.supplier = new Supplier();
-                    this.toggleSupplierForm();
-                    AlertUtil.success(response);
-                } else {
-                    this.errors = response?.errors || {};
                     AlertUtil.error(response);
                 }
             },

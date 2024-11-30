@@ -125,6 +125,9 @@ import {BrowseUnitsComponent} from "./marketing/browse-units/browse-units.compon
 import {AdminComponent} from "./dashboard/admin/admin.component";
 import {ManagerComponent} from "./dashboard/manager/manager.component";
 import {AllStagesComponent} from "./construction/project/stage/all-stages/all-stages.component";
+import {
+    RawMaterialSuppliersComponent
+} from "./construction/project/raw-material/raw-material-suppliers/raw-material-suppliers.component";
 
 export const routes: Routes = [
     {
@@ -211,6 +214,7 @@ export const routes: Routes = [
             {path: 'raw-materials', component: RawMaterialsComponent,},
             {path: 'raw-material-form', component: RawMaterialFormComponent,},
             {path: 'raw-material-form/:id', component: RawMaterialFormComponent,},
+            {path: 'raw-material-suppliers', component: RawMaterialSuppliersComponent,},
             {path: 'raw-material-orders', component: RawMaterialOrdersComponent,},
             {path: 'raw-material-usage/:stageId', component: RawMaterialUsageComponent,},
             {path: 'booking-view/:unitId', component: BookingViewComponent,},

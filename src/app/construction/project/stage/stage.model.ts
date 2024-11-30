@@ -10,9 +10,9 @@ export class ConstructionStage {
     startDate: Date;
     endDate: Date;
     status: StageStatus;
-    building: Building = new Building();
-    floor: Floor = new Floor();
-    unit: Unit = new Unit();
+    building?: Building = new Building();
+    floor?: Floor = new Floor();
+    unit?: Unit = new Unit();
     rawMaterials: RawMaterial[];
     workers: Worker[];
     companyId: number;

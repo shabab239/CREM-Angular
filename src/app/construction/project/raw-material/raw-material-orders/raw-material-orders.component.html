@@ -30,14 +30,6 @@
             </h5>
         </div>
         <div class="trezo-card-subtitle">
-            <a class="add-btn d-inline-block transition fw-medium border-radius me-2" style="cursor: pointer" (click)="toggleSupplierForm()">
-                <span class="d-inline-block position-relative">
-                    <i class="material-symbols-outlined">
-                        add
-                    </i>
-                    New Supplier
-                </span>
-            </a>
             <a class="add-btn d-inline-block transition fw-medium border-radius" style="cursor: pointer" (click)="toggleOrderForm()">
                 <span class="d-inline-block position-relative">
                     <i class="material-symbols-outlined">
@@ -137,64 +129,6 @@
                         </a>
                     </li>
                 </ol>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Supplier Form -->
-<div class="add-new-popup" [class.active]="showSupplierForm">
-    <div class="popup-dialog">
-        <div class="trezo-card w-100 border-radius d-block bg-white border-0 shadow-none">
-            <div class="trezo-card-header d-flex align-items-center justify-content-between">
-                <div class="trezo-card-title">
-                    <h5 class="mb-0">
-                        Create Supplier
-                    </h5>
-                </div>
-                <div class="trezo-card-subtitle">
-                    <button
-                        (click)="toggleSupplierForm()"
-                        class="p-0 border-0 lh-1 bg-transparent transition"
-                    >
-                        <i class="ri-close-fill"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="trezo-card-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="main-label d-block fw-medium text-black">
-                                        Supplier Name
-                                    </label>
-                                    <input type="text" class="form-control" placeholder="E.g. Supplier Name"
-                                           [(ngModel)]="supplier.name">
-                                    <small *ngIf="errors['name']" class="form-text text-danger">{{ errors['name'] }}</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-box">
-                    <button
-                        (click)="toggleSupplierForm()"
-                        class="warn d-inline-block fw-medium border-0 border-radius transition"
-                    >
-                        Cancel
-                    </button>
-                    <button (click)="createSupplier()"
-                            class="primary d-inline-block fw-medium border-0 border-radius transition">
-                        <span class="position-relative d-inline-block">
-                            <i class="material-symbols-outlined">
-                                add
-                            </i>
-                            Save
-                        </span>
-                    </button>
-                </div>
             </div>
         </div>
     </div>

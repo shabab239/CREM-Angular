@@ -65,13 +65,13 @@ export class StagesComponent implements OnInit {
             this.newStage = new ConstructionStage();
             this.newStage.status = StageStatus[status as keyof typeof StageStatus];
             if (this.stageOf === 'building') {
-                this.newStage.building.id = this.stageOfId;
+                this.newStage.building!.id = this.stageOfId;
             }
             if (this.stageOf === 'floor') {
-                this.newStage.floor.id = this.stageOfId;
+                this.newStage.floor!.id = this.stageOfId;
             }
             if (this.stageOf === 'unit') {
-                this.newStage.unit.id = this.stageOfId;
+                this.newStage.unit!.id = this.stageOfId;
             }
         }
         this.showNewStage = !this.showNewStage;
