@@ -28,7 +28,7 @@
             </h5>
         </div>
         <div class="trezo-card-subtitle">
-            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/marketing/conversation-form">
+            <a class="add-btn d-inline-block transition fw-medium border-radius" routerLink="/dashboard/marketing/conversation-form/{{leadId}}">
                 <span class="d-inline-block position-relative">
                     <i class="material-symbols-outlined">add</i>
                     Add New Conversation
@@ -43,7 +43,7 @@
                 <tr>
                     <th scope="col" class="fw-medium"> SL </th>
                     <th scope="col" class="fw-medium"> Lead </th>
-                    <th scope="col" class="fw-medium"> Customer </th>
+                    <!--<th scope="col" class="fw-medium"> Customer </th>-->
                     <th scope="col" class="fw-medium"> Employee </th>
                     <th scope="col" class="fw-medium"> Description </th>
                     <th scope="col" class="fw-medium"> Follow-up Date </th>
@@ -54,7 +54,7 @@
                 <tr *ngFor="let conversation of conversations; let i = index">
                     <td class="text-body"> {{ i + 1 }} </td>
                     <td class="text-body"> {{ conversation.lead.name }} </td>
-                    <td class="text-body"> {{ conversation.customer.name }} </td>
+                    <!--<td class="text-body"> {{ conversation.customer.name }} </td>-->
                     <td class="text-body"> {{ conversation.employee.name }} </td>
                     <td class="text-body"> {{ conversation.description }} </td>
                     <td class="text-body"> {{ conversation.followUpDate | date: 'mediumDate' }} </td>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {ActivatedRoute, Route, RouterLink} from '@angular/router';
 import {DatePipe, NgFor, NgIf} from '@angular/common';
 import { Conversation } from '../model/conversation.model';
 import { ApiResponse } from '../../util/api.response.model';
@@ -14,17 +14,20 @@ import {ConversationService} from "../service/conversation.service";
     styleUrls: ['./conversations.component.scss']
 })
 export class ConversationsComponent implements OnInit {
+    //customerID: number;
+    leadId: number;
     conversations: Conversation[] = [];
     errors: { [key: string]: string } = {};
 
-    constructor(private conversationService: ConversationService) {}
+    constructor(private conversationService: ConversationService, private route: ActivatedRoute) {}
 
     ngOnInit(): void {
+        this.leadId = this.route.snapshot.params['id'];
         this.loadConversations();
     }
 
     loadConversations(): void {
-        this.conversationService.getAll().subscribe({
+        this.conversationService.getAllByLeadId(this.leadId).subscribe({
             next: (response: ApiResponse) => {
                 if (response && response.successful) {
                     this.conversations = response.data['conversations'];

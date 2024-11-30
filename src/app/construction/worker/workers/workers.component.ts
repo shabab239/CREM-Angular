@@ -82,7 +82,8 @@ export class WorkersComponent implements OnInit {
     payWorkers() {
         let transaction: Transaction = new Transaction();
         transaction.amount = this.calculateTotalSalary();
-        this.transactionService.payWorkers(transaction).subscribe({
+        const workersToPay = this.attendances.map(attendance => attendance.worker);
+        this.workerService.payWorkers(workersToPay).subscribe({
             next: (response: ApiResponse) => {
                 if (response && response.successful) {
                     this.loadWorkers();

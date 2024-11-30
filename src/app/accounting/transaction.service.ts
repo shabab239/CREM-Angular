@@ -38,10 +38,6 @@ export class TransactionService {
         return this.http.get<ApiResponse>(`${this.baseUrl}/groupTransaction?groupTransactionId=${groupTransactionId}`);
     }
 
-    payWorkers(transaction: Transaction): Observable<ApiResponse> {
-        return this.http.post<ApiResponse>(`${this.baseUrl}/payWorkers`, transaction);
-    }
-
     getIncomeStatement(startDate: string, endDate: string): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(
             `${this.baseUrl}/profit-loss?startDate=${startDate}&endDate=${endDate}`

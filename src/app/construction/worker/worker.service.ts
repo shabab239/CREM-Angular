@@ -6,6 +6,7 @@ import {ApiResponse} from "../../util/api.response.model";
 import {AttendanceStatus, WorkerAttendance} from "./worker.attendance.model";
 import {API_URLS} from "../../util/urls";
 import {formatDate} from "@angular/common";
+import {Transaction} from "../../accounting/model/transaction.model";
 
 @Injectable({
     providedIn: 'root'
@@ -57,6 +58,10 @@ export class WorkerService {
             `${this.baseUrl}/attendance/recordAttendance?attendanceId=${attendanceId}&attendance=${attendance}`,
             {}
         );
+    }
+
+    payWorkers(workers: Worker[]): Observable<ApiResponse> {
+        return this.http.post<ApiResponse>(`${this.baseUrl}/payWorkers`, workers);
     }
 
     getAttendanceByStageIdAndDate(stageId: number, date: Date): Observable<ApiResponse> {

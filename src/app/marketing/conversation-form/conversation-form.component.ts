@@ -21,80 +21,28 @@ import {AlertUtil} from "../../util/alert.util";
 })
 export class ConversationFormComponent implements OnInit {
     errors: { [key: string]: string } = {};
+    leadId: number;
     conversation: Conversation = new Conversation();
     leads: Lead[] = [];
     users: User[] = [];
 
     constructor(
         private conversationService: ConversationService,
-        private leadService: LeadService,
-        private userService: UserService,
         private router: Router,
         private route: ActivatedRoute
     ) {}
 
     ngOnInit(): void {
-        this.loadLeads();
-        this.loadUsers();
-
-        let conversationId = this.route.snapshot.params['id'];
-        if (conversationId) {
-            this.conversationService.getById(conversationId).subscribe({
-                next: (response: ApiResponse) => {
-                    if (response && response.successful) {
-                        this.conversation = response.data['conversation'];
-                    } else {
-                        this.errors = response?.errors || {};
-                        AlertUtil.error(response);
-                    }
-                },
-                error: (error) => {
-                    AlertUtil.error(error);
-                }
-            });
-        }
-    }
-
-    loadLeads(): void {
-        this.leadService.getAll().subscribe({
-            next: (response: ApiResponse) => {
-                if (response && response.successful) {
-                    this.leads = response.data['leads'];
-                } else {
-                    AlertUtil.error(response);
-                }
-            },
-            error: (error) => {
-                AlertUtil.error(error);
-            }
-        });
-    }
-
-    loadUsers(): void {
-        this.userService.getAll().subscribe({
-            next: (response: ApiResponse) => {
-                if (response && response.successful) {
-                    this.users = response.data['users'];
-                } else {
-                    AlertUtil.error(response);
-                }
-            },
-            error: (error) => {
-                AlertUtil.error(error);
-            }
-        });
+        this.leadId = this.route.snapshot.params['id'];
     }
 
     save(): void {
-        let apiResponse: Observable<ApiResponse> = this.conversation.id
-            ? this.conversationService.update(this.conversation)
-            : this.conversationService.save(this.conversation);
-
-        apiResponse.subscribe({
+        this.conversation.lead.id = this.leadId;
+        this.conversationService.save(this.conversation).subscribe({
             next: (response) => {
                 if (response && response.successful) {
                     AlertUtil.success(response);
-                    this.router.navigate(['/dashboard/marketing/conversations']);
+                    this.router.navigate(['/dashboard/marketing/conversations', this.leadId]);
                 } else {
                     this.errors = response?.errors || {};
                     AlertUtil.error(response);

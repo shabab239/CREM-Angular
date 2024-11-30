@@ -32,12 +32,4 @@ export class AccountService {
   deleteById(id: number): Observable<ApiResponse> {
     return this.http.delete<ApiResponse>(`${this.baseUrl}/${id}`);
   }
-
-  getAllByCompanyId(companyId: number): Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(`${this.baseUrl}/company/${companyId}`);
-  }
-
-  getByIdAndCompanyId(id: number, companyId: number): Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(`${this.baseUrl}/company/${companyId}/account/${id}`);
-  }
 }

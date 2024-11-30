@@ -40,28 +40,6 @@
                         <small *ngIf="errors['followUpDate']" class="form-text text-danger">{{ errors['followUpDate'] }}</small>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="main-label d-block fw-medium text-black">Lead</label>
-                        <select class="form-select" [(ngModel)]="conversation.lead.id" name="leadId">
-                            <option *ngFor="let lead of leads" [value]="lead.id">
-                                {{ lead.name }}
-                            </option>
-                        </select>
-                        <small *ngIf="errors['leadId']" class="form-text text-danger">{{ errors['leadId'] }}</small>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="main-label d-block fw-medium text-black">Customer</label>
-                        <select class="form-select" [(ngModel)]="conversation.customer.id" name="customerId">
-                            <option *ngFor="let user of users" [value]="user.id">
-                                {{ user.name }}
-                            </option>
-                        </select>
-                        <small *ngIf="errors['customerId']" class="form-text text-danger">{{ errors['customerId'] }}</small>
-                    </div>
-                </div>
                 <div class="col-12">
                     <div class="form-group">
                         <label class="main-label d-block fw-medium text-black">Description</label>
@@ -75,7 +53,7 @@
                 <button type="submit" class="primary d-inline-block fw-medium border-radius border-0 transition">
                     <span class="d-inline-block position-relative">
                         <i class="material-symbols-outlined">add</i>
-                        {{ conversation.id ? 'Update' : 'Create' }} Conversation
+                        Create Conversation
                     </span>
                 </button>
             </div>

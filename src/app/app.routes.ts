@@ -82,8 +82,8 @@ export const routes: Routes = [
                     {path: 'lead-form', component: LeadFormComponent},
                     {path: 'campaigns', component: CampaignsComponent},
                     {path: 'campaign-form', component: CampaignFormComponent},
-                    {path: 'conversations', component: ConversationsComponent},
-                    {path: 'conversation-form', component: ConversationFormComponent},
+                    {path: 'conversations/:id', component: ConversationsComponent},
+                    {path: 'conversation-form/:id', component: ConversationFormComponent},
                 ]
             },
             {

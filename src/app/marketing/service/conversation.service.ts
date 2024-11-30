@@ -15,8 +15,12 @@ export class ConversationService {
     constructor(private http: HttpClient) {}
 
     getAll(): Observable<ApiResponse> {
-        return this.http.get<ApiResponse>(`${this.apiUrl}/`);
-      }
+        return this.http.get<ApiResponse>(`${this.apiUrl}/all`);
+    }
+
+    getAllByLeadId(leadId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/getAllByLeadId?leadId=${leadId}`);
+    }
 
     save(conversation: Conversation): Observable<ApiResponse> {
         return this.http.post<ApiResponse>(`${this.apiUrl}/save`, conversation);
@@ -34,25 +38,22 @@ export class ConversationService {
         return this.http.delete<ApiResponse>(`${this.apiUrl}/${id}`);
     }
 
-    getByDateRange(startDate: Date, endDate: Date, companyId: number): Observable<ApiResponse> {
-        return this.http.get<ApiResponse>(`${this.apiUrl}/date-range/${companyId}`, {
-            params: {
-                startDate: startDate.toISOString(),
-                endDate: endDate.toISOString()
-            }
-        });
+    getByDateRange(startDate: Date, endDate: Date): Observable<ApiResponse> {
+        const start = startDate.toISOString().split('T')[0];
+        const end = endDate.toISOString().split('T')[0];
+        return this.http.get<ApiResponse>(`${this.apiUrl}/date-range?startDate=${start}&endDate=${end}`);
     }
 
-    getByCustomerId(customerId: number, companyId: number): Observable<ApiResponse> {
-        return this.http.get<ApiResponse>(`${this.apiUrl}/customer/${customerId}/${companyId}`);
+    getByCustomerId(customerId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/customer/${customerId}`);
     }
 
-    getByEmployeeId(employeeId: number, companyId: number): Observable<ApiResponse> {
-        return this.http.get<ApiResponse>(`${this.apiUrl}/employee/${employeeId}/${companyId}`);
+    getByEmployeeId(employeeId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/employee/${employeeId}`);
     }
 
-    getByLeadId(leadId: number, companyId: number): Observable<ApiResponse> {
-        return this.http.get<ApiResponse>(`${this.apiUrl}/lead/${leadId}/${companyId}`);
+    getByLeadId(leadId: number): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/lead/${leadId}`);
     }
 }
 
