@@ -41,4 +41,8 @@ export class LeadService {
     getByCampaignId(campaignId: number): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(`${this.apiUrl}/campaign/${campaignId}`);
     }
+
+    convertToCustomer(id: number): Observable<ApiResponse> {
+        return this.http.post<ApiResponse>(`${this.apiUrl}/convertToCustomer/${id}`, null);
+    }
 }

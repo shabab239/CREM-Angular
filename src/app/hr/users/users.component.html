@@ -49,6 +49,8 @@
                     <th scope="col" class="fw-medium">Email</th>
                     <th scope="col" class="fw-medium">Role</th>
                     <th scope="col" class="fw-medium">Status</th>
+                    <th scope="col" class="fw-medium">Bookings</th>
+                    <th scope="col" class="fw-medium">Account</th>
                     <th scope="col" class="fw-medium">Action</th>
                 </tr>
                 </thead>
@@ -76,6 +78,16 @@
                             <span class="trezo-badge" [ngClass]="{'cancelled': user.status === 'INACTIVE'}">
                                 {{user.status === 'ACTIVE' ? 'Active' : 'Deactive'}}
                             </span>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-secondary">
+                            View
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-secondary">
+                            View
+                        </button>
                     </td>
                     <td>
                         <div class="action-buttons d-flex align-items-center">

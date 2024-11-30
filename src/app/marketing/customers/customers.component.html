@@ -78,6 +78,7 @@
                         <th scope="col" class="fw-medium"> Gender </th>
                         <th scope="col" class="fw-medium"> Address </th>
                         <th scope="col" class="fw-medium"> Date of Birth </th>
+                        <th scope="col" class="fw-medium"> Action </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -94,6 +95,19 @@
                         <td class="text-body"> {{ customer.gender }} </td>
                         <td class="text-body"> {{ customer.address }} </td>
                         <td class="text-body"> {{ customer.dateOfBirth | date }} </td>
+                        <td>
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> visibility </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> edit </i>
+                                </button>
+                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                    <i class="material-symbols-outlined"> delete </i>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
