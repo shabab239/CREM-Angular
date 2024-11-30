@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {ApiResponse} from '../../../util/api.response.model';
 import {API_URLS} from "../../../util/urls";
-import {ConstructionStage} from "./stage.model"; // Assuming you have a ConstructionStage model
+import {ConstructionStage, StageStatus} from "./stage.model"; // Assuming you have a ConstructionStage model
 
 @Injectable({
     providedIn: 'root'
@@ -17,6 +17,10 @@ export class StageService {
 
     getAllStages(): Observable<ApiResponse> {
         return this.http.get<ApiResponse>(`${this.apiUrl}/`);
+    }
+
+    getAllStagesByStatus(status: StageStatus): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(`${this.apiUrl}/getAllStagesByStatus?status=${status}`);
     }
 
     saveStage(stage: ConstructionStage): Observable<ApiResponse> {

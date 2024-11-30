@@ -8,7 +8,7 @@ export const API_URLS = {
     user: `${baseUrl}/user`,
     image: `${baseUrl}/image`,
 
-    dashboard: `${baseUrl}/admin/dashboard`,
+    dashboard: `${baseUrl}/dashboard`,
     project: `${baseUrl}/project`,
     stage: `${baseUrl}/stage`,
     worker: `${baseUrl}/worker`,

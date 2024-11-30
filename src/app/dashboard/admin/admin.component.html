@@ -1,0 +1,118 @@
+<div class="container-fluid p-4">
+    <!-- Overview Stats -->
+    <div class="row mb-4 g-3">
+        <div class="col-lg-3 col-md-6" *ngFor="let stat of overviewStats">
+            <div class="card h-100" [ngClass]="stat.borderClass">
+                <div class="card-body">
+                    <h6 class="text-muted">{{ stat.title }}</h6>
+                    <div class="d-flex align-items-center mt-2">
+                        <h2 class="mb-0">{{ stat.value | number }}</h2>
+                        <i class="bi ms-auto fs-3" [ngClass]="stat.iconClass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Financial & Sales Stats -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="mb-4">Financial Overview</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-success bg-opacity-10 rounded">
+                                <h6 class="text-muted">Total Revenue</h6>
+                                <h3 class="mb-0">${{ revenue | number:'1.2-2' }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-danger bg-opacity-10 rounded">
+                                <h6 class="text-muted">Total Expenses</h6>
+                                <h3 class="mb-0">${{ expenses | number:'1.2-2' }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales Stats -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="mb-4">Sales Overview</h5>
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <div class="p-3 bg-info bg-opacity-10 rounded">
+                                <h6 class="text-muted">Available Units</h6>
+                                <h3 class="mb-0">{{ availableUnits }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 bg-warning bg-opacity-10 rounded">
+                                <h6 class="text-muted">Total Leads</h6>
+                                <h3 class="mb-0">{{ totalLeads }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 bg-success bg-opacity-10 rounded">
+                                <h6 class="text-muted">Active Leads</h6>
+                                <h3 class="mb-0">{{ activeLeads }}</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 bg-primary bg-opacity-10 rounded">
+                                <h6 class="text-muted">Converted Leads</h6>
+                                <h3 class="mb-0">{{ convertedLeads }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workforce Stats -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="mb-4">Workforce Analytics</h5>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-3 bg-light rounded">
+                                <h6 class="text-muted">Worker Utilization</h6>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="mb-0">{{ workerUtilization?.percentage || 0 }}%</h3>
+                                    <i class="bi bi-person-workspace ms-auto fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 bg-light rounded">
+                                <h6 class="text-muted">Attendance Rate</h6>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="mb-0">{{ attendanceStats[0]?.rate || 0 }}%</h3>
+                                    <i class="bi bi-calendar-check ms-auto fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 bg-light rounded">
+                                <h6 class="text-muted">Productivity Rate</h6>
+                                <div class="d-flex align-items-center">
+                                    <h3 class="mb-0">{{ productivityMetrics?.rate || 0 }}%</h3>
+                                    <i class="bi bi-graph-up-arrow ms-auto fs-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

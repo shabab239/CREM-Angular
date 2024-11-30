@@ -129,6 +129,11 @@
                                         </a>
                                     </li>
                                     <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/project/all-stages" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            All Stages
+                                        </a>
+                                    </li>
+                                    <li class="sidemenu-item">
                                         <a routerLink="/dashboard/workers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Workers
                                         </a>
@@ -153,7 +158,7 @@
                                 person
                             </i>
                             <span class="title">
-                                Users
+                                HR
                             </span>
                         </button>
                         <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(12) }">
@@ -161,32 +166,12 @@
                                 <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
                                     <li class="sidemenu-item">
                                         <a routerLink="/dashboard/users" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Team Members
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/users/users-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Users List
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/users/add-user" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Add User
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/starter" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                            <i class="material-symbols-outlined">
-                                star_border
-                            </i>
-                            <span class="title">
-                                Starter
-                            </span>
-                        </a>
                     </div>
                     <span class="sub-title d-block fw-medium text-uppercase">
                         ACCOUNTING

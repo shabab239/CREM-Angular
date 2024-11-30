@@ -1,10 +1,5 @@
 import {Routes} from '@angular/router';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import {EcommerceComponent} from './dashboard/ecommerce/ecommerce.component';
-import {CrmComponent} from './dashboard/crm/crm.component';
-import {ProjectManagementComponent} from './dashboard/project-management/project-management.component';
-import {LmsComponent} from './dashboard/lms/lms.component';
-import {HelpdeskComponent} from './dashboard/helpdesk/helpdesk.component';
 import {TasksComponent} from './construction/project/to-do-list/tasks.component';
 import {EcommercePageComponent} from './pages/ecommerce-page/ecommerce-page.component';
 import {EProductsGridComponent} from './pages/ecommerce-page/e-products-grid/e-products-grid.component';
@@ -27,11 +22,8 @@ import {ECreateSellerComponent} from './pages/ecommerce-page/e-create-seller/e-c
 import {EReviewsComponent} from './pages/ecommerce-page/e-reviews/e-reviews.component';
 import {ERefundsComponent} from './pages/ecommerce-page/e-refunds/e-refunds.component';
 import {ProjectManagementPageComponent} from './construction/project/project-management-page.component';
-import {PmProjectOverviewComponent} from './construction/project/pm-project-overview/pm-project-overview.component';
 import {ProjectsComponent} from './construction/project/projects/projects.component';
 import {ProjectFormComponent} from './construction/project/project-form/project-form.component';
-import {PmClientsComponent} from './construction/project/pm-clients/pm-clients.component';
-import {PmTeamsComponent} from './construction/project/pm-teams/pm-teams.component';
 import {StagesComponent} from './construction/project/stage/stages/stages.component';
 import {UsersComponent} from './hr/users/users.component';
 import {LmsPageComponent} from './pages/lms-page/lms-page.component';
@@ -130,6 +122,9 @@ import {CustomersComponent} from "./marketing/customers/customers.component";
 import {LeadsComponent} from "./marketing/leads/leads.component";
 import {MarketplaceComponent} from "./marketing/marketplace/marketplace.component";
 import {BrowseUnitsComponent} from "./marketing/browse-units/browse-units.component";
+import {AdminComponent} from "./dashboard/admin/admin.component";
+import {ManagerComponent} from "./dashboard/manager/manager.component";
+import {AllStagesComponent} from "./construction/project/stage/all-stages/all-stages.component";
 
 export const routes: Routes = [
     {
@@ -146,11 +141,8 @@ export const routes: Routes = [
         component: DashboardComponent,
         canActivate: [AuthGuard],
         children: [
-            {path: '', component: EcommerceComponent},
-            {path: 'crm', component: CrmComponent},
-            {path: 'project-management', component: ProjectManagementComponent},
-            {path: 'lms', component: LmsComponent},
-            {path: 'helpdesk', component: HelpdeskComponent},
+            {path: '', component: AdminComponent},
+            {path: 'manager', component: ManagerComponent},
             {
                 path: 'ecommerce-page',
                 component: EcommercePageComponent,
@@ -193,7 +185,6 @@ export const routes: Routes = [
                 path: 'project',
                 component: ProjectManagementPageComponent,
                 children: [
-                    {path: '', component: PmProjectOverviewComponent},
                     {path: 'projects', component: ProjectsComponent},
                     {path: 'project-form', component: ProjectFormComponent},
                     {path: 'project-form/:id', component: ProjectFormComponent},
@@ -206,11 +197,10 @@ export const routes: Routes = [
                     {path: 'units', component: UnitsComponent},
                     {path: 'unit-form', component: UnitFormComponent},
                     {path: 'unit-form/:id', component: UnitFormComponent},
+                    {path: 'all-stages', component: AllStagesComponent},
                     {path: 'stages/:stageOf/:stageOfId', component: StagesComponent},
                     {path: 'invoice/:groupTransactionId', component: InvoiceComponent},
                     {path: 'tasks/:stageId', component: TasksComponent},
-                    {path: 'clients', component: PmClientsComponent},
-                    {path: 'teams', component: PmTeamsComponent},
                     {path: 'users', component: UsersComponent},
                 ]
             },
@@ -291,7 +281,7 @@ export const routes: Routes = [
                 path: 'users',
                 component: UsersPageComponent,
                 children: [
-                    {path: '', component: TeamMembersComponent},
+                    {path: '', component: UsersComponent},
                     {path: 'users-list', component: UsersListComponent},
                     {path: 'add-user', component: AddUserComponent}
                 ]
