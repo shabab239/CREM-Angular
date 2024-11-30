@@ -53,6 +53,8 @@ import {
     RawMaterialOrdersComponent
 } from "./construction/raw-material/raw-material-orders/raw-material-orders.component";
 import {RawMaterialUsageComponent} from "./construction/raw-material/raw-material-usage/raw-material-usage.component";
+import {IncomeStatementComponent} from "./accounting/income-statement/income-statement.component";
+import {CashFlowComponent} from "./accounting/cash-flow/cash-flow.component";
 
 export const routes: Routes = [
     {
@@ -121,6 +123,9 @@ export const routes: Routes = [
             {path: 'accounts', component: AccountsComponent,},
             {path: 'ledger', component: LedgerHeadsComponent,},
             {path: 'ledger-heads', component: LedgerHeadsComponent,},
+            {path: 'income-statement', component: IncomeStatementComponent,},
+            {path: 'cash-flow', component: CashFlowComponent,},
+            {path: 'users', component: UsersComponent,},
         ]
     },
     {

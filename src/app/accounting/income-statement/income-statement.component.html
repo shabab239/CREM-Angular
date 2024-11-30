@@ -1,0 +1,76 @@
+<div class="container mt-4">
+    <h3 class="text-center mb-4">Income Statement</h3>
+
+    <!-- Date Range Selector -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <label for="startDate" class="form-label">Start Date</label>
+            <input
+                id="startDate"
+                type="date"
+                class="form-control"
+                [(ngModel)]="startDate"
+                required />
+        </div>
+        <div class="col-md-4">
+            <label for="endDate" class="form-label">End Date</label>
+            <input
+                id="endDate"
+                type="date"
+                class="form-control"
+                [(ngModel)]="endDate"
+                required />
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+            <button
+                class="btn btn-primary w-100"
+                (click)="loadIncomeStatement()">
+                Load Statement
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Income Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <strong>Income</strong>
+                </div>
+                <div class="card-body">
+                    <p><strong>Booking Income:</strong> {{ incomeStatement?.income.bookingIncome | currency }}</p>
+                    <p><strong>Total Income:</strong> {{ incomeStatement?.income.totalIncome | currency }}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profit Section -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <strong>Profit</strong>
+                </div>
+                <div class="card-body">
+                    <p><strong>Gross Profit:</strong> {{ incomeStatement?.grossProfit | currency }}</p>
+                    <p><strong>Net Profit:</strong> {{ incomeStatement?.netProfit | currency }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Expenses Section -->
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <strong>Expenses</strong>
+                </div>
+                <div class="card-body">
+                    <p><strong>Total Expenses:</strong> {{ incomeStatement?.expenses.totalExpenses | currency }}</p>
+                    <p><strong>Worker Payments:</strong> {{ incomeStatement?.expenses.workerPayments | currency }}</p>
+                    <p><strong>Material Expenses:</strong> {{ incomeStatement?.expenses.materialExpenses | currency }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -221,43 +221,6 @@
                             </div>
                         </div>
                     </div>
-                    <span class="sub-title d-block fw-medium text-uppercase">
-                        REPORTING
-                    </span>
-                    <div class="accordion-item border-radius border-0">
-                        <button
-                            type="button"
-                            (click)="toggleSection(88)"
-                            [ngClass]="{ 'open': isSectionOpen(88) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
-                        >
-                            <i class="material-symbols-outlined">
-                                list
-                            </i>
-                            <span class="title">
-                                Reports
-                            </span>
-                        </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(88) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/report/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Financial
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-radius border-0">
-                            <i class="material-symbols-outlined">
-                                logout
-                            </i>
-                            <span class="title">
-                                Logout
-                            </span>
-                    </div>
                 </div>
             </div>
         </div>

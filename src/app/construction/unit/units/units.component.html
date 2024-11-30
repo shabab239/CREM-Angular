@@ -46,12 +46,14 @@
             <table class="table mb-0">
                 <thead>
                     <tr>
+                        <th scope="col" class="fw-medium col-md-1">Building</th>
                         <th scope="col" class="fw-medium col-md-1">Floor</th>
                         <th scope="col" class="fw-medium">Units</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let floor of floors">
+                        <td class="text-body">{{ floor.building.name }}</td>
                         <td class="text-body">{{ floor.name }}</td>
                         <td class="text-body">
                             <div class="d-flex flex-wrap">

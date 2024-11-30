@@ -41,4 +41,16 @@ export class TransactionService {
     payWorkers(transaction: Transaction): Observable<ApiResponse> {
         return this.http.post<ApiResponse>(`${this.baseUrl}/payWorkers`, transaction);
     }
+
+    getIncomeStatement(startDate: string, endDate: string): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(
+            `${this.baseUrl}/profit-loss?startDate=${startDate}&endDate=${endDate}`
+        );
+    }
+
+    getCashFlowStatement(startDate: string, endDate: string): Observable<ApiResponse> {
+        return this.http.get<ApiResponse>(
+            `${this.baseUrl}/cash-flow?startDate=${startDate}&endDate=${endDate}`
+        );
+    }
 }
