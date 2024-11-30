@@ -6,8 +6,8 @@ import {WorkerService} from "../worker.service";
 import {Worker} from "../worker.model";
 import {ApiResponse} from "../../../util/api.response.model";
 import {AlertUtil} from "../../../util/alert.util";
-import {StageService} from "../../project/stage/stage.service";
-import {ConstructionStage} from "../../project/stage/stage.model";
+import {StageService} from "../../stage/stage.service";
+import {ConstructionStage} from "../../stage/stage.model";
 import {ProjectService} from "../../project/project.service";
 import {attendanceStatusOptions, WorkerAttendance} from "../worker.attendance.model";
 

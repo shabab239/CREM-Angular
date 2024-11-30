@@ -3,6 +3,13 @@ import { ApiResponse } from './api.response.model';
 import Swal from 'sweetalert2';
 
 export class AlertUtil {
+    static successText(message: string): void {
+        Swal.fire({
+            icon: 'success',
+            title: 'Message',
+            text: message || 'Successful',
+        });
+    }
     static success(response: ApiResponse): void {
         Swal.fire({
             icon: 'success',

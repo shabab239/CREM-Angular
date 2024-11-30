@@ -36,8 +36,7 @@
                     <div class="accordion-item border-radius border-0">
                         <button
                             type="button"
-                            (click)="toggleSection(0)"
-                            [ngClass]="{ 'open': isSectionOpen(0) }"
+                            routerLink="/dashboard/"
                             class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
@@ -46,47 +45,7 @@
                             <span class="title">
                                 Dashboard
                             </span>
-                            <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center">
-                                5
-                            </span>
                         </button>
-                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
-                            <div class="accordion-body">
-                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            eCommerce
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/crm" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            CRM
-                                            <span class="trezo-badge d-inline-block position-relative">
-                                                Hot
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/project-management" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            Project Management
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/lms" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            LMS
-                                        </a>
-                                    </li>
-                                    <li class="sidemenu-item">
-                                        <a routerLink="/dashboard/helpdesk" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
-                                            HelpDesk
-                                            <span class="trezo-badge d-inline-block position-relative style-two">
-                                                Top
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     <span class="sub-title d-block fw-medium text-uppercase">
                         CORE
@@ -187,7 +146,7 @@
                                 money
                             </i>
                             <span class="title">
-                                Payment
+                                Accounting
                             </span>
                         </button>
                         <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
@@ -242,6 +201,35 @@
                                     <li class="sidemenu-item">
                                         <a routerLink="/dashboard/marketing/leads" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
                                             Leads
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="sub-title d-block fw-medium text-uppercase">
+                        REPORTING
+                    </span>
+                    <div class="accordion-item border-radius border-0">
+                        <button
+                            type="button"
+                            (click)="toggleSection(88)"
+                            [ngClass]="{ 'open': isSectionOpen(88) }"
+                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                        >
+                            <i class="material-symbols-outlined">
+                                list
+                            </i>
+                            <span class="title">
+                                Reports
+                            </span>
+                        </button>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(88) }">
+                            <div class="accordion-body">
+                                <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                    <li class="sidemenu-item">
+                                        <a routerLink="/dashboard/report/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-medium">
+                                            Financial
                                         </a>
                                     </li>
                                 </ul>

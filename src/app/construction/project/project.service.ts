@@ -4,9 +4,9 @@ import { Observable } from 'rxjs';
 import { ApiResponse } from '../../util/api.response.model';
 import { API_URLS } from '../../util/urls';
 import { Project } from './project.model';
-import {Building} from "./building/building.model";
-import {Floor} from "./floor/floor.model";
-import {Unit} from "./unit/unit.model";
+import {Building} from "../building/building.model";
+import {Floor} from "../floor/floor.model";
+import {Unit} from "../unit/unit.model";
 
 @Injectable({
   providedIn: 'root'

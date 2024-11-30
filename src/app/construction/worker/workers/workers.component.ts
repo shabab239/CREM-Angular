@@ -5,7 +5,7 @@ import {NgFor, NgIf} from '@angular/common';
 import {RouterLink} from '@angular/router';
 import {ApiResponse} from "../../../util/api.response.model";
 import {AlertUtil} from "../../../util/alert.util";
-import {StageStatusOptions} from "../../project/stage/stage.model";
+import {StageStatusOptions} from "../../stage/stage.model";
 import {FormsModule} from "@angular/forms";
 import {WorkerAttendance} from "../worker.attendance.model";
 import {TransactionService} from "../../../accounting/transaction.service";

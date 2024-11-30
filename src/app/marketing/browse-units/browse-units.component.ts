@@ -4,11 +4,11 @@ import {CurrencyPipe, NgForOf, NgIf} from "@angular/common";
 import {ActivatedRoute} from '@angular/router';
 import {API_URLS} from '../../util/urls';
 import {MarketplaceService} from "../service/marketplace.service";
-import {Unit, UnitType, UnitTypeOptions} from "../../construction/project/unit/unit.model";
+import {Unit, UnitType, UnitTypeOptions} from "../../construction/unit/unit.model";
 import {Viewer} from "@photo-sphere-viewer/core";
 import {LeadService} from "../service/lead.service";
 import {Lead, LeadStatus} from "../model/lead.model";
-import {StageStatusOptions} from "../../construction/project/stage/stage.model";
+import {StageStatusOptions} from "../../construction/stage/stage.model";
 import {ApiResponse} from "../../util/api.response.model";
 import {AlertUtil} from "../../util/alert.util";
 

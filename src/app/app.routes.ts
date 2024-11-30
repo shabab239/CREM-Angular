@@ -1,6 +1,6 @@
 import {Routes} from '@angular/router';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import {TasksComponent} from './construction/project/to-do-list/tasks.component';
+import {TasksComponent} from './construction/to-do-list/tasks.component';
 import {EcommercePageComponent} from './pages/ecommerce-page/ecommerce-page.component';
 import {EProductsGridComponent} from './pages/ecommerce-page/e-products-grid/e-products-grid.component';
 import {EProductsListComponent} from './pages/ecommerce-page/e-products-list/e-products-list.component';
@@ -24,7 +24,7 @@ import {ERefundsComponent} from './pages/ecommerce-page/e-refunds/e-refunds.comp
 import {ProjectManagementPageComponent} from './construction/project/project-management-page.component';
 import {ProjectsComponent} from './construction/project/projects/projects.component';
 import {ProjectFormComponent} from './construction/project/project-form/project-form.component';
-import {StagesComponent} from './construction/project/stage/stages/stages.component';
+import {StagesComponent} from './construction/stage/stages/stages.component';
 import {UsersComponent} from './hr/users/users.component';
 import {LmsPageComponent} from './pages/lms-page/lms-page.component';
 import {LCoursesComponent} from './pages/lms-page/l-courses/l-courses.component';
@@ -88,29 +88,18 @@ import {FaqPageComponent} from './pages/faq-page/faq-page.component';
 import {FrontPagesComponent} from './front-pages/front-pages.component';
 import {HomeComponent} from './front-pages/home/home.component';
 import {AuthGuard} from "./authentication/auth.guard";
-import {BuildingsComponent} from "./construction/project/building/buildings/buildings.component";
-import {BuildingFormComponent} from "./construction/project/building/building-form/building-form.component";
-import {FloorFormComponent} from "./construction/project/floor/floor-form/floor-form.component";
-import {FloorsComponent} from "./construction/project/floor/floors/floors.component";
-import {UnitsComponent} from "./construction/project/unit/units/units.component";
-import {UnitFormComponent} from "./construction/project/unit/unit-form/unit-form.component";
+import {BuildingsComponent} from "./construction/building/buildings/buildings.component";
+import {BuildingFormComponent} from "./construction/building/building-form/building-form.component";
+import {FloorFormComponent} from "./construction/floor/floor-form/floor-form.component";
+import {FloorsComponent} from "./construction/floor/floors/floors.component";
+import {UnitsComponent} from "./construction/unit/units/units.component";
+import {UnitFormComponent} from "./construction/unit/unit-form/unit-form.component";
 import {WorkersComponent} from "./construction/worker/workers/workers.component";
 import {WorkerFormComponent} from "./construction/worker/worker-form/worker-form.component";
 import {WorkerAttendanceComponent} from "./construction/worker/worker-attendance/worker-attendance.component";
-import {RawMaterialsComponent} from "./construction/project/raw-material/raw-materials/raw-materials.component";
-import {
-    RawMaterialFormComponent
-} from "./construction/project/raw-material/raw-material-form/raw-material-form.component";
-import {
-    RawMaterialOrdersComponent
-} from "./construction/project/raw-material/raw-material-orders/raw-material-orders.component";
-import {
-    RawMaterialUsageComponent
-} from "./construction/project/raw-material/raw-material-usage/raw-material-usage.component";
-import {BookingViewComponent} from "./construction/project/unit/booking-view/booking-view.component";
+import {BookingViewComponent} from "./construction/unit/booking-view/booking-view.component";
 import {TransactionsComponent} from "./accounting/transactions/transactions.component";
 import {AccountsComponent} from "./accounting/accounts/accounts.component";
-import {InvoiceComponent} from "./construction/project/unit/invoice/invoice.component";
 import {LedgerHeadsComponent} from "./accounting/ledger-heads/ledger-heads.component";
 import {CampaignsComponent} from "./marketing/campaigns/campaigns.component";
 import {ConversationsComponent} from "./marketing/conversations/conversations.component";
@@ -124,10 +113,16 @@ import {MarketplaceComponent} from "./marketing/marketplace/marketplace.componen
 import {BrowseUnitsComponent} from "./marketing/browse-units/browse-units.component";
 import {AdminComponent} from "./dashboard/admin/admin.component";
 import {ManagerComponent} from "./dashboard/manager/manager.component";
-import {AllStagesComponent} from "./construction/project/stage/all-stages/all-stages.component";
+import {AllStagesComponent} from "./construction/stage/all-stages/all-stages.component";
+import {RawMaterialsComponent} from "./construction/raw-material/raw-materials/raw-materials.component";
+import {RawMaterialFormComponent} from "./construction/raw-material/raw-material-form/raw-material-form.component";
 import {
     RawMaterialSuppliersComponent
-} from "./construction/project/raw-material/raw-material-suppliers/raw-material-suppliers.component";
+} from "./construction/raw-material/raw-material-suppliers/raw-material-suppliers.component";
+import {
+    RawMaterialOrdersComponent
+} from "./construction/raw-material/raw-material-orders/raw-material-orders.component";
+import {RawMaterialUsageComponent} from "./construction/raw-material/raw-material-usage/raw-material-usage.component";
 
 export const routes: Routes = [
     {
@@ -202,7 +197,6 @@ export const routes: Routes = [
                     {path: 'unit-form/:id', component: UnitFormComponent},
                     {path: 'all-stages', component: AllStagesComponent},
                     {path: 'stages/:stageOf/:stageOfId', component: StagesComponent},
-                    {path: 'invoice/:groupTransactionId', component: InvoiceComponent},
                     {path: 'tasks/:stageId', component: TasksComponent},
                     {path: 'users', component: UsersComponent},
                 ]

@@ -4,8 +4,8 @@ import {MarketplaceService} from "../service/marketplace.service";
 import {FormsModule} from "@angular/forms";
 import {NgForOf, NgIf} from "@angular/common";
 import {API_URLS} from "../../util/urls";
-import {UnitTypeOptions} from "../../construction/project/unit/unit.model";
-import {BuildingTypeOptions} from "../../construction/project/building/building.model";
+import {UnitTypeOptions} from "../../construction/unit/unit.model";
+import {BuildingTypeOptions} from "../../construction/building/building.model";
 
 @Component({
     selector: 'app-marketplace',

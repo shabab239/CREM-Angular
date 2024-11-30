@@ -1,5 +1,5 @@
 import {Worker} from "./worker.model";
-import {ConstructionStage} from "../project/stage/stage.model";
+import {ConstructionStage} from "../stage/stage.model";
 
 export class WorkerAttendance {
     id: number;
